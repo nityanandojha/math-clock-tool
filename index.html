@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="en" class="no-js"> -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Document</title>
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+</head>
+
+<body class="loading">
+  <div id="modal-staging">
+    <div id="save-popup-box" class="soft-shadow">
+      <!-- <div class="header" title="Share your work">
+        <div class="title">Share Your Work</div>
+        <button class="close-button"></button>
+      </div> -->
+      <div class="content">
+        <div class="description">
+          <img src="images/icon-share-image.b82bef8c3fdcea06dd1abd92463f1a4f.svg" class="description-icon" alt="" />
+          <span>Share an image</span>
+        </div>
+        <div id="share-image-ui-container">
+          <a id="image-download-link" class="hidden" download=""></a>
+          <div class="share-image-button-container">
+            <button id="image-download" class="text-button">SAVE IMAGE</button>
+            <div id="copy-container" class="text-button">
+              <button id="image-copy">
+                COPY IMAGE
+              </button>
+              <div id="image-copy-feedback" class="input-feedback">Copied</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="description">
+          <img src="images/icon-share-link.c29c333b24fbe14818a38f956ac0d741.svg" class="description-icon short" alt="" />
+          <span>Share a link</span>
+        </div>
+        <div id="share-link-ui-container" class="button-field">
+          <div class="input-container">
+            <input id="link-url" type="text" value="Saving..." readonly="readonly" />
+            <div id="copy-feedback" class="input-feedback">Copied</div>
+          </div>
+          <button id="link-copy" class="text-button">COPY LINK</button>
+        </div>
+        <div class="popup-divider"></div>
+        <div class="description">
+          <img src="images/icon-share-code-dark.fd145b363742941a079ed357a55c1b7c.svg" class="description-icon short" alt="" />
+          <span>Share a code</span>
+        </div>
+        <div id="share-activity-ui-container">
+          <div class="input-container">
+            <input id="link-code" type="text" value="" readonly="readonly" />
+          </div>
+          <button id="link-display" class="text-button">DISPLAY CODE</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="copy-image-box">
+      <div class="header" title="Share your work">
+        <div class="title">Copy Image</div>
+        <button class="close-button"></button>
+      </div>
+      <div class="content">
+        <div class="copy-image-instructions">
+          <div class="instruction-block desktop">
+            <p>Right-click image for copy options.</p>
+            <p class="sub-head">The image will be full-sized when pasted.</p>
+            <p class="sub-head"><strong>Tip:</strong> You can also try dragging the image to your desktop or an application.</p>
+          </div>
+          <div class="instruction-block mobile">
+            <div>Touch image and hold for copy options.</div>
+            <div class="sub-head">The image will be full-sized when pasted.</div>
+          </div>
+        </div>
+        <div class="copy-image-source-container">
+          <img class="copy-image-source" title="Copy of the workspace" alt="Copy of the workspace" />
+        </div>
+      </div>
+    </div>
+
+    <div id="submit-activity-submit-box">
+      <div class="header" title="Open shared work">
+        <div class="title">
+          <span>Enter a share code:</span>
+          <span class="error-text">Sorry, this code is unknown.</span>
+        </div>
+        <button class="close-button"></button>
+      </div>
+      <div class="content">
+        <div class="submit-container">
+          <div id="submit-activity-ui-container" class="field-container">
+            <label for="submit-activity-target">
+              <img class="submit-icon" src="images/icon-share-code-dark.fd145b363742941a079ed357a55c1b7c.svg" alt="Enter share code" />
+            </label>
+            <div class="input-container">
+              <input id="submit-activity-target-background" value="    -    " disabled/>
+              <input id="submit-activity-target" maxlength="9" />
+            </div>
+            <button id="submit-activity-submit" class="text-button">OPEN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="activity-display">
+      <div class="header" title="Open shared work">
+        <div class="title">
+          To open, press <img class="submit-glyph-inline" src="images/icon-share-code-dark.fd145b363742941a079ed357a55c1b7c.svg" alt="Share code submit button"> and enter:
+        </div>
+        <button class="close-button close-dark"></button>
+      </div>
+      <div class="content">
+        <div class="description">
+        </div>
+        <div id="activity-display-code">
+        </div>
+      </div>
+    </div>
+
+    <div id="new-clock-box" class="soft-shadow">
+      <div class="title" title="Add a new clock">
+        Add a new clock
+      </div>
+      <div class="content">
+        <button id="add-geared-clock"><img src="images/icon-add-clock-geared%402x.a992a543cc231a358c0007c8cbcf2a7c.png" /><span
+            class="label">Geared hands</span></button>
+        <button id="add-ungeared-clock"><img src="images/icon-add-clock-ungeared%402x.66111730478d838a42eec52665201695.png" /><span
+            class="label">Free-moving hands</span></button>
+        <button id="add-fraction-clock"><img src="images/icon-add-clock-fraction%402x.80af5e7036043f2a8638cb20ed515d2a.png" /><span
+            class="label">Clock with fractions</span></button>
+      </div>
+    </div>
+
+    <div id="fraction-fill-box">
+      <div class="fraction-fill-palette" data-active-color="">
+        <button id="fraction-fill-red" class="fraction-fill-button">
+          <div class="fraction-fill-active"></div>
+        </button>
+        <button id="fraction-fill-orange" class="fraction-fill-button">
+          <div class="fraction-fill-active"></div>
+        </button>
+        <button id="fraction-fill-yellow" class="fraction-fill-button">
+          <div class="fraction-fill-active"></div>
+        </button>
+        <button id="fraction-fill-green" class="fraction-fill-button">
+          <div class="fraction-fill-active"></div>
+        </button>
+        <button id="fraction-fill-blue" class="fraction-fill-button">
+          <div class="fraction-fill-active"></div>
+        </button>
+        <button id="fraction-fill-purple" class="fraction-fill-button">
+          <div class="fraction-fill-active"></div>
+        </button>
+      </div>
+    </div>
+
+    <div id="edit-clock-box" class="soft-shadow">
+      <div class="upper-content">
+        <div class="buttons">
+          <input type="radio" name="face-radio" value="Increments" id="face-button-increments" />
+          <label class="face-select-button" for="face-button-increments">
+            <div class="button-icon"></div>
+          </label>
+          <input type="radio" name="face-radio" value="Arabic" id="face-button-arabic" />
+          <label class="face-select-button" for="face-button-arabic">
+            <div class="button-icon"></div>
+          </label>
+          <input type="radio" name="face-radio" value="Roman" id="face-button-roman" />
+          <label class="face-select-button" for="face-button-roman">
+            <div class="button-icon"></div>
+          </label>
+          <input type="radio" name="face-radio" value="Blank" id="face-button-blank" />
+          <label class="face-select-button" for="face-button-blank">
+            <div class="button-icon"></div>
+          </label>
+        </div>
+        <div class="checkboxes">
+          <div class="checkbox-container">
+            <input type="checkbox" id="check-hour" />
+            <label for="check-hour">Hour Hand</input>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="check-minute" />
+            <label for="check-minute">Minute Hand</label>
+          </div>
+          <hr />
+          <div class="checkbox-container">
+            <input type="checkbox" id="check-labels" />
+            <label for="check-labels">Hand Labels</input>
+          </div>
+        </div>
+      </div>
+
+      <button id="edit-clock-done">OK</button>
+    </div>
+    <!-- End modal-staging div -->
+  </div>
+
+
+  <main class="">
+    <div id="loading-spinner"></div>
+
+    <canvas id="canvas"></canvas><!-- tabindex="1" -->
+
+    <div id="toolbar">
+      <div class="toolbar-button-container"><button id="restart" class="toolbar-button" title="Start Over"
+          aria-label="Clear the workspace"></button></div>
+
+      <hr class="toolbar-divider" />
+      <div class="toolbar-button-container button-group tab">
+        <button id="new-clock" class="toolbar-button" title="New Clock" aria-label="Create a new clock"></button>
+      </div>
+
+      <hr class="toolbar-divider" />
+
+      <div class="toolbar-button-container"><button id="edit-clock" class="toolbar-button" title="Edit Clock"
+          aria-label="Edit a selected clock"></button></div>
+
+      <hr class="toolbar-divider" />
+
+      <div class="toolbar-button-container"><button id="digital-mode" class="toolbar-button" title="Digital Mode"
+          aria-label="Activate digital readout mode"></button></div>
+
+      <div class="toolbar-button-container"><button id="run-jump-mode" class="toolbar-button" title="Run/Jump Mode"
+          aria-label="Activate run/jump mode"></button></div>
+
+      <hr class="toolbar-divider" />
+
+      <div class="toolbar-button-container"><button id="elapsed-time-mode" class="toolbar-button" title="Elapsed Time"
+          aria-label="Activate elapsed time mode"></button></div>
+
+      <hr class="toolbar-divider" />
+
+      <div class="toolbar-button-container"><button id="fractions-mode" class="toolbar-button" title="Fractions Mode"
+          aria-label="Activate fractions mode"></button></div>
+
+      <div class="toolbar-button-container"><button id="fill-mode" class="toolbar-button" title="Fill Mode"
+          aria-label="Activate fractions fill mode"></button></div>
+
+      <hr class="toolbar-divider" />
+
+
+      <div class="toolbar-button-container"><button id="shade" class="toolbar-button" title="Shade" aria-label="Add a shade to hide part of the workspace"></button></div>
+
+      <div class="toolbar-button-container"><button id="equation" class="toolbar-button" title="Math Text Tool"
+          aria-label="Open or close math text tool"></button></div>
+
+      <div class="toolbar-button-container"><button id="text" class="toolbar-button" title="Writing Tool"
+          aria-label="Open or close writing tool"></button></div>
+
+      <div class="toolbar-button-container"><button id="draw" class="toolbar-button" title="Drawing Tools"
+          aria-label="Open or close drawing tools"></button></div>
+
+      <hr class="toolbar-divider" />
+
+      <div class="toolbar-button-container"><button id="duplicate" class="toolbar-button" title="Duplicate"
+          aria-label="Duplicate selected objects"></button></div>
+
+      <div class="toolbar-button-container"><button id="trash" class="toolbar-button" title="Trash"
+          aria-label="Delete selected objects"></button></div>
+
+      <hr class="toolbar-divider" />
+
+
+      <!-- <div class="toolbar-button-container">
+        <button id="code" class="toolbar-button" title="Open Shared Work" aria-label="Open shared work using a code"></button>
+      </div>
+
+      <div class="toolbar-button-container">
+        <button id="save" class="toolbar-button" title="Share" aria-label="Share snapshot of the current workspace"></button>
+      </div>
+
+      <hr class="toolbar-divider" />
+
+      <div class="toolbar-button-container"><button id="info" class="toolbar-button" title="Info"
+          aria-label="Open instructions and more information"></button></div> -->
+
+    </div>
+
+    <!-- Info page -->
+    <div id="infopage" class="infopage">
+      <div class="infowrapper">
+        <nav class="titlebar" aria-label="Info Pages Menu">
+          <ul class="sectionwrapper">
+            <li class="title howto selected">How To</li>
+            <li class="title about">About</li>
+          </ul>
+          <div class="close" aria-label="Close info pages">Close</div>
+        </nav>
+
+        <div class="contents-wrapper">
+          <iframe id="info-howto-frame" partition="info" src="info/info-how-to.html" class="contents howto"></iframe>
+          <iframe id="info-about-frame" partition="info" src="info/info-about.html" class="contents about"></iframe>
+        </div> <!-- End contents wrapper -->
+      </div> <!-- End Info wrapper -->
+    </div> <!-- End info page -->
+
+  </main>
+
+<script type="text/javascript" src="js/runtime.js"></script>
+<script type="text/javascript" src="js/createjs.js"></script>
+<script type="text/javascript" src="js/main.js"></script></body>
+
+</html>

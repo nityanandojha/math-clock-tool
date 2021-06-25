@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Document</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="shortcut icon" href="favicon.ico"> -->
 </head>
 
@@ -127,12 +127,15 @@
         Add a new clock
       </div>
       <div class="content">
-        <button id="add-geared-clock"><img src="images/icon-add-clock-geared%402x.a992a543cc231a358c0007c8cbcf2a7c.png" /><span
-            class="label">Geared hands</span></button>
-        <button id="add-ungeared-clock"><img src="images/icon-add-clock-ungeared%402x.66111730478d838a42eec52665201695.png" /><span
-            class="label">Free-moving hands</span></button>
-        <button id="add-fraction-clock"><img src="images/icon-add-clock-fraction%402x.80af5e7036043f2a8638cb20ed515d2a.png" /><span
-            class="label">Clock with fractions</span></button>
+        <button id="add-geared-clock">
+            <input type="radio" name="aa" id="">
+            <span class="label">Geared hands</span></button>
+        <button id="add-ungeared-clock">
+            <input type="radio" name="aa" id="">
+            <span class="label">Free-moving hands</span></button>
+        <button id="add-fraction-clock">
+            <input type="radio" name="aa" id="">
+            <span class="label">Clock with fractions</span></button>
       </div>
     </div>
 
@@ -211,12 +214,9 @@
       <div class="toolbar-button-container"><button id="restart" class="toolbar-button" title="Start Over"
           aria-label="Clear the workspace"></button></div>
 
-      <hr class="toolbar-divider" />
       <div class="toolbar-button-container button-group tab">
         <button id="new-clock" class="toolbar-button" title="New Clock" aria-label="Create a new clock"></button>
       </div>
-
-      <hr class="toolbar-divider" />
 
       <div class="toolbar-button-container"><button id="edit-clock" class="toolbar-button" title="Edit Clock"
           aria-label="Edit a selected clock"></button></div>
@@ -264,10 +264,9 @@
       <div class="toolbar-button-container"><button id="trash" class="toolbar-button" title="Trash"
           aria-label="Delete selected objects"></button></div>
 
-      <hr class="toolbar-divider" />
+      <!-- <hr class="toolbar-divider" />
 
-
-      <!-- <div class="toolbar-button-container">
+      <div class="toolbar-button-container">
         <button id="code" class="toolbar-button" title="Open Shared Work" aria-label="Open shared work using a code"></button>
       </div>
 

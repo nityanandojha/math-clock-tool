@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 body {
-  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
   touch-action: none;
   user-drag: none;
@@ -70,7 +70,7 @@ button {
   right: 0.3em;
   padding: 0.2em 0.4em;
   border-radius: 3px;
-  background-color: #551A8B;
+  background-color: #551a8b;
   color: #fff;
   opacity: 0.75;
   font-size: 1.35em;
@@ -87,10 +87,10 @@ button {
 Toolbar
 ----- */
 #toolbar {
-position: absolute;
-bottom: 0;
-align-items: center;
-height: 90px;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  height: 90px;
   order: 3;
   flex: 0 0 48px;
   display: flex;
@@ -109,7 +109,7 @@ height: 90px;
 #toolbar.top .popup::after {
   top: -24px;
   background: url("+_e+") no-repeat;
-  content: '';
+  content: "";
 }
 #toolbar.top .popup .popup-body {
   border-radius: 10px;
@@ -198,10 +198,10 @@ height: 90px;
   flex-direction: row;
 }
 .button-field input {
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-right: none;
   border-radius: 3px 0 0 3px;
-  box-shadow: inset 2px 2px 5px #CCC;
+  box-shadow: inset 2px 2px 5px #ccc;
   padding: 5px;
   font-size: 0.9em;
   margin: 0;
@@ -212,10 +212,10 @@ height: 90px;
   border-bottom-left-radius: 0;
 }
 /* -----
-Dialog
+winBox
 ----- */
-/* jquery dialogs */
-#dialog-modal {
+/* jquery winBoxs */
+#winBox-base {
   display: none;
 }
 /* background overlay */
@@ -232,18 +232,18 @@ Dialog
   width: 100%;
   height: 100%;
 }
-/* our app's generic dialog */
-.ui-dialog.alert {
+/* our app's generic winBox */
+.ui-winBox.msgBox {
   padding: 0;
   background-image: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
   outline: none;
 }
-.ui-dialog.alert .ui-dialog-titlebar {
+.ui-winBox.msgBox .ui-winBox-titlebar {
   padding-top: 20px;
-  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   background: none;
@@ -251,58 +251,58 @@ Dialog
   text-align: center;
   font-size: 16px;
 }
-.ui-dialog.alert .ui-dialog-titlebar .ui-dialog-title.no-title {
+.ui-winBox.msgBox .ui-winBox-titlebar .ui-winBox-title.no-title {
   /* Fix to JQuery UI 1.12 update where empty titles
       are replaced with an nbsp;.
       Manually hiding to prevent extra padding.
    */
   display: none;
 }
-.ui-dialog.alert .ui-dialog-titlebar-close {
+.ui-winBox.msgBox .ui-winBox-titlebar-close {
   display: none;
 }
-.ui-dialog.alert .ui-dialog-content {
-  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.ui-winBox.msgBox .ui-winBox-content {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   padding: 5px 20px 20px;
   line-height: 1.2em;
 }
-.ui-dialog.alert .ui-dialog-buttonpane {
+.ui-winBox.msgBox .ui-winBox-buttonpane {
   margin: 0;
   padding: 0;
 }
-.ui-dialog.alert .ui-dialog-buttonset {
+.ui-winBox.msgBox .ui-winBox-buttonset {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  border-top: solid 1px #BBB;
+  border-top: solid 1px #bbb;
 }
-.ui-dialog.alert .ui-button {
+.ui-winBox.msgBox .ui-button {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 35px;
   background: none;
   border: none;
-  color: #1C81C4;
+  color: #1c81c4;
   /*font-size: 14px;*/
   /*text-transform: uppercase;*/
 }
-.ui-dialog.alert.confirm .ui-button {
+.ui-winBox.msgBox.confirm .ui-button {
   width: 50%;
 }
-.ui-dialog.alert.confirm .ui-button:first-child {
-  border-right: solid 1px #BBB;
+.ui-winBox.msgBox.confirm .ui-button:first-child {
+  border-right: solid 1px #bbb;
 }
-.ui-dialog.alert .ui-button:hover {
-  background-color: #F7F7F7;
+.ui-winBox.msgBox .ui-button:hover {
+  background-color: #f7f7f7;
 }
-.ui-dialog.alert .ui-button:active {
-  background-color: #DDD;
+.ui-winBox.msgBox .ui-button:active {
+  background-color: #ddd;
 }
-.ui-dialog.alert.has-close button.ui-dialog-titlebar-close {
+.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close {
   display: block;
   position: absolute;
   color: transparent;
@@ -313,16 +313,16 @@ Dialog
   width: 36px;
   background: black url("+fe+") no-repeat center;
 }
-.ui-dialog.alert.has-close button.ui-dialog-titlebar-close:hover {
+.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close:hover {
   background-color: darkgrey;
 }
 #templates {
   display: none;
 }
 /* -----
-  Modal styles
+  base styles
 ----- */
-.modal-backdrop {
+.base-background {
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -331,29 +331,29 @@ Dialog
   z-index: -1;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .modal-backdrop {
+  .base-background {
     height: 200vh;
     width: 200vw;
     transform: translateX(-50%), translateY(-50%);
   }
 }
-.modal {
+.base {
   z-index: 100;
 }
-.modal.dark-backdrop .modal-backdrop {
+.base.gray-background .base-background {
   background-color: rgba(108, 118, 128, 0.7);
 }
-.modal.popup {
+.base.popup {
   position: absolute;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .modal.popup {
+  .base.popup {
     transform: translateX(-50%);
     left: 50%;
   }
 }
-.modal.popup::after {
-  content: '';
+.base.popup::after {
+  content: "";
   position: absolute;
   bottom: -24px;
   left: 0;
@@ -364,11 +364,11 @@ Dialog
   width: 48px;
   background: url("+_e+") no-repeat;
 }
-.modal.popup.tail-right .popup-body {
+.base.popup.tail-right .popup-body {
   transform: translateX(-50%);
   border-bottom-right-radius: 0;
 }
-.modal.popup.tail-right::after {
+.base.popup.tail-right::after {
   background-position: 0 0;
   top: 0;
   bottom: 0;
@@ -378,11 +378,11 @@ Dialog
   margin-bottom: auto;
   transform: rotate(-90deg);
 }
-.modal.popup.tail-left .popup-body {
+.base.popup.tail-left .popup-body {
   transform: translateX(50%);
   border-bottom-left-radius: 0;
 }
-.modal.popup.tail-left::after {
+.base.popup.tail-left::after {
   background-position: 0 0;
   top: 0;
   bottom: 0;
@@ -392,7 +392,7 @@ Dialog
   margin-bottom: auto;
   transform: rotate(90deg);
 }
-.modal.dialog {
+.base.winBox {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -403,22 +403,22 @@ Dialog
   width: 100vw;
   height: 100vh;
 }
-.modal.dialog.hidden {
+.base.winBox.hidden {
   display: none;
 }
-.modal.dialog .modal-box {
+.base.winBox .base-box {
   top: -24px;
 }
-.modal-box {
+.base-box {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
-.modal-box .content {
+.base-box .content {
   background: #595959;
- color:#fff;
+  color: #fff;
 }
-.modal-box .header {
+.base-box .header {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
@@ -431,19 +431,19 @@ Dialog
   font-weight: 600;
   font-size: 1.1em;
 }
-.modal-box .header .close-button {
+.base-box .header .close-button {
   height: 46px;
   width: 46px;
   background: url("+me+") no-repeat center;
   background-size: 40%;
 }
-.modal-box .header .close-button.close-dark {
+.base-box .header .close-button.close-dark {
   background-image: url("+be+");
 }
-.modal-box .header .close-button:active {
+.base-box .header .close-button:active {
   opacity: 0.5;
 }
-.modal.alert .modal-box {
+.base.msgBox .base-box {
   display: flex;
   flex-flow: column nowrap;
   width: 300px;
@@ -451,44 +451,44 @@ Dialog
   position: relative;
   top: -24px;
 }
-.modal.alert .title {
+.base.msgBox .title {
   margin: 20px 20px 0;
   font-weight: 600;
 }
-.modal.alert .message {
+.base.msgBox .message {
   margin: 0.5em 20px 20px;
 }
-.modal.alert .button-container {
+.base.msgBox .button-container {
   display: flex;
   flex-flow: row wrap;
 }
-.modal.alert .button-container button {
+.base.msgBox .button-container button {
   color: #000;
   flex: 1 0 100%;
   padding: 31px;
 }
-.modal.alert .button-container button:nth-last-child(-n + 2):first-child,
-.modal.alert .button-container button:nth-last-child(-n + 2):first-child ~ button {
- background-size: cover; 
- background-image: url(images/noBtn.png);
+.base.msgBox .button-container button:nth-last-child(-n + 2):first-child,
+.base.msgBox .button-container button:nth-last-child(-n + 2):first-child ~ button {
+  background-size: cover;
+  background-image: url(images/noBtn.png);
   flex: 1 0 40%;
 }
-.modal.alert .button-container button:first-child:nth-last-child(2) {
- background-image: url(images/yesBtn.png);
- background-size:cover;
+.base.msgBox .button-container button:first-child:nth-last-child(2) {
+  background-image: url(images/yesBtn.png);
+  background-size: cover;
 }
-.modal.alert .button-container button:hover:active {
+.base.msgBox .button-container button:hover:active {
   background-color: #cccccc;
 }
-.modal.alert .button-container button.default {
+.base.msgBox .button-container button.default {
   /* background-color: #afd8ee; */
   color: #000;
-  /* animation: pulse-alert-default 3s ease infinite; */
+  /* animation: pulse-msgBox-default 3s ease infinite; */
 }
-.modal.alert .button-container button.default:hover:active {
+.base.msgBox .button-container button.default:hover:active {
   background-color: #85c3e5;
 }
-@keyframes pulse-alert-default {
+@keyframes pulse-msgBox-default {
   0% {
     background-color: #568995;
   }
@@ -499,61 +499,61 @@ Dialog
     background-color: #568995;
   }
 }
-.modal.popup {
+.base.popup {
   user-select: text;
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
   -webkit-user-drag: auto;
 }
-.modal.popup .content {
+.base.popup .content {
   background-color: white;
   padding: 15px;
   display: flex;
   flex-direction: column;
 }
-.modal.popup .description {
+.base.popup .description {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   margin-bottom: 0.75em;
 }
-.modal.popup .description .description-icon {
+.base.popup .description .description-icon {
   height: 24px;
   width: 24px;
   margin-right: 0.5em;
 }
-.modal.popup .description .description-icon.short {
+.base.popup .description .description-icon.short {
   height: 20px;
 }
-.modal.popup .text-button {
+.base.popup .text-button {
   margin: 0 5px;
   padding-left: 0;
   padding-right: 0;
   flex-basis: 0;
   flex-grow: 1;
 }
-.modal.popup input {
+.base.popup input {
   height: 100%;
   padding: 0 0.5em;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 3px;
-  box-shadow: inset 2px 2px 5px #CCC;
+  box-shadow: inset 2px 2px 5px #ccc;
   margin: 0;
 }
-.modal.popup .modal-box {
+.base.popup .base-box {
   position: relative;
 }
-.modal.popup .popup-divider {
+.base.popup .popup-divider {
   margin: 1em -15px;
   flex-grow: 0;
   flex-basis: 2px;
-  background: #CCC;
+  background: #ccc;
 }
 #save-popup {
   width: 380px;
 }
-#save-popup .modal-box {
+#save-popup .base-box {
   right: 130px;
 }
 #save-popup #share-image-ui-container,
@@ -619,9 +619,9 @@ html.disable-copy-image #copy-container {
   overflow: hidden;
 }
 .submit-container .input-container input {
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 3px;
-  box-shadow: inset 2px 2px 5px #CCC;
+  box-shadow: inset 2px 2px 5px #ccc;
   padding: 5px;
   font-size: 4em;
   font-weight: 400;
@@ -634,53 +634,53 @@ html.disable-copy-image #copy-container {
   font-size: 1.4em;
 }
 /* Default styling: show desktop instructions. */
-#copy-image-modal .copy-image-instructions .mobile {
+#copy-image-base .copy-image-instructions .mobile {
   display: none;
 }
 /*
  * If touch is detected, hide desktop instructions and show mobileinstructions.
  */
-.touch #copy-image-modal .desktop {
+.touch #copy-image-base .desktop {
   display: none;
 }
-.touch #copy-image-modal .mobile {
+.touch #copy-image-base .mobile {
   display: block;
 }
-#copy-image-modal {
+#copy-image-base {
   z-index: 110;
 }
-#copy-image-modal .modal-box {
+#copy-image-base .base-box {
   position: relative;
   top: -24px;
 }
-#copy-image-modal .content {
+#copy-image-base .content {
   padding: 20px;
   display: flex;
   flex-flow: row nowrap;
 }
-#copy-image-modal .content .copy-image-instructions {
+#copy-image-base .content .copy-image-instructions {
   width: 10em;
   margin-right: 20px;
 }
-#copy-image-modal .content .copy-image-instructions p:first-child {
+#copy-image-base .content .copy-image-instructions p:first-child {
   margin-top: 0;
 }
-#copy-image-modal .content .copy-image-instructions .sub-head {
+#copy-image-base .content .copy-image-instructions .sub-head {
   font-size: 0.9em;
 }
-#copy-image-modal .content .copy-image-source-container {
+#copy-image-base .content .copy-image-source-container {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
 }
-#copy-image-modal .content .copy-image-source-container .copy-image-source {
+#copy-image-base .content .copy-image-source-container .copy-image-source {
   max-width: 50vw;
   max-height: 50vh;
   box-shadow: 0 5px 10px 0 grey;
 }
 #activity-display .header {
-  border-bottom: solid 2px #CCC;
+  border-bottom: solid 2px #ccc;
   background-color: white;
   color: #333;
   justify-content: center;
@@ -759,17 +759,17 @@ html.disable-copy-image #copy-container {
   left: 0;
   background: transparent;
 }
-/* --- End Modal styles --- */
+/* --- End base styles --- */
 .calculator-input input {
   width: 414px;
   height: 44px;
-  font: 300 32px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 32px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 2px 4px;
 }
 .calculator-textarea textarea {
   width: 414px;
   height: 202px;
-  font: 300 30px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 30px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.1;
   padding: 2px 4px;
   resize: none;
@@ -827,7 +827,7 @@ html.disable-copy-image #copy-container {
   border-top-right-radius: 5px;
 }
 .infopage .title.selected {
-  color: #0287CF;
+  color: #0287cf;
   background-color: white;
 }
 .infopage .close {
@@ -865,7 +865,7 @@ html.disable-copy-image #copy-container {
 }
 .infopage .infohead {
   color: #0081c6;
-  font: bold 36px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: bold 36px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   text-align: center;
 }
@@ -879,13 +879,13 @@ html.disable-copy-image #copy-container {
 }
 .infopage .info-subhead {
   color: #0081c6;
-  font: bold 28px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: bold 28px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 20px;
   text-align: left;
 }
 .infopage .info-subhead-description {
   color: #0081c6;
-  font: 18px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 18px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4em;
   margin: -15px 0 30px;
   text-align: left;
@@ -894,7 +894,7 @@ html.disable-copy-image #copy-container {
 .infopage .box ul,
 .infopage .info-buttons p {
   color: #666;
-  font: 18px/1.4em Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 18px/1.4em Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .infopage .infolink {
   text-align: center;
@@ -918,7 +918,7 @@ html.disable-copy-image #copy-container {
   color: #666;
 }
 .infopage a.about-link {
-  color: #0287CF;
+  color: #0287cf;
   display: block;
   font-weight: bold;
   text-align: center;
@@ -946,50 +946,50 @@ html.disable-copy-image #copy-container {
 }
 /* roboto-300 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("+Ce+") format('woff2'),  url("+Se+") format('woff');
+  src: url("+Ce+") format("woff2"), url("+Se+") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-300italic - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-weight: 300;
-  src: url("+Ae+") format('woff2'),  url("+Oe+") format('woff');
+  src: url("+Ae+") format("woff2"), url("+Oe+") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-regular - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("+Ie+") format('woff2'),  url("+ye+") format('woff');
+  src: url("+Ie+") format("woff2"), url("+ye+") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-italic - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-weight: 400;
-  src: url("+we+") format('woff2'),  url("+Le+") format('woff');
+  src: url("+we+") format("woff2"), url("+Le+") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700italic - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-weight: 700;
-  src: url("+Re+") format('woff2'),  url("+De+") format('woff');
+  src: url("+Re+") format("woff2"), url("+De+") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("+Ne+") format('woff2'),  url("+xe+") format('woff');
+  src: url("+Ne+") format("woff2"), url("+xe+") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @keyframes missing-feature {
@@ -1042,9 +1042,9 @@ html.disable-copy-image #copy-container {
   justify-content: center;
   background: #233239;
   margin: 0 auto;
- width: 96%;
- padding: 0 16px;
-border-radius: 50px;
+  width: 96%;
+  padding: 0 16px;
+  border-radius: 50px;
 }
 #toolbar .toolbar-button {
   height: 100%;
@@ -1122,13 +1122,13 @@ border-radius: 50px;
   flex-grow: 1;
   overflow: hidden;
 }
-#modal-staging {
+#base-stage {
   display: none;
 }
 #save-popout {
   width: 380px;
 }
-#save-popout .modal-box {
+#save-popout .base-box {
   position: relative;
   right: 130px;
 }
@@ -1177,12 +1177,12 @@ border-radius: 50px;
   margin: 1em -15px;
   flex-grow: 0;
   flex-basis: 2px;
-  background: #CCC;
+  background: #ccc;
 }
-#edit-clock-modal {
+#edit-clock-base {
   left: 0;
 }
-#edit-clock-modal .modal-backdrop {
+#edit-clock-base .base-background {
   /**
      * Pass through pointer events on HTML palettes so Page can handle dismissal,
      * and other workspace interactions can still occur.
@@ -1237,11 +1237,11 @@ border-radius: 50px;
   background-color: lightgrey;
   border: none;
 }
-#edit-clock-box .checkboxes input[type='checkbox'] {
+#edit-clock-box .checkboxes input[type="checkbox"] {
   display: none;
 }
-#edit-clock-box .checkboxes input[type='checkbox'] + label::before {
-  content: ' ';
+#edit-clock-box .checkboxes input[type="checkbox"] + label::before {
+  content: " ";
   display: inline-block;
   background-image: url("+Pe+");
   width: 30px;
@@ -1249,23 +1249,23 @@ border-radius: 50px;
   margin-right: 10px;
   margin-left: 8px;
 }
-#edit-clock-box .checkboxes input[type='checkbox']:checked + label::before {
+#edit-clock-box .checkboxes input[type="checkbox"]:checked + label::before {
   background-image: url("+Fe+");
 }
-#edit-clock-box input[type='radio'] {
+#edit-clock-box input[type="radio"] {
   display: none;
 }
-#edit-clock-box input[type='radio'] + .face-select-button {
+#edit-clock-box input[type="radio"] + .face-select-button {
   width: 70px;
   height: 70px;
   margin: 1px;
   background-image: url("+Me+");
 }
-#edit-clock-box input[type='radio'] + .face-select-button .button-icon {
+#edit-clock-box input[type="radio"] + .face-select-button .button-icon {
   width: 70px;
   height: 70px;
 }
-#edit-clock-box input[type='radio']:checked + .face-select-button {
+#edit-clock-box input[type="radio"]:checked + .face-select-button {
   background-image: url("+Ue+");
 }
 #edit-clock-box #edit-clock-done {
@@ -1275,16 +1275,16 @@ border-radius: 50px;
   background-color: #0081c6;
   font-size: 1.2em;
 }
-label[for='face-button-increments'] .button-icon {
+label[for="face-button-increments"] .button-icon {
   background-image: url("+He+");
 }
-label[for='face-button-arabic'] .button-icon {
+label[for="face-button-arabic"] .button-icon {
   background-image: url("+Ge+");
 }
-label[for='face-button-roman'] .button-icon {
+label[for="face-button-roman"] .button-icon {
   background-image: url("+Ve+");
 }
-label[for='face-button-blank'] .button-icon {
+label[for="face-button-blank"] .button-icon {
   background-image: url("+Be+");
 }
 #new-clock-box {
@@ -1317,15 +1317,15 @@ label[for='face-button-blank'] .button-icon {
   font-size: 19px;
   text-align: left;
 }
-/* Removes default styling for generic framework modals. */
-#fraction-fill-modal.popup {
+/* Removes default styling for generic framework bases. */
+#fraction-fill-base.popup {
   bottom: 40px;
 }
-#fraction-fill-modal.popup::after {
-  /* Remove default after styling for modals created with the Framework. */
+#fraction-fill-base.popup::after {
+  /* Remove default after styling for bases created with the Framework. */
   display: none;
 }
-#fraction-fill-modal.popup .modal-backdrop {
+#fraction-fill-base.popup .base-background {
   display: none;
 }
 .fraction-fill-palette {
@@ -1350,22 +1350,22 @@ label[for='face-button-blank'] .button-icon {
   height: 24px;
   pointer-events: none;
 }
-.fraction-fill-palette[data-active-color='red'] #fraction-fill-red .fraction-fill-active {
+.fraction-fill-palette[data-active-color="red"] #fraction-fill-red .fraction-fill-active {
   background-image: url("+Ye+");
 }
-.fraction-fill-palette[data-active-color='orange'] #fraction-fill-orange .fraction-fill-active {
+.fraction-fill-palette[data-active-color="orange"] #fraction-fill-orange .fraction-fill-active {
   background-image: url("+Ye+");
 }
-.fraction-fill-palette[data-active-color='yellow'] #fraction-fill-yellow .fraction-fill-active {
+.fraction-fill-palette[data-active-color="yellow"] #fraction-fill-yellow .fraction-fill-active {
   background-image: url("+Ye+");
 }
-.fraction-fill-palette[data-active-color='green'] #fraction-fill-green .fraction-fill-active {
+.fraction-fill-palette[data-active-color="green"] #fraction-fill-green .fraction-fill-active {
   background-image: url("+Ye+");
 }
-.fraction-fill-palette[data-active-color='blue'] #fraction-fill-blue .fraction-fill-active {
+.fraction-fill-palette[data-active-color="blue"] #fraction-fill-blue .fraction-fill-active {
   background-image: url("+Ye+");
 }
-.fraction-fill-palette[data-active-color='purple'] #fraction-fill-purple .fraction-fill-active {
+.fraction-fill-palette[data-active-color="purple"] #fraction-fill-purple .fraction-fill-active {
   background-image: url("+Ye+");
 }
 #fraction-fill-red {
@@ -1387,34 +1387,34 @@ label[for='face-button-blank'] .button-icon {
   background-image: url("+qe+");
 }
 #canvas {
-  background-image: url(images/pat.jpg); 
-background-size:cover;
+  background-image: url(images/pat.jpg);
+  background-size: cover;
 }
 #canvas.draw-cursor:not(.pan-cursor) {
   cursor: url("+Ze+"), crosshair !important;
   /* !important gets around bugginess with EaselJS cursor setting and IE */
 }
-#canvas.draw-cursor[data-draw-color='BLACK']:not(.pan-cursor) {
+#canvas.draw-cursor[data-draw-color="BLACK"]:not(.pan-cursor) {
   cursor: url("+$e+"), crosshair !important;
   /* !important gets around bugginess with EaselJS cursor setting and IE */
 }
-#canvas.draw-cursor[data-draw-color='BLUE']:not(.pan-cursor) {
+#canvas.draw-cursor[data-draw-color="BLUE"]:not(.pan-cursor) {
   cursor: url("+et+"), crosshair !important;
   /* !important gets around bugginess with EaselJS cursor setting and IE */
 }
-#canvas.draw-cursor[data-draw-color='GREEN']:not(.pan-cursor) {
+#canvas.draw-cursor[data-draw-color="GREEN"]:not(.pan-cursor) {
   cursor: url("+tt+"), crosshair !important;
   /* !important gets around bugginess with EaselJS cursor setting and IE */
 }
-#canvas.draw-cursor[data-draw-color='YELLOW']:not(.pan-cursor) {
+#canvas.draw-cursor[data-draw-color="YELLOW"]:not(.pan-cursor) {
   cursor: url("+nt+"), crosshair !important;
   /* !important gets around bugginess with EaselJS cursor setting and IE */
 }
-#canvas.draw-cursor[data-draw-color='ORANGE']:not(.pan-cursor) {
+#canvas.draw-cursor[data-draw-color="ORANGE"]:not(.pan-cursor) {
   cursor: url("+it+"), crosshair !important;
   /* !important gets around bugginess with EaselJS cursor setting and IE */
 }
-#canvas.draw-cursor[data-draw-color='RED']:not(.pan-cursor) {
+#canvas.draw-cursor[data-draw-color="RED"]:not(.pan-cursor) {
   cursor: url("+ot+"), crosshair !important;
   /* !important gets around bugginess with EaselJS cursor setting and IE */
 }
@@ -1459,7 +1459,7 @@ toolbar-button {
 }
 #restart {
   background-image: url(images/reset.png);
- background-size: contain;
+  background-size: contain;
 }
 #new-clock {
   background-image: url("+rt+");
@@ -1686,7 +1686,7 @@ h2 {
   font: normal 24px Helvetica neue, sans-serif;
   text-align: center;
 }
-.jump-control input[type=number]::-webkit-inner-spin-button {
+.jump-control input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 @media all and (max-width: 767px) {

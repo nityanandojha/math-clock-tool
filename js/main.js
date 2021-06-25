@@ -318,13 +318,7 @@
           ot +
           "), crosshair !important;\n  /* !important gets around bugginess with EaselJS cursor setting and IE */\n}\n#canvas.erase-cursor:not(.pan-cursor) {\n  cursor: url(" +
           at +
-          "), crosshair !important;\n  /* !important gets around bugginess with EaselJS cursor setting and IE */\n}\n#canvas.pan-cursor {\n  cursor: grab;\n}\n#canvas.pan-cursor:active {\n  cursor: grabbing;\n}\n#loading-spinner {\n  position: fixed;\n  left: 50%;\n  top: 50%;\n}\n/* -----\nToolbar Buttons\n----- */\n#toolbar .button-group.tab {\n  background-color: inherit;\n  position: relative;\n  top: -12px;\n  align-items: center\n  box-sizing: content-box;\n}\n#toolbar .button-group.tab > .toolbar-button {\n  margin-top: -45px;\n  max-width: none;\n  min-width: 58px;\n}\ntoolbar-button {\n  background-size: auto 24px;\n}\n#restart {\n  background-image: url(images/reset.png);\n background-size: contain;\n}\n#new-clock {\n  background-image: url(images/add-clock.png);\nbackground-size:cover;\nwidth: 120px !important;\nheight: 120px !important;\n}\n#edit-clock.on {\n  /* @todo Needsa -down state image, like Equation/Text. */\n  opacity: 0.5;\n}\n#digital-mode {\n  background-image: url(" +
-          lt +
-          ");\n}\n#digital-mode.on {\n  background-image: url(" +
-          ut +
-          ");\n}\n#run-jump-mode {\n  background-image: url(" +
-          Tt +
-          ");\n}\n#run-jump-mode.on {\n  background-image: url(" +
+          "), crosshair !important;\n  /* !important gets around bugginess with EaselJS cursor setting and IE */\n}\n#canvas.pan-cursor {\n  cursor: grab;\n}\n#canvas.pan-cursor:active {\n  cursor: grabbing;\n}\n#loading-spinner {\n  position: fixed;\n  left: 50%;\n  top: 50%;\n}\n/* -----\nToolbar Buttons\n----- */\n#toolbar .button-group.tab {\n  background-color: inherit;\n  position: relative;\n  top: -12px;\n  align-items: center\n  box-sizing: content-box;\n}\n#toolbar .button-group.tab > .toolbar-button {\n  margin-top: -45px;\n  max-width: none;\n  min-width: 58px;\n}\ntoolbar-button {\n  background-size: auto 24px;\n}\n#restart {\n  background-image: url(images/reset.png);\n background-size: contain;\n}\n#new-clock {\n  background-image: url(images/add-clock.png);\nbackground-size:cover;\nwidth: 120px !important;\nheight: 120px !important;\n}\n#edit-clock.on {\n  /* @todo Needsa -down state image, like Equation/Text. */\n  opacity: 0.5;\n}\n#run-jump-mode.on {\n  background-image: url(" +
           ht +
           ");\n}\n#elapsed-time-mode {\n  background-image: url(" +
           dt +
@@ -9457,7 +9451,7 @@
       e.exports = n.p + "images/cursor-pen-red.91a6beea49d236d86b247495956bdd65.cur";
     },
     "Va4Y": function (e, t, n) {
-      e.exports = n.p + "images/icon-digital-on.66d8bb4aeed2f9defe929fbe679ba059.png";
+      e.exports = n.p /* + "images/icon-digital-on.66d8bb4aeed2f9defe929fbe679ba059.png" */;
     },
     "VikQ": function (e, t, n) {
       e.exports = n.p + "images/icon-fill-green.41a1d196ac6c3e14030e3a30361fc2b9.png";
@@ -9486,7 +9480,7 @@
     },
 
     "YiJN": function (e, t, n) {
-      e.exports = n.p + "images/icon-face.681d2b1cd06f5d2a1154cd21264ea1ef.png";
+      e.exports = n.p /* + "images/icon-face.681d2b1cd06f5d2a1154cd21264ea1ef.png" */;
     },
     "ZgxC": function (e, t, n) {
       e.exports = n.p + "images/runjump-icon-play-on.5e9b488f0504bd6188b07b95ecb73017.png";
@@ -9529,7 +9523,7 @@
     },
 
     "emzk": function (e, t, n) {
-      e.exports = n.p + "images/icon-run-jump-on.808d4230d21d9c1a10741d961fccbe85.png";
+      e.exports = n.p + "images/icon-run.png";
     },
     "fGIB": function (e, t, n) {
       e.exports = n.p + "images/icon-drawing.e828e65cc678f32776c8169c4d752852.png";
@@ -9548,7 +9542,7 @@
     },
 
     "iY4r": function (e, t, n) {
-      e.exports = n.p + "images/icon-digital.823ad80877f5b73bb916ff7a830038fb.png";
+      e.exports = n.p /* + "images/icon-digital.823ad80877f5b73bb916ff7a830038fb.png" */;
     },
     "iapb": function (e, t, n) {
       e.exports = n.p + "images/runjump-background.4b408dc909805d9b99e895ff02063448.png";
@@ -9575,7 +9569,7 @@
       e.exports = n.p + "images/cursor-pen.0b17119d63b2cfbafc7dbf35237eb0ac.cur";
     },
     "mpcN": function (e, t, n) {
-      e.exports = n.p + "images/icon-run-jump.990a62aa4d0f4e8799e80eea1fd2f17d.png";
+      e.exports = n.p /* + "images/icon-run-jump.990a62aa4d0f4e8799e80eea1fd2f17d.png" */;
     },
     "n8Jy": function (e, t, n) {
       //images/icon-resize-minus.b6eed95dce718920c6736cfcf8002645.png

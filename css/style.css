@@ -32,3 +32,19 @@
   background-image: url(../images/editClock.png);
   background-size: contain;
 }
+#digital-mode {
+  background-image: url(../images/digital.png);
+  background-size: contain;
+}
+
+#digital-mode.on {
+  background-image: url(../images/digital.png);
+}
+
+#run-jump-mode {
+  background-image: url(../images/icon-run.png);
+}
+
+/* #run-jump-mode.on {
+  background-image: url(../images/icon-run.png);
+} */

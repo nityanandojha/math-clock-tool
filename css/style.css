@@ -1,3 +1,49 @@
+@font-face {
+  font-family: RockwellB;
+  src: url(../fonts/Rockwell-Bold.ttf);
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 71px;
+  order: 3;
+  z-index: 1;
+  background: #233239;
+  border-radius: 50px;
+  width: 100%;
+}
+
+#toolbar.top {
+  order: 1;
+}
+
+#toolbar.top .popup {
+  bottom: auto;
+  top: 64px;
+}
+
+#toolbar .toolbar-button-container {
+  position: relative;
+  /* margin: 0 4px;
+  min-width: 24px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#toolbar .button-group.tab > .toolbar-button {
+ min-width: 58px;
+}
+
+ /* toolbar ends */
+
 #new-clock-box button input{
   margin-right: 10px;
 }
@@ -48,3 +94,76 @@
 /* #run-jump-mode.on {
   background-image: url(../images/icon-run.png);
 } */
+
+#elapsed-time-mode {
+  background-image: url(../images/elapseTime.png);
+  background-size: contain;
+}
+
+#elapsed-time-mode.on {
+  background-image: url(../images/elapseTimeOn.png);
+}
+
+#fractions-mode {
+  background-image: url(../images/fracMode.png);
+  background-size: contain;
+}
+#fractions-mode.on {
+  background-image: url(../images/fracModeOn.png);
+  background-size: contain;
+}
+
+#fill-mode {
+  background-image: url(../images/fillMode.png);
+  background-size: contain;
+}
+
+#fill-mode.on {
+  background-image: url(../images/fracModeOn.png);
+  background-size: contain;
+}
+
+#shade {
+  background-image: url(../images/shade.png);
+  background-size: contain;
+}
+
+#shade.on {
+  opacity: 0.5;
+}
+
+#equation {
+  background-image: url(../images/calText.png);
+  background-size: contain;
+}
+
+#equation.on {
+  opacity: 0.5;
+}
+
+#text {
+  background-image: url(../images/wTool.png);
+  background-size: contain;
+}
+#text.on {
+  opacity: 0.5;
+}
+
+#draw {
+  background-image: url(../images/dTool.png);
+  background-size: contain;
+}
+#draw.on {
+  background-image: url(../images/dTool.png);
+  background-size: contain;
+}
+
+#duplicate {
+  background-image: url(../images/duplicate.png);
+  background-size: contain;
+}
+
+#trash {
+  background-image: url(../images/delete.png);
+  background-size: contain;
+}

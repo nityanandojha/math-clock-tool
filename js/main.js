@@ -151,7 +151,7 @@
         pe = n("sb+R"),
         Ee = n("1mBI"),
         ve = n("45L6");
-      t = i(!1);
+        t = i(!1);
 
       var _e = o(a),
         ge = o(s),
@@ -222,11 +222,11 @@
 
       t.push([
         e.i,
-        "*,\n*:before,\n*:after {\n  box-sizing: border-box;\n}@font-face {font-family: RockwellB;\nsrc: url(fonts/Rockwell-Bold.ttf);}\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  padding: 0;\n  margin: 0;\n}\nbody {\nfont-family: RockwellB;\n  overflow: hidden;\n  touch-action: none;\n  user-drag: none;\n  -ms-content-zooming: none;\n  color: #333;\n  font-size: 100%;\n}\nmain {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: stretch;\n}\nbutton {\n  background: none;\n  outline: none;\n  padding: 0;\n  margin: 0;\n  border: 0;\n  color: inherit;\n  font: inherit;\n  line-height: normal;\n  overflow: visible;\n  cursor: pointer;\n}\n.hidden {\n  display: none;\n}\n.light-on-dark {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.soft-shadow {\n  box-shadow: 0 0 300px rgba(0, 0, 0, 0.25);\n}\n#canvas {\n  order: 2;\n  flex: 1 0;\n  background-color: #f8f8f8;\n  outline: none;\n}\n/* Styling for branch/hash identifier element. */\n.alpha-tag,\n.beta-tag {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  position: absolute;\n  top: 0.3em;\n  right: 0.3em;\n  padding: 0.2em 0.4em;\n  border-radius: 3px;\n  background-color: #551A8B;\n  color: #fff;\n  opacity: 0.75;\n  font-size: 1.35em;\n  font-weight: 600;\n  text-align: right;\n}\n.alpha-tag {\n  background-color: #551a8b;\n}\n.beta-tag {\n  background-color: #0273af;\n}\n/* -----\nToolbar\n----- */\n#toolbar {\nposition: absolute;\nbottom: 0;\nalign-items: center;\nheight: 90px;\n  order: 3;\n  flex: 0 0 48px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  margin: 0;\n  padding: 0;\n}\n#toolbar.top {\n  order: 1;\n}\n#toolbar.top .popup {\n  bottom: auto;\n  top: 64px;\n}\n#toolbar.top .popup::after {\n  top: -24px;\n  background: url(" +
+        "html,\nbody {\n  width: 100%;\n  height: 100%;\n  padding: 0;\n  margin: 0;\n}\nbody {\nfont-family: RockwellB;\n  overflow: hidden;\n  touch-action: none;\n  user-drag: none;\n  -ms-content-zooming: none;\n  color: #333;\n  font-size: 100%;\n}\nmain {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  margin: auto;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: stretch;\n}\nbutton {\n  background: none;\n  outline: none;\n  padding: 0;\n  margin: 0;\n  border: 0;\n  color: inherit;\n  font: inherit;\n  line-height: normal;\n  overflow: visible;\n  cursor: pointer;\n}\n.hidden {\n  display: none;\n}\n.light-on-dark {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.soft-shadow {\n  box-shadow: 0 0 300px rgba(0, 0, 0, 0.25);\n}\n#canvas {\n  order: 2;\n  flex: 1 0;\n  background-color: #f8f8f8;\n  outline: none;\n}\n/* Styling for branch/hash identifier element. */\n.alpha-tag,\n.beta-tag {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  position: absolute;\n  top: 0.3em;\n  right: 0.3em;\n  padding: 0.2em 0.4em;\n  border-radius: 3px;\n  background-color: #551A8B;\n  color: #fff;\n  opacity: 0.75;\n  font-size: 1.35em;\n  font-weight: 600;\n  text-align: right;\n}\n.alpha-tag {\n  background-color: #551a8b;\n}\n.beta-tag {\n  background-color: #0273af;\n}\n/* -----\nToolbar\n----- */\n#toolbar.top .popup::after {\n  top: -24px;\n  background: url(" +
           _e +
           ") no-repeat;\n  content: '';\n}\n#toolbar.top .popup .popup-body {\n  border-radius: 10px;\n}\n#toolbar.top .popup.tail-right .popup-body {\n  border-top-right-radius: 0;\n}\n#toolbar.top .popup.tail-right::after {\n  background-position: 24px 0;\n  right: 48px;\n}\n#toolbar.top .popup.tail-left .popup-body {\n  border-top-left-radius: 0;\n}\n#toolbar.top .popup.tail-left::after {\n  background-position: -24px 0;\n  left: 48px;\n}\n#toolbar .toolbar-spacer {\n  display: flex;\n  flex-grow: 1;\n}\n#toolbar .divider {\n  height: 48px;\n  -ms-flex: 0 0 16px;\n  flex: 0 0 16px;\n  background-image: url(" +
           ge +
-          ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .button-group {\n  position: relative;\n  height: 48px;flex-direction: row;\n  justify-content: space-around;\n}\n#toolbar .popup {\n  bottom: 64px;\n}\n#toolbar .toolbar-button {\n  height: 48px;\n  width: 64px;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .toolbar-button.narrow {\n  width: 40px;\n}\n#toolbar .toolbar-button.wide {\n  width: 96px;\n}\n#toolbar .toolbar-button.disabled,\n#toolbar .toolbar-button:active {\n  opacity: 0.5;\n}\n.text-button {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: #629d34;\n  color: white;\n  padding: 0.8em 0;\n  font-size: 0.825em;\n  border-radius: 3px;\n  font-weight: 600;\n  letter-spacing: 0.025em;\n  word-spacing: 0.1em;\n  white-space: nowrap;\n}\n.text-button:hover {\n  opacity: 0.8;\n}\n.text-button:active {\n  background-color: #4a7727;\n}\n.text-button:disabled {\n  background-color: #b2b2b2;\n  cursor: default;\n}\n.text-button:disabled:hover {\n  background-color: #b2b2b2;\n  opacity: 1;\n}\n.button-field {\n  display: flex;\n  flex-direction: row;\n}\n.button-field input {\n  border: 1px solid #CCC;\n  border-right: none;\n  border-radius: 3px 0 0 3px;\n  box-shadow: inset 2px 2px 5px #CCC;\n  padding: 5px;\n  font-size: 0.9em;\n  margin: 0;\n  flex-grow: 1;\n}\n.button-field button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n/* -----\nwinBox\n----- */\n/* jquery winBoxs */\n#winBox-base {\n  display: none;\n}\n/* background overlay */\n.ui-front {\n  z-index: 101;\n  /* same as toolbar or higher */\n}\n.ui-widget-overlay {\n  background: none repeat scroll 0 0 gray;\n  opacity: 0.6;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n/* our app's generic winBox */\n.ui-winBox.msgBox {\n  padding: 0;\n  background-image: none;\n  background-color: #FFFFFF;\n  border-radius: 8px;\n  overflow: hidden;\n  outline: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar {\n  padding-top: 20px;\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: bold;\n  color: #000000;\n  background: none;\n  border: none;\n  text-align: center;\n  font-size: 16px;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar .ui-winBox-title.no-title {\n  /* Fix to JQuery UI 1.12 update where empty titles\n      are replaced with an nbsp;.\n      Manually hiding to prevent extra padding.\n   */\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar-close {\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-content {\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 16px;\n  text-align: center;\n  padding: 5px 20px 20px;\n  line-height: 1.2em;\n}\n.ui-winBox.msgBox .ui-winBox-buttonpane {\n  margin: 0;\n  padding: 0;\n}\n.ui-winBox.msgBox .ui-winBox-buttonset {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  border-top: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 35px;\n  background: none;\n  border: none;\n  color: #1C81C4;\n  /*font-size: 14px;*/\n  /*text-transform: uppercase;*/\n}\n.ui-winBox.msgBox.confirm .ui-button {\n  width: 50%;\n}\n.ui-winBox.msgBox.confirm .ui-button:first-child {\n  border-right: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button:hover {\n  background-color: #F7F7F7;\n}\n.ui-winBox.msgBox .ui-button:active {\n  background-color: #DDD;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close {\n  display: block;\n  position: absolute;\n  color: transparent;\n  top: 0;\n  right: 0;\n  border-radius: 18px;\n  margin: 5px;\n  width: 36px;\n  background: black url(" +
+          ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .button-group {\n  position: relative;\n  height: 48px;flex-direction: row;\n  justify-content: space-around;\n}\n#toolbar .popup {\n  bottom: 64px;\n}\n#toolbar .toolbar-button {\n  height: 48px;\n  width: 64px;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .toolbar-button.narrow {\n  width: 40px;\n}\n#toolbar .toolbar-button.wide {\n  width: 96px;\n}\n#toolbar .toolbar-button.disabled,\n#toolbar .toolbar-button:active {\n  opacity: 0.5;\n}\n.text-button {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: #629d34;\n  color: white;\n  padding: 0.8em 0;\n  font-size: 0.825em;\n  border-radius: 3px;\n  font-weight: 600;\n  letter-spacing: 0.025em;\n  word-spacing: 0.1em;\n  white-space: nowrap;\n}\n.text-button:hover {\n  opacity: 0.8;\n}\n.text-button:active {\n  background-color: #4a7727;\n}\n.text-button:disabled {\n  background-color: #b2b2b2;\n  cursor: default;\n}\n.text-button:disabled:hover {\n  background-color: #b2b2b2;\n  opacity: 1;\n}\n.button-field {\n  display: flex;\n  flex-direction: row;\n}\n.button-field input {\n  border: 1px solid #CCC;\n  border-right: none;\n  border-radius: 3px 0 0 3px;\n  box-shadow: inset 2px 2px 5px #CCC;\n  padding: 5px;\n  font-size: 0.9em;\n  margin: 0;\n  flex-grow: 1;\n}\n.button-field button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n/* -----\nwinBox\n----- */\n/* jquery winBoxs */\n#winBox-base {\n  display: none;\n}\n/* background overlay */\n.ui-front {\n  z-index: 101;\n  /* same as toolbar or higher */\n}\n.ui-widget-overlay {\n  background: none repeat scroll 0 0 gray;\n  opacity: 0.6;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n/* our app's generic winBox */\n.ui-winBox.msgBox {\n  padding: 0;\n  background-image: none;\n  background-color: #FFFFFF;\n  border-radius: 8px;\n  overflow: hidden;\n  outline: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar {\n  padding-top: 20px;\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: bold;\n  color: #000000;\n  background: none;\n  border: none;\n  text-align: center;\n  font-size: 16px;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar .ui-winBox-title.no-title {\n  /* Fix to JQuery UI 1.12 update where empty titles\n      are replaced with an nbsp;.\n Manually hiding to prevent extra padding.\n   */\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar-close {\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-content {\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 16px;\n  text-align: center;\n  padding: 5px 20px 20px;\n  line-height: 1.2em;\n}\n.ui-winBox.msgBox .ui-winBox-buttonpane {\n  margin: 0;\n  padding: 0;\n}\n.ui-winBox.msgBox .ui-winBox-buttonset {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  border-top: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 35px;\n  background: none;\n  border: none;\n  color: #1C81C4;\n  /*font-size: 14px;*/\n  /*text-transform: uppercase;*/\n}\n.ui-winBox.msgBox.confirm .ui-button {\n  width: 50%;\n}\n.ui-winBox.msgBox.confirm .ui-button:first-child {\n  border-right: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button:hover {\n  background-color: #F7F7F7;\n}\n.ui-winBox.msgBox .ui-button:active {\n  background-color: #DDD;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close {\n  display: block;\n  position: absolute;\n  color: transparent;\n  top: 0;\n  right: 0;\n  border-radius: 18px;\n  margin: 5px;\n  width: 36px;\n  background: black url(" +
           fe +
           ") no-repeat center;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close:hover {\n  background-color: darkgrey;\n}\n#templates {\n  display: none;\n}\n/* -----\n  base styles\n----- */\n.base-background {\n  height: 100vh;\n  width: 100vw;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n  .base-background {\n    height: 200vh;\n    width: 200vw;\n    transform: translateX(-50%), translateY(-50%);\n  }\n}\n.base {\n  z-index: 100;\n}\n.base.gray-background .base-background {\n  background-color: rgba(108, 118, 128, 0.7);\n}\n.base.popup {\n  position: absolute;\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n  .base.popup {\n    transform: translateX(-50%);\n    left: 50%;\n  }\n}\n.base.popup::after {\n  content: '';\n  position: absolute;\n  bottom: -24px;\n  left: 0;\n  right: 0;\n  margin-left: auto;\n  margin-right: auto;\n  height: 24px;\n  width: 48px;\n  background: url(" +
           _e +
@@ -258,7 +258,7 @@
           Ne +
           ") format('woff2'),  url(" +
           xe +
-          ") format('woff');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n@keyframes missing-feature {\n  0% {\n    background-color: red;\n  }\n  17% {\n    background-color: magenta;\n  }\n  33% {\n    background-color: blue;\n  }\n  50% {\n    background-color: cyan;\n  }\n  67% {\n    background-color: green;\n  }\n  83% {\n    background-color: yellow;\n  }\n  100% {\n    background-color: red;\n  }\n}\n.missing-feature {\n  animation: missing-feature 600s infinite linear;\n}\n.beta-tag::after {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  content: \"BETA\";\n  font-size: 1.5em;\n  background: #0273af;\n  opacity: 0.75;\n  position: absolute;\n  padding: 0.2em 0.4em;\n  top: 0.3em;\n  right: 0.3em;\n  color: #fff;\n  border-radius: 3px;\n  font-weight: 600;\n  pointer-events: none;\n}\n#toolbar {\n  z-index: 1;\n  flex: 0 0 48px;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: center;\n  background: #233239;\n  margin: 0 auto;\n width: 96%;\n padding: 0 16px;\nborder-radius: 50px;\n}\n#toolbar .toolbar-button-container {\n  position: relative;\n  margin: 0 4px;\n  min-width: 24px;\n  display: flex;\n  justify-content: center;\n}\n#toolbar .toolbar-button-container.narrow {\n  flex-basis: 32px;\n}\n#toolbar .toolbar-button-container.wide {\n  flex-basis: 32px;\n}\n#toolbar .toolbar-divider {\n  height: 48px;\n  flex: 0 0 2px;\n  margin: 0 7px;\n  border: none;\n  background: #4da7d7;\n}\n.input-feedback {\n  position: absolute;\n  background: url(" +
+          ") format('woff');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n@keyframes missing-feature {\n  0% {\n    background-color: red;\n  }\n  17% {\n    background-color: magenta;\n  }\n  33% {\n    background-color: blue;\n  }\n  50% {\n    background-color: cyan;\n  }\n  67% {\n    background-color: green;\n  }\n  83% {\n    background-color: yellow;\n  }\n  100% {\n    background-color: red;\n  }\n}\n.missing-feature {\n  animation: missing-feature 600s infinite linear;\n}\n.beta-tag::after {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  content: \"BETA\";\n  font-size: 1.5em;\n  background: #0273af;\n  opacity: 0.75;\n  position: absolute;\n  padding: 0.2em 0.4em;\n  top: 0.3em;\n  right: 0.3em;\n  color: #fff;\n  border-radius: 3px;\n  font-weight: 600;\n  pointer-events: none;\n}\n#toolbar .toolbar-button-container.narrow {\n  flex-basis: 32px;\n}\n#toolbar .toolbar-button-container.wide {\n  flex-basis: 32px;\n}\n#toolbar .toolbar-divider {\n  height: 48px;\n  flex: 0 0 2px;\n  margin: 0 7px;\n  border: none;\n  background: #4da7d7;\n}\n.input-feedback {\n  position: absolute;\n  background: url(" +
           ke +
           ");\n  width: 400%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  border-radius: 3px;\n  align-items: center;\n  justify-content: center;\n  display: none;\n  z-index: 10;\n  background-size: 48px;\n  opacity: 0;\n  color: #4a7727;\n  font-size: 1.2em;\n  letter-spacing: 0.025em;\n  user-select: none;\n}\n@keyframes pulse-feedback {\n  10% {\n    left: -150%;\n    background-size: 8px;\n    opacity: 1;\n  }\n  80% {\n    left: -150%;\n    background-size: 8px;\n    opacity: 1;\n  }\n}\n.input-feedback-pulse {\n  animation-duration: 2.5s;\n  animation-name: pulse-feedback;\n  display: flex;\n}\n.button-field {\n  position: relative;\n  width: 100%;\n}\n.button-field input {\n  width: calc(100% - 10px);\n  height: calc(100% - 12px);\n}\n.button-field .input-container {\n  position: relative;\n  flex-grow: 1;\n  overflow: hidden;\n}\n#base-stage {\n  display: none;\n}\n#save-popout {\n  width: 380px;\n}\n#save-popout .base-box {\n  position: relative;\n  right: 130px;\n}\n#save-popout {\n  user-select: text;\n  -moz-user-select: text;\n  -webkit-user-select: text;\n  -ms-user-select: text;\n  -webkit-user-drag: auto;\n}\n#save-popout .content {\n  background-color: white;\n  padding: 15px;\n  display: flex;\n  flex-direction: column;\n}\n#save-popout .content #share-image-ui-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n#save-popout .content .description {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  margin-bottom: 0.75em;\n}\n#save-popout .content .description .description-icon {\n  height: 18px;\n  margin-right: 0.5em;\n}\n#save-popout .content .share-image-button-container {\n  display: flex;\n  flex-flow: row nowrap;\n  width: calc(100% + 10px);\n  margin: 0 -5px;\n}\n#save-popout .content .share-image-button-container .text-button {\n  margin: 0 5px;\n  padding-left: 0;\n  padding-right: 0;\n  flex-basis: 0;\n  flex-grow: 1;\n}\n#save-popout .content .popout-divider {\n  margin: 1em -15px;\n  flex-grow: 0;\n  flex-basis: 2px;\n  background: #CCC;\n}\n#edit-clock-base {\n  left: 0;\n}\n#edit-clock-base .base-background {\n  /**\n     * Pass through pointer events on HTML palettes so Page can handle dismissal,\n     * and other workspace interactions can still occur.\n     */\n  pointer-events: none;\n}\n#edit-clock-box {\n  user-select: none;\n  background: white;\n  padding: 12px;\n  display: flex;\n  flex-flow: column nowrap;\n}\n#edit-clock-box label {\n  cursor: pointer;\n}\n#edit-clock-box .upper-content {\n  display: flex;\n  flex-flow: row nowrap;\n  margin-bottom: 6px;\n}\n#edit-clock-box .buttons {\n  display: flex;\n  flex-flow: row wrap;\n  width: 144px;\n  height: 144px;\n  margin: -1px;\n}\n#edit-clock-box .checkboxes {\n  display: flex;\n  flex-flow: column nowrap;\n  width: 160px;\n  margin-left: 6px;\n  margin-top: 1px;\n  margin-bottom: 1px;\n  font-size: 1.1em;\n}\n#edit-clock-box .checkboxes .checkbox-container {\n  height: 30px;\n  margin-top: 9px;\n  margin-bottom: 9px;\n}\n#edit-clock-box .checkboxes .checkbox-container label {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n}\n#edit-clock-box .checkboxes hr {\n  height: 2px;\n  margin: 0;\n  padding: 0;\n  background-color: lightgrey;\n  border: none;\n}\n#edit-clock-box .checkboxes input[type='checkbox'] {\n  display: none;\n}\n#edit-clock-box .checkboxes input[type='checkbox'] + label::before {\n  content: ' ';\n  display: inline-block;\n  background-image: url(" +
           Pe +
@@ -318,34 +318,8 @@
           ot +
           "), crosshair !important;\n  /* !important gets around bugginess with EaselJS cursor setting and IE */\n}\n#canvas.erase-cursor:not(.pan-cursor) {\n  cursor: url(" +
           at +
-          "), crosshair !important;\n  /* !important gets around bugginess with EaselJS cursor setting and IE */\n}\n#canvas.pan-cursor {\n  cursor: grab;\n}\n#canvas.pan-cursor:active {\n  cursor: grabbing;\n}\n#loading-spinner {\n  position: fixed;\n  left: 50%;\n  top: 50%;\n}\n/* -----\nToolbar Buttons\n----- */\n#toolbar .button-group.tab {\n  background-color: inherit;\n  position: relative;\n  top: -12px;\n  align-items: center\n  box-sizing: content-box;\n}\n#toolbar .button-group.tab > .toolbar-button {\n  margin-top: -45px;\n  max-width: none;\n  min-width: 58px;\n}\ntoolbar-button {\n  background-size: auto 24px;\n}\n#restart {\n  background-image: url(images/reset.png);\n background-size: contain;\n}\n#new-clock {\n  background-image: url(images/add-clock.png);\nbackground-size:cover;\nwidth: 120px !important;\nheight: 120px !important;\n}\n#edit-clock.on {\n  /* @todo Needsa -down state image, like Equation/Text. */\n  opacity: 0.5;\n}\n#run-jump-mode.on {\n  background-image: url(" +
+          "), crosshair !important;\n  /* !important gets around bugginess with EaselJS cursor setting and IE */\n}\n#canvas.pan-cursor {\n  cursor: grab;\n}\n#canvas.pan-cursor:active {\n  cursor: grabbing;\n}\n#loading-spinner {\n  position: fixed;\n  left: 50%;\n  top: 50%;\n}\n/* -----\nToolbar Buttons\n----- */\n#toolbar .button-group.tab {\n  background-color: inherit;\n  position: relative;\n  top: -12px;\n  align-items: center\n  box-sizing: content-box;\n}\ntoolbar-button {\n  background-size: auto 24px;\n}\n#restart {\n  background-image: url(images/reset.png);\n background-size: contain;\n}\n#new-clock {\n  background-image: url(images/add-clock.png);\nbackground-size:cover;\nwidth: 120px !important;\nheight: 120px !important;\n}\n#edit-clock.on {\n  /* @todo Needsa -down state image, like Equation/Text. */\n  opacity: 0.5;\n}\n#run-jump-mode.on {\n  background-image: url(" +
           ht +
-          ");\n}\n#elapsed-time-mode {\n  background-image: url(" +
-          dt +
-          ");\n}\n#elapsed-time-mode.on {\n  background-image: url(" +
-          pt +
-          ");\n}\n#fractions-mode {\n  background-image: url(" +
-          Et +
-          ");\n}\n#fractions-mode.on {\n  background-image: url(" +
-          vt +
-          ");\n}\n#fill-mode {\n  background-image: url(" +
-          _t +
-          ");\n}\n#fill-mode.on {\n  background-image: url(" +
-          gt +
-          ");\n}\n#shade {\n  background-image: url(" +
-          ft +
-          ");\n}\n#shade.on {\n  opacity: 0.5;\n}\n#equation {\n  background-image: url(" +
-          mt +
-          ");\n}\n#equation.on {\n  opacity: 0.5;\n}\n#text {\n  background-image: url(" +
-          bt +
-          ");\n}\n#text.on {\n  opacity: 0.5;\n}\n#draw {\n  background-image: url(" +
-          Ct +
-          ");\n}\n#draw.on {\n  background-image: url(" +
-          St +
-          ");\n}\n#duplicate {\n  background-image: url(" +
-          At +
-          ");\n}\n#trash {\n  background-image: url(" +
-          Ot +
           ");\n}\n#code {\n  background-image: url(" +
           It +
           ");\n}\n#save {\n  background-image: url(" +
@@ -371,7 +345,7 @@
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAABj0lEQVRoge2YPW4CMRBGJ6k4wBYcIeWWSL5ASsqU3MTaW6TMESgpaVZKyTEofADKaMGIKOOf8aztnQg/CQl58DJPgtlvDY3Gk/MS0++GcWvfHoxWF/SBhXklfH1vX7tuGFeo+g8E7qwlSqQIgESJVAGQJsERAEkSFIETWrkhQiI6RuExSntUuHEGgK+lRixJAARLkAUgLnGxEmdUKUiSgESJZAEQJsESAEES0TE6NdoN4/vfdaPVPjBiV3bErlElM9Qwt/mVSkVJpNyJe4kSqVFCnAQnC82ReEOVmXDDHFfioxtG3+RiMSfMcSQmtjklcoS5k206Zc/E3mgVEiWRK8wtJpEzzC0ikTvMVZcoEeaqSpQKc1yJ6fDsG60GoJzMXYOc0ergqIUa4ko49/mg3Ac2zDDHvU849/koHeaKS9QIc0UlaoW5YhI1w1wRCYqA76zHeeFIQ9klKAKhuey8cKShrBJRAaPV0Z68+egZD/2cPc59pP+A0eoTAI6Bn5PzgJfQEIKzp9FoNBpPCgD8AChdIF7AVN8sAAAAAElFTkSuQmCC";
     },
     "H1HQ": function (e, t, n) {
-      e.exports = n.p + "images/icon-fill.f229382e6894353903bcd79864a905a8.png";
+      e.exports = n.p /* + "images/icon-fill.f229382e6894353903bcd79864a905a8.png" */;
     },
     "Hni1": function (e, t, n) {
       e.exports = n.p + "fonts/roboto-v19-latin-300.b00849e00f4c2331cddd8ffb44a6720b.woff";
@@ -393,7 +367,7 @@
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAABj0lEQVRoge2YPW4CMRBGJ6k4wBYcIeWWSL5ASsqU3MTaW6TMESgpaVZKyTEofADKaMGIKOOf8aztnQg/CQl58DJPgtlvDY3Gk/MS0++GcWvfHoxWF/SBhXklfH1vX7tuGFeo+g8E7qwlSqQIgESJVAGQJsERAEkSFIETWrkhQiI6RuExSntUuHEGgK+lRixJAARLkAUgLnGxEmdUKUiSgESJZAEQJsESAEES0TE6NdoN4/vfdaPVPjBiV3bErlElM9Qwt/mVSkVJpNyJe4kSqVFCnAQnC82ReEOVmXDDHFfioxtG3+RiMSfMcSQmtjklcoS5k206Zc/E3mgVEiWRK8wtJpEzzC0ikTvMVZcoEeaqSpQKc1yJ6fDsG60GoJzMXYOc0ergqIUa4ko49/mg3Ac2zDDHvU849/koHeaKS9QIc0UlaoW5YhI1w1wRCYqA76zHeeFIQ9klKAKhuey8cKShrBJRAaPV0Z68+egZD/2cPc59pP+A0eoTAI6Bn5PzgJfQEIKzp9FoNBpPCgD8AChdIF7AVN8sAAAAAElFTkSuQmCC";
     },
     "Iu71": function (e, t, n) {
-      e.exports = n.p + "images/icon-duplicate.8bbc582e4e337e23f9e8eb2406cbe349.png";
+      e.exports = n.p /* + "images/icon-duplicate.8bbc582e4e337e23f9e8eb2406cbe349.png" */;
     },
     "Iv4c": function (e, t, n) {
       e.exports = n.p + "fonts/roboto-v19-latin-regular.60fa3c0614b8fb2f394fa29944c21540.woff";
@@ -539,8 +513,7 @@
         (_.Events.SET_CLOCK_HAND_VISIBILITY = "setclockhandvisibility"),
         (_.Events.SET_SELECTION_CLOCK_HAND_VISIBILITY = "setselectionclockhandvisibility"),
         (_.Events.SET_CLOCK_HAND_LABEL_VISIBILITY = "setclockhandlabelvisibility"),
-        (_.Events.SET_SELECTION_CLOCK_HAND_LABEL_VISIBILITY =
-          "setselectionclockhandlabelvisibility"),
+        (_.Events.SET_SELECTION_CLOCK_HAND_LABEL_VISIBILITY = "setselectionclockhandlabelvisibility"),
         (_.Events.TOGGLE_RUN_JUMP_STATE = "togglerunjumpstate"),
         (_.Events.JUMP_BY_AMOUNT = "jumpbyamount"),
         (_.Events.REQUEST_SELECTION_DELETE = "requestselectiondelete"),
@@ -595,9 +568,9 @@
         (_.WORKSPACE_HEIGHT = 720),
         (_.WORKSPACE_WIDTH = 1024),
         (_.SPAWN_PADDING_INC = 50),
-        (_.APP_FULL_NAME = "Math Clock, by MLC"),
-        (_.IOS_APP_URL = "https://apps.apple.com/us/app/math-clock-by-mlc/id1444666967?mt=8"),
-        (_.DEFAULT_SAVE_FILENAME = "my-math-clock"),
+        (_.APP_FULL_NAME = "Math Clock Tool"),
+        (_.IOS_APP_URL = ""),
+        (_.DEFAULT_SAVE_FILENAME = "my math clock"),
         (_.FALLBACK_CONFIG = { appState: { booleanFlags: {}, customObjects: [] }, workspaces: [] });
       var f,
         m = new d.a({
@@ -6631,7 +6604,7 @@
       (zt.prototype.draw = function () {
         this.backing.graphics
           .clear()
-          .beginFill("#ffffff")
+          .beginFill("#233239") // fraction popup
           .drawRoundRect(0, 0, this.width - 2, this.height - 2, 12);
       }),
         (zt.prototype.indicator = function (e, t) {
@@ -6683,12 +6656,12 @@
             (this.indicatorRight = t.right),
             (this.indicatorLeft.x = 0),
             (this.indicatorRight.x = this.width),
-            (this.header = new o.a.Text("How many parts?", jt.HEADER, "#333")),
+            (this.header = new o.a.Text("How many parts?", jt.HEADER, "#fff")),
             (this.header.textAlign = "center"),
             (this.header.textBaseline = "top"),
             (this.header.x = this.width / 2),
             (this.header.y = 38 - this.header.getMeasuredHeight() / 2),
-            (this.partsIndicator = new o.a.Text("", jt.PARTS, "#333")),
+            (this.partsIndicator = new o.a.Text("", jt.PARTS, "#000")),
             (this.partsIndicator.textAlign = "center"),
             (this.partsIndicator.textBaseline = "top"),
             (this.partsIndicator.x = 105),
@@ -6716,10 +6689,10 @@
             t = new o.a.Shape();
           return (
             e.graphics.clear(),
-            e.graphics.beginFill("#ffffff").moveTo(1, -25).lineTo(-25, 0).lineTo(1, 25).endStroke(),
+            e.graphics.beginFill("#233239").moveTo(1, -25).lineTo(-25, 0).lineTo(1, 25).endStroke(),
             t.graphics.clear(),
             t.graphics
-              .beginFill("#ffffff")
+              .beginFill("#233239")
               .moveTo(-2, -25)
               .lineTo(25, 0)
               .lineTo(-2, 25)
@@ -6807,7 +6780,7 @@
                         { eventName: g.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT, value: n },
                         0 + o,
                         2 + i,
-                        { font: jt.DEFAULT, fillColor: "#cce6f4", activeColor: "#9ac5e2" }
+                        { font: jt.DEFAULT, fillColor: "#50879F", activeColor: "#97DBF8" }
                       ));
                   },
                   this
@@ -6829,15 +6802,14 @@
           );
         }),
         (zt.prototype._createNoneButton = function (e, t, n) {
-          var i = this._createPartsButton(
-            "NONE",
+          var i = this._createPartsButton("NONE",
             { eventName: g.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT, value: 0 },
             e,
             t,
             {
               font: jt.NONE,
-              fillColor: "#cce6f4",
-              activeColor: "#9ac5e2",
+              fillColor: "#50879F",
+              activeColor: "#50879F",
               width: 62 * n - 2,
               stateActive: !0,
             }
@@ -7146,6 +7118,8 @@
                 d.f.dispatchEvent(d.d.TEXT_TOOLS_HIDE);
             }),
             d.f.on(d.d.RESIZE_EVENT, function () {
+              // NNO resize
+              console.log(" RESIZE_EVENT ")
               var e = new o.a.Event(d.d.CONSTRAIN_ENTITY_EVENT);
               e.set({ skipAnimation: !0, skipConstrainOffset: !0 }), qt.display.dispatchEvent(e);
             }),
@@ -7388,11 +7362,16 @@
         var e, t, n, i;
         Pn.tooManyShades(1)
           ? d.f.dispatchEvent(d.d.SPAWN_ITEM_FAILURE_PROMPT_EVENT)
-          : ((t = {
-              closeImage: d.n.getResult("entities", Rn),
-              revealImage: d.n.getResult("entities", Dn),
-              concealImage: d.n.getResult("entities", Nn),
+          : ((t = { // NNO changes shade tool
+              // d.n.getResult("entities", Rn)
+              closeImage: "data:image/png;base64,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", //Rn
+
+              revealImage: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAYAAABU1PscAAAD7UlEQVRYhc1Yu27jRhQ9d7gy0sl/YAFBaitlkGJVKLDNxvoD6w9Wa0mhOjMduZYd5QtC/4HSaL2AC26TlKHrpND+gbaVwTkpaBl6cTiUXOQABizizpl7Z+Y+Ba8Etzs80kgbSrFBorZdShISiYITT256X15jX9lncdMLqgepdChsC6RWZi3BqVAi0In2MWYnA5peUK2k4ougs+vGyyAw1in9T7eDx7JrSxvg9sIrAB0IDsuuLQYj6Dd+mRuxNuDkMjhWCiMRaRjEEhBjgAlFzVY2oj4EpA5BC0A9l4GYQehPrge/2ehlZcBpN7xQClHunmQMUf7H658/2/Cd9T+8BbVvOgyS8ZOD1kM4+GriKjTA7Qe/A9LOFSD8ydD7pYhnK3cvvILAz6fmVKdomXwj14CmF1QrWiIBWrka7KH8AkVGgJhRpJV3u862j1mUwVhETvO3ZjQZDt6XU3cT//z58Pm7H5s1QLb7heAbAdrf/vDT9N+/HjZuQq1/aHpB9UBLbHyf4HSuXieEAsBcoUNwapJRCpHbC843vi//WJw8TFECgBCdIucqg4dw8FVocSAi49NueLHyafGP1ZvPkEyuve9NAm4vOCdWFRJgNBkO/jCu64d/o+DwQMwAthdcLzdgqTwARkYleuEVRMYi0lj+g8j4OQnuzA0AWQKV6OQyOH4xwO2FV3bKA4RKcpXvDo+MEUXgu93h0S7cazyHysG46QVVdXIZHBs3XYMpWVHSwndskrFNhAAgkNpBKh2lFEa2i4pB8/u1lrFGRxXUNv9vCA5V5tX2aHpB1cBo8YbzZczcmyA4Vdom/i6holXuExA6hc/RJGPi3gadoqXub7w70t4PBDp3k8lN74vWaG+9VWKmNdqmWt/EvUFHjD7dDh4VAHwceu8BWIWw9QS1jvsb7y7VbACMSMYkY4BRqtm4v/Hu9uFeQvLk0AeWMnEWw9PEptPSGu0iZcqiqOd4ATFLNRuLEnulnD65DI4dp9gRCU6fFOqvVQ9lZQwSm8HA+uGtFHOfbgePIAszskBqFS1RaU1zkJUxUiuWZGf95rc2NG4vOIfI2IIwmqvdK9OsdMfI2PEtdiJGz766gtyO7OQyOHaUxBY+kcwVG2WNWPQdKKo+Yfa5jYZmgew5OXUUR6d6RSNx+8G7IkUWcPvBu4pGApvSmWyZAobVVOKsF/5qNcQiZgQiAeNtYxVCGgK0bSIdyVj4xpg3gBJzobP+h7cCjmBx5fuA4FSA0avOhZZx2g0vRNEvOwstxPNAa64QlfGnnYe7bi84p0jbthHKA4ExNca7Jsa9ptMLZD2wNADWi8rzrLSQRMB47iDeNxn+B703ztcjT6uLAAAAAElFTkSuQmCC", //Dn
+
+              concealImage: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAYAAABU1PscAAADsElEQVRYhb1YzU4aURT+zgXbtDGRPoG+ASTuDMi8gbyBuBGJi+LKKCHFNGDcTReN4KbTN6BvMEDTncn0DegbYEJXOvd0MYAD83PvKPRbkDBz7znfuXPu+QPWhN3j8618pZF9yd5C9aKou5deoiCgsFI/EMQlMHIgysUuZnYAjFhQT0rh/Ox+/j17tV+tH5KECULGW8q1Qbf9ZS0G7J3WtzdcboKpNFP4EkhGadht/div1g+JYS28ZIz73daHuP3ppAp3j8+3NkXKhIsyQK/6hkwoDzsR5AHoHEwiA+afGArBzA6IxkvPMovuxdbgtv09kjwAZpgqTlrnt3t8vrVJKQtEpZhltmSYw27rR5yc95Q2iDg36LSv4sgDbPU77SMVN6UBU1+3AdoJ14OxFLI0vL3uq2T5sQrygMKAQvWiKFjYkQuYnQm7xv3dzYOOshl0yE+/us0ge9BtnUXJijSgUKkfCMCKvEiMsQth+MPgqsk/3xm2JtKthR1UqAHxSjxIksY63CZfaWRT5PYCLhvxtcWymEL1oqgiD7C1NvKQduh9I8ptUiqwf8GAfKWRjfV5AGCMJ9KtabGeQtdtUpB2bOwnKhVPLr/5H80NeLZeAeJekkurG208mTxSS6Sy3wgBePE5RW5PJ/NJpp4OcSB5qGRBysTlgcr7lcuPwDQTe75FOzpb3TQcnXUvifNSCidFUkc8iMgsVC8c0ok4fvQ7LWXye02SKp7UWZcLAFtMa5uVYVUZVhOGeE0pvIz/TB6Ad4ntJBuiOiWFK9o65PdO69tJuDDDFBP5VNILXx6EkIGOK5Y8s+PpUCP1hPhublHwaNBtnYn7u5sHSVzW3UbMhv+/knyCYo8AQ7loihlnAQDD2+s+M2tmVyrvHp9vAaslDwAElHXWMbg5K2XmmdhrnjmczOJ26/7u5mHV5PdPLj9pBhR70Glfzf4s1EL9TvtoOjWIgBdJVk0+X2lkiUntASH3KVCNTtg1wo1YD3mviHOj+465bIwf01RSltP3dzcPQSPWd/KLjUsUeXYe08j9+tr6s/wqtiyYVX3rIq8snzVka00ldMgDwNuNdCbslILE3aZiwjEVDTOuHwY0DIht7H3k567AGDNggXhpLkQZAhtKd/EWjyRxWafrUw62BItmHPl39GZnoYclZAioBc6G5j8xvDFmcPMvu5auO+pM5oygIh95r4d9ZUHII89d4ge5YVAawAyTCDXfg/mlylcaYGIzmXs8y2GQLSGspKMZP/4B6HCJVL8oVrYAAAAASUVORK5CYII=", //Nn
+
               cornerResizeImage: d.n.getResult("entities", xn),
+
               fillImage: d.n.getResult("entities", kn),
             }),
             ((n = Zn((e = new d.t(null, t)), !0)).x += 24 * Math.random() - 12),
@@ -7712,6 +7691,7 @@
           Pn.addEntity(a);
         }),
         (Pn.resizePage = function (e) {
+          console.log("resize page...")
           Vn.updateWorkspaceDimensions(e);
           var t = new o.a.Event(d.d.RESIZE_EVENT);
           t.set({
@@ -9486,13 +9466,13 @@
       e.exports = n.p + "images/runjump-icon-play-on.5e9b488f0504bd6188b07b95ecb73017.png";
     },
     "aJT6": function (e, t, n) {
-      e.exports = n.p + "images/icon-fraction-on.bc2cff04ddfb36ba5a5b5b471811f438.png";
+      e.exports = n.p /* + "images/icon-fraction-on.bc2cff04ddfb36ba5a5b5b471811f438.png" */;
     },
     "aLGr": function (e, t, n) {
       e.exports = n.p + "images/cursor-pen-orange.77277ae6663d9772b915cb04e31068e0.cur";
     },
     "cJUU": function (e, t, n) {
-      e.exports = n.p + "images/icon-equation.d7d5b21528049aaf880e176dd6dc134e.png";
+      e.exports = n.p /* + "images/icon-equation.d7d5b21528049aaf880e176dd6dc134e.png"; */
     },
     "d6Hy": function (e, t, n) {
       //images/pen-straight.2904b4a9e78fa219d46216a3b2472dfd.png
@@ -9513,7 +9493,7 @@
       e.exports = n.p + "images/cursor-pen-yellow.7c462ec7d4bd923adc5921866b92dd9c.cur";
     },
     "dXac": function (e, t, n) {
-      e.exports = n.p + "images/icon-text.01e165e90c7695db1b6c4a8c9c55c52a.png";
+      e.exports = n.p /* + "images/icon-text.01e165e90c7695db1b6c4a8c9c55c52a.png" */;
     },
     "dmk2": function (e, t, n) {
       //images/shade-handle-resize.8592051c9676f0916ccb0edadbea0984.png
@@ -9526,10 +9506,10 @@
       e.exports = n.p + "images/icon-run.png";
     },
     "fGIB": function (e, t, n) {
-      e.exports = n.p + "images/icon-drawing.e828e65cc678f32776c8169c4d752852.png";
+      e.exports = n.p /* + "images/icon-drawing.e828e65cc678f32776c8169c4d752852.png" */;
     },
     "gmkO": function (e, t, n) {
-      e.exports = n.p + "images/icon-fraction.2ecdf0742988b125658b0f98d0872602.png";
+      e.exports = n.p /* + "images/icon-fraction.2ecdf0742988b125658b0f98d0872602.png" */;
     },
     "iMqz": function (e, t, n) {
       e.exports = n.p + "images/icon-fill-active.0250074ed1b4986fb1468516d26a7af6.png";
@@ -9581,10 +9561,9 @@
       e.exports = n.p + "images/checkbox-on.0127fdd5bcfbb786d85993e6ae1aca91.png";
     },
     "oaRK": function (e, t, n) {
-      //images/shade-button-hide.121132d5666168d451673ca2e097a7f7.png
+      //images/shade-button-hide.png
       e.exports =
-        n.p +
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAAAoElEQVRoge3WQQqEUBAD0djCeP+reBRvM4Kj4NZkN/BbqF3zyLroad3OU5K+x0/7cZ/6zJOWufQGL4dp3NHLYRp39HKYxh29HKZxRy+HadzRy2Ead3QqNNqp0GinQqOdClEhKmQwjTs6FaJCVMhgGlMhfqGnUyEqRIUMpnFHp0JUiAoZTGMqxC/0dCpEhaiQwTTu6FSIClEhg2lMhf7tki41SgRdE7y8WwAAAABJRU5ErkJggg==";
+        n.p + "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAAB4UlEQVRoge2Yy1HDMBCGf6ggBxeQdABnHwIdJBVgd0Aq8KgC00FMBXYHJAedoQNcgA+UwChsZhw9LMnJABnvd4mtXXn3t1YPBwzDMAzDMBPm5pLSEyEfADwBUL9zzdwC2AF47Yp0Z3QeyUUEUOJbS9IulJj8EkLOEpAIOaPEV4YxjIaEfI3NYbSARMg7AG8AZoYxDpX8Y1ekH78mIBEyA1A6klcJVQD2dA3yWwLIBvpsuiKtDIuHaAGU/NYw/FBRItaSoJIrSYiNPFZElIBESFXrtWGIDO55CeuuSBuj1UGwAE/NV12R5kbrAImQSoBtJKLmRJAAGvp3xzKpAi76ZUMjVfb8WyqtRnvmp+OFKP97Vyn2uTVa7Ayt8ZUl+VrzV9c12Q5QH1fJzQdKLE5AIuSzZ53fa/el4eG26X37rCj2ICEjUBgtp+jD7Bopm81XIr7YwSX0bwkRIIyWU/RJ2BoebpttAsfE9gvoivSFziwullr7xuFns+l9+zQUe5DQEsotb+9IRkviAVoq15p/q29Q1Me2Dxz9g/aVq9/IgicxPdCVZEbHgyDI1+Wfx5xMp3WY6yVyvcfpI545EcNZHzSjNzIKuPAssT4aOgiOSh6T/6jX+Yu/VRiGYRiGYSYLgG8IlMaSlIbrfgAAAABJRU5ErkJggg==";
     },
     "qBZb": function (e, t, n) {
       e.exports = n.p + "images/widget-elapsed-cancel.2356ab67625eaff13469382c3a5e5c43.png";
@@ -9596,13 +9575,13 @@
       e.exports = n.p + "fonts/roboto-v19-latin-italic.51521a2a8da71e50d871ac6fd2187e87.woff2";
     },
     "quX5": function (e, t, n) {
-      //images/shade-button-close.9110a391470cfda96789dd3cc7fe4969.png
+      //images/shade-button-close.png
       e.exports =
         n.p +
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAAAoElEQVRoge3WQQqEUBAD0djCeP+reBRvM4Kj4NZkN/BbqF3zyLroad3OU5K+x0/7cZ/6zJOWufQGL4dp3NHLYRp39HKYxh29HKZxRy+HadzRy2Ead3QqNNqp0GinQqOdClEhKmQwjTs6FaJCVMhgGlMhfqGnUyEqRIUMpnFHp0JUiAoZTGMqxC/0dCpEhaiQwTTu6FSIClEhg2lMhf7tki41SgRdE7y8WwAAAABJRU5ErkJggg==";
     },
     "sMyz": function (e, t, n) {
-      e.exports = n.p + "images/icon-elapsed.3b3a15b8fd46ac10f299319a448d1f5a.png";
+      e.exports = n.p /* + "images/icon-elapsed.3b3a15b8fd46ac10f299319a448d1f5a.png" */;
     },
     "sb+R": function (e, t, n) {
       e.exports = n.p + "images/icon-activity-code.fdd47fce846d62c566f0224b0a799629.png";
@@ -9620,16 +9599,16 @@
       e.exports = n.p + "images/icon-fill-yellow.1b86c9080e3e7cd2b1a565b69d20170f.png";
     },
     "wBlU": function (e, t, n) {
-      e.exports = n.p + "images/icon-elapsed-on.2e1996b0e621ac4b4b5e8eb9a7bd23fd.png";
+      e.exports = n.p /* + "images/icon-elapsed-on.2e1996b0e621ac4b4b5e8eb9a7bd23fd.png" */;
     },
     "wSdw": function (e, t, n) {
-      e.exports = n.p + "images/icon-shade.7eba04dc2ed6cae46f04df120334f5d1.png";
+      e.exports = n.p /* + "images/icon-shade.7eba04dc2ed6cae46f04df120334f5d1.png" */;
     },
     "xfvv": function (e, t, n) {
       e.exports = n.p + "images/icon-fill-purple.26c45ce39bdc49e1e0ebf5c4adc05daa.png";
     },
     "xp4H": function (e, t, n) {
-      e.exports = n.p + "images/icon-drawing-on.1d1f19f165d85ca38dc87afd36fc7c8c.png";
+      e.exports = n.p /* + "images/icon-drawing-on.1d1f19f165d85ca38dc87afd36fc7c8c.png" */;
     },
     "y45+": function (e, t, n) {
       e.exports = n.p + "images/runjump-icon-jump-back.7054014e9b4d331815d5d5450a5e5640.png";
@@ -9647,10 +9626,8 @@
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAAAoElEQVRoge3WQQqEUBAD0djCeP+reBRvM4Kj4NZkN/BbqF3zyLroad3OU5K+x0/7cZ/6zJOWufQGL4dp3NHLYRp39HKYxh29HKZxRy+HadzRy2Ead3QqNNqp0GinQqOdClEhKmQwjTs6FaJCVMhgGlMhfqGnUyEqRIUMpnFHp0JUiAoZTGMqxC/0dCpEhaiQwTTu6FSIClEhg2lMhf7tki41SgRdE7y8WwAAAABJRU5ErkJggg==";
     },
     "zNve": function (e, t, n) {
-      //images/shade-button-show.5dc64d8583865fda6269066ead26f2ef.png
-      e.exports =
-        n.p +
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAAAoElEQVRoge3WQQqEUBAD0djCeP+reBRvM4Kj4NZkN/BbqF3zyLroad3OU5K+x0/7cZ/6zJOWufQGL4dp3NHLYRp39HKYxh29HKZxRy+HadzRy2Ead3QqNNqp0GinQqOdClEhKmQwjTs6FaJCVMhgGlMhfqGnUyEqRIUMpnFHp0JUiAoZTGMqxC/0dCpEhaiQwTTu6FSIClEhg2lMhf7tki41SgRdE7y8WwAAAABJRU5ErkJggg==";
+      //images/shade-button-show.png
+      e.exports = n.p +"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAAB4UlEQVRoge2Yy1HDMBCGf6ggBxeQdABnHwIdJBVgd0Aq8KgC00FMBXYHJAedoQNcgA+UwChsZhw9LMnJABnvd4mtXXn3t1YPBwzDMAzDMBPm5pLSEyEfADwBUL9zzdwC2AF47Yp0Z3QeyUUEUOJbS9IulJj8EkLOEpAIOaPEV4YxjIaEfI3NYbSARMg7AG8AZoYxDpX8Y1ekH78mIBEyA1A6klcJVQD2dA3yWwLIBvpsuiKtDIuHaAGU/NYw/FBRItaSoJIrSYiNPFZElIBESFXrtWGIDO55CeuuSBuj1UGwAE/NV12R5kbrAImQSoBtJKLmRJAAGvp3xzKpAi76ZUMjVfb8WyqtRnvmp+OFKP97Vyn2uTVa7Ayt8ZUl+VrzV9c12Q5QH1fJzQdKLE5AIuSzZ53fa/el4eG26X37rCj2ICEjUBgtp+jD7Bopm81XIr7YwSX0bwkRIIyWU/RJ2BoebpttAsfE9gvoivSFziwullr7xuFns+l9+zQUe5DQEsotb+9IRkviAVoq15p/q29Q1Me2Dxz9g/aVq9/IgicxPdCVZEbHgyDI1+Wfx5xMp3WY6yVyvcfpI545EcNZHzSjNzIKuPAssT4aOgiOSh6T/6jX+Yu/VRiGYRiGYSYLgG8IlMaSlIbrfgAAAABJRU5ErkJggg==";
     },
     "zyPW": function (e, t, n) {
       //images/eraser-active.816c75b8834606e81cf1656ad4715419.png

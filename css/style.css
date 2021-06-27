@@ -8,6 +8,21 @@
   box-sizing: border-box;
 }
 
+main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #f99a00;
+}
+
 #toolbar {
   display: flex;
   align-items: center;
@@ -43,6 +58,90 @@
 }
 
  /* toolbar ends */
+
+ #edit-clock-box {
+  user-select: none;
+  background: #233239;
+  padding: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+#edit-clock-box label {
+  cursor: pointer;
+}
+#edit-clock-box .upper-content {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 6px;
+}
+#edit-clock-box .buttons {
+  display: flex;
+  flex-flow: row wrap;
+  width: 144px;
+  height: 144px;
+  margin: -1px;
+}
+#edit-clock-box .checkboxes {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 160px;
+  margin-left: 6px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 1em;
+}
+#edit-clock-box .checkboxes .checkbox-container {
+  height: 30px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  color: #fff;
+}
+#edit-clock-box .checkboxes .checkbox-container label {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+#edit-clock-box .checkboxes hr {
+  height: 2px;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+  border: none;
+}
+#edit-clock-box .checkboxes input[type='checkbox'] {
+  display: none;
+}
+
+.base.popup.tail-left::after {
+  background-position: 0 0;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: -36px;
+  margin-top: auto;
+  margin-bottom: auto;
+  transform: rotate(90deg);
+}
+
+.base.popup::after {
+  content: '';
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  height: 24px;
+  width: 48px;
+  background: url(../images/popup-tail.svg) no-repeat;
+}
+
+#edit-clock-box #edit-clock-done {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #131b1f;
+  font-size: 1.2em;
+}
+
+ /* Edit clock ends */
 
 #new-clock-box button input{
   margin-right: 10px;

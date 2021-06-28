@@ -22638,7 +22638,7 @@
           COLOR_PRIMARY_LIGHT: "rgba(95, 152, 232, 1)",
           COLOR_PRIMARY_PALE: "rgba(201, 218, 228, 1)",
           COLOR_SECONDARY_BASE: "rgba(39, 54, 145, 1)",
-          COLOR_SECONDARY_DARK: "rgba(0, 46, 102, 1)",
+          COLOR_SECONDARY_DARK: "rgba(255, 255, 255, 1)",
           COLOR_NEUTRAL_BASE: "rgba(178, 178, 178, 1)",
           COLOR_NEUTRAL_LIGHT: "rgba(221, 221, 221, 1)",
           COLOR_NEUTRAL_PALE: "rgba(242, 242, 242, 1)",
@@ -26142,8 +26142,8 @@
               buttonText: a.a.isObject(t) ? t.displayText : t,
               textColor: c.COLOR_SECONDARY_DARK,
               borderColor: "transparent",
-              fillColor: "#e8e8e8",
-              activeColor: "#f3f3f3",
+              fillColor: "#233239",
+              activeColor: "#405C69",
               borderRadius: 0,
               font: $e.DEFAULT,
               smallText: !1,
@@ -26171,29 +26171,32 @@
             e,
             i = {};
           return (
+            // NNO calculator
             a.a.each(
               a.a.range(0, 10),
               function (n, r) {
                 var s = String(n);
-                "0" === String(r)
-                  ? ((t = 1), (e = 4))
-                  : ((t = Math.floor((r - 1) % 3)), (e = Math.floor((10 - r - 1) / 3) + 1)),
+                console.log(r)
+                "0" === String(r) ? 
+                ((t = 1), (e = 4)) : 
+                ((t = Math.floor((r-10-2) % 3)+2), (e = Math.floor((r - 1) / 3) + 1)), //(t = Math.floor((r - 1) % 3)), (e = Math.floor((10 - r - 1) / 3) + 1)
+                
                   (i[s] = this._createGenericButton(
                     s,
                     { text: s, eventName: c.EQUATION_TOOLS_WRITE },
                     t,
                     e,
-                    { fillColor: "#cce6f4", activeColor: "#e5f2fa" }
+                    { fillColor: "#233239", activeColor: "#405C69" }
                   ));
               },
               this
             ),
             (i.commaSep = this._createGenericButton(",", { text: "," }, 0, 4, {
-              fillColor: "#cce6f4",
+              fillColor: "#233239",
               activeColor: "#e5f2fa",
             })),
             (i.dotSep = this._createGenericButton(".", { text: "." }, 2, 4, {
-              fillColor: "#cce6f4",
+              fillColor: "#233239",
               activeColor: "#e5f2fa",
             })),
             Qe()(a.a).call(a.a, i)
@@ -26253,9 +26256,11 @@
           return this._createGenericButton("?", { text: "▢" }, t, e, i);
         }),
         (ii.prototype._createSpaceButton = function (t, e, i) {
-          return this._createGenericButton("SPACE".split("").join(" "), { text: " " }, t, e, {
+          return this._createGenericButton("Space".split("").join(" "), { text: " " }, t, e, {
             font: $e.space,
             width: 52 * i - 2,
+            textColor:"#000",
+            fillColor:"#fff"
           });
         }),
         (ii.prototype._createBackspaceButton = function (t, e, i, n) {
@@ -26272,85 +26277,85 @@
         (ii.prototype._createOperatorButtons = function () {
           return [
             this._createGenericButton("+", { text: "+" }, 3, 1, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createGenericButton("–", { text: "–" }, 4, 1, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createGenericButton("=", { text: "=" }, 5, 1, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createGenericButton("×", { text: "×" }, 3, 2, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createGenericButton("÷", { text: "÷" }, 4, 2, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createQuestionButton(5, 2),
             this._createGenericButton("<", { text: "<" }, 3, 3, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton(">", { text: ">" }, 3.75, 3, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton("≤", { text: "≤" }, 4.5, 3, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton("≥", { text: "≥" }, 5.25, 3, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton("/", { text: "/" }, 3, 4, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
             }),
             this._createGenericButton("%", { text: "%" }, 3.75, 4, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               font: $e["%"],
             }),
             this._createGenericButton("(", { text: "(" }, 4.5, 4, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton(")", { text: ")" }, 5.25, 4, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton("$", { text: "$" }, 3, 5, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
             }),
             this._createGenericButton("¢", { text: "¢" }, 3.75, 5, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
@@ -26453,7 +26458,7 @@
       (ri.prototype._bindDispatcherEvents = function () {
         p.on(c.REQUEST_INFO_EVENT, function () {
           console.log(
-            "MLC Constants.REQUEST_INFO_EVENT has been deprecated. Use Constants.INFO_TOGGLE_EVENT."
+            "Constants.REQUEST_INFO_EVENT has been deprecated. Use Constants.INFO_TOGGLE_EVENT."
           );
         }),
           p.on(

@@ -196,90 +196,92 @@
             <input type="checkbox" id="check-labels" />
             <label for="check-labels">Hand Labels</input>
           </div>
-        </div>
+          </div>
       </div>
-
       <button id="edit-clock-done">OK</button>
-    </div>
+    </div>    
     <!-- End base-stage div -->
   </div>
 
 
-  <main class="">
+  <main class="" id="app">
     <div id="loading-spinner"></div>
+    <div id="bg-orange"></div>
 
     <canvas id="canvas"></canvas><!-- tabindex="1" -->
+    <div id="toolbar-wrap">
+      <div id="toolbar">
+        <div class="toolbar-button-container"><button id="restart" class="toolbar-button" title="Start Over"
+            aria-label="Clear the workspace"></button></div>
 
-    <div id="toolbar">
-      <div class="toolbar-button-container"><button id="restart" class="toolbar-button" title="Start Over"
-          aria-label="Clear the workspace"></button></div>
+        <div class="toolbar-button-container button-group tab">
+          <button id="new-clock" class="toolbar-button" title="New Clock" aria-label="Create a new clock"></button>
+        </div>
 
-      <div class="toolbar-button-container button-group tab">
-        <button id="new-clock" class="toolbar-button" title="New Clock" aria-label="Create a new clock"></button>
+        <div class="toolbar-button-container"><button id="edit-clock" class="toolbar-button" title="Edit Clock"
+            aria-label="Edit a selected clock"></button></div>
+
+        <hr class="toolbar-divider" />
+
+        <div class="toolbar-button-container"><button id="digital-mode" class="toolbar-button" title="Digital Mode"
+            aria-label="Activate digital readout mode"></button></div>
+
+        <div class="toolbar-button-container"><button id="run-jump-mode" class="toolbar-button" title="Run/Jump Mode"
+            aria-label="Activate run/jump mode"></button></div>
+
+        <hr class="toolbar-divider" />
+
+        <div class="toolbar-button-container"><button id="elapsed-time-mode" class="toolbar-button" title="Elapsed Time"
+            aria-label="Activate elapsed time mode"></button></div>
+
+        <hr class="toolbar-divider" />
+
+        <div class="toolbar-button-container"><button id="fractions-mode" class="toolbar-button" title="Fractions Mode"
+            aria-label="Activate fractions mode"></button></div>
+
+        <div class="toolbar-button-container"><button id="fill-mode" class="toolbar-button" title="Fill Mode"
+            aria-label="Activate fractions fill mode"></button></div>
+
+        <hr class="toolbar-divider" />
+
+
+        <div class="toolbar-button-container"><button id="shade" class="toolbar-button" title="Shade" aria-label="Add a shade to hide part of the workspace"></button></div>
+
+        <div class="toolbar-button-container"><button id="equation" class="toolbar-button" title="Math Text Tool"
+            aria-label="Open or close math text tool"></button></div>
+
+        <div class="toolbar-button-container"><button id="text" class="toolbar-button" title="Writing Tool"
+            aria-label="Open or close writing tool"></button></div>
+
+        <div class="toolbar-button-container"><button id="draw" class="toolbar-button" title="Drawing Tools"
+            aria-label="Open or close drawing tools"></button></div>
+
+        <hr class="toolbar-divider" />
+
+        <div class="toolbar-button-container"><button id="duplicate" class="toolbar-button" title="Duplicate"
+            aria-label="Duplicate selected objects"></button></div>
+
+        <div class="toolbar-button-container"><button id="trash" class="toolbar-button" title="Trash"
+            aria-label="Delete selected objects"></button></div>
+
+        <!-- <hr class="toolbar-divider" />
+
+        <div class="toolbar-button-container">
+          <button id="code" class="toolbar-button" title="Open Shared Work" aria-label="Open shared work using a code"></button>
+        </div>
+
+        <div class="toolbar-button-container">
+          <button id="save" class="toolbar-button" title="Share" aria-label="Share snapshot of the current workspace"></button>
+        </div>
+
+        <hr class="toolbar-divider" />
+
+        <div class="toolbar-button-container"><button id="info" class="toolbar-button" title="Info"
+            aria-label="Open instructions and more information"></button></div> -->
+
       </div>
-
-      <div class="toolbar-button-container"><button id="edit-clock" class="toolbar-button" title="Edit Clock"
-          aria-label="Edit a selected clock"></button></div>
-
-      <hr class="toolbar-divider" />
-
-      <div class="toolbar-button-container"><button id="digital-mode" class="toolbar-button" title="Digital Mode"
-          aria-label="Activate digital readout mode"></button></div>
-
-      <div class="toolbar-button-container"><button id="run-jump-mode" class="toolbar-button" title="Run/Jump Mode"
-          aria-label="Activate run/jump mode"></button></div>
-
-      <hr class="toolbar-divider" />
-
-      <div class="toolbar-button-container"><button id="elapsed-time-mode" class="toolbar-button" title="Elapsed Time"
-          aria-label="Activate elapsed time mode"></button></div>
-
-      <hr class="toolbar-divider" />
-
-      <div class="toolbar-button-container"><button id="fractions-mode" class="toolbar-button" title="Fractions Mode"
-          aria-label="Activate fractions mode"></button></div>
-
-      <div class="toolbar-button-container"><button id="fill-mode" class="toolbar-button" title="Fill Mode"
-          aria-label="Activate fractions fill mode"></button></div>
-
-      <hr class="toolbar-divider" />
-
-
-      <div class="toolbar-button-container"><button id="shade" class="toolbar-button" title="Shade" aria-label="Add a shade to hide part of the workspace"></button></div>
-
-      <div class="toolbar-button-container"><button id="equation" class="toolbar-button" title="Math Text Tool"
-          aria-label="Open or close math text tool"></button></div>
-
-      <div class="toolbar-button-container"><button id="text" class="toolbar-button" title="Writing Tool"
-          aria-label="Open or close writing tool"></button></div>
-
-      <div class="toolbar-button-container"><button id="draw" class="toolbar-button" title="Drawing Tools"
-          aria-label="Open or close drawing tools"></button></div>
-
-      <hr class="toolbar-divider" />
-
-      <div class="toolbar-button-container"><button id="duplicate" class="toolbar-button" title="Duplicate"
-          aria-label="Duplicate selected objects"></button></div>
-
-      <div class="toolbar-button-container"><button id="trash" class="toolbar-button" title="Trash"
-          aria-label="Delete selected objects"></button></div>
-
-      <!-- <hr class="toolbar-divider" />
-
-      <div class="toolbar-button-container">
-        <button id="code" class="toolbar-button" title="Open Shared Work" aria-label="Open shared work using a code"></button>
-      </div>
-
-      <div class="toolbar-button-container">
-        <button id="save" class="toolbar-button" title="Share" aria-label="Share snapshot of the current workspace"></button>
-      </div>
-
-      <hr class="toolbar-divider" />
-
-      <div class="toolbar-button-container"><button id="info" class="toolbar-button" title="Info"
-          aria-label="Open instructions and more information"></button></div> -->
-
     </div>
+    </main>
 
     <!-- Info page -->
     <div id="infopage" class="infopage">
@@ -298,11 +300,14 @@
         </div> <!-- End contents wrapper -->
       </div> <!-- End Info wrapper -->
     </div> <!-- End info page -->
-
   </main>
-
+  <div id="tempDiv"></div>
+<script>
+  var canvasActiveWidth=0;
+  var fired = false;
+</script>  
 <script type="text/javascript" src="js/runtime.js"></script>
 <script type="text/javascript" src="js/createjs.js"></script>
 <script type="text/javascript" src="js/main.js"></script></body>
-
+<script type="text/javascript" src="js/resize.js"></script>
 </html>

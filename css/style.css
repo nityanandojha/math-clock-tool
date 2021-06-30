@@ -8,13 +8,14 @@
   box-sizing: border-box;
 }
 
+
 main {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  margin: auto;
+  margin: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -23,16 +24,26 @@ main {
   background-color: #f99a00;
 }
 
+#bg-orange{
+
+}
+#toolbar-wrap {
+  order: 3;
+  display: flex;
+  justify-content: center;
+}
+
 #toolbar {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 71px;
-  order: 3;
   z-index: 1;
   background: #233239;
-  border-radius: 50px;
-  width: 100%;
+  border-radius: 20px;
+  max-width: 970px;
+  min-width: 970px;
+  width: 970px;
 }
 
 #toolbar.top {
@@ -54,12 +65,12 @@ main {
 }
 
 #toolbar .button-group.tab > .toolbar-button {
- min-width: 58px;
+  min-width: 58px;
 }
 
- /* toolbar ends */
+/* toolbar ends */
 
- #edit-clock-box {
+#edit-clock-box {
   user-select: none;
   background: #233239;
   padding: 12px;
@@ -108,7 +119,7 @@ main {
   background-color: lightgrey;
   border: none;
 }
-#edit-clock-box .checkboxes input[type='checkbox'] {
+#edit-clock-box .checkboxes input[type="checkbox"] {
   display: none;
 }
 
@@ -124,7 +135,7 @@ main {
 }
 
 .base.popup::after {
-  content: '';
+  content: "";
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -141,9 +152,9 @@ main {
   font-size: 1.2em;
 }
 
- /* Edit clock ends */
+/* Edit clock ends */
 
-#new-clock-box button input{
+#new-clock-box button input {
   margin-right: 10px;
 }
 
@@ -170,7 +181,7 @@ main {
 
 #new-clock-box button input[type="radio"]::before {
   content: "";
-    transform: translateX(10px) rotate(-45deg);
+  transform: translateX(10px) rotate(-45deg);
 }
 
 #edit-clock {
@@ -265,4 +276,16 @@ main {
 #trash {
   background-image: url(../images/delete.png);
   background-size: contain;
+}
+
+#tempDiv {
+  position: fixed;
+  left: 90px;
+  top: 0;
+  height: 570px;
+  width: 970px;
+  z-index: 100;
+  background-color: rgba(125, 0, 249, 0.3);
+  pointer-events: none;
+  display: none;
 }

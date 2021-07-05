@@ -51,7 +51,7 @@
       t.exports = i("Kxu3");
     },
     "/JNE": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("Bvq2"),
         s = i("YiBS"),
@@ -103,7 +103,7 @@
       );
     },
     "04M5": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("mIMY"),
         r = i("QYBB"),
         s = i("A2Ma"),
@@ -319,7 +319,7 @@
          */
         (this.createjs = this.createjs || {}),
           (createjs.extend = function (t, e) {
-            //"use strict";
+            "use strict";
             function i() {
               this.constructor = t;
             }
@@ -327,7 +327,7 @@
           }),
           (this.createjs = this.createjs || {}),
           (createjs.promote = function (t, e) {
-            //"use strict";
+            "use strict";
             var i = t.prototype,
               n = (Object.getPrototypeOf && Object.getPrototypeOf(i)) || i.__proto__;
             if (n)
@@ -337,7 +337,7 @@
           }),
           (this.createjs = this.createjs || {}),
           (createjs.deprecate = function (t, e) {
-            //"use strict";
+            "use strict";
             return function () {
               var i = "Deprecated property or method '" + e + "'. See docs for info.";
               return (
@@ -348,7 +348,7 @@
           }),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i) {
               (this.type = t),
                 (this.target = null),
@@ -389,7 +389,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               (this._listeners = null), (this._captureListeners = null);
             }
@@ -503,7 +503,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               throw "Ticker cannot be instantiated.";
             }
@@ -671,7 +671,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               this.EventDispatcher_constructor(),
                 (this.ignoreGlobalPause = !1),
@@ -855,7 +855,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(i, n) {
               this.AbstractTween_constructor(n),
                 (this.pluginData = null),
@@ -1134,7 +1134,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               var e, i;
               t instanceof Array || (null == t && arguments.length > 1)
@@ -1208,7 +1208,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               throw "Ease cannot be instantiated.";
             }
@@ -1343,7 +1343,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               throw "MotionGuidePlugin cannot be instantiated.";
             }
@@ -1583,7 +1583,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             var t = (createjs.TweenJS = createjs.TweenJS || {});
             (t.version = "1.0.0"), (t.buildDate = "Thu, 14 Sep 2017 19:47:47 GMT");
           })(),
@@ -1594,7 +1594,7 @@
       t.exports = i("qpuQ");
     },
     "6dl6": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("zJQS"),
         r = i("39uu"),
         s = [].slice,
@@ -1673,7 +1673,7 @@
       };
     },
     "9XUY": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("u4PT").IteratorPrototype,
         r = i("SJYm"),
         s = i("LGyv"),
@@ -1835,13 +1835,13 @@
            */
           (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               var t = (createjs.PreloadJS = createjs.PreloadJS || {});
               (t.version = "1.0.0"), (t.buildDate = "Thu, 14 Sep 2017 19:47:47 GMT");
             })(),
             (this.createjs = this.createjs || {}),
             (createjs.extend = function (t, e) {
-              //"use strict";
+              "use strict";
               function i() {
                 this.constructor = t;
               }
@@ -1849,7 +1849,7 @@
             }),
             (this.createjs = this.createjs || {}),
             (createjs.promote = function (t, e) {
-              //"use strict";
+              "use strict";
               var i = t.prototype,
                 n = (Object.getPrototypeOf && Object.getPrototypeOf(i)) || i.__proto__;
               if (n)
@@ -1859,7 +1859,7 @@
             }),
             (this.createjs = this.createjs || {}),
             (createjs.deprecate = function (t, e) {
-              //"use strict";
+              "use strict";
               return function () {
                 var i = "Deprecated property or method '" + e + "'. See docs for info.";
                 return (
@@ -1870,7 +1870,7 @@
             }),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               createjs.proxy = function (t, e) {
                 var i = Array.prototype.slice.call(arguments, 2);
                 return function () {
@@ -1880,13 +1880,13 @@
             })(),
             (this.createjs = this.createjs || {}),
             (createjs.indexOf = function (t, e) {
-              //"use strict";
+              "use strict";
               for (var i = 0, n = t.length; n > i; i++) if (e === t[i]) return i;
               return -1;
             }),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e, i) {
                 (this.type = t),
                   (this.target = null),
@@ -1927,7 +1927,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e, i) {
                 this.Event_constructor("error"),
                   (this.title = t),
@@ -1941,7 +1941,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t() {
                 (this._listeners = null), (this._captureListeners = null);
               }
@@ -2055,7 +2055,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.Event_constructor("progress"),
                   (this.loaded = t),
@@ -2798,7 +2798,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t() {
                 (this.src = null),
                   (this.type = null),
@@ -2896,7 +2896,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e, i) {
                 this.EventDispatcher_constructor(),
                   (this.loaded = !1),
@@ -3131,7 +3131,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e, i) {
                 this.AbstractLoader_constructor(t, e, i),
                   (this.resultFormatter = this._formatResult),
@@ -3175,7 +3175,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               var t = function (t) {
                   this._item = t;
                 },
@@ -3187,7 +3187,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e, i) {
                 this.AbstractRequest_constructor(t),
                   (this._tag = e),
@@ -3250,7 +3250,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e, i) {
                 this.AbstractRequest_constructor(t),
                   (this._tag = e),
@@ -3293,7 +3293,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t) {
                 this.AbstractRequest_constructor(t),
                   (this._request = null),
@@ -3531,7 +3531,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e, i) {
                 this.AbstractLoader_constructor(),
                   (this._plugins = []),
@@ -4070,7 +4070,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t) {
                 this.AbstractLoader_constructor(t, !0, createjs.Types.TEXT);
               }
@@ -4081,7 +4081,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t) {
                 this.AbstractLoader_constructor(t, !0, createjs.Types.BINARY),
                   this.on("initialize", this._updateXHR, this);
@@ -4097,7 +4097,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractLoader_constructor(t, e, createjs.Types.CSS),
                   (this.resultFormatter = this._formatResult),
@@ -4125,7 +4125,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractLoader_constructor(t, e, t.type),
                   (this._faces = {}),
@@ -4357,7 +4357,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractLoader_constructor(t, e, createjs.Types.IMAGE),
                   (this.resultFormatter = this._formatResult),
@@ -4421,7 +4421,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractLoader_constructor(t, e, createjs.Types.JAVASCRIPT),
                   (this.resultFormatter = this._formatResult),
@@ -4440,7 +4440,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t) {
                 this.AbstractLoader_constructor(t, !0, createjs.Types.JSON),
                   (this.resultFormatter = this._formatResult);
@@ -4463,7 +4463,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t) {
                 this.AbstractLoader_constructor(t, !1, createjs.Types.JSONP),
                   this.setTag(createjs.Elements.script()),
@@ -4508,7 +4508,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractLoader_constructor(t, e, createjs.Types.MANIFEST),
                   (this.plugins = null),
@@ -4582,7 +4582,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractMediaLoader_constructor(t, e, createjs.Types.SOUND),
                   createjs.DomUtils.isAudioTag(t) || createjs.DomUtils.isAudioTag(t.src)
@@ -4603,7 +4603,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractMediaLoader_constructor(t, e, createjs.Types.VIDEO),
                   createjs.DomUtils.isVideoTag(t) || createjs.DomUtils.isVideoTag(t.src)
@@ -4622,7 +4622,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractLoader_constructor(t, e, createjs.Types.SPRITESHEET),
                   (this._manifestQueue = null);
@@ -4702,7 +4702,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t, e) {
                 this.AbstractLoader_constructor(t, e, createjs.Types.SVG),
                   (this.resultFormatter = this._formatResult),
@@ -4734,7 +4734,7 @@
             })(),
             (this.createjs = this.createjs || {}),
             (function () {
-              //"use strict";
+              "use strict";
               function t(t) {
                 this.AbstractLoader_constructor(t, !0, createjs.Types.XML),
                   (this.resultFormatter = this._formatResult);
@@ -4826,7 +4826,7 @@
        *
        * Date: 2019-05-01T21:04Z
        */ !(function (e, i) {
-        //"use strict";
+        "use strict";
         "object" == typeof t.exports
           ? (t.exports = e.document
               ? i(e, !0)
@@ -4836,7 +4836,7 @@
                 })
           : i(e);
       })("undefined" != typeof window ? window : this, function (i, r) {
-        //"use strict";
+        "use strict";
         var s = [],
           a = i.document,
           o = Object.getPrototypeOf,
@@ -10979,7 +10979,7 @@
       }.call(this, i("yLpj"), i("YuTi")(t)));
     },
     "FHuo": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("3uAa").filter,
         s = i("nJYk"),
@@ -11045,7 +11045,7 @@
       };
     },
     "HAoi": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("1jut"),
         r = i("j5XY");
       t.exports = n
@@ -11078,7 +11078,7 @@
       t.exports = n.Symbol;
     },
     "HTq5": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("39uu"),
         s = i("YiBS"),
@@ -11121,7 +11121,7 @@
       );
     },
     "HeW1": function (t, e, i) {
-      //"use strict";
+      "use strict";
       t.exports = function (t, e) {
         return (
           e || (e = {}),
@@ -11183,7 +11183,7 @@
       };
     },
     "JPst": function (t, e, i) {
-      //"use strict";
+      "use strict";
       t.exports = function (t) {
         var e = [];
         return (
@@ -11231,7 +11231,7 @@
       };
     },
     "JaZ3": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("3uAa").some,
         s = i("n2Hk"),
@@ -11265,7 +11265,7 @@
       t.exports = n("Array").concat;
     },
     "KEzc": function (t, e, i) {
-      //"use strict";
+      "use strict";
       i.d(e, "a", function () {
         return c;
       });
@@ -11381,7 +11381,7 @@
       };
     },
     "L6fE": function (t, e, i) {
-      //"use strict";
+      "use strict";
       i.d(e, "a", function () {
         return s;
       });
@@ -11461,7 +11461,7 @@
       t.exports = n("Function").bind;
     },
     "NioV": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("cEKj"),
         s = i("81Rs"),
@@ -11553,7 +11553,7 @@
       n({ target: "Object", stat: !0, forced: !r, sham: !r }, { defineProperty: i("QYBB").f });
     },
     "Pkew": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("y9AQ").charAt,
         r = i("L1rz"),
         s = i("QFZC"),
@@ -11603,7 +11603,7 @@
       t.exports = n;
     },
     "QFZC": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("9XUY"),
         s = i("V3kF"),
@@ -11673,7 +11673,7 @@
       };
     },
     "QQub": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("3uAa").map,
         s = i("nJYk"),
@@ -11752,7 +11752,7 @@
       t.exports = i("JLQQ");
     },
     "RnbG": function (t, e, i) {
-      //"use strict";
+      "use strict";
       i.d(e, "a", function () {
         return s;
       });
@@ -11912,7 +11912,7 @@
       }
     },
     "Rxu/": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("ZBQp"),
         r = i("T/97"),
         s = i("+qqD"),
@@ -12027,7 +12027,7 @@
       };
     },
     "TAYc": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("5GCO").left,
         s = i("n2Hk"),
@@ -12390,7 +12390,7 @@
       };
     },
     "aBPM": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n,
         r,
         s,
@@ -12910,7 +12910,7 @@
       }
     },
     "aFDJ": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("Y4Ys").includes,
         s = i("xE4W");
@@ -12933,7 +12933,7 @@
     },
     "b4mI": function (t, e) {},
     "bBVJ": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("cWgI"),
         r = i("QYBB"),
         s = i("LGyv");
@@ -12961,7 +12961,7 @@
          */
         (this.createjs = this.createjs || {}),
           (createjs.extend = function (t, e) {
-            //"use strict";
+            "use strict";
             function i() {
               this.constructor = t;
             }
@@ -12969,7 +12969,7 @@
           }),
           (this.createjs = this.createjs || {}),
           (createjs.promote = function (t, e) {
-            //"use strict";
+            "use strict";
             var i = t.prototype,
               n = (Object.getPrototypeOf && Object.getPrototypeOf(i)) || i.__proto__;
             if (n)
@@ -12979,13 +12979,13 @@
           }),
           (this.createjs = this.createjs || {}),
           (createjs.indexOf = function (t, e) {
-            //"use strict";
+            "use strict";
             for (var i = 0, n = t.length; n > i; i++) if (e === t[i]) return i;
             return -1;
           }),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               throw "UID cannot be instantiated";
             }
@@ -12997,7 +12997,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (createjs.deprecate = function (t, e) {
-            //"use strict";
+            "use strict";
             return function () {
               var i = "Deprecated property or method '" + e + "'. See docs for info.";
               return (
@@ -13008,7 +13008,7 @@
           }),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i) {
               (this.type = t),
                 (this.target = null),
@@ -13049,7 +13049,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               (this._listeners = null), (this._captureListeners = null);
             }
@@ -13163,7 +13163,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               throw "Ticker cannot be instantiated.";
             }
@@ -13331,7 +13331,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               (this.readyState = t.readyState),
                 (this._video = t),
@@ -13369,7 +13369,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i, n, r, s, a, o, h, c, l) {
               this.Event_constructor(t, e, i),
                 (this.stageX = n),
@@ -13427,7 +13427,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i, n, r, s) {
               this.setValues(t, e, i, n, r, s);
             }
@@ -13638,7 +13638,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i, n, r) {
               this.setValues(t, e, i, n, r);
             }
@@ -13696,7 +13696,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e) {
               this.setValues(t, e);
             }
@@ -13728,7 +13728,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i, n) {
               this.setValues(t, e, i, n);
             }
@@ -13817,7 +13817,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i, n, r, s, a) {
               t.addEventListener &&
                 ((this.target = t),
@@ -13887,7 +13887,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i, n) {
               (this.color = t || "black"),
                 (this.offsetX = e || 0),
@@ -13906,7 +13906,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               this.EventDispatcher_constructor(),
                 (this.complete = !0),
@@ -14085,7 +14085,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               (this.command = null),
                 (this._stroke = null),
@@ -14710,7 +14710,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               this.EventDispatcher_constructor(),
                 (this.alpha = 1),
@@ -15033,7 +15033,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               this.DisplayObject_constructor(),
                 (this.children = []),
@@ -15292,7 +15292,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               this.Container_constructor(),
                 (this.autoClear = !0),
@@ -15643,7 +15643,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(e, i) {
               var n, r, s, a, o;
               if ((this.Stage_constructor(e), void 0 !== i)) {
@@ -17057,7 +17057,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e) {
               this.DisplayObject_constructor(),
                 (this.currentFrame = 0),
@@ -17204,7 +17204,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               this.DisplayObject_constructor(), (this.graphics = t || new createjs.Graphics());
             }
@@ -17233,7 +17233,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i) {
               this.DisplayObject_constructor(),
                 (this.text = t),
@@ -17395,7 +17395,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e) {
               this.Container_constructor(),
                 (this.text = t || ""),
@@ -17530,7 +17530,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(e) {
               var i, n, r, s;
               this.Container_constructor(),
@@ -17728,7 +17728,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               throw "SpriteSheetUtils cannot be instantiated";
             }
@@ -17822,7 +17822,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               this.EventDispatcher_constructor(),
                 (this.maxWidth = 2048),
@@ -18066,7 +18066,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               this.DisplayObject_constructor(),
                 "string" == typeof t && (t = document.getElementById(t)),
@@ -18154,7 +18154,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               (this.usesContext = !1),
                 (this._multiPass = null),
@@ -18194,7 +18194,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               (this.width = void 0),
                 (this.height = void 0),
@@ -18458,7 +18458,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i) {
               this.Filter_constructor(),
                 (this._blurX = t),
@@ -18748,7 +18748,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               if ((this.Filter_constructor(), !createjs.Filter.isValidImageSource(t)))
                 throw "Must provide valid image source for alpha map, see Filter.isValidImageSource";
@@ -18827,7 +18827,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               if ((this.Filter_constructor(), !createjs.Filter.isValidImageSource(t)))
                 throw "Must provide valid image source for alpha mask, see Filter.isValidImageSource";
@@ -18879,7 +18879,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i, n, r, s, a, o) {
               this.Filter_constructor(),
                 (this.redMultiplier = null != t ? t : 1),
@@ -18937,7 +18937,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t, e, i, n) {
               this.setColor(t, e, i, n);
             }
@@ -19265,7 +19265,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t(t) {
               this.Filter_constructor(),
                 (this.matrix = t),
@@ -19355,7 +19355,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             function t() {
               throw "Touch cannot be instantiated";
             }
@@ -19488,7 +19488,7 @@
           })(),
           (this.createjs = this.createjs || {}),
           (function () {
-            //"use strict";
+            "use strict";
             var t = (createjs.EaselJS = createjs.EaselJS || {});
             (t.version = "NEXT"), (t.buildDate = "Thu, 06 Sep 2018 19:56:51 GMT");
           })(),
@@ -19507,7 +19507,7 @@
       t.exports = !0;
     },
     "cEPT": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = {}.propertyIsEnumerable,
         r = Object.getOwnPropertyDescriptor,
         s = r && !n.call({ 1: 2 }, 1);
@@ -19703,7 +19703,7 @@
       t.exports = "\t\n\v\f\r                　\u2028\u2029\ufeff";
     },
     "hNJ/": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("zJQS"),
         s = i("rSeq"),
@@ -19747,7 +19747,7 @@
       t.exports = i("mhMO");
     },
     "i3tW": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("OsYe"),
         s = i("mIMY"),
@@ -21523,7 +21523,7 @@
       i("m/sp")("isConcatSpreadable");
     },
     "kQON": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pCEo"),
         r = i("xE4W"),
         s = i("dGO/"),
@@ -21584,7 +21584,7 @@
       n({ target: "Object", stat: !0, forced: !r, sham: !r }, { defineProperties: i("wjB2") });
     },
     "lr4h": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("YiBS"),
         s = [].reverse,
@@ -21632,7 +21632,7 @@
       };
     },
     "m2rO": function (t, e, i) {
-      //"use strict";
+      "use strict";
       /*!
        * hotkeys-js v3.7.3
        * A simple micro-library for defining and dispatching keyboard shortcuts. It has no dependencies.
@@ -21991,7 +21991,7 @@
       };
     },
     "maQk": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("3uAa").forEach,
         r = i("n2Hk"),
         s = i("MCtm"),
@@ -22015,7 +22015,7 @@
       i("m/sp")("species");
     },
     "n2Hk": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("Bvq2");
       t.exports = function (t, e) {
         var i = [][t];
@@ -22194,7 +22194,7 @@
       e.f = Object.getOwnPropertySymbols;
     },
     "oqxR": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("3uAa").every,
         s = i("n2Hk"),
@@ -22222,7 +22222,7 @@
       };
     },
     "pevS": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("OsYe"),
         r = i("RLqH").f,
         s = i("oOVA"),
@@ -22289,7 +22289,7 @@
       t.exports = i("tfHg");
     },
     "qLPT": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("maQk");
       n({ target: "Array", proto: !0, forced: [].forEach != r }, { forEach: r });
@@ -22322,7 +22322,7 @@
       t.exports = i("RALh");
     },
     "rSeq": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("zJQS"),
         r = function (t) {
           var e, i;
@@ -22379,7 +22379,7 @@
       };
     },
     "tRS1": function (t, e, i) {
-      //"use strict";
+      "use strict";
       i.d(e, "a", function () {
         return E;
       }),
@@ -22638,7 +22638,7 @@
           COLOR_PRIMARY_LIGHT: "rgba(95, 152, 232, 1)",
           COLOR_PRIMARY_PALE: "rgba(201, 218, 228, 1)",
           COLOR_SECONDARY_BASE: "rgba(39, 54, 145, 1)",
-          COLOR_SECONDARY_DARK: "rgba(0, 46, 102, 1)",
+          COLOR_SECONDARY_DARK: "rgba(255, 255, 255, 1)",
           COLOR_NEUTRAL_BASE: "rgba(178, 178, 178, 1)",
           COLOR_NEUTRAL_LIGHT: "rgba(221, 221, 221, 1)",
           COLOR_NEUTRAL_PALE: "rgba(242, 242, 242, 1)",
@@ -24522,7 +24522,6 @@
         });
       var ue = document.getElementById(c.CANVAS_ID),
         de = new u.a.Stage(ue);
-       //console.log("DE: ", ue.width, ue.height); //imp Vikas
       (de.name = "stage"),
         (de.mouseMoveOutside = !0),
         (de.preventSelection = !0),
@@ -24544,7 +24543,6 @@
           de
         );
       var pe = de;
-      
       function fe(t, e) {
         (e = e || {}), D.call(this, t, e);
         var i = {
@@ -24802,8 +24800,9 @@
               width: t.dimensions ? t.dimensions.width : 48,
               height: t.dimensions ? t.dimensions.height : 48,
             },
+            // NNO drawing tool
             buttonType: "icon",
-            defaultImage: t.defaultImage,
+            defaultImage: "data:image/png;base64,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", //t.defaultImage,
             activeImage: t.activeImage,
             borderColor: "transparent",
             clickCallback: t.callback,
@@ -26144,8 +26143,8 @@
               buttonText: a.a.isObject(t) ? t.displayText : t,
               textColor: c.COLOR_SECONDARY_DARK,
               borderColor: "transparent",
-              fillColor: "#e8e8e8",
-              activeColor: "#f3f3f3",
+              fillColor: "#233239",
+              activeColor: "#405C69",
               borderRadius: 0,
               font: $e.DEFAULT,
               smallText: !1,
@@ -26173,29 +26172,32 @@
             e,
             i = {};
           return (
+            // NNO calculator
             a.a.each(
               a.a.range(0, 10),
               function (n, r) {
                 var s = String(n);
-                "0" === String(r)
-                  ? ((t = 1), (e = 4))
-                  : ((t = Math.floor((r - 1) % 3)), (e = Math.floor((10 - r - 1) / 3) + 1)),
+                console.log(r)
+                "0" === String(r) ? 
+                ((t = 1), (e = 4)) : 
+                ((t = Math.floor((r-10-2) % 3)+2), (e = Math.floor((r - 1) / 3) + 1)), //(t = Math.floor((r - 1) % 3)), (e = Math.floor((10 - r - 1) / 3) + 1)
+                
                   (i[s] = this._createGenericButton(
                     s,
                     { text: s, eventName: c.EQUATION_TOOLS_WRITE },
                     t,
                     e,
-                    { fillColor: "#cce6f4", activeColor: "#e5f2fa" }
+                    { fillColor: "#233239", activeColor: "#405C69" }
                   ));
               },
               this
             ),
             (i.commaSep = this._createGenericButton(",", { text: "," }, 0, 4, {
-              fillColor: "#cce6f4",
+              fillColor: "#233239",
               activeColor: "#e5f2fa",
             })),
             (i.dotSep = this._createGenericButton(".", { text: "." }, 2, 4, {
-              fillColor: "#cce6f4",
+              fillColor: "#233239",
               activeColor: "#e5f2fa",
             })),
             Qe()(a.a).call(a.a, i)
@@ -26255,9 +26257,11 @@
           return this._createGenericButton("?", { text: "▢" }, t, e, i);
         }),
         (ii.prototype._createSpaceButton = function (t, e, i) {
-          return this._createGenericButton("SPACE".split("").join(" "), { text: " " }, t, e, {
+          return this._createGenericButton("Space".split("").join(" "), { text: " " }, t, e, {
             font: $e.space,
             width: 52 * i - 2,
+            textColor:"#000",
+            fillColor:"#fff"
           });
         }),
         (ii.prototype._createBackspaceButton = function (t, e, i, n) {
@@ -26274,85 +26278,85 @@
         (ii.prototype._createOperatorButtons = function () {
           return [
             this._createGenericButton("+", { text: "+" }, 3, 1, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createGenericButton("–", { text: "–" }, 4, 1, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createGenericButton("=", { text: "=" }, 5, 1, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createGenericButton("×", { text: "×" }, 3, 2, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createGenericButton("÷", { text: "÷" }, 4, 2, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               smallText: !0,
             }),
             this._createQuestionButton(5, 2),
             this._createGenericButton("<", { text: "<" }, 3, 3, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton(">", { text: ">" }, 3.75, 3, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton("≤", { text: "≤" }, 4.5, 3, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton("≥", { text: "≥" }, 5.25, 3, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton("/", { text: "/" }, 3, 4, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
             }),
             this._createGenericButton("%", { text: "%" }, 3.75, 4, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               font: $e["%"],
             }),
             this._createGenericButton("(", { text: "(" }, 4.5, 4, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton(")", { text: ")" }, 5.25, 4, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
             }),
             this._createGenericButton("$", { text: "$" }, 3, 5, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
             }),
             this._createGenericButton("¢", { text: "¢" }, 3.75, 5, {
-              fillColor: "#99cde8",
+              fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
               smallText: !0,
@@ -26455,7 +26459,7 @@
       (ri.prototype._bindDispatcherEvents = function () {
         p.on(c.REQUEST_INFO_EVENT, function () {
           console.log(
-            "MLC Constants.REQUEST_INFO_EVENT has been deprecated. Use Constants.INFO_TOGGLE_EVENT."
+            "Constants.REQUEST_INFO_EVENT has been deprecated. Use Constants.INFO_TOGGLE_EVENT."
           );
         }),
           p.on(
@@ -27986,22 +27990,17 @@
             });
         }),
         (Yi.prototype._drawBackground = function () {
-          //console.log("draw background", this.workspaceColor);//Vikas
-          if ((this.workspaceBacking.graphics.clear(), "string" == typeof this.workspaceColor)){
+          if ((this.workspaceBacking.graphics.clear(), "string" == typeof this.workspaceColor))
             this.workspaceBacking.graphics
-            .beginFill(this.workspaceColor)
+              .beginFill(this.workspaceColor)
               .drawRect(0, 0, this.workspaceDimensions.width, this.workspaceDimensions.height);
-              //console.log("case 1: ", this.workspaceColor);//Vikas
-          }
           else if (gi()(this.workspaceColor)) {
-            //console.log("case 2: ", this.workspaceColor,this.workspaceBacking);//Vikas
             var t,
               e = [];
             Ze()((t = this.workspaceColor)).call(
               t,
               function (t, i) {
                 e.push(i / this.workspaceColor.length);
-                
               },
               this
             ),
@@ -28015,7 +28014,6 @@
                   this.workspaceDimensions.height
                 )
                 .drawRect(0, 0, this.workspaceDimensions.width, this.workspaceDimensions.height);
-                //console.log("Dimensions: W: ", this.workspaceDimensions.width, "H: ",this.workspaceDimensions.height);//Vikas
           }
         }),
         (Yi.prototype._bindEvents = function (t) {
@@ -28111,11 +28109,8 @@
               .drawRect(0, 0, t.width, t.height),
             this.workspace.setBounds(0, 0, t.width, t.height),
             this._drawBackground();
-            //console.log("T width: ", t.width, "t height: ", t.height); //Vikas
-            //console.log("this width: ", this.width, "this width: ", this.height); //Vikas
         }),
         (Yi.prototype._setupDisplay = function (t, e) {
-          //console.log("setup display...");//Vikas
           var i = a.a.isObject(this.workspaceDimensions)
             ? this.workspaceDimensions
             : { width: this.width, height: this.height };
@@ -28135,7 +28130,6 @@
               : this.workspace.addChild(this.drawLayer, this.shadeLayer),
             this.drawLayer.addChild(this.drawBacking, this.drawing.display),
             (this.drawLayer.mask = this.workspaceBacking);
-            
           var n = this.getZoom(),
             r = this._scrollbarStyle.thickness * n;
           (this.verticalScrollbar = new wi(this.display, {
@@ -28176,7 +28170,6 @@
             t && a.a.isFunction(t.addChild) && t.addChild(this.display);
         }),
         (Yi.prototype.getZoom = function (t) {
-          //console.log("ZOOM: ", this.zoomLevels);//Vikas28174
           if ((a.a.isUndefined(t) && (t = this.zoomLevelIndex), a.a.isNumber(this.zoomLevels[t])))
             return this.zoomLevels[t];
           switch (this.zoomLevels[t]) {
@@ -28194,7 +28187,6 @@
           var t = this.workspaceDimensions || { width: pe.canvas.width, height: pe.canvas.height },
             e = this.width,
             i = this.height;
-            //console.log(t);
           return e < t.width || i < t.height ? Math.min(e / t.width, i / t.height) : 1;
         }),
         (Yi.prototype._shrinkToFitVertical = function () {
@@ -28206,7 +28198,7 @@
           var r = i / t.height;
           return (n = e < t.width * r) ? (i - this._scrollbarStyle.thickness) / t.height : r;
         }),
-        (Yi.prototype._shrinkToFitHorizontal = function () {                    
+        (Yi.prototype._shrinkToFitHorizontal = function () {
           var t = this.workspaceDimensions || { width: pe.canvas.width, height: pe.canvas.height },
             e = this.width,
             i = this.height,
@@ -28578,7 +28570,6 @@
             this._alignWorkspace());
         }),
         (Yi.prototype._resizeEvent = function (t) {
-          //console.log("GET ZOOM: ", this.getZoom()); //Vikas
           if (t.visiblePage) this._handleTrayResize(t);
           else {
             (this.x = a.a.isNumber(t.x) ? t.x : this.x),
@@ -28598,7 +28589,7 @@
               this.drawing.resize({ width: e.width, height: e.height }),
               (this.drawing.x = this.x),
               (this.drawing.y = this.y),
-              this._setZoom(this.getZoom());//imp....Vikas 
+              this._setZoom(this.getZoom());
           }
         }),
         (Yi.prototype._handleTrayResize = function (t) {
@@ -28891,12 +28882,10 @@
               : this._setZoom(this.zoomLevelIndex + 1, t.focusPoint));
         }),
         (Yi.prototype._setZoom = function (t, e) {
-          //console.log(t,e);//Vikas
           var i, n, r;
           (this.workspace.scaleX = t),
             (this.workspace.scaleY = t),
             (i = this.display.getBounds()),
-            (i.height += 1),
             (this.workspaceDimensions = this.workspace.getBounds()),
             this.horizontalScrollbar &&
               ((n = (this.width * (this.width / this.workspaceDimensions.width)) / t),
@@ -28917,13 +28906,6 @@
             this.constrainWorkspaceToVisible && this._constrainWorkspace(),
             this._sendZoomInfo(),
             this.draw();
-            console.log(i.width, i.height);
-            try{
-              canvasActiveWidth = this.workspace.x; 
-            }catch(err){
-
-            }
-            //console.log("X: ", this.workspace.x, " Y: ", this.workspace.y); //most imp Vikas
         }),
         (Yi.prototype._handleScroll = function (t) {
           var e,
@@ -30963,7 +30945,7 @@
       i("DIJN"), i("cgHO"), i("dP0U"), i("Jm8n"), i("mAJt"), (t.exports = n);
     },
     "u+ON": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("Y4Ys").indexOf,
         s = i("n2Hk"),
@@ -30984,7 +30966,7 @@
       );
     },
     "u4PT": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n,
         r,
         s,
@@ -31020,7 +31002,7 @@
       t.exports = n("Array").reverse;
     },
     "vfRR": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("3uAa").find,
         s = i("xE4W"),
@@ -31147,7 +31129,7 @@
       t.exports = { codeAt: s(!1), charAt: s(!0) };
     },
     "yB81": function (t, e, i) {
-      //"use strict";
+      "use strict";
       var n = i("pevS"),
         r = i("nlFj"),
         s = i("GHVm");

@@ -255,7 +255,7 @@
           img +
           ") no-repeat;\n  content: '';\n}\n#toolbar.top .popup .popup-body {\n  border-radius: 10px;\n}\n#toolbar.top .popup.tail-right .popup-body {\n  border-top-right-radius: 0;\n}\n#toolbar.top .popup.tail-right::after {\n  background-position: 24px 0;\n  right: 48px;\n}\n#toolbar.top .popup.tail-left .popup-body {\n  border-top-left-radius: 0;\n}\n#toolbar.top .popup.tail-left::after {\n  background-position: -24px 0;\n  left: 48px;\n}\n#toolbar .toolbar-spacer {\n  display: flex;\n  flex-grow: 1;\n}\n#toolbar .divider {\n  height: 48px;\n  -ms-flex: 0 0 16px;\n  flex: 0 0 16px;\n  background-image: url(" +
           cnvs +
-          ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .button-group {\n  position: relative;\n  height: 48px;flex-direction: row;\n  justify-content: space-around;\n}\n#toolbar .popup {\n  bottom: 64px;\n}\n#toolbar .toolbar-button {\n  height: 50px;\n  width: 59px;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .toolbar-button.narrow {\n  width: 40px;\n}\n#toolbar .toolbar-button.wide {\n  width: 96px;\n}\n#toolbar .toolbar-button.disabled,\n#toolbar .toolbar-button:active {\n  opacity: 0.5;\n}\n.text-button {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: #629d34;\n  color: white;\n  padding: 0.8em 0;\n  font-size: 0.825em;\n  border-radius: 3px;\n  font-weight: 600;\n  letter-spacing: 0.025em;\n  word-spacing: 0.1em;\n  white-space: nowrap;\n}\n.text-button:hover {\n  opacity: 0.8;\n}\n.text-button:active {\n  background-color: #4a7727;\n}\n.text-button:disabled {\n  background-color: #b2b2b2;\n  cursor: default;\n}\n.text-button:disabled:hover {\n  background-color: #b2b2b2;\n  opacity: 1;\n}\n.button-field {\n  display: flex;\n  flex-direction: row;\n}\n.button-field input {\n  border: 1px solid #CCC;\n  border-right: none;\n  border-radius: 3px 0 0 3px;\n  box-shadow: inset 2px 2px 5px #CCC;\n  padding: 5px;\n  font-size: 0.9em;\n  margin: 0;\n  flex-grow: 1;\n}\n.button-field button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n/* -----\nwinBox\n----- */\n/* jquery winBoxs */\n#winBox-base {\n  display: none;\n}\n/* background overlay */\n.ui-front {\n  z-index: 101;\n  /* same as toolbar or higher */\n}\n.ui-widget-overlay {\n  background: none repeat scroll 0 0 gray;\n  opacity: 0.6;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n/* our app's generic winBox */\n.ui-winBox.msgBox {\n  padding: 0;\n  background-image: none;\n  background-color: #FFFFFF;\n  border-radius: 8px;\n  overflow: hidden;\n  outline: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar {\n  padding-top: 20px;\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: bold;\n  color: #000000;\n  background: none;\n  border: none;\n  text-align: center;\n  font-size: 16px;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar .ui-winBox-title.no-title {\n  /* Fix to JQuery UI 1.12 update where empty titles\n      are replaced with an nbsp;.\n Manually hiding to prevent extra padding.\n   */\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar-close {\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-content {\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 16px;\n  text-align: center;\n  padding: 5px 20px 20px;\n  line-height: 1.2em;\n}\n.ui-winBox.msgBox .ui-winBox-buttonpane {\n  margin: 0;\n  padding: 0;\n}\n.ui-winBox.msgBox .ui-winBox-buttonset {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  border-top: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 35px;\n  background: none;\n  border: none;\n  color: #1C81C4;\n  /*font-size: 14px;*/\n  /*text-transform: uppercase;*/\n}\n.ui-winBox.msgBox.confirm .ui-button {\n  width: 50%;\n}\n.ui-winBox.msgBox.confirm .ui-button:first-child {\n  border-right: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button:hover {\n  background-color: #F7F7F7;\n}\n.ui-winBox.msgBox .ui-button:active {\n  background-color: #DDD;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close {\n  display: block;\n  position: absolute;\n  color: transparent;\n  top: 0;\n  right: 0;\n  border-radius: 18px;\n  margin: 5px;\n  width: 36px;\n  background: black url(" +
+          ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .button-group {\n  position: relative;\n  height: 48px;flex-direction: row;\n  justify-content: space-around;\n}\n#toolbar .popup {\n  bottom: 64px;\n}\n#toolbar .toolbar-button {\n  height: 49px;\n  width: 51px;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .toolbar-button.narrow {\n  width: 40px;\n}\n#toolbar .toolbar-button.wide {\n  width: 96px;\n}\n#toolbar .toolbar-button.disabled,\n#toolbar .toolbar-button:active {\n  opacity: 0.5;\n}\n.text-button {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: #629d34;\n  color: white;\n  padding: 0.8em 0;\n  font-size: 0.825em;\n  border-radius: 3px;\n  font-weight: 600;\n  letter-spacing: 0.025em;\n  word-spacing: 0.1em;\n  white-space: nowrap;\n}\n.text-button:hover {\n  opacity: 0.8;\n}\n.text-button:active {\n  background-color: #4a7727;\n}\n.text-button:disabled {\n  background-color: #b2b2b2;\n  cursor: default;\n}\n.text-button:disabled:hover {\n  background-color: #b2b2b2;\n  opacity: 1;\n}\n.button-field {\n  display: flex;\n  flex-direction: row;\n}\n.button-field input {\n  border: 1px solid #CCC;\n  border-right: none;\n  border-radius: 3px 0 0 3px;\n  box-shadow: inset 2px 2px 5px #CCC;\n  padding: 5px;\n  font-size: 0.9em;\n  margin: 0;\n  flex-grow: 1;\n}\n.button-field button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n/* -----\nwinBox\n----- */\n/* jquery winBoxs */\n#winBox-base {\n  display: none;\n}\n/* background overlay */\n.ui-front {\n  z-index: 101;\n  /* same as toolbar or higher */\n}\n.ui-widget-overlay {\n  background: none repeat scroll 0 0 gray;\n  opacity: 0.6;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n/* our app's generic winBox */\n.ui-winBox.msgBox {\n  padding: 0;\n  background-image: none;\n  background-color: #FFFFFF;\n  border-radius: 8px;\n  overflow: hidden;\n  outline: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar {\n  padding-top: 20px;\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: bold;\n  color: #000000;\n  background: none;\n  border: none;\n  text-align: center;\n  font-size: 16px;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar .ui-winBox-title.no-title {\n  /* Fix to JQuery UI 1.12 update where empty titles\n      are replaced with an nbsp;.\n Manually hiding to prevent extra padding.\n   */\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar-close {\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-content {\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 16px;\n  text-align: center;\n  padding: 5px 20px 20px;\n  line-height: 1.2em;\n}\n.ui-winBox.msgBox .ui-winBox-buttonpane {\n  margin: 0;\n  padding: 0;\n}\n.ui-winBox.msgBox .ui-winBox-buttonset {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  border-top: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 35px;\n  background: none;\n  border: none;\n  color: #1C81C4;\n  /*font-size: 14px;*/\n  /*text-transform: uppercase;*/\n}\n.ui-winBox.msgBox.confirm .ui-button {\n  width: 50%;\n}\n.ui-winBox.msgBox.confirm .ui-button:first-child {\n  border-right: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button:hover {\n  background-color: #F7F7F7;\n}\n.ui-winBox.msgBox .ui-button:active {\n  background-color: #DDD;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close {\n  display: block;\n  position: absolute;\n  color: transparent;\n  top: 0;\n  right: 0;\n  border-radius: 18px;\n  margin: 5px;\n  width: 36px;\n  background: black url(" +
           rs +
           ") no-repeat center;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close:hover {\n  background-color: darkgrey;\n}\n#templates {\n  display: none;\n}\n/* -----\n  base styles\n----- */\n.base-background {\n  height: 100vh;\n  width: 100vw;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n  .base-background {\n    height: 200vh;\n    width: 200vw;\n    transform: translateX(-50%), translateY(-50%);\n  }\n}\n.base {\n  z-index: 100;\n}\n.base.gray-background .base-background {\n  background-color: rgba(108, 118, 128, 0.7);\n}\n.base.popup {\n  position: absolute;\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n  .base.popup {\n    transform: translateX(-50%);\n    left: 50%;\n  }\n}\n.base.popup.tail-right .popup-body {\n  transform: translateX(-50%);\n  border-bottom-right-radius: 0;\n}\n.base.popup.tail-right::after {\n  background-position: 0 0;\n  top: 0;\n  bottom: 0;\n  right: -36px;\n  left: auto;\n  margin-top: auto;\n  margin-bottom: auto;\n  transform: rotate(-90deg);\n}\n.base.popup.tail-left .popup-body {\n  transform: translateX(50%);\n  border-bottom-left-radius: 0;\n}\n.base.winBox {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: center;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n}\n.base.winBox.hidden {\n  display: none;\n}\n.base.winBox .base-box {\n  top: -24px;\n}\n.base-box {\n  position: relative;\n  overflow: hidden;\n  border-radius: 10px;\n}\n.base-box .content {\ncolor:#fff;\n}\n.base-box .header {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 0 0 15px;\n  background: #0081c6;\n  color: white;\n  height: 46px;\n  font-weight: 600;\n  font-size: 1.1em;\n}\n.base-box .header .close-button {\n  height: 46px;\n  width: 46px;\n  background: url(" +
           or +
@@ -1799,6 +1799,14 @@
         });
         _this.f.dispatchEvent(beat);
       }
+
+      function tellTime(){
+        console.log("TELL TIME function......");
+      }
+      function tellAngle(){
+        console.log("TELL ANGLE function......");
+      }
+
       /**
        * @param {string} name
        * @param {!Function} x
@@ -2344,7 +2352,6 @@
        * @return {undefined}
        */
       function get() {
-        console.log("GET: ", _this.u.canvas);
         _this.u.canvas.removeAttribute("height");
         _this.u.canvas.removeAttribute("width");
         _this.u.canvas.width = _this.u.canvas.offsetWidth;
@@ -2579,6 +2586,10 @@
       /** @type {string} */
       that.TOGGLE_ELAPSED_TIME_SELECTOR = "#elapsed-time-mode";
       /** @type {string} */
+      that.TOGGLE_TELL_TIME_SELECTOR = "#tell-time-mode";
+      /** @type {string} */
+      that.TOGGLE_TELL_ANGLE_SELECTOR = "#tell-angle-mode";
+      /** @type {string} */
       that.TOGGLE_FRACTION_SELECTOR = "#fractions-mode";
       /** @type {string} */
       that.FRACTION_FILL_SELECTOR = "#fill-mode";
@@ -2712,6 +2723,16 @@
       /** @type {string} */
       that.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE =
         "toggleselectionelapsedtimemode";
+      /** @type {string} */
+      that.Events.TOGGLE_TELL_TIME_MODE = "toggletelltime";
+      /** @type {string} */
+      that.Events.TOGGLE_SELECTION_TELL_TIME_MODE =
+        "toggleselectiontelltimemode";
+      /** @type {string} */
+      that.Events.TOGGLE_TELL_ANGLE_MODE = "toggletellangle";
+      /** @type {string} */
+      that.Events.TOGGLE_SELECTION_TELL_ANGLE_MODE =
+        "toggleselectiontellanglemode";
       /** @type {string} */
       that.Events.TOGGLE_FRACTION_MODE = "togglefractionmode";
       /** @type {string} */
@@ -8395,6 +8416,20 @@
           this
         );
         _this.f.on(
+          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE,
+          function (message) {
+            console.log(message);
+            if (message.targetEntity === this) {
+              /** @type {boolean} */
+              this.handleActive = false;
+              /** @type {string} */
+              //this.activeMajorControl = modifier.FractionControl;
+              this.draw();
+            }
+          },
+          this
+        );
+        _this.f.on(
           data.Events.FRACTION_PICK_PALETTE_SHOW,
           function () {
             this._tempFragments = this.fraction.fragments;
@@ -10920,7 +10955,7 @@
           }
         });
         _this.f.on(_this.d.RESIZE_EVENT, function () {
-          console.log(" RESIZE_EVENT ");
+          //console.log(" RESIZE_EVENT ");//NNO
           var beat = new doc.a.Event(_this.d.CONSTRAIN_ENTITY_EVENT);
           beat.set({
             skipAnimation: true,
@@ -11331,6 +11366,8 @@
         _this.f.on(data.Events.TOGGLE_DIGITAL_READOUT_MODE, flush);
         _this.f.on(data.Events.TOGGLE_RUN_JUMP_MODE, decode);
         _this.f.on(data.Events.TOGGLE_ELAPSED_TIME_MODE, _init);
+        _this.f.on(data.Events.TOGGLE_TELL_TIME_MODE, tellTime);
+        _this.f.on(data.Events.TOGGLE_TELL_ANGLE_MODE, tellAngle);
         _this.f.on(_this.d.EQUATION_TOOLS_HIDE, onPause);
         _this.f.on(_this.d.EQUATION_TOOLS_SHOW, pause);
         _this.f.on(_this.d.TEXT_TOOLS_HIDE, onPause);
@@ -11554,7 +11591,7 @@
        * @return {undefined}
        */
       self.resizePage = function (noteDatas) {
-        console.log("resize page...");
+        //console.log("resize page...");//NNO
         me.updateWorkspaceDimensions(noteDatas);
         var t = new doc.a.Event(_this.d.RESIZE_EVENT);
         t.set({
@@ -11571,8 +11608,8 @@
         _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
         //var toolbar = document.getElementById("toolbar");
         //toolbar.style.marginLeft = canvasActiveWidth + "px";
-        canvasActiveWidth = Math.round(window.innerWidth - (canvasActiveWidth*2));
-        console.log("WIDTH: ", canvasActiveWidth);
+        //canvasActiveWidth = Math.round(window.innerWidth - (canvasActiveWidth*2));
+        //console.log("WIDTH: ", canvasActiveWidth);
         //document.getElementById("toolbar").style.width = canvasActiveWidth+"px";
       };
       /**
@@ -12976,6 +13013,347 @@
           ],
         },
       };
+
+      Container.toggleTellTimeMode = {
+        selector: data.TOGGLE_TELL_TIME_SELECTOR,
+        options: {
+          clickEvent: data.Events.TOGGLE_TELL_TIME_MODE,
+          disabled: true,
+          enableEvent: [
+            {
+              event: _this.d.SELECT_ENTITY_EVENT,
+              condition: function (value) {
+                var expr;
+                return (
+                  require()((expr = resolve(value))).call(
+                    expr,
+                    function (canCreateDiscussions) {
+                      return canCreateDiscussions.isGeared();
+                    }
+                  ).length > 0
+                );
+              },
+            },
+            {
+              event: data.Events.SET_CLOCK_HAND_VISIBILITY,
+              condition: function (o) {
+                return search(o).length > 0;
+              },
+            },
+          ],
+          disableEvent: [
+            {
+              event: _this.d.SELECT_ENTITY_EVENT,
+              condition: function (value) {
+                var expr;
+                return (
+                  require()((expr = resolve(value))).call(
+                    expr,
+                    function (canCreateDiscussions) {
+                      return canCreateDiscussions.isGeared();
+                    }
+                  ).length <= 0
+                );
+              },
+            },
+            {
+              event: data.Events.SET_CLOCK_HAND_VISIBILITY,
+              condition: function (o) {
+                return search(o).length <= 0;
+              },
+            },
+          ],
+          addClassOn: [
+            {
+              eventID: _this.d.SELECT_ENTITY_EVENT,
+              cssClass: "on",
+              condition: function (value) {
+                var results;
+                var t = require()((results = resolve(value))).call(
+                  results,
+                  function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }
+                );
+                return i()(t).call(t, function (canCreateDiscussions) {
+                  return (
+                    canCreateDiscussions.elapsedTimeMode &&
+                    canCreateDiscussions.activeMajorControl ===
+                      selection.MajorControls.ElapsedTime
+                  );
+                });
+              },
+            },
+            {
+              eventID: data.Events.SET_CLOCK_HAND_VISIBILITY,
+              cssClass: "on",
+              condition: function (o) {
+                var t = search(o);
+                return i()(t).call(t, function (canCreateDiscussions) {
+                  return (
+                    canCreateDiscussions.elapsedTimeMode &&
+                    canCreateDiscussions.activeMajorControl ===
+                      selection.MajorControls.ElapsedTime
+                  );
+                });
+              },
+            },
+            {
+              eventID: data.Events.TOGGLE_TELL_TIME_MODE,
+              cssClass: "on",
+              condition: function () {
+                var x;
+                var path = require()((x = resolve())).call(
+                  x,
+                  function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }
+                );
+                return match()(path).call(
+                  path,
+                  function (canCreateDiscussions) {
+                    return !canCreateDiscussions.elapsedTimeMode;
+                  }
+                );
+              },
+            },
+          ],
+          removeClassOn: [
+            {
+              eventID: _this.d.SELECT_ENTITY_EVENT,
+              cssClass: "on",
+              condition: function (name) {
+                var pkg;
+                var url = require()((pkg = resolve(name))).call(
+                  pkg,
+                  function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }
+                );
+                return (
+                  match()(url).call(url, function (canCreateDiscussions) {
+                    return !(
+                      canCreateDiscussions.elapsedTimeMode &&
+                      canCreateDiscussions.activeMajorControl ===
+                        selection.MajorControls.ElapsedTime
+                    );
+                  }) || !(url.length > 0)
+                );
+              },
+            },
+            {
+              eventID: data.Events.SET_CLOCK_HAND_VISIBILITY,
+              cssClass: "on",
+              condition: function (type) {
+                var selector = search(type);
+                return (
+                  match()(selector).call(
+                    selector,
+                    function (canCreateDiscussions) {
+                      return !(
+                        canCreateDiscussions.elapsedTimeMode &&
+                        canCreateDiscussions.activeMajorControl ===
+                          selection.MajorControls.ElapsedTime
+                      );
+                    }
+                  ) || !(selector.length > 0)
+                );
+              },
+            },
+            {
+              eventID: data.Events.TOGGLE_TELL_TIME_MODE,
+              cssClass: "on",
+              condition: function () {
+                var expr;
+                var value = require()((expr = resolve())).call(
+                  expr,
+                  function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }
+                );
+                return i()(value).call(value, function (canCreateDiscussions) {
+                  return canCreateDiscussions.elapsedTimeMode;
+                });
+              },
+            },
+            {
+              eventID: data.Events.FRACTION_PICK_PALETTE_SHOW,
+              cssClass: "on",
+            },
+          ],
+        },
+      };
+
+      Container.toggleTellAngleMode = {
+        selector: data.TOGGLE_TELL_ANGLE_SELECTOR,
+        options: {
+          clickEvent: data.Events.TOGGLE_TELL_ANGLE_MODE,
+          disabled: true,
+          enableEvent: [
+            {
+              event: _this.d.SELECT_ENTITY_EVENT,
+              condition: function (value) {
+                var expr;
+                return (
+                  require()((expr = resolve(value))).call(
+                    expr,
+                    function (canCreateDiscussions) {
+                      return canCreateDiscussions.isGeared();
+                    }
+                  ).length > 0
+                );
+              },
+            },
+            {
+              event: data.Events.SET_CLOCK_HAND_VISIBILITY,
+              condition: function (o) {
+                return search(o).length > 0;
+              },
+            },
+          ],
+          disableEvent: [
+            {
+              event: _this.d.SELECT_ENTITY_EVENT,
+              condition: function (value) {
+                var expr;
+                return (
+                  require()((expr = resolve(value))).call(
+                    expr,
+                    function (canCreateDiscussions) {
+                      return canCreateDiscussions.isGeared();
+                    }
+                  ).length <= 0
+                );
+              },
+            },
+            {
+              event: data.Events.SET_CLOCK_HAND_VISIBILITY,
+              condition: function (o) {
+                return search(o).length <= 0;
+              },
+            },
+          ],
+          addClassOn: [
+            {
+              eventID: _this.d.SELECT_ENTITY_EVENT,
+              cssClass: "on",
+              condition: function (value) {
+                var results;
+                var t = require()((results = resolve(value))).call(
+                  results,
+                  function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }
+                );
+                return i()(t).call(t, function (canCreateDiscussions) {
+                  return (
+                    canCreateDiscussions.elapsedTimeMode &&
+                    canCreateDiscussions.activeMajorControl ===
+                      selection.MajorControls.ElapsedTime
+                  );
+                });
+              },
+            },
+            {
+              eventID: data.Events.SET_CLOCK_HAND_VISIBILITY,
+              cssClass: "on",
+              condition: function (o) {
+                var t = search(o);
+                return i()(t).call(t, function (canCreateDiscussions) {
+                  return (
+                    canCreateDiscussions.elapsedTimeMode &&
+                    canCreateDiscussions.activeMajorControl ===
+                      selection.MajorControls.ElapsedTime
+                  );
+                });
+              },
+            },
+            {
+              eventID: data.Events.TOGGLE_TELL_ANGLE_MODE,
+              cssClass: "on",
+              condition: function () {
+                var x;
+                var path = require()((x = resolve())).call(
+                  x,
+                  function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }
+                );
+                return match()(path).call(
+                  path,
+                  function (canCreateDiscussions) {
+                    return !canCreateDiscussions.elapsedTimeMode;
+                  }
+                );
+              },
+            },
+          ],
+          removeClassOn: [
+            {
+              eventID: _this.d.SELECT_ENTITY_EVENT,
+              cssClass: "on",
+              condition: function (name) {
+                var pkg;
+                var url = require()((pkg = resolve(name))).call(
+                  pkg,
+                  function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }
+                );
+                return (
+                  match()(url).call(url, function (canCreateDiscussions) {
+                    return !(
+                      canCreateDiscussions.elapsedTimeMode &&
+                      canCreateDiscussions.activeMajorControl ===
+                        selection.MajorControls.ElapsedTime
+                    );
+                  }) || !(url.length > 0)
+                );
+              },
+            },
+            {
+              eventID: data.Events.SET_CLOCK_HAND_VISIBILITY,
+              cssClass: "on",
+              condition: function (type) {
+                var selector = search(type);
+                return (
+                  match()(selector).call(
+                    selector,
+                    function (canCreateDiscussions) {
+                      return !(
+                        canCreateDiscussions.elapsedTimeMode &&
+                        canCreateDiscussions.activeMajorControl ===
+                          selection.MajorControls.ElapsedTime
+                      );
+                    }
+                  ) || !(selector.length > 0)
+                );
+              },
+            },
+            {
+              eventID: data.Events.TOGGLE_TELL_ANGLE_MODE,
+              cssClass: "on",
+              condition: function () {
+                var expr;
+                var value = require()((expr = resolve())).call(
+                  expr,
+                  function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }
+                );
+                return i()(value).call(value, function (canCreateDiscussions) {
+                  return canCreateDiscussions.elapsedTimeMode;
+                });
+              },
+            },
+            {
+              eventID: data.Events.FRACTION_PICK_PALETTE_SHOW,
+              cssClass: "on",
+            },
+          ],
+        },
+      };
+
       Container.toggleFraction = {
         selector: data.TOGGLE_FRACTION_SELECTOR,
         options: {
@@ -13133,6 +13511,8 @@
             data.TOGGLE_DIGITAL_READOUT_SELECTOR,
             data.TOGGLE_RUN_JUMP_SELECTOR,
             data.TOGGLE_ELAPSED_TIME_SELECTOR,
+            data.TOGGLE_TELL_TIME_SELECTOR,
+            data.TOGGLE_TELL_ANGLE_SELECTOR,
             data.TOGGLE_FRACTION_SELECTOR,
             data.FRACTION_FILL_SELECTOR,
             data.FRACTION_FILL_PALETTE_SELECTOR,

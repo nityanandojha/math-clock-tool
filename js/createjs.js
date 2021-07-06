@@ -26177,7 +26177,7 @@
               a.a.range(0, 10),
               function (n, r) {
                 var s = String(n);
-                console.log(r)
+                //console.log(r)//NNO
                 "0" === String(r) ? 
                 ((t = 1), (e = 4)) : 
                 ((t = Math.floor((r-10-2) % 3)+2), (e = Math.floor((r - 1) / 3) + 1)), //(t = Math.floor((r - 1) % 3)), (e = Math.floor((10 - r - 1) / 3) + 1)

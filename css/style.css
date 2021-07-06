@@ -213,6 +213,24 @@ main {
   background-image: url(../images/elapseTimeOn.png);
 }
 
+#tell-time-mode{
+  background-image: url(../images/tellTimeMode.png);
+  background-size: contain;
+}
+
+#tell-time-mode.on{
+  background-image: url(../images/tellTimeModeOn.png);
+}
+
+#tell-angle-mode{
+  background-image: url(../images/tellAngleMode.png);
+  background-size: contain;
+}
+
+#tell-angle-mode.on{
+  background-image: url(../images/tellAngleModeOn.png);
+}
+
 #fractions-mode {
   background-image: url(../images/fracMode.png);
   background-size: contain;

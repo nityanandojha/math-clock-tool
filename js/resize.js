@@ -36,7 +36,6 @@ function scaleStage() {
     s.hasOwnProperty(i) && (e.style[i] = s[i]);
   var bar = document.getElementById("toolbar");
   bar.style.transform = "scale(0.96)";
-  console.log(t, zoomFactor);
   window.zoomFactor = zoomFactor;
   scaleValue = Number(t.split(",")[0]);
 }

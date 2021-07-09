@@ -10080,6 +10080,7 @@
               }),
             (_.filter = _.select =
               function (t, e, i) {
+                //console.log(t);//Vikas most imp
                 var n = [];
                 return (
                   (e = E(e, i)),
@@ -14816,6 +14817,7 @@
                   r.invert(),
                   e.transform(r.a, r.b, r.c, r.d, r.tx, r.ty)),
                   this.getMatrix(r);
+                  //console.log(e.transform, r);//Vikas
                 var s = r.tx,
                   a = r.ty;
                 t._snapToPixelEnabled &&
@@ -18083,6 +18085,7 @@
                 (this._oldProps = null),
                 (this._oldStage = null),
                 (this._drawAction = null);
+                //console.log(t);//Vikas
             }
             var e = createjs.extend(t, createjs.DisplayObject);
             (e.isVisible = function () {
@@ -18114,17 +18117,23 @@
                   this.DisplayObject__tick(t);
               }),
               (e._handleDrawEnd = function () {
+                //console.log();
                 var t = this.htmlElement;
-                if (t) {
+                
+                if (customDiv) {
                   var e = t.style,
                     i = this.getConcatenatedDisplayProps(this._props),
                     n = i.matrix,
                     r = i.visible ? "visible" : "hidden";
-                  if ((r != e.visibility && (e.visibility = r), i.visible)) {
+                    
+                  {
                     var s = this._oldProps,
                       a = s && s.matrix,
                       o = 1e4;
+                      
+                      
                     if (!a || !a.equals(n)) {
+                      
                       var h =
                         "matrix(" +
                         ((n.a * o) | 0) / o +
@@ -18136,6 +18145,7 @@
                         ((n.d * o) | 0) / o +
                         "," +
                         ((n.tx + 0.5) | 0);
+                      timeBox.style.transform =  h + "," + ((n.ty + 0.5) | 0) + ")";
                       (e.transform =
                         e.WebkitTransform =
                         e.OTransform =
@@ -18144,6 +18154,48 @@
                         (e.MozTransform = h + "px," + ((n.ty + 0.5) | 0) + "px)"),
                         s || (s = this._oldProps = new createjs.DisplayProps(!0, null)),
                         s.matrix.copy(n);
+                        //console.log(JSON.stringify(this._oldProps));
+                       //console.log(e.MozTransform);
+                    }
+                    s.alpha != i.alpha &&
+                      ((e.opacity = "" + ((i.alpha * o) | 0) / o), (s.alpha = i.alpha));
+                  }
+                }else if (t) {
+                  var e = t.style,
+                    i = this.getConcatenatedDisplayProps(this._props),
+                    n = i.matrix,
+                    r = i.visible ? "visible" : "hidden";
+                    
+                  if ((r != e.visibility && (e.visibility = r), i.visible)) {
+                    var s = this._oldProps,
+                      a = s && s.matrix,
+                      o = 1e4;
+                      
+                      
+                    if (!a || !a.equals(n)) {
+                      
+                      var h =
+                        "matrix(" +
+                        ((n.a * o) | 0) / o +
+                        "," +
+                        ((n.b * o) | 0) / o +
+                        "," +
+                        ((n.c * o) | 0) / o +
+                        "," +
+                        ((n.d * o) | 0) / o +
+                        "," +
+                        ((n.tx + 0.5) | 0);
+                      timeBox.style.transform =  h + "," + ((n.ty + 0.5) | 0) + ")";
+                      (e.transform =
+                        e.WebkitTransform =
+                        e.OTransform =
+                        e.msTransform =
+                          h + "," + ((n.ty + 0.5) | 0) + ")"),
+                        (e.MozTransform = h + "px," + ((n.ty + 0.5) | 0) + "px)"),
+                        s || (s = this._oldProps = new createjs.DisplayProps(!0, null)),
+                        s.matrix.copy(n);
+                        //console.log(JSON.stringify(this._oldProps));
+                       //console.log(e.MozTransform);
                     }
                     s.alpha != i.alpha &&
                       ((e.opacity = "" + ((i.alpha * o) | 0) / o), (s.alpha = i.alpha));
@@ -23125,6 +23177,7 @@
               this.display,
               "pressmove",
               function (t) {
+                var r = document.getElementById("tempDiv");
                 var e = this.getRelativePoint(t.stageX, t.stageY);
                 (this.interactionState.previousPosition = this.interactionState.currentPosition),
                   (this.interactionState.currentPosition = { x: e.x, y: e.y }),
@@ -23134,6 +23187,16 @@
                   (this.interactionState.deltaY =
                     this.interactionState.currentPosition.y -
                     this.interactionState.previousPosition.y);
+                    //console.log("PRESSMOVE: ", e);
+                    //console.log("PRESmove: ", this.interactionState.deltaX, this.interactionState.deltaY);//Vikas pressmove
+                    var ax = parseInt(r.getAttribute("data-X")) + (this.interactionState.deltaX * 0.846094),
+                        ay = parseInt(r.getAttribute("data-Y")) + (this.interactionState.deltaY * 0.846094);
+                    //console.log("PRESmove: ", this.interactionState.deltaX, this.interactionState.deltaY);//Vikas pressmove
+                    r.style.transform = "translate(" + ax +"px, " + ay + "px)";
+                    r.setAttribute("data-X", ax);
+                    r.setAttribute("data-Y", ay);
+                    
+                    //console.log(ax, ay);
               },
               t
             ),
@@ -28363,6 +28426,7 @@
               );
         }),
         (Yi.prototype.endAllSpotlights = function () {
+          console.log("END...")
           a.a.each(
             a.a.union(this.shades, this.texts, this.entities),
             this._resetPreSpotlightState,
@@ -29812,7 +29876,7 @@
                 var t = new u.a.Event(e.eventName || c.TEXT_TOOLS_WRITE);
                 t.set(e), p.dispatchEvent(t);
               },
-            });
+            });            
           var o = new ut(null, s);
           return o.draw(), o;
         }),

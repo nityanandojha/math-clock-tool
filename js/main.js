@@ -255,7 +255,7 @@
           img +
           ") no-repeat;\n  content: '';\n}\n#toolbar.top .popup .popup-body {\n  border-radius: 10px;\n}\n#toolbar.top .popup.tail-right .popup-body {\n  border-top-right-radius: 0;\n}\n#toolbar.top .popup.tail-right::after {\n  background-position: 24px 0;\n  right: 48px;\n}\n#toolbar.top .popup.tail-left .popup-body {\n  border-top-left-radius: 0;\n}\n#toolbar.top .popup.tail-left::after {\n  background-position: -24px 0;\n  left: 48px;\n}\n#toolbar .toolbar-spacer {\n  display: flex;\n  flex-grow: 1;\n}\n#toolbar .divider {\n  height: 48px;\n  -ms-flex: 0 0 16px;\n  flex: 0 0 16px;\n  background-image: url(" +
           cnvs +
-          ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .button-group {\n  position: relative;\n  height: 48px;flex-direction: row;\n  justify-content: space-around;\n}\n#toolbar .popup {\n  bottom: 64px;\n}\n#toolbar .toolbar-button {\n  height: 49px;\n  width: 51px;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .toolbar-button.narrow {\n  width: 40px;\n}\n#toolbar .toolbar-button.wide {\n  width: 96px;\n}\n#toolbar .toolbar-button.disabled,\n#toolbar .toolbar-button:active {\n  opacity: 0.5;\n}\n.text-button {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: #629d34;\n  color: white;\n  padding: 0.8em 0;\n  font-size: 0.825em;\n  border-radius: 3px;\n  font-weight: 600;\n  letter-spacing: 0.025em;\n  word-spacing: 0.1em;\n  white-space: nowrap;\n}\n.text-button:hover {\n  opacity: 0.8;\n}\n.text-button:active {\n  background-color: #4a7727;\n}\n.text-button:disabled {\n  background-color: #b2b2b2;\n  cursor: default;\n}\n.text-button:disabled:hover {\n  background-color: #b2b2b2;\n  opacity: 1;\n}\n.button-field {\n  display: flex;\n  flex-direction: row;\n}\n.button-field input {\n  border: 1px solid #CCC;\n  border-right: none;\n  border-radius: 3px 0 0 3px;\n  box-shadow: inset 2px 2px 5px #CCC;\n  padding: 5px;\n  font-size: 0.9em;\n  margin: 0;\n  flex-grow: 1;\n}\n.button-field button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n/* -----\nwinBox\n----- */\n/* jquery winBoxs */\n#winBox-base {\n  display: none;\n}\n/* background overlay */\n.ui-front {\n  z-index: 101;\n  /* same as toolbar or higher */\n}\n.ui-widget-overlay {\n  background: none repeat scroll 0 0 gray;\n  opacity: 0.6;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n/* our app's generic winBox */\n.ui-winBox.msgBox {\n  padding: 0;\n  background-image: none;\n  background-color: #FFFFFF;\n  border-radius: 8px;\n  overflow: hidden;\n  outline: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar {\n  padding-top: 20px;\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: bold;\n  color: #000000;\n  background: none;\n  border: none;\n  text-align: center;\n  font-size: 16px;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar .ui-winBox-title.no-title {\n  /* Fix to JQuery UI 1.12 update where empty titles\n      are replaced with an nbsp;.\n Manually hiding to prevent extra padding.\n   */\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar-close {\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-content {\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 16px;\n  text-align: center;\n  padding: 5px 20px 20px;\n  line-height: 1.2em;\n}\n.ui-winBox.msgBox .ui-winBox-buttonpane {\n  margin: 0;\n  padding: 0;\n}\n.ui-winBox.msgBox .ui-winBox-buttonset {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  border-top: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 35px;\n  background: none;\n  border: none;\n  color: #1C81C4;\n  /*font-size: 14px;*/\n  /*text-transform: uppercase;*/\n}\n.ui-winBox.msgBox.confirm .ui-button {\n  width: 50%;\n}\n.ui-winBox.msgBox.confirm .ui-button:first-child {\n  border-right: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button:hover {\n  background-color: #F7F7F7;\n}\n.ui-winBox.msgBox .ui-button:active {\n  background-color: #DDD;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close {\n  display: block;\n  position: absolute;\n  color: transparent;\n  top: 0;\n  right: 0;\n  border-radius: 18px;\n  margin: 5px;\n  width: 36px;\n  background: black url(" +
+          ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .button-group {\n  position: relative;\n  height: 48px;flex-direction: row;\n  justify-content: space-around;\n}\n#toolbar .popup {\n  bottom: 64px;\n}\n#toolbar .toolbar-button {\n  height: 51px;\n  width: 51px;\n  background-repeat: no-repeat;\n  background-position: center;\n}\n#toolbar .toolbar-button.narrow {\n  width: 40px;\n}\n#toolbar .toolbar-button.wide {\n  width: 96px;\n}\n#toolbar .toolbar-button.disabled,\n#toolbar .toolbar-button:active {\n  opacity: 0.5;\n}\n.text-button {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: #629d34;\n  color: white;\n  padding: 0.8em 0;\n  font-size: 0.825em;\n  border-radius: 3px;\n  font-weight: 600;\n  letter-spacing: 0.025em;\n  word-spacing: 0.1em;\n  white-space: nowrap;\n}\n.text-button:hover {\n  opacity: 0.8;\n}\n.text-button:active {\n  background-color: #4a7727;\n}\n.text-button:disabled {\n  background-color: #b2b2b2;\n  cursor: default;\n}\n.text-button:disabled:hover {\n  background-color: #b2b2b2;\n  opacity: 1;\n}\n.button-field {\n  display: flex;\n  flex-direction: row;\n}\n.button-field input {\n  border: 1px solid #CCC;\n  border-right: none;\n  border-radius: 3px 0 0 3px;\n  box-shadow: inset 2px 2px 5px #CCC;\n  padding: 5px;\n  font-size: 0.9em;\n  margin: 0;\n  flex-grow: 1;\n}\n.button-field button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n/* -----\nwinBox\n----- */\n/* jquery winBoxs */\n#winBox-base {\n  display: none;\n}\n/* background overlay */\n.ui-front {\n  z-index: 101;\n  /* same as toolbar or higher */\n}\n.ui-widget-overlay {\n  background: none repeat scroll 0 0 gray;\n  opacity: 0.6;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n/* our app's generic winBox */\n.ui-winBox.msgBox {\n  padding: 0;\n  background-image: none;\n  background-color: #FFFFFF;\n  border-radius: 8px;\n  overflow: hidden;\n  outline: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar {\n  padding-top: 20px;\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: bold;\n  color: #000000;\n  background: none;\n  border: none;\n  text-align: center;\n  font-size: 16px;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar .ui-winBox-title.no-title {\n  /* Fix to JQuery UI 1.12 update where empty titles\n      are replaced with an nbsp;.\n Manually hiding to prevent extra padding.\n   */\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-titlebar-close {\n  display: none;\n}\n.ui-winBox.msgBox .ui-winBox-content {\n  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 16px;\n  text-align: center;\n  padding: 5px 20px 20px;\n  line-height: 1.2em;\n}\n.ui-winBox.msgBox .ui-winBox-buttonpane {\n  margin: 0;\n  padding: 0;\n}\n.ui-winBox.msgBox .ui-winBox-buttonset {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  border-top: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 35px;\n  background: none;\n  border: none;\n  color: #1C81C4;\n  /*font-size: 14px;*/\n  /*text-transform: uppercase;*/\n}\n.ui-winBox.msgBox.confirm .ui-button {\n  width: 50%;\n}\n.ui-winBox.msgBox.confirm .ui-button:first-child {\n  border-right: solid 1px #BBB;\n}\n.ui-winBox.msgBox .ui-button:hover {\n  background-color: #F7F7F7;\n}\n.ui-winBox.msgBox .ui-button:active {\n  background-color: #DDD;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close {\n  display: block;\n  position: absolute;\n  color: transparent;\n  top: 0;\n  right: 0;\n  border-radius: 18px;\n  margin: 5px;\n  width: 36px;\n  background: black url(" +
           rs +
           ") no-repeat center;\n}\n.ui-winBox.msgBox.has-close button.ui-winBox-titlebar-close:hover {\n  background-color: darkgrey;\n}\n#templates {\n  display: none;\n}\n/* -----\n  base styles\n----- */\n.base-background {\n  height: 100vh;\n  width: 100vw;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: -1;\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n  .base-background {\n    height: 200vh;\n    width: 200vw;\n    transform: translateX(-50%), translateY(-50%);\n  }\n}\n.base {\n  z-index: 100;\n}\n.base.gray-background .base-background {\n  background-color: rgba(108, 118, 128, 0.7);\n}\n.base.popup {\n  position: absolute;\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n  .base.popup {\n    transform: translateX(-50%);\n    left: 50%;\n  }\n}\n.base.popup.tail-right .popup-body {\n  transform: translateX(-50%);\n  border-bottom-right-radius: 0;\n}\n.base.popup.tail-right::after {\n  background-position: 0 0;\n  top: 0;\n  bottom: 0;\n  right: -36px;\n  left: auto;\n  margin-top: auto;\n  margin-bottom: auto;\n  transform: rotate(-90deg);\n}\n.base.popup.tail-left .popup-body {\n  transform: translateX(50%);\n  border-bottom-left-radius: 0;\n}\n.base.winBox {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: center;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n}\n.base.winBox.hidden {\n  display: none;\n}\n.base.winBox .base-box {\n  top: -24px;\n}\n.base-box {\n  position: relative;\n  overflow: hidden;\n  border-radius: 10px;\n}\n.base-box .content {\ncolor:#fff;\n}\n.base-box .header {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 0 0 15px;\n  background: #0081c6;\n  color: white;\n  height: 46px;\n  font-weight: 600;\n  font-size: 1.1em;\n}\n.base-box .header .close-button {\n  height: 46px;\n  width: 46px;\n  background: url(" +
           or +
@@ -835,6 +835,7 @@
           digitalReadoutMode: false,
           runJumpMode: false,
           elapsedTimeMode: false,
+          tellTimeMode: false,
           fractionMode: false,
           fractionFillMode: false,
           initialFillColor: Et,
@@ -925,6 +926,7 @@
         this.digitalReadoutMode = self.digitalReadoutMode;
         this.runJumpMode = self.runJumpMode;
         this.elapsedTimeMode = self.elapsedTimeMode;
+        this.tellTimeMode = self.tellTimeMode;
         this.fractionMode = self.fractionMode;
         this.fractionFillMode = self.fractionFillMode;
         this.maxRadius = self.maxRadius;
@@ -1600,6 +1602,7 @@
             digitalReadoutMode: _clr_hex.digitalReadoutMode,
             runJumpMode: _clr_hex.runJumpMode,
             elapsedTimeMode: _clr_hex.elapsedTimeMode,
+            tellTimeMode: _clr_hex.tellTimeMode,
             fractionMode: _clr_hex.fractionMode,
             fractionFillMode: _clr_hex.fractionFillMode,
             minuteHandOn: _clr_hex.minuteHandOn,
@@ -1732,7 +1735,9 @@
         var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
           return canCreateDiscussions.digitalReadoutMode;
         });
+        
         req.a.each(event, function (e) {
+          //console.log(e);
           t.push(e.id);
         });
         beat.set({
@@ -1800,9 +1805,33 @@
         _this.f.dispatchEvent(beat);
       }
 
-      function tellTime(){
+      function tellTime(e){
         console.log("TELL TIME function......");
+        var tb = timeBox;
+        customDiv = tb;
+        var b = document.getElementById("tell-time-button");
+        var a = tb.getAttribute("data-on")==="true"?true:false;
+        a=!a;
+        tb.getAttribute("data-on", a);
+        tb.setAttribute("data-on", a);
+        if(a){
+          tb.style.display = "block";
+          b.addEventListener("click", function(e){
+            var box = document.getElementById("time-box");
+            if(e.target.getAttribute("data-on") =="no"){
+              tb.classList.add("active");
+              e.target.setAttribute("data-on", "yes");
+            }else{
+              tb.classList.remove("active");
+              e.target.setAttribute("data-on", "no");
+            }
+          });
+        }else{
+          tb.style.display = "none";
+          document.getElementById("tell-time-mode").classList.remove("on");
+        }
       }
+
       function tellAngle(){
         console.log("TELL ANGLE function......");
       }
@@ -3463,7 +3492,7 @@
        * @return {undefined}
        */
       test.prototype.setTime = function (i, v) {
-        var value;
+        var value;        
         if (req.a.isNumber(i)) {
           if (i < 0 || i >= 24) {
             console.error("Hour time out of bounds:", i);
@@ -3509,6 +3538,7 @@
           /** @type {string} */
           this.period.text = i < 12 ? "AM" : "PM";
         }
+        document.getElementById("time-box").innerHTML = this.hours.text + ":" + this.minutes.text + " "+this.period.text;
       };
       /**
        * @return {undefined}
@@ -8738,6 +8768,8 @@
           },
           this
         );
+        
+
         _this.f.on(
           data.Events.FRACTION_PICK_PALETTE_SHOW,
           function (message) {
@@ -9965,7 +9997,7 @@
       });
       var koyomi = isolatedNodeComponent;
       /** @type {!Array} */
-      var r = ["#ffffff", "#f0f0f0"];
+      var r = ["#ffffff", "#ffffff"];//color
       var EVENT = {
         Red: "rgb(241, 217, 218)",
         Orange: "rgb(245, 228, 215)",
@@ -11606,11 +11638,6 @@
         });
         _this.f.dispatchEvent(t);
         _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
-        //var toolbar = document.getElementById("toolbar");
-        //toolbar.style.marginLeft = canvasActiveWidth + "px";
-        //canvasActiveWidth = Math.round(window.innerWidth - (canvasActiveWidth*2));
-        //console.log("WIDTH: ", canvasActiveWidth);
-        //document.getElementById("toolbar").style.width = canvasActiveWidth+"px";
       };
       /**
        * @param {!Object} obj

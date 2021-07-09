@@ -287,6 +287,20 @@
 
       </div>
     </div>
+    <div id="tell-time-wrap" data-on=false>
+      <div class="up-arrow">&#x25B2;</div>
+      <div class="info-wrap">
+        <div id="time-box"></div>
+        <button data-on="no" id="tell-time-button">Tell the time</button>
+      </div>
+    </div>
+    <div id="tell-angle-wrap" data-on=false>
+      <div class="up-arrow">&#x25B2;</div>
+      <div class="info-wrap">
+        <div id="time-box"></div>
+        <button data-on="no" id="tell-time-button">Tell the time</button>
+      </div>
+    </div>
     </main>
 
     <!-- Info page -->
@@ -306,11 +320,13 @@
         </div> <!-- End contents wrapper -->
       </div> <!-- End Info wrapper -->
     </div> <!-- End info page -->
+    
   </main>
-  <div id="tempDiv"></div>
+  <div id="tempDiv" data-X=0 data-Y=0></div>
 <script>
-  var canvasActiveWidth=0;
-  var fired = false;
+  var timeBox=document.getElementById("tell-time-wrap");
+  var angleBox=document.getElementById("tell-angle-wrap");
+  var customDiv=null;
 </script>  
 <script type="text/javascript" src="js/runtime.js"></script>
 <script type="text/javascript" src="js/createjs.js"></script>

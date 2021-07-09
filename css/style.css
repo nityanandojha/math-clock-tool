@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
 main {
   position: absolute;
   left: 0;
@@ -23,7 +22,6 @@ main {
   align-items: stretch;
   background-color: #f99a00;
 }
-
 
 #toolbar-wrap {
   order: 3;
@@ -213,22 +211,81 @@ main {
   background-image: url(../images/elapseTimeOn.png);
 }
 
-#tell-time-mode{
+#tell-time-mode {
   background-image: url(../images/tellTimeMode.png);
   background-size: contain;
+  border-radius: 50%;
 }
 
-#tell-time-mode.on{
+#tell-time-mode.on {
   background-image: url(../images/tellTimeModeOn.png);
+  border: 2px solid rgb(136, 255, 0);
 }
 
-#tell-angle-mode{
+#tell-time-wrap{
+  display: none;
+  position: absolute;    
+  left: -130px;
+  top: -70px;
+}
+.up-arrow{
+  font-size: 40px;
+    text-align: center;
+    line-height: 28px;
+    width: 65%;
+    margin: 0 auto;
+    transform: scaleX(1.5);
+}
+.info-wrap {
+  width: 300px;
+    height: 150px;
+    background: #233239;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;    
+}
+
+#time-box {
+  user-select: none;
+  width: 90%;
+  height: 65px;
+  background: #8d9598;
+  color:#8d9598;
+  font-size: 24px;
+  text-align: center;
+  line-height: 2.5;
+}
+
+#tell-time-wrap.active #time-box{
+  background-color: #fff;
+  color: #000;
+}
+
+#tell-time-wrap.active button{
+  background-image: url(../images/tell-time-btn-on.png);
+}
+
+#tell-time-button {
+  width: 90%;
+  height: 50px;
+  background-image: url(../images/tell-time-btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#tell-angle-mode {
   background-image: url(../images/tellAngleMode.png);
   background-size: contain;
 }
 
-#tell-angle-mode.on{
+#tell-angle-mode.on {
   background-image: url(../images/tellAngleModeOn.png);
+}
+
+#tell-angle-wrap{
+  display: none;
 }
 
 #fractions-mode {
@@ -297,10 +354,10 @@ main {
 
 #tempDiv {
   position: fixed;
-  left: 90px;
-  top: 0;
-  height: 570px;
-  width: 970px;
+  left: 580px;
+  top: 298px;
+  height: 80px;
+  width: 120px;
   z-index: 100;
   background-color: rgba(125, 0, 249, 0.3);
   pointer-events: none;

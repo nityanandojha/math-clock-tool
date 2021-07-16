@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 (window.webpackJsonp = window.webpackJsonp || []).push([
   [0],
   {
@@ -493,6 +493,7 @@
         this.angle = req.a.isNumber(options.initialAngle)
           ? options.initialAngle
           : 0;
+          console.log(this);
         this.setupDisplayComponents(options);
       }
       /**
@@ -694,7 +695,7 @@
         this.active = params.active;
         this.startAngle = params.startAngle;
         this.endAngle = params.endAngle;
-        this.radius = params.radius;
+        this.radius = params.radius;        
         this._setupDisplayComponents(config);
       }
       /**
@@ -1424,6 +1425,7 @@
        * @return {undefined}
        */
       function onPause() {
+        //console.log("On Pause.........1427", marketID, onPause.caller, onPause.callee);
         if (marketID) {
           me.endSpotlight(marketID);
           /** @type {null} */
@@ -1655,6 +1657,7 @@
        * @return {undefined}
        */
       function rubricAdvance() {
+        console.log("rubricAdvance: EVENT: SPAWN_FRACTION_CLOCK_REQUEST");
         var beat = new doc.a.Event(data.Events.SPAWN_CLOCK_REQUEST);
         beat.set({
           gearedClock: true,
@@ -1718,6 +1721,12 @@
        * @return {undefined}
        */
       function flush() {
+        console.log("Flush: EVENT: TOGGLE_DIGITAL_READOUT_MODE");
+        var ct = document.getElementById("digital-mode");
+        if(prevActive && ct !==  prevActive){
+          prevActive.click();
+        }
+        prevActive = ct;
         var beat = new doc.a.Event(
           data.Events.TOGGLE_SELECTION_DIGITAL_READOUT_MODE
         );
@@ -1750,6 +1759,12 @@
        * @return {undefined}
        */
       function decode() {
+        console.log("decode: EVENT: TOGGLE_RUN_JUMP_MODE");
+        /* var ct = document.getElementById("run-jump-mode");
+        if(prevActive && ct !==  prevActive){
+          prevActive.click();
+        }
+        prevActive = ct; */
         var beat = new doc.a.Event(data.Events.TOGGLE_SELECTION_RUN_JUMP_MODE);
         /** @type {!Array} */
         var t = [];
@@ -1778,6 +1793,12 @@
        * @return {undefined}
        */
       function _init() {
+        console.log("_init: EVENT: TOGGLE_ELAPSED_TIME_MODE");
+        /* var ct = document.getElementById("elapsed-time-mode");
+        if(prevActive && ct !==  prevActive){
+          prevActive.click();
+        }
+        prevActive = ct; */
         var beat = new doc.a.Event(
           data.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE
         );
@@ -1806,34 +1827,173 @@
       }
 
       function tellTime(e){
-        console.log("TELL TIME function......");
+        //console.log("TELL TIME: EVENT: TOGGLE_TELL_TIME_MODE");
+        /* var ct = document.getElementById("tell-time-mode");
+        if(prevActive && ct !==  prevActive){
+          prevActive.click();
+        }
+        prevActive = ct; */
         var tb = timeBox;
         customDiv = tb;
         var b = document.getElementById("tell-time-button");
         var a = tb.getAttribute("data-on")==="true"?true:false;
+        var fun;
         a=!a;
-        tb.getAttribute("data-on", a);
         tb.setAttribute("data-on", a);
+        console.log(b.getAttribute("data-active"));
         if(a){
           tb.style.display = "block";
-          b.addEventListener("click", function(e){
-            var box = document.getElementById("time-box");
-            if(e.target.getAttribute("data-on") =="no"){
-              tb.classList.add("active");
-              e.target.setAttribute("data-on", "yes");
-            }else{
-              tb.classList.remove("active");
-              e.target.setAttribute("data-on", "no");
-            }
-          });
+          if(b.getAttribute("data-active")=="no"){
+            b.addEventListener("click", fun = function(e){
+              var box = document.getElementById("time-box");
+              if(e.target.getAttribute("data-on") =="no"){
+                tb.classList.add("active");
+                e.target.setAttribute("data-on", "yes");
+              }else{
+                tb.classList.remove("active");
+                e.target.setAttribute("data-on", "no");
+              }
+            });
+            b.setAttribute("data-active", "yes");
+          }
         }else{
+          //console.log(b, fun);
           tb.style.display = "none";
           document.getElementById("tell-time-mode").classList.remove("on");
         }
-      }
 
-      function tellAngle(){
-        console.log("TELL ANGLE function......");
+        var beat = new doc.a.Event(
+          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE
+        );
+        /** @type {!Array} */
+        var t = [];
+        var selected = me.getSelection(selection);
+        var event = require()(req.a).call(
+          req.a,
+          selected,
+          function (canCreateDiscussions) {
+            return canCreateDiscussions.isGeared();
+          }
+        );
+        /** @type {boolean} */
+        var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
+          return canCreateDiscussions.tellTimeMode;
+        });
+        
+        req.a.each(event, function (e) {
+          //console.log(e);
+          t.push(e.id);
+        });
+        beat.set({
+          id: t,
+          setTo: a,
+        });
+        _this.f.dispatchEvent(beat);
+      }
+      function getAngleByTime(h, m){
+         // validate the input
+         if (h <0 || m < 0 || h >12 || m > 60)
+         document.write("Wrong input");
+          if (h == 12) h = 0;
+          if (m == 60){
+            m = 0;
+            h += 1;
+            if(h>12)
+                h = h-12;
+          }
+          console.log(h,m);
+          let hour_angle = 0.5 * (h * 60 + m);
+          let minute_angle = 6 * m;
+          // Find the difference between two angles
+          let angle = Math.abs(hour_angle - minute_angle);
+          // Return the smaller angle of two possible angles
+          //angle = Math.min(360 - angle, angle);
+          //console.log("max: ",360 - angle, "min: ", angle)
+          return [angle, 360-angle];
+      }
+      function tellAngle(e){
+        //console.log("TELL TIME: EVENT: TOGGLE_TELL_TIME_MODE");
+        /* var ct = document.getElementById("tell-time-mode");
+        if(prevActive && ct !==  prevActive){
+          prevActive.click();
+        }
+        prevActive = ct; */
+        var tb1 = document.getElementById("info-box-1"),
+            tb2 = document.getElementById("info-box-2");
+
+        customDiv = angleBox;
+        var b = document.getElementById("tell-angle-type-button");
+        var c = document.getElementById("tell-angle-val-button");
+        var a = angleBox.getAttribute("data-on")==="true"?true:false;
+        var fun;
+        a=!a;
+        angleBox.setAttribute("data-on", a);
+        if(a){
+          angleBox.style.display = "block";
+          if(b.getAttribute("data-active")=="no"){
+            b.addEventListener("click", fun = function(e){
+              if(e.target.getAttribute("data-on") =="no"){
+                tb1.classList.add("active");
+                e.target.setAttribute("data-on", "yes");
+              }else{
+                tb1.classList.remove("active");
+                e.target.setAttribute("data-on", "no");
+              }
+            });
+            b.setAttribute("data-active", "yes");
+          }
+          if(c.getAttribute("data-active")=="no"){
+            c.addEventListener("click", function(e){
+              if(e.target.getAttribute("data-on") =="no"){
+                tb2.classList.add("active");
+                e.target.setAttribute("data-on", "yes");
+                // var tBox = document.getElementById("time-box");
+                // var aVal = document.getElementById("angle-value");
+                // var h = parseInt(tBox.getAttribute("data-h"));
+                // var m = parseInt(tBox.getAttribute("data-m"));
+                //console.log(h,m);
+                //aVal.innerHTML = getAngleByTime(h,m)[0];
+                //console.log(aVal);
+              }else{
+                tb2.classList.remove("active");
+                e.target.setAttribute("data-on", "no");
+              }
+            });
+            b.setAttribute("data-active", "yes");
+          }
+        }else{
+          //console.log(b, fun);
+          angleBox.style.display = "none";
+          document.getElementById("tell-angle-mode").classList.remove("on");
+        }
+
+        var beat = new doc.a.Event(
+          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE
+        );
+        /** @type {!Array} */
+        var t = [];
+        var selected = me.getSelection(selection);
+        var event = require()(req.a).call(
+          req.a,
+          selected,
+          function (canCreateDiscussions) {
+            return canCreateDiscussions.isGeared();
+          }
+        );
+        /** @type {boolean} */
+        var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
+          return canCreateDiscussions.tellTimeMode;
+        });
+        
+        req.a.each(event, function (e) {
+          //console.log(e);
+          t.push(e.id);
+        });
+        beat.set({
+          id: t,
+          setTo: a,
+        });
+        _this.f.dispatchEvent(beat);
       }
 
       /**
@@ -3090,6 +3250,8 @@
         this.label.rotation = this.angle;
         /** @type {number} */
         this.label.regY = -this.height / 3;
+
+        //console.log("Angle: ", this);//Vikas
       };
       CheckerToolkit.prototype = mutation()(_this.c.prototype);
       CheckerToolkit.prototype.constructor = _this.c;
@@ -3538,8 +3700,72 @@
           /** @type {string} */
           this.period.text = i < 12 ? "AM" : "PM";
         }
-        document.getElementById("time-box").innerHTML = this.hours.text + ":" + this.minutes.text + " "+this.period.text;
+        var tBox = document.getElementById("time-box");
+        tBox.innerHTML = this.hours.text + ":" + this.minutes.text + " "+this.period.text;
+        tBox.setAttribute("data-h", this.hours.text);
+        tBox.setAttribute("data-m", this.minutes.text);
+        tBox.setAttribute("data-p", this.period.text);
+        var aValBox = document.getElementById("angle-value");
+        var aTypeBox = document.getElementById("angle-type");
+        var aVal = test.prototype.getAngleByTime(parseInt(this.hours.text), parseInt(this.minutes.text))[0];
+        /* console.log(typeof aVal);
+        if(aVal%10){
+          console.log("add 0: ", aVal%10);
+        }else{
+          console.log("OK: ", aVal%10);
+        } */
+        //aVal = aVal%10?aVal:aVal + 0.0;
+        aVal = Math.round(aVal);
+        aValBox.setAttribute("data-a", aVal);
+        aValBox.innerHTML = aVal + '&#176;';
+        var aType = test.prototype.getAngleType(aVal);
+        aTypeBox.setAttribute("data-t", aType);
+        aTypeBox.innerHTML = aType + " angle";
       };
+      test.prototype.getAngleByTime = function(h,m){
+        // if (h <0 || m < 0 || h >12 || m > 60)
+        //  document.write("Wrong input");
+          if (h == 12) h = 0;
+          if (m == 60){
+            m = 0;
+            h += 1;
+            if(h>12)
+                h = h-12;
+          }
+          //console.log(h,m);
+          let hour_angle = 0.5 * (h * 60 + m);
+          let minute_angle = 6 * m;
+          // Find the difference between two angles
+          let angle = Math.abs(hour_angle - minute_angle);
+          // Return the smaller angle of two possible angles
+          //angle = Math.min(360 - angle, angle);
+          console.log("max: ",360 - angle, "min: ", angle)
+          return [angle, 360-angle];
+      }
+      test.prototype.getAngleType = function(angle){
+        if(!angle){
+          return "Zero";
+        }
+        if(angle && angle <90){
+          return "Acute";
+        }
+        if(angle==90){
+          return "Right";
+        }
+        if(angle>90 && angle<180){
+          return "Obtuse";
+        }
+        if(angle == 180){
+          return "Straight";
+        }
+        if(angle > 180 && angle <360){
+          return "Reflex";
+        }
+        if(angle == 360){
+          return "Complete";
+        }
+      }
+
       /**
        * @return {undefined}
        */
@@ -10997,6 +11223,7 @@
         });
         _this.f.on(_this.d.STAGE_UPDATE, initialize);
         _this.f.on(data.Events.EDIT_CLOCK_PALETTE_SHOW, function (item) {
+          //console.log("SDFSADF", item);//Vikas
           bounds = item.targetEntity;
           initialize();
           var beat = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT);
@@ -12500,6 +12727,7 @@
             {
               event: _this.d.SELECT_ENTITY_EVENT,
               condition: function (value) {
+                //console.log("EDIT ON: ", value); //Vikas editclock
                 return resolve(value).length > 0;
               },
             },
@@ -12508,6 +12736,7 @@
             {
               event: _this.d.SELECT_ENTITY_EVENT,
               condition: function (value) {
+                //console.log("EDIT OFFFF: ", Container); //Vikas editclock
                 return resolve(value).length <= 0;
               },
             },
@@ -13086,7 +13315,7 @@
             {
               event: data.Events.SET_CLOCK_HAND_VISIBILITY,
               condition: function (o) {
-                return search(o).length <= 0;
+                return search(o).length > 0;
               },
             },
           ],
@@ -13104,9 +13333,9 @@
                 );
                 return i()(t).call(t, function (canCreateDiscussions) {
                   return (
-                    canCreateDiscussions.elapsedTimeMode &&
-                    canCreateDiscussions.activeMajorControl ===
-                      selection.MajorControls.ElapsedTime
+                    canCreateDiscussions.tellTimeMode/* &&
+                    canCreateDiscussions.activeMajorControl  ===
+                      selection.MajorControls.ElapsedTime */
                   );
                 });
               },
@@ -13118,9 +13347,9 @@
                 var t = search(o);
                 return i()(t).call(t, function (canCreateDiscussions) {
                   return (
-                    canCreateDiscussions.elapsedTimeMode &&
+                    canCreateDiscussions.tellTimeMode/*  &&
                     canCreateDiscussions.activeMajorControl ===
-                      selection.MajorControls.ElapsedTime
+                      selection.MajorControls.ElapsedTime */
                   );
                 });
               },
@@ -13139,7 +13368,7 @@
                 return match()(path).call(
                   path,
                   function (canCreateDiscussions) {
-                    return !canCreateDiscussions.elapsedTimeMode;
+                    return !canCreateDiscussions.tellTimeMode;
                   }
                 );
               },
@@ -13160,9 +13389,9 @@
                 return (
                   match()(url).call(url, function (canCreateDiscussions) {
                     return !(
-                      canCreateDiscussions.elapsedTimeMode &&
+                      canCreateDiscussions.tellTimeMode/*  &&
                       canCreateDiscussions.activeMajorControl ===
-                        selection.MajorControls.ElapsedTime
+                        selection.MajorControls.ElapsedTime */
                     );
                   }) || !(url.length > 0)
                 );
@@ -13178,9 +13407,9 @@
                     selector,
                     function (canCreateDiscussions) {
                       return !(
-                        canCreateDiscussions.elapsedTimeMode &&
+                        canCreateDiscussions.tellTimeMode/*  &&
                         canCreateDiscussions.activeMajorControl ===
-                          selection.MajorControls.ElapsedTime
+                          selection.MajorControls.ElapsedTime */
                       );
                     }
                   ) || !(selector.length > 0)
@@ -13199,14 +13428,14 @@
                   }
                 );
                 return i()(value).call(value, function (canCreateDiscussions) {
-                  return canCreateDiscussions.elapsedTimeMode;
+                  return canCreateDiscussions.tellTimeMode;
                 });
               },
             },
-            {
+           /*  {
               eventID: data.Events.FRACTION_PICK_PALETTE_SHOW,
               cssClass: "on",
-            },
+            }, */
           ],
         },
       };

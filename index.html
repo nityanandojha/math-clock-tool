@@ -291,14 +291,20 @@
       <div class="up-arrow">&#x25B2;</div>
       <div class="info-wrap">
         <div id="time-box"></div>
-        <button data-on="no" id="tell-time-button">Tell the time</button>
+        <button data-on="no" data-active="no" id="tell-time-button">Tell the time</button>
       </div>
     </div>
     <div id="tell-angle-wrap" data-on=false>
       <div class="up-arrow">&#x25B2;</div>
       <div class="info-wrap">
-        <div id="time-box"></div>
-        <button data-on="no" id="tell-time-button">Tell the time</button>
+        <div id="info-box-1" class="info-box">
+          <div id="angle-type" class="angle-info"></div>
+          <button class="angle-button" data-on="no" data-active="no" id="tell-angle-type-button">Show angle type</button>
+        </div>
+        <div id="info-box-2" class="info-box">
+          <div id="angle-value" class="angle-info"></div>
+          <button class="angle-button" data-on="no" data-active="no" id="tell-angle-val-button">Show angle measure</button>
+        </div>
       </div>
     </div>
     </main>
@@ -327,6 +333,7 @@
   var timeBox=document.getElementById("tell-time-wrap");
   var angleBox=document.getElementById("tell-angle-wrap");
   var customDiv=null;
+  var prevActive=null;
 </script>  
 <script type="text/javascript" src="js/runtime.js"></script>
 <script type="text/javascript" src="js/createjs.js"></script>

@@ -7246,6 +7246,11 @@
                   (a = v.handle) ||
                     (a = v.handle =
                       function (e) {
+                        /* console.log(s);
+                        console.log(c, "W: ", w.event)
+                        console.log("T: ",t);
+                        console.log("ARG: ",arguments);
+                        console.log("e: ",e); */
                         return void 0 !== w && w.event.triggered !== e.type
                           ? w.event.dispatch.apply(t, arguments)
                           : void 0;
@@ -18146,6 +18151,7 @@
                         "," +
                         ((n.tx + 0.5) | 0);
                       timeBox.style.transform =  h + "," + ((n.ty + 0.5) | 0) + ")";
+                      angleBox.style.transform =  h + "," + ((n.ty + 0.5) | 0) + ")";
                       (e.transform =
                         e.WebkitTransform =
                         e.OTransform =

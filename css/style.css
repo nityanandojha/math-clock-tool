@@ -228,6 +228,7 @@ main {
   left: -130px;
   top: -70px;
 }
+
 .up-arrow{
   font-size: 40px;
     text-align: center;
@@ -285,8 +286,60 @@ main {
 }
 
 #tell-angle-wrap{
+  position: absolute;
   display: none;
+  left: -280px;
+  top: -70px;
 }
+
+#tell-angle-wrap .info-wrap{
+  flex-direction: row;
+  width: 600px;
+}
+.info-box{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#info-box-1.active #angle-type{
+  background-color: #fff;
+  color: #000; 
+}
+#info-box-1.active button{
+  background-image: url(../images/tell-time-btn-on.png);
+}
+
+#info-box-2.active #angle-value{
+  background-color: #fff;
+  color: #000;
+}
+#info-box-2.active button{
+  background-image: url(../images/tell-time-btn-on.png);
+}
+
+.angle-info{
+  height: 65px;
+  width: 90%;
+  background: #8d9598;
+  color: #8d9598;
+  text-align: center;
+  line-height: 65px;
+  font-size: 30px;
+  user-select: none;
+}
+.angle-button{
+  width: 90%;
+  height: 50px;
+  background-image: url(../images/tell-time-btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
 
 #fractions-mode {
   background-image: url(../images/fracMode.png);

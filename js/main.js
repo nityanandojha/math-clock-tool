@@ -5020,6 +5020,7 @@
         this.shape_9.setTransform(-0.225, -118.9);
         this.shape_10 = new doc.a.Shape();
         this.shape_10.graphics
+          // NNO Minuit hand
           .beginFill("#1ab123")
           .beginStroke()
           .moveTo(-4, 66.5)
@@ -5038,6 +5039,7 @@
         this.shape_10.setTransform(0, -76.5);
         this.shape_11 = new doc.a.Shape();
         this.shape_11.graphics
+        // NNO Minuit hand circle
           .beginFill("#1ab123")
           .beginStroke()
           .moveTo(-8.5, 8.5)
@@ -5191,6 +5193,7 @@
         this.shape_16.setTransform(-0.0224, -59.5);
         this.shape_17 = new doc.a.Shape();
         this.shape_17.graphics
+        // NNO hour hand
           .beginFill("#ff0038")
           .beginStroke()
           .moveTo(-9.9, 9.9)
@@ -5205,6 +5208,7 @@
           .closePath();
         this.shape_18 = new doc.a.Shape();
         this.shape_18.graphics
+        // NNO hour hand circle
           .beginFill("#ff0038")
           .beginStroke()
           .moveTo(-5.4, 43)

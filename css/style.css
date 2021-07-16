@@ -8,6 +8,25 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: RockwellB;
+  overflow: hidden;
+  touch-action: none;
+  -ms-content-zooming: none;
+  color: #333;
+  font-size: 100%;
+  background-image: url(../images/pat.jpg); 
+  background-size:cover;
+}
+
 main {
   position: absolute;
   left: 0;
@@ -20,7 +39,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background-color: #f99a00;
+  /* background-color: #f99a00; */
+}
+
+#canvas {
+  order: 2;
+  flex: 1 0;
+  outline: none;
+  /* background-color: #f8f8f8;
+  background-image: url(../images/pat.jpg); 
+  background-size:cover; */
 }
 
 #toolbar-wrap {
@@ -403,6 +431,27 @@ main {
 #trash {
   background-image: url(../images/delete.png);
   background-size: contain;
+}
+
+
+.base.msgBox .button-container button {
+  color: #000;
+  flex: 1 0 100%;
+  padding: 25px;
+}
+
+
+.digital-readout input,
+.jump-control input {
+  box-sizing: content-box;
+  width: 34px;
+  height: 24px;
+  padding: 0;
+  font: normal 24px Helvetica neue, sans-serif;
+  text-align: center;
+}
+.jump-control input[type=number]::-webkit-inner-spin-button {
+  display: none;
 }
 
 #tempDiv {

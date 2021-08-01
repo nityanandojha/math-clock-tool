@@ -2710,6 +2710,7 @@
                     (t.container = document.createElement("div")),
                       (t.container.id = "preloadjs-container");
                     var i = t.container.style;
+                    console.log("HIDE:4 ");
                     (i.visibility = "hidden"),
                       (i.position = "absolute"),
                       (i.width = t.container.style.height = "10px"),
@@ -7943,6 +7944,7 @@
           te = /^--/,
           ee = { position: "absolute", visibility: "hidden", display: "block" },
           ie = { letterSpacing: "0", fontWeight: "400" };
+          //console.log("HIDE: ", ee); //Vikas
         function ne(t, e, i) {
           var n = rt.exec(e);
           return n ? Math.max(0, n[2] - (i || 0)) + (n[3] || "px") : e;
@@ -8224,6 +8226,7 @@
           ce = /^(?:toggle|show|hide)$/,
           le = /queueHooks$/;
         function ue() {
+          console.log("HIDE:1 ");
           he &&
             (!1 === a.hidden && i.requestAnimationFrame
               ? i.requestAnimationFrame(ue)
@@ -10085,7 +10088,16 @@
               }),
             (_.filter = _.select =
               function (t, e, i) {
-                //console.log(t);//Vikas most imp
+                try{
+                  //console.clear();
+                  //console.log(t);
+                  var angle = t[0].minuteHand.angle;
+                  //console.log("Hour: ", t[0].hourHand.angle);//Vikas most imp
+                  //console.log("Minute: ", angle);
+                  //angle = Math.round(angle/6)*6;
+                  //console.log("NEW Minute: ", angle);
+
+                }catch(Err){}
                 var n = [];
                 return (
                   (e = E(e, i)),
@@ -18126,10 +18138,19 @@
                 var t = this.htmlElement;
                 
                 if (customDiv) {
+                  //console.log("customDiv: ", customDiv);
+                  
                   var e = t.style,
                     i = this.getConcatenatedDisplayProps(this._props),
                     n = i.matrix,
                     r = i.visible ? "visible" : "hidden";
+                    console.log("HIDE:2 ");
+                    try{
+                      console.log("T: ", t, "  i.visible: ", i.visible);
+                    }catch(err){
+                      console.log("Err: ", err);
+                      console.log("E.T: ", t);
+                    }
                     
                   {
                     var s = this._oldProps,
@@ -18150,8 +18171,7 @@
                         ((n.d * o) | 0) / o +
                         "," +
                         ((n.tx + 0.5) | 0);
-                      timeBox.style.transform =  h + "," + ((n.ty + 0.5) | 0) + ")";
-                      angleBox.style.transform =  h + "," + ((n.ty + 0.5) | 0) + ")";
+                      
                       (e.transform =
                         e.WebkitTransform =
                         e.OTransform =
@@ -18171,6 +18191,13 @@
                     i = this.getConcatenatedDisplayProps(this._props),
                     n = i.matrix,
                     r = i.visible ? "visible" : "hidden";
+                    //console.log("HIDE:3 ");//Vikas
+                    try{
+                      //console.log("T: ", t, "  i.visible: ", i.visible);//Vikas
+                    }catch(err){
+                      console.log("Err: ", err);
+                      console.log("E.T: ", t);
+                    }
                     
                   if ((r != e.visibility && (e.visibility = r), i.visible)) {
                     var s = this._oldProps,
@@ -18191,7 +18218,7 @@
                         ((n.d * o) | 0) / o +
                         "," +
                         ((n.tx + 0.5) | 0);
-                      timeBox.style.transform =  h + "," + ((n.ty + 0.5) | 0) + ")";
+                      
                       (e.transform =
                         e.WebkitTransform =
                         e.OTransform =
@@ -22517,8 +22544,8 @@
         r = i.n(n),
         s = i("F/us"),
         a = i.n(s),
-        o = i("EVdn"),
-        h = i.n(o),
+        o = i("EVdn");
+        var h = i.n(o),
         c = {
           DEGREES_TO_RADIANS: Math.PI / 180,
           RADIANS_TO_DEGREES: 180 / Math.PI,
@@ -22731,7 +22758,7 @@
         l = i("bZW+"),
         u = i.n(l),
         d = new u.a.EventDispatcher(),
-        p = d;
+        p = d;        
       (window.dispatch = function (t, e) {
         var i = new u.a.Event(t);
         i.set(e), d.dispatchEvent(i);
@@ -23440,6 +23467,7 @@
         }
       }),
         (H[c.CONSTRAIN_ENTITY_EVENT] = function (t) {
+          //console.log("CONSTRAIN_ENTITY_EVENT: ", t);
           var e = { x: 0, y: 0, width: 0, height: 0 };
           this.bindingContainer
             ? (e = this.bindingContainer.getBounds())
@@ -23485,6 +23513,7 @@
               : u.a.Tween.get(this)
                   .to({ x: T, y: w }, 150)
                   .on("change", function () {
+                    console.log("Change: ", p);//Vikas- Note: This code is executed whem clock is resized and needs to be re-located in canvas.
                     p.dispatchEvent(new u.a.Event(c.STAGE_UPDATE));
                   }));
         });

@@ -443,9 +443,11 @@
        * @return {undefined}
        */
       function filter(immediate, options) {
+        //console.log("filter: ",immediate, options); //Vikas
         (options = options || {}).rotatable = {
           mousedown: true,
           pressmove: function () {
+            //console.log("Drag clock hands..")//Vikas- Note: Drag clock hands
             /** @type {string} */
             var targetType = "";
             var prevXY = this.display.localToLocal(0, 0, this.topmostParent.t);
@@ -493,7 +495,6 @@
         this.angle = req.a.isNumber(options.initialAngle)
           ? options.initialAngle
           : 0;
-          console.log(this);
         this.setupDisplayComponents(options);
       }
       /**
@@ -502,6 +503,7 @@
        * @return {undefined}
        */
       function CheckerToolkit(casperInstance, config) {
+        //console.log("toolkit: ", casperInstance, config);//Vikas
         config = config || {};
         _this.c.call(this, casperInstance, config);
         this.angle = config.angle || 0;
@@ -513,6 +515,7 @@
        * @return {undefined}
        */
       function test(value, params) {
+        //console.log("Step 3 : test"); //Vikas Note: Step: 3
         var listeners;
         var wunderlist_list = this;
         params = req.a.clone(params) || {};
@@ -529,6 +532,7 @@
           mousedown: function () {},
           pressup: function () {},
           click: function (event) {
+            //console.log("DONE", event); //Vikas
             var c = new doc.a.Event(data.Events.DIGITAL_READOUT_TOGGLE_ACTIVE);
             if (
               !(_this.c.getFirstParentEntity(event.target) instanceof _this.b)
@@ -554,12 +558,59 @@
         this.draw();
         this._bindDispatcherEvents();
       }
+
+      function testTellTime(value, params) {
+        //console.log("step 3: testTellTime", readFunction); //Vikas Step: 3
+        var listeners;
+        var wunderlist_list = this;
+        params = req.a.clone(params) || {};
+        req.a.defaults(params, {
+          dimensions: {
+            width: 300,
+            height: 150,
+          },
+          tellTimeDisplayMode: readFunction,
+          enabled: true,
+          canToggle: false,
+        });
+        //console.log("testTELL TIME: ", params.hours, params.minutes);//Vikas
+        listeners = {
+          mousedown: function () {},
+          pressup: function () {},
+          click: function (event) {
+            var c = new doc.a.Event(data.Events.TELL_TIME_TOGGLE_ACTIVE);
+            if (
+              !(_this.c.getFirstParentEntity(event.target) instanceof _this.b)
+            ) {
+              c.set({
+                ids: [wunderlist_list.id],
+              });
+              _this.f.dispatchEvent(c);
+            }
+          },
+        };
+        _this.c.call(this, value, params);
+        _this.m.addInterfaces(this, this.display, {
+          clickable: listeners,
+        });
+        this.tellTimeDisplayMode = params.tellTimeDisplayMode;
+        this.tellTimeDisplayModeCanToggle = params.canToggle;
+        /** @type {boolean} */
+        this.active = false;
+        this.enabled = params.enabled;
+        this._setupDisplayComponents(params);
+        this.setTime(params.hours, params.minutes);
+        this.draw();
+        this._bindDispatcherEvents();
+      }
+
       /**
        * @param {?} casperInstance
        * @param {?} config
        * @return {undefined}
        */
       function M6CorpoChecker_HpPro(casperInstance, config) {
+        //console.log("M6CorpoChecker_HpPro", casperInstance, config);//Vikas
         _this.c.call(this, casperInstance, config);
         this._setupDisplayComponents();
       }
@@ -569,12 +620,14 @@
        * @return {undefined}
        */
       function getEvents(connection, from) {
+        console.log("getEvents: ", connection, from);
         var deviceOrientationEvent;
         var $input;
         /** @type {number} */
         var smoothArcSteepness = 0;
         if (
           (function (pathToDestinationFile) {
+            console.log("Call test", pathToDestinationFile); 
             return new RegExp(/^\d{1,2}$/).test(pathToDestinationFile);
           })(($input = debug()("input", connection.input.htmlElement)).val())
         ) {
@@ -608,6 +661,7 @@
        */
       function Tween(target, props) {
         props = req.a.clone(props) || {};
+        //console.log("TWEEN Props: ", props);//Vikas
         req.a.defaults(props, {
           dimensions: {
             width: 160,
@@ -684,6 +738,7 @@
        * @return {undefined}
        */
       function Particle(material, config) {
+        //console.log("Part: ", Particle.caller);//Vikas-- Note: Particle object
         var params = req.a.clone(config || {});
         req.a.defaults(params, {
           active: false,
@@ -828,6 +883,7 @@
        * @return {undefined}
        */
       function options(fn, self) {
+        //console.log("YEEEee", fn , self);//Vikas-- Note: Set options here
         self = req.a.clone(self) || {};
         req.a.defaults(self, {
           activeMajorControl: modifiers,
@@ -1397,6 +1453,7 @@
           } else {
             obj.indicator("left", rect.y - obj.y);
           }
+          //console.log("initialize: ", obj);//Vikas
           var beat = new doc.a.Event(_this.d.CONSTRAIN_ENTITY_EVENT);
           beat.set({
             skipAnimation: true,
@@ -1722,11 +1779,6 @@
        */
       function flush() {
         console.log("Flush: EVENT: TOGGLE_DIGITAL_READOUT_MODE");
-        var ct = document.getElementById("digital-mode");
-        if(prevActive && ct !==  prevActive){
-          prevActive.click();
-        }
-        prevActive = ct;
         var beat = new doc.a.Event(
           data.Events.TOGGLE_SELECTION_DIGITAL_READOUT_MODE
         );
@@ -1744,9 +1796,36 @@
         var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
           return canCreateDiscussions.digitalReadoutMode;
         });
-        
         req.a.each(event, function (e) {
-          //console.log(e);
+          t.push(e.id);
+        });
+        beat.set({
+          id: t,
+          setTo: a,
+        });
+        _this.f.dispatchEvent(beat);
+      }
+
+      function tellTimeHandler() {
+        console.log("tellTimeHandler: EVENT: TOGGLE_TELL_TIME_MODE");
+        var beat = new doc.a.Event(
+          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE
+        );
+        /** @type {!Array} */
+        var t = [];
+        var selected = me.getSelection(selection);
+        var event = require()(req.a).call(
+          req.a,
+          selected,
+          function (canCreateDiscussions) {
+            return canCreateDiscussions.isGeared();
+          }
+        );
+        /** @type {boolean} */
+        var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
+          return canCreateDiscussions.tellTimeMode;
+        });
+        req.a.each(event, function (e) {
           t.push(e.id);
         });
         beat.set({
@@ -1760,11 +1839,6 @@
        */
       function decode() {
         console.log("decode: EVENT: TOGGLE_RUN_JUMP_MODE");
-        /* var ct = document.getElementById("run-jump-mode");
-        if(prevActive && ct !==  prevActive){
-          prevActive.click();
-        }
-        prevActive = ct; */
         var beat = new doc.a.Event(data.Events.TOGGLE_SELECTION_RUN_JUMP_MODE);
         /** @type {!Array} */
         var t = [];
@@ -1794,11 +1868,6 @@
        */
       function _init() {
         console.log("_init: EVENT: TOGGLE_ELAPSED_TIME_MODE");
-        /* var ct = document.getElementById("elapsed-time-mode");
-        if(prevActive && ct !==  prevActive){
-          prevActive.click();
-        }
-        prevActive = ct; */
         var beat = new doc.a.Event(
           data.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE
         );
@@ -1826,175 +1895,7 @@
         _this.f.dispatchEvent(beat);
       }
 
-      function tellTime(e){
-        //console.log("TELL TIME: EVENT: TOGGLE_TELL_TIME_MODE");
-        /* var ct = document.getElementById("tell-time-mode");
-        if(prevActive && ct !==  prevActive){
-          prevActive.click();
-        }
-        prevActive = ct; */
-        var tb = timeBox;
-        customDiv = tb;
-        var b = document.getElementById("tell-time-button");
-        var a = tb.getAttribute("data-on")==="true"?true:false;
-        var fun;
-        a=!a;
-        tb.setAttribute("data-on", a);
-        console.log(b.getAttribute("data-active"));
-        if(a){
-          tb.style.display = "block";
-          if(b.getAttribute("data-active")=="no"){
-            b.addEventListener("click", fun = function(e){
-              var box = document.getElementById("time-box");
-              if(e.target.getAttribute("data-on") =="no"){
-                tb.classList.add("active");
-                e.target.setAttribute("data-on", "yes");
-              }else{
-                tb.classList.remove("active");
-                e.target.setAttribute("data-on", "no");
-              }
-            });
-            b.setAttribute("data-active", "yes");
-          }
-        }else{
-          //console.log(b, fun);
-          tb.style.display = "none";
-          document.getElementById("tell-time-mode").classList.remove("on");
-        }
-
-        var beat = new doc.a.Event(
-          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE
-        );
-        /** @type {!Array} */
-        var t = [];
-        var selected = me.getSelection(selection);
-        var event = require()(req.a).call(
-          req.a,
-          selected,
-          function (canCreateDiscussions) {
-            return canCreateDiscussions.isGeared();
-          }
-        );
-        /** @type {boolean} */
-        var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
-          return canCreateDiscussions.tellTimeMode;
-        });
-        
-        req.a.each(event, function (e) {
-          //console.log(e);
-          t.push(e.id);
-        });
-        beat.set({
-          id: t,
-          setTo: a,
-        });
-        _this.f.dispatchEvent(beat);
-      }
-      function getAngleByTime(h, m){
-         // validate the input
-         if (h <0 || m < 0 || h >12 || m > 60)
-         document.write("Wrong input");
-          if (h == 12) h = 0;
-          if (m == 60){
-            m = 0;
-            h += 1;
-            if(h>12)
-                h = h-12;
-          }
-          console.log(h,m);
-          let hour_angle = 0.5 * (h * 60 + m);
-          let minute_angle = 6 * m;
-          // Find the difference between two angles
-          let angle = Math.abs(hour_angle - minute_angle);
-          // Return the smaller angle of two possible angles
-          //angle = Math.min(360 - angle, angle);
-          //console.log("max: ",360 - angle, "min: ", angle)
-          return [angle, 360-angle];
-      }
-      function tellAngle(e){
-        //console.log("TELL TIME: EVENT: TOGGLE_TELL_TIME_MODE");
-        /* var ct = document.getElementById("tell-time-mode");
-        if(prevActive && ct !==  prevActive){
-          prevActive.click();
-        }
-        prevActive = ct; */
-        var tb1 = document.getElementById("info-box-1"),
-            tb2 = document.getElementById("info-box-2");
-
-        customDiv = angleBox;
-        var b = document.getElementById("tell-angle-type-button");
-        var c = document.getElementById("tell-angle-val-button");
-        var a = angleBox.getAttribute("data-on")==="true"?true:false;
-        var fun;
-        a=!a;
-        angleBox.setAttribute("data-on", a);
-        if(a){
-          angleBox.style.display = "block";
-          if(b.getAttribute("data-active")=="no"){
-            b.addEventListener("click", fun = function(e){
-              if(e.target.getAttribute("data-on") =="no"){
-                tb1.classList.add("active");
-                e.target.setAttribute("data-on", "yes");
-              }else{
-                tb1.classList.remove("active");
-                e.target.setAttribute("data-on", "no");
-              }
-            });
-            b.setAttribute("data-active", "yes");
-          }
-          if(c.getAttribute("data-active")=="no"){
-            c.addEventListener("click", function(e){
-              if(e.target.getAttribute("data-on") =="no"){
-                tb2.classList.add("active");
-                e.target.setAttribute("data-on", "yes");
-                // var tBox = document.getElementById("time-box");
-                // var aVal = document.getElementById("angle-value");
-                // var h = parseInt(tBox.getAttribute("data-h"));
-                // var m = parseInt(tBox.getAttribute("data-m"));
-                //console.log(h,m);
-                //aVal.innerHTML = getAngleByTime(h,m)[0];
-                //console.log(aVal);
-              }else{
-                tb2.classList.remove("active");
-                e.target.setAttribute("data-on", "no");
-              }
-            });
-            b.setAttribute("data-active", "yes");
-          }
-        }else{
-          //console.log(b, fun);
-          angleBox.style.display = "none";
-          document.getElementById("tell-angle-mode").classList.remove("on");
-        }
-
-        var beat = new doc.a.Event(
-          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE
-        );
-        /** @type {!Array} */
-        var t = [];
-        var selected = me.getSelection(selection);
-        var event = require()(req.a).call(
-          req.a,
-          selected,
-          function (canCreateDiscussions) {
-            return canCreateDiscussions.isGeared();
-          }
-        );
-        /** @type {boolean} */
-        var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
-          return canCreateDiscussions.tellTimeMode;
-        });
-        
-        req.a.each(event, function (e) {
-          //console.log(e);
-          t.push(e.id);
-        });
-        beat.set({
-          id: t,
-          setTo: a,
-        });
-        _this.f.dispatchEvent(beat);
-      }
+      
 
       /**
        * @param {string} name
@@ -3029,6 +2930,22 @@
       /** @type {string} */
       that.Events.DIGITAL_READOUT_INPUT_BLUR = "digitalreadoutinputblur";
       /** @type {string} */
+      /* ---------------------------*/
+      that.Events.TELL_TIME_ADJUSTMENT = "digitalreadoutadjustment";
+      /** @type {string} */
+      that.Events.TELL_TIME_MODE_TOGGLE = "digitalreadoutmodetoggle";
+      /** @type {string} */
+      that.Events.TELL_TIME_TOGGLE_ACTIVE = "digitalreadouttoggleactive";
+      /** @type {string} */
+      that.Events.TELL_TIME_SET_ACTIVE = "digitalreadoutsetactive";
+      /** @type {string} */
+      that.Events.TELL_TIME_UNSET_ACTIVE = "digitalreadoutunsetactive";
+      /** @type {string} */
+      that.Events.TELL_TIME_INPUT_FOCUS = "digitalreadoutinputfocus";
+      /** @type {string} */
+      that.Events.TELL_TIME_INPUT_BLUR = "digitalreadoutinputblur";
+      /** @type {string} */
+      /* -------------------------- */
       that.Events.JUMP_TOGGLE_ACTIVE = "jumptoggleactive";
       /** @type {string} */
       that.Events.JUMP_SET_ACTIVE = "jumpsetactive";
@@ -3421,6 +3338,7 @@
         _this.f.on(
           data.Events.DIGITAL_READOUT_MODE_TOGGLE,
           function (aReport) {
+            console.log("DIGITAL_READOUT_MODE_TOGGLE",aReport);
             var node = this.readoutDisplayMode;
             var value = pipe()(this.hours.text, 10);
             var BR = this.period.text;
@@ -3701,28 +3619,26 @@
           this.period.text = i < 12 ? "AM" : "PM";
         }
         var tBox = document.getElementById("time-box");
-        tBox.innerHTML = this.hours.text + ":" + this.minutes.text + " "+this.period.text;
+        tBox.innerHTML = this.hours.text + ":" + this.minutes.text;
         tBox.setAttribute("data-h", this.hours.text);
         tBox.setAttribute("data-m", this.minutes.text);
         tBox.setAttribute("data-p", this.period.text);
+        //console.clear();
+        //console.log("TIME: ", this.hours.text, this.minutes.text);
+
+        /*
         var aValBox = document.getElementById("angle-value");
         var aTypeBox = document.getElementById("angle-type");
-        var aVal = test.prototype.getAngleByTime(parseInt(this.hours.text), parseInt(this.minutes.text))[0];
-        /* console.log(typeof aVal);
-        if(aVal%10){
-          console.log("add 0: ", aVal%10);
-        }else{
-          console.log("OK: ", aVal%10);
-        } */
-        //aVal = aVal%10?aVal:aVal + 0.0;
+         var aVal = test.prototype.getAngleByTime(parseInt(this.hours.text), parseInt(this.minutes.text))[0];
         aVal = Math.round(aVal);
         aValBox.setAttribute("data-a", aVal);
         aValBox.innerHTML = aVal + '&#176;';
         var aType = test.prototype.getAngleType(aVal);
         aTypeBox.setAttribute("data-t", aType);
-        aTypeBox.innerHTML = aType + " angle";
+        aTypeBox.innerHTML = aType + " angle"; */
       };
-      test.prototype.getAngleByTime = function(h,m){
+
+      /* test.prototype.getAngleByTime = function(h,m){
         // if (h <0 || m < 0 || h >12 || m > 60)
         //  document.write("Wrong input");
           if (h == 12) h = 0;
@@ -3739,7 +3655,7 @@
           let angle = Math.abs(hour_angle - minute_angle);
           // Return the smaller angle of two possible angles
           //angle = Math.min(360 - angle, angle);
-          console.log("max: ",360 - angle, "min: ", angle)
+          //console.log("max: ",360 - angle, "min: ", angle)
           return [angle, 360-angle];
       }
       test.prototype.getAngleType = function(angle){
@@ -3764,7 +3680,7 @@
         if(angle == 360){
           return "Complete";
         }
-      }
+      } */
 
       /**
        * @return {undefined}
@@ -3902,6 +3818,7 @@
                   this.display.addChild(this.shape);
                 },
                 callback: function () {
+                  //console.log("TEST 11111");
                   this.shape.graphics
                     .clear()
                     .setStrokeStyle(this.strokeThickness)
@@ -3919,6 +3836,7 @@
                   this.display.addChild(this.shape);
                 },
                 callback: function () {
+                  //console.log("TEST 2222222");
                   this.shape.graphics
                     .clear()
                     .setStrokeStyle(this.strokeThickness)
@@ -4127,6 +4045,791 @@
         STOP: "stop",
         RESET: "reset",
       };
+/*Tell time funcions start...............*/
+
+testTellTime.prototype = mutation()(_this.c.prototype);
+      testTellTime.prototype.constructor = _this.c;
+      /** @type {function(?, string): undefined} */
+      //var DirSearchPathEntry = testTellTime;
+      /**
+       * @return {undefined}
+       */
+      testTellTime.prototype._setupDisplayComponents = function () {
+        var interval = this._setupTextComponents();
+        var file = this._setupUiComponents();
+        var n = this._setupElements();
+        //console.log("testTellTime.prototype._setupDisplayComponents: ", interval);//Vikas
+        this.hours = interval.hours;
+        this.spacer = interval.spacer;
+        this.minutes = interval.minutes;
+        this.period = interval.period;
+        this.backing = file.backing;
+        this.timeButton = n.timeButton;
+        this.timeBar = n.timeBar;
+        this.tellTimeDisplayModeToggle = file.tellTimeDisplayModeToggle;
+        /** @type {!Array} */
+        this.displayComponents = [
+          this.backing,
+          
+          this.hours,
+          this.spacer,
+          this.minutes,
+          this.period,
+          this.timeButton,
+          this.timeBar,
+          //this.hoursInput,
+          //this.minutesInput,
+          this.readoutDisplayModeCanToggle
+            ? this.readoutDisplayModeToggle.display
+            : null,
+        ];
+        req.a.each(
+          this.displayComponents,
+          function (name) {
+            this.display.addChild(name);
+          },
+          this
+        );
+        this._placeComponents();
+      };
+      /**
+       * @return {?}
+       */
+      testTellTime.prototype._setupTextComponents = function () {
+        var options = {};
+        return (
+          (options.hours = new doc.a.Text("88", width, "white")),
+          (options.spacer = new doc.a.Text(":", fontName, "white")),
+          (options.minutes = new doc.a.Text("88", width, "white")),
+          (options.period = new doc.a.Text("AM", fontName, "white")),
+          (options.hours.textBaseline = "middle"),
+          (options.spacer.textBaseline = "middle"),
+          (options.minutes.textBaseline = "middle"),
+          (options.period.textBaseline = "middle"),
+          options
+        );
+      };
+      /**
+       * @return {?}
+       */
+      testTellTime.prototype._setupUiComponents = function () {
+        var self = {};
+        var timeBox = this._setupInnerRect();
+        var timeBar = this._setupTimeBar();
+        return (
+          (self.backing = new doc.a.Shape()),
+          self.timeBox = new _this.b(null, timeBox),
+          self.timeBar = new _this.b(null, timeBar),
+          (self.tellTimeDisplayModeToggle = new _this.v(
+            null,
+            this._getModeToggleButtonOptions()
+          )),
+          self.timeBar.draw(),
+          self.timeBox.draw(),
+
+          self.tellTimeDisplayModeToggle.draw(),
+          self
+        );
+      };
+      testTellTime.prototype._setupInnerRect = function () {
+        var removedRelations = this;
+        /** @type {boolean} */
+        var ev = "trect";
+        //console.log("RECT.......");
+        var config = {
+          buttonType: _this.b.ButtonTypes.TEXT,
+          font: fontName,
+          fillColor: "rgba(255, 0, 0, 1)",//_this.d.COLOR_PRIMARY_BASE,
+          activeColor: _this.d.COLOR_PRIMARY_PALE,
+          borderColor: "transparent",
+          
+          clickableHandlers: {
+            mousedown: function (event) {
+              if (0 === event.nativeEvent.button) {
+                removedRelations._adjustmentButtonMouseDown("up");
+                /** @type {boolean} */
+                this.active = true;
+                this.draw();
+                _this.f.dispatchEvent(new doc.a.Event(data.STAGE_UPDATE));
+              }
+            },
+            pressup: function () {
+              removedRelations._adjustmentButtonPressUp();
+              /** @type {boolean} */
+              this.active = false;
+              this.draw();
+              _this.f.dispatchEvent(new doc.a.Event(data.STAGE_UPDATE));
+            },
+          },
+          clickCallback: function () {},
+        };
+        return (
+          (config.draw = ev
+            ? {
+                init: function () {
+                  this.shape = new doc.a.Shape();
+                  this.display.addChild(this.shape);
+                },
+                callback: function () {
+                  //console.log("CASE 1: ",this.activeColor, this.fillColor);
+                  this.shape.graphics
+                    .clear()
+                    .setStrokeStyle(this.strokeThickness)
+                    .beginStroke(this.borderColor)
+                    .beginFill(this.active ? this.activeColor : this.fillColor)
+                    .drawRoundRect(0, 0, 300, 150, 8);
+                },
+              }
+            : {
+                init: function () {
+                  this.shape = new doc.a.Shape();
+                  this.display.addChild(this.shape);
+                  shape.translate(50,400);
+                },
+                callback: function () {
+                  //console.log("CASE 2: ", this.activeColor, this.fillColor);
+                  this.shape.graphics
+                    .clear()
+                    .setStrokeStyle(this.strokeThickness)
+                    .beginStroke(this.borderColor)
+                    .beginFill(this.active ? this.activeColor : this.fillColor)
+                    .moveTo(0, 0)
+                    .lineTo(this.width / 2, this.height)
+                    .lineTo(this.width, 0);
+                },
+              }),
+          config
+        );
+      }
+
+      testTellTime.prototype._setupTimeBar = function () {
+        var removedRelations = this;
+        /** @type {boolean} */
+        var ev = "trect";
+        //console.log("RECT.......");
+        var config = {};
+        return (
+          (config.draw = ev
+            ? {
+                init: function () {
+                  this.shape = new doc.a.Shape();
+                  this.display.addChild(this.shape);
+                },
+                callback: function () {
+                  //console.log("BAR CASE 1: ",this.activeColor, this.fillColor);
+                  this.shape.graphics
+                    .clear()
+                    .setStrokeStyle(this.strokeThickness)
+                    .beginStroke(this.borderColor)
+                    .beginFill(this.active ? this.activeColor : this.fillColor)
+                    .drawRoundRect(0, 0, 300, 150, 8);
+                },
+              }
+            : {
+                init: function () {
+                  this.shape = new doc.a.Shape();
+                  this.display.addChild(this.shape);
+                  shape.translate(50,400);
+                },
+                callback: function () {
+                  //console.log("BAR CASE 2: ", this.activeColor, this.fillColor);
+                  this.shape.graphics
+                    .clear()
+                    .setStrokeStyle(this.strokeThickness)
+                    .beginStroke(this.borderColor)
+                    .beginFill(this.active ? this.activeColor : this.fillColor)
+                    .moveTo(0, 0)
+                    .lineTo(this.width / 2, this.height)
+                    .lineTo(this.width, 0);
+                },
+              }),
+          config
+        );
+      }
+
+
+      /**
+       * @return {undefined}
+       */
+      testTellTime.prototype._bindDispatcherEvents = function () {
+        var node = this;
+        _this.f.on(
+          data.Events.TELL_TIME_MODE_TOGGLE,
+          function (aReport) {
+            //console.log("TELL_TIME_MODE_TOGGLE",aReport);
+            var node = this.readoutDisplayMode;
+            var value = pipe()(this.hours.text, 10);
+            var BR = this.period.text;
+            this.tellTimeDisplayMode = aReport.mode;
+            if (
+              (node === state.hr24 && value > 12) ||
+              (node === state.hr24 && 0 === value)
+            ) {
+              this.setTime(value);
+            } else {
+              if (node === state.hr12 && "AM" === BR && 12 === value) {
+                this.setTime(0);
+              } else {
+                if (node === state.hr12 && "PM" === BR && 12 === value) {
+                  this.setTime(12);
+                } else {
+                  if (node === state.hr12 && "PM" === BR) {
+                    this.setTime(value + 12);
+                  }
+                }
+              }
+            }
+            this._placeComponents();
+            this.draw();
+          },
+          this
+        );
+        _this.f.on(
+          data.Events.TELL_TIME_TOGGLE_ACTIVE,
+          function (options) {
+            var c;
+            var s = req.a.isBoolean(options.setTo);
+            if (req.a.contains(options.ids, node.id) && node.enabled) {
+              if ((s && options.setTo) || (!s && !node.active)) {
+                c = new doc.a.Event(data.Events.TELL_TIME_SET_ACTIVE);
+              }
+              if ((s && !options.setTo) || (!s && node.active)) {
+                c = new doc.a.Event(data.Events.TELL_TIME_UNSET_ACTIVE);
+              }
+              c.set({
+                ids: [node.id],
+              });
+              _this.f.dispatchEvent(c);
+            }
+          }
+        );
+        _this.f.on(data.Events.TELL_TIME_SET_ACTIVE, function (options) {
+          if (req.a.contains(options.ids, node.id) && node.enabled) {
+            /** @type {boolean} */
+            node.active = true;
+            node.draw();
+            _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
+          }
+        });
+        _this.f.on(
+          data.Events.TELL_TIME_UNSET_ACTIVE,
+          function (options) {
+            if (req.a.contains(options.ids, node.id) && node.enabled) {
+              /** @type {boolean} */
+              node.active = false;
+              node.draw();
+              _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
+            }
+          }
+        );
+      };
+      /**
+       * @return {?}
+       */
+      testTellTime.prototype._setupElements = function () {
+        var d = {};
+        return (
+          (d.timeButton = this._createButton("time")),
+          (d.timeBar = this._createBar()),
+          d
+        );
+      };
+      testTellTime.prototype._createBar = function () {
+        var element = debug()("<div id='time-box'></div>");
+        var bunny = new doc.a.DOMElement(element[0]);
+        return (
+          document.querySelector("main").appendChild(element[0]),
+          bunny
+        );
+      }
+      /**
+       * @param {string} key
+       * @return {?}
+       */
+      testTellTime.prototype._createButton = function (key) {
+        var element = debug()("<div><button id='tell-time-button'>Tell the Time</button></div>");
+        var bunny = new doc.a.DOMElement(element[0]);
+        return (
+          document.querySelector("main").appendChild(element[0]),
+          this._attachInputFieldEvents(debug()("#tell-time-button", element), key),
+          bunny
+        );
+      };
+      
+      /**
+       * @param {!Object} e
+       * @param {string} undefined
+       * @return {undefined}
+       */
+      testTellTime.prototype._attachInputFieldEvents = function (e, undefined) {
+        var scope = this;
+        e.on("click", function (event) {
+          if(event.target.classList.contains("on")){
+            event.target.classList.remove("on");
+          }else{
+            event.target.classList.add("on");
+          }
+          var trigger = new doc.a.Event(
+            data.Events.TELL_TIME_BUTTON_CLICK
+          );
+          trigger.set({
+            display:true,
+            id: scope.id,
+          });
+          _this.f.dispatchEvent(trigger);
+        });
+
+        e.on("keydown", function (event) {
+          switch (event.keyCode) {
+            case data.Keycodes.ARROW_UP:
+            case data.Keycodes.ARROW_DOWN:
+              scope._adjustmentKeyboardTicker(undefined, event.keyCode);
+          }
+        });
+        e.on("keyup", function () {
+          scope._cleanupTickTracker();
+        });
+        e.on("focus", function () {
+          e.select();
+          _this.f.dispatchEvent(data.Events.TELL_TIME_INPUT_FOCUS);
+        });
+        e.on("blur", function () {
+          var intVal = pipe()(e.val(), 10);
+          if (
+            "hours" === undefined &&
+            (intVal < 1 || intVal > 12 || req.a.isNaN(intVal))
+          ) {
+            e.val(scope.hours.text);
+          }
+          if (
+            "minutes" === undefined &&
+            (intVal < 0 || intVal > 59 || req.a.isNaN(intVal))
+          ) {
+            e.val(scope.minutes.text);
+          }
+          _this.f.dispatchEvent(data.Events.TELL_TIME_INPUT_BLUR);
+        });
+      };
+      /**
+       * @return {undefined}
+       */
+      testTellTime.prototype.draw = function () {
+        //this.hoursInput.visible = this.active && this.enabled;
+        //this.minutesInput.visible = this.active && this.enabled;
+        if (this.enabled) {
+          if (this.active) {
+            this.backing.graphics
+              .clear()
+              .setStrokeStyle(3)
+              //.beginStroke(TABS_ACTIVE_LINE_COLOR)
+              .beginFill("black")
+              .drawRoundRect(this.width/10, this.height*2.5, this.width, this.height, 20)
+          } else {
+            this.backing.graphics
+              .clear()
+              .setStrokeStyle(3)
+              //.beginStroke(TABS_ACTIVE_LINE_COLOR)
+              .beginFill("black")
+              .drawRoundRect(this.width/10, this.height*2.5, this.width, this.height, 20);
+          }
+        } else {
+          this.backing.graphics
+            .clear()
+            .setStrokeStyle(3)
+            .beginStroke("grey")
+            .beginFill("grey")
+            .drawRoundRect(0, 0, this.width, this.height, 8);
+        }
+      };
+      /**
+       * @param {number} i
+       * @param {number} v
+       * @return {undefined}
+       */
+      testTellTime.prototype.setTime = function (i, v) {
+        //console.log("testTellTime.prototype.setTime", i,v);//Vikas
+        var value;        
+        if (req.a.isNumber(i)) {
+          if (i < 0 || i >= 24) {
+            console.error("Hour time out of bounds:", i);
+          } else {
+            if (this.tellTimeDisplayMode === state.hr12) {
+              if (0 === (value = Math.floor(i % 12))) {
+                /** @type {number} */
+                value = value + 12;
+              }
+              /** @type {string} */
+              this.hours.text = "" + value;
+              if (this.hours.text.length < 2) {
+                /** @type {string} */
+                this.hours.text = "0" + this.hours.text;
+              }
+            } else {
+              /** @type {string} */
+              this.hours.text = "" + Math.floor(i);
+              if (this.hours.text.length < 2) {
+                /** @type {string} */
+                this.hours.text = "0" + this.hours.text;
+              }
+            }
+          }
+          //debug()("input", this.hoursInput.htmlElement).val(this.hours.text);
+        }
+        if (req.a.isNumber(v)) {
+          if (v < 0 || v >= 60) {
+            console.error("Minute time out of bounds:", v);
+          } else {
+            /** @type {string} */
+            this.minutes.text = "" + Math.floor(v);
+            if (this.minutes.text.length < 2) {
+              /** @type {string} */
+              this.minutes.text = "0" + this.minutes.text;
+            }
+          }
+          //debug()("input", this.minutesInput.htmlElement).val(this.minutes.text);
+        }
+        if (this.tellTimeDisplayMode === state.hr12) {
+          /** @type {string} */
+          this.period.text = i < 12 ? "AM" : "PM";
+        }
+        
+      };
+
+      /**
+       * @return {undefined}
+       */
+      testTellTime.prototype._placeComponents = function () {
+        /** @type {number} */
+        var w = this.width / 2;
+        var lineWidth =
+          this.hours.getMeasuredWidth() +
+          4 +
+          this.spacer.getMeasuredWidth() +
+          4 +
+          this.minutes.getMeasuredWidth() +
+          (this.tellTimeDisplayMode === state.hr12 ? 8 : 0) +
+          (this.tellTimeDisplayMode === state.hr12
+            ? this.period.getMeasuredWidth()
+            : 0);
+        /** @type {number} */
+        var plottingAreaHeight = this.height / 2 + 1;
+        /** @type {number} */
+        var yAxisVerticalMargin = -this.hours.getMeasuredHeight() - 4;
+        /** @type {number} */
+        var wty = this.hours.getMeasuredHeight() / 2 + 2;
+        /** @type {number} */
+        var i = w - lineWidth / 2;
+        /** @type {number} */
+        this.timeButton.x = i-78;
+        this.timeBar.x = i-78;
+        
+        i += 30;
+        this.hours.x = i;
+        /** @type {number} */
+        
+        i = i + this.hours.getMeasuredWidth();
+        i = i + 4;
+        this.spacer.x = i + -1;
+        i = i + this.spacer.getMeasuredWidth();
+        i = i + 4;
+        this.minutes.x = i;
+        /** @type {number} */
+        i = i + this.minutes.getMeasuredWidth();
+        i = i + 8;
+        /** @type {boolean} */
+        this.period.visible = this.readoutDisplayMode === state.hr12;
+        this.period.x = i;
+        i = i + this.period.getMeasuredWidth();
+        /** @type {number} */
+        this.hours.y = plottingAreaHeight+340;
+        /** @type {number} */
+        this.spacer.y = plottingAreaHeight+340;
+        /** @type {number} */
+        this.minutes.y = plottingAreaHeight+340;
+        /** @type {number} */
+        this.period.y = plottingAreaHeight+340;
+        /** @type {number} */
+        this.timeButton.y = plottingAreaHeight + 380;
+        this.timeBar.y = plottingAreaHeight + 307;
+        this.tellTimeDisplayModeToggle.x = 2;
+        /** @type {number} */
+        this.tellTimeDisplayModeToggle.y = 2;
+        console.log();
+      };
+      /**
+       * @param {string} direction
+       * @param {!Object} length
+       * @return {?}
+       */
+      testTellTime.prototype._getButtonOptions = function (direction, length) {
+        var removedRelations = this;
+        /** @type {boolean} */
+        var ev = "down" !== direction;
+        var config = {
+          buttonType: _this.b.ButtonTypes.TEXT,
+          font: fontName,
+          fillColor: _this.d.COLOR_PRIMARY_BASE,
+          activeColor: _this.d.COLOR_PRIMARY_PALE,
+          borderColor: "transparent",
+          dimensions: {
+            width: 24,
+            height: 12,
+          },
+          clickableHandlers: {
+            mousedown: function (event) {
+              if (0 === event.nativeEvent.button) {
+                removedRelations._adjustmentButtonMouseDown(length);
+                /** @type {boolean} */
+                this.active = true;
+                this.draw();
+                _this.f.dispatchEvent(new doc.a.Event(data.STAGE_UPDATE));
+              }
+            },
+            pressup: function () {
+              removedRelations._adjustmentButtonPressUp();
+              /** @type {boolean} */
+              this.active = false;
+              this.draw();
+              _this.f.dispatchEvent(new doc.a.Event(data.STAGE_UPDATE));
+            },
+          },
+          clickCallback: function () {},
+        };
+        return (
+          (config.draw = ev
+            ? {
+                init: function () {
+                  this.shape = new doc.a.Shape();
+                  this.display.addChild(this.shape);
+                },
+                callback: function () {
+                  this.shape.graphics
+                    .clear()
+                    .setStrokeStyle(this.strokeThickness)
+                    .beginStroke(this.borderColor)
+                    .beginFill(this.active ? this.activeColor : this.fillColor)
+                    .moveTo(0, this.height)
+                    .lineTo(this.width / 2, 0)
+                    .lineTo(this.width, this.height)
+                    .closePath();
+                },
+              }
+            : {
+                init: function () {
+                  this.shape = new doc.a.Shape();
+                  this.display.addChild(this.shape);
+                },
+                callback: function () {
+                  this.shape.graphics
+                    .clear()
+                    .setStrokeStyle(this.strokeThickness)
+                    .beginStroke(this.borderColor)
+                    .beginFill(this.active ? this.activeColor : this.fillColor)
+                    .moveTo(0, 0)
+                    .lineTo(this.width / 2, this.height)
+                    .lineTo(this.width, 0);
+                },
+              }),
+          config
+        );
+      };
+      /**
+       * @param {boolean} bitmask
+       * @return {undefined}
+       */
+      testTellTime.prototype._adjustmentButtonMouseDown = function (bitmask) {
+        this._cleanupTickTracker();
+        this._adjustmentButtonTicker(bitmask);
+      };
+      /**
+       * @return {undefined}
+       */
+      testTellTime.prototype._adjustmentButtonPressUp = function () {
+        this._cleanupTickTracker();
+      };
+      /**
+       * @return {undefined}
+       */
+      testTellTime.prototype._cleanupTickTracker = function () {
+        if (this.tickTracker) {
+          if (req.a.isNumber(this.tickTracker.timeoutId)) {
+            clearTimeout(this.tickTracker.timeoutId);
+          }
+          /** @type {null} */
+          this.tickTracker.timeoutId = null;
+          /** @type {number} */
+          this.tickTracker.tickCount = 0;
+        }
+      };
+      /**
+       * @param {number} n
+       * @return {undefined}
+       */
+      testTellTime.prototype._adjustmentButtonTicker = function (n) {
+        var jimple = this;
+        /** @type {number} */
+        var start = 500;
+        if (!req.a.isObject(this.tickTracker)) {
+          this.tickTracker = {
+            timeoutId: null,
+            tickCount: 0,
+          };
+        }
+        this._adjustmentTick(n);
+        this.tickTracker.tickCount += 1;
+        if (this.tickTracker.tickCount > 1) {
+          /** @type {number} */
+          start =
+            n === nums.MINUTES_FIVES_UP || n === nums.MINUTES_FIVES_DOWN
+              ? 250
+              : 150;
+        }
+        if (this.tickTracker.tickCount >= 10) {
+          if (n === nums.MINUTES_UNITS_UP) {
+            /** @type {string} */
+            n = nums.MINUTES_FIVES_UP;
+          } else {
+            if (n === nums.MINUTES_UNITS_DOWN) {
+              /** @type {string} */
+              n = nums.MINUTES_FIVES_DOWN;
+            }
+          }
+        }
+        this.tickTracker.timeoutId =
+          __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(
+            function () {
+              jimple._adjustmentButtonTicker(n);
+            },
+            start
+          );
+      };
+      /**
+       * @param {string} undefined
+       * @param {number} keyCode
+       * @return {undefined}
+       */
+      testTellTime.prototype._adjustmentKeyboardTicker = function (undefined, keyCode) {
+        /** @type {string} */
+        var n = "";
+        if (!req.a.isObject(this.tickTracker)) {
+          this.tickTracker = {
+            timeoutId: null,
+            tickCount: 0,
+          };
+        }
+        if (req.a.isNull(this.tickTracker.timeoutId)) {
+          if ("hours" === undefined) {
+            if (keyCode === data.Keycodes.ARROW_UP) {
+              /** @type {string} */
+              n = nums.HOURS_UP;
+            } else {
+              if (keyCode === data.Keycodes.ARROW_DOWN) {
+                /** @type {string} */
+                n = nums.HOURS_DOWN;
+              }
+            }
+          } else {
+            if ("minutes" === undefined) {
+              if (keyCode === data.Keycodes.ARROW_UP) {
+                /** @type {string} */
+                n = nums.MINUTES_UNITS_UP;
+              } else {
+                if (keyCode === data.Keycodes.ARROW_DOWN) {
+                  /** @type {string} */
+                  n = nums.MINUTES_UNITS_DOWN;
+                }
+              }
+            }
+          }
+          if (this.tickTracker.tickCount >= 10) {
+            if (n === nums.MINUTES_UNITS_UP) {
+              /** @type {string} */
+              n = nums.MINUTES_FIVES_UP;
+            } else {
+              if (n === nums.MINUTES_UNITS_DOWN) {
+                /** @type {string} */
+                n = nums.MINUTES_FIVES_DOWN;
+              }
+            }
+          }
+          this._adjustmentTick(n);
+          this.tickTracker.tickCount += 1;
+        }
+      };
+      /**
+       * @param {!Object} posnum
+       * @return {undefined}
+       */
+      testTellTime.prototype._adjustmentTick = function (posnum) {
+        var new_record = new doc.a.Event(
+          data.Events.DIGITAL_READOUT_ADJUSTMENT
+        );
+        new_record.set({
+          adjustmentType: posnum,
+          id: this.display.id,
+        });
+        _this.f.dispatchEvent(new_record);
+      };
+      /**
+       * @return {?}
+       */
+      testTellTime.prototype._getModeToggleButtonOptions = function () {
+        var e = this;
+        return {
+          dimensions: {
+            width: 20,
+            height: 20,
+          },
+          buttonText: this.readoutDisplayMode,
+          initialState: this.readoutDisplayMode !== state.hr24,
+          fillColor: "teal",
+          activeColor: "chocolate",
+          toggleEvent: data.Events.DIGITAL_READOUT_MODE_TOGGLE,
+          clickCallback: function () {
+            var instance = new doc.a.Event(
+              data.Events.DIGITAL_READOUT_MODE_TOGGLE
+            );
+            if (e.enabled) {
+              if (this.stateActive) {
+                /** @type {string} */
+                this.label.text = "24hr";
+              } else {
+                /** @type {string} */
+                this.label.text = "12hr";
+              }
+              instance.set({
+                mode: this.stateActive ? state.hr24 : state.hr12,
+                id: e.display.id,
+                setState: !this.stateActive,
+              });
+              _this.f.dispatchEvent(instance);
+              this.draw();
+            }
+          },
+          font: "normal 8px Helvetica Neue",
+        };
+      };
+      /**
+       * @return {undefined}
+       */
+      testTellTime.prototype.delete = function () {
+        debug()(this.hoursInput.htmlElement).remove();
+        debug()(this.minutesInput.htmlElement).remove();
+      };
+      testTellTime.AdjustmentTypes = nums;
+      testTellTime.ReadoutModes = state;
+      var $sharepreview = $("iapb");
+      var bar = $("2xYs");
+      var obj2 = $("NVI9");
+      var str = $("lD3G");
+      var pattern = $("ZgxC");
+      var accessInfo = {
+        PLAY: "play",
+        STOP: "stop",
+        RESET: "reset",
+      };
+
+/*Tell time functions end................*/
       M6CorpoChecker_HpPro.prototype = mutation()(_this.c.prototype);
       M6CorpoChecker_HpPro.prototype.constructor = _this.c;
       /** @type {function(?, ?): undefined} */
@@ -4563,11 +5266,13 @@
        * @return {undefined}
        */
       Tween.prototype._setupDisplayComponents = function (obj2) {
+        
         var RawClasses = this._setupRunComponent(obj2.controlMode);
         var keys = this._setupJumpComponent(
           obj2.controlMode,
           obj2.initialJumpStep
         );
+        console.log(RawClasses.tab.draw);
         this.runTab = RawClasses.tab;
         this.runControl = RawClasses.control;
         this.jumpTab = keys.tab;
@@ -5020,7 +5725,7 @@
         this.shape_9.setTransform(-0.225, -118.9);
         this.shape_10 = new doc.a.Shape();
         this.shape_10.graphics
-          // NNO Minuit hand
+          // NNO Minute hand
           .beginFill("#1ab123")
           .beginStroke()
           .moveTo(-4, 66.5)
@@ -5192,8 +5897,8 @@
           .closePath();
         this.shape_16.setTransform(-0.0224, -59.5);
         this.shape_17 = new doc.a.Shape();
-        this.shape_17.graphics
         // NNO hour hand
+        this.shape_17.graphics
           .beginFill("#ff0038")
           .beginStroke()
           .moveTo(-9.9, 9.9)
@@ -5206,6 +5911,7 @@
           .curveTo(5.8, 14, -0, 14)
           .curveTo(-5.8, 14, -9.9, 9.9)
           .closePath();
+          //console.log("HAND: ",this.shape_17); //Vikas 
         this.shape_18 = new doc.a.Shape();
         this.shape_18.graphics
         // NNO hour hand circle
@@ -7898,7 +8604,7 @@
         diffZoom = 10 + (e = e * 45);
         /** @type {number} */
         this.hourHand.angle = this.startAngle / 12;
-        this.minuteHand.angle = this.startAngle;
+        this.minuteHand.angle = this.startAngle; //Vikas-- Note: Angle of hands...
         this.toggleHandle.display.regY = this.radius + diffZoom;
         this.toggleHandle.display.rotation = this.startAngle;
         /** @type {number} */
@@ -7936,6 +8642,7 @@
        * @return {undefined}
        */
       Particle.prototype.draw = function () {
+        //console.log("ASFSDFSF", Particle.prototype.draw.caller);//Vikas-- Note: Particle draw
         /** @type {string} */
         var color =
           this.startAngle <= this.endAngle
@@ -8625,7 +9332,7 @@
             /** @type {number} */
             delta = delta * data.RADIANS_TO_DEGREES;
             particle.angle += delta;
-            particle._placeComponents();
+            particle._placeComponents();  //Vikas--Note: add all info about colck hands
             particle.draw();
           },
           pressup: function () {
@@ -8671,20 +9378,6 @@
             if (req.a.contains(options.ids, this.fraction.id)) {
               this.draw();
               _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
-            }
-          },
-          this
-        );
-        _this.f.on(
-          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE,
-          function (message) {
-            console.log(message);
-            if (message.targetEntity === this) {
-              /** @type {boolean} */
-              this.handleActive = false;
-              /** @type {string} */
-              //this.activeMajorControl = modifier.FractionControl;
-              this.draw();
             }
           },
           this
@@ -8998,7 +9691,22 @@
           },
           this
         );
-        
+        _this.f.on(
+          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE,
+          function (options) {
+            console.log("TOGGLE_SELECTION_TELL_TIME_MODE fired");
+            if (req.a.contains(options.id, this.id)) {
+              /** @type {boolean} */
+              this.handleActive = false;
+              this.tellTimeMode = req.a.isBoolean(options.setTo)
+                ? options.setTo
+                : !this.tellTimeMode;
+              this._placeComponents();
+              this.draw();
+            }
+          },
+          this
+        );
 
         _this.f.on(
           data.Events.FRACTION_PICK_PALETTE_SHOW,
@@ -9056,6 +9764,15 @@
                   this.setTime(this.getHours(), params.newTime);
                 }
               }
+            }
+          },
+          this
+        );
+        _this.f.on(
+          data.Events.TELL_TIME_BUTTON_CLICK,
+          function (params) {
+            if (params.id === this.tellTime.id) {
+              console.log(params.display);
             }
           },
           this
@@ -9161,10 +9878,12 @@
        * @return {undefined}
        */
       options.prototype.setupDisplayComponents = function (e) {
+        //console.log("step 1: options.prototype.setupDisplayComponents");
         var m;
         var clock = this.setupClockHands(e);
         var i = this.setupGearBox();
-        var this_area = this.setupDigitalReadout(e);
+        var this_area = this.setupDigitalReadout(e);  //Vikas Step: 1
+        var tell_time = this.setupTellTime(e);  //Vikas Note: Step1 for tell time
         var intervalGroups = this.setupRunJumpControl(e);
         var elapsedTime = this.setupElapsedTime(e);
         var sourceatt = this.setupFractionControl(e);
@@ -9180,6 +9899,7 @@
         this.digitalReadout = this_area;
         this.runJumpControl = intervalGroups;
         this.elapsedTime = elapsedTime;
+        this.tellTime = tell_time;
         this.fractionControl = sourceatt;
         this.hourHand = clock.hourHand;
         this.minuteHand = clock.minuteHand;
@@ -9234,6 +9954,7 @@
           this.fractionControl.display,
           this.runJumpControl.display,
           this.digitalReadout.display,
+          this.tellTime.display,//Vikas Note: added for tell time
         ];
         (m = this.display).addChild.apply(m, searchPipeline);
       };
@@ -9249,7 +9970,7 @@
               radius - data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale),
           g
             .setStrokeStyle(12)
-            .beginStroke("#6697c4")
+            .beginStroke("#6697c4")  //Color of clock selection
             .drawCircle(this.radius, this.radius, radius),
           g
         );
@@ -9385,8 +10106,17 @@
        * @return {?}
        */
       options.prototype.setupDigitalReadout = function (a22) {
+        //console.log("Step 2: options.prototype.setupDigitalReadout");
+        //console.log(options.prototype.setupDigitalReadout.caller);
         return new DirSearchPathEntry(null, {
           readoutDisplayMode: a22.readoutDisplayMode,
+          enabled: !a22.elapsedTimeMode,
+        });
+      };
+      options.prototype.setupTellTime = function (a22) {
+        //console.log("Step 2: options.prototype.setupTellTime: ", a22); //Vikas Step: 2        
+         return new testTellTime(null, {
+          tellTimeDisplayMode: a22.tellTimeMode,
           enabled: !a22.elapsedTimeMode,
         });
       };
@@ -9405,11 +10135,13 @@
        * @return {?}
        */
       options.prototype.setupElapsedTime = function (settings) {
+        //console.log("call partilce....",  options.prototype.setupElapsedTime.caller);// Vikas-- Note: This calls particle
         /** @type {number} */
         var current_radius =
           settings.radius -
           (data.GENERAL_CLOCK_FACE_RADIUS_PADDING * settings.radius) /
             (scope.Clock.bounds.width / 2);
+         //Vikas-- Note: following code calls Particle....   
         return new Tabs(null, {
           active: settings.elapsedTimeActive,
           startAngle: settings.elapsedTimeStart,
@@ -9543,6 +10275,9 @@
         this.digitalReadout.display.visible =
           this.digitalReadoutMode && this.isGeared();
         this.digitalReadout.draw();
+        this.tellTime.display.visible =
+          this.tellTimeMode && this.isGeared();
+        this.tellTime.draw();
         this.runJumpControl.display.visible =
           this.runJumpMode && this.isGeared();
         this.runJumpControl.draw();
@@ -9934,6 +10669,11 @@
           this.getReadableHours(),
           this.getReadableMinutes()
         );
+        this.tellTime.setTime(
+          this.getReadableHours(),
+          this.getReadableMinutes()
+        )
+
         this.elapsedTime._placeComponents();
       };
       /**
@@ -10077,6 +10817,7 @@
        */
       options.prototype._copyCriticalProperties = function () {
         var e = this.fractionControl._copyCriticalProperties();
+        console.log("YE");
         return {
           position: {
             x: this.x,
@@ -10271,6 +11012,12 @@
        * @return {undefined}
        */
       View.prototype.indicator = function (side, value) {
+        //console.clear();
+        /* console.log("This: ", this);
+        console.log("Side: ", side);
+        console.log("Value: ", value);
+        console.log("caller 1",View.prototype.indicator.caller);
+        console.log("caller 2",View.prototype.indicator.caller.caller); */
         if (req.a.isNumber(value)) {
           /** @type {number} */
           this.baseElement.y = value - this.height / 2;
@@ -10417,6 +11164,8 @@
        * @return {undefined}
        */
       View.prototype._toggleVisibility = function () {
+        console.log("View visibility.......");
+
         /** @type {string} */
         var deviceOrientationEvent = data.Events.EDIT_CLOCK_PALETTE_SHOW;
         if (this.display.visible) {
@@ -10537,6 +11286,7 @@
        * @return {undefined}
        */
       Palette.prototype._toggleVisibility = function (htOptions) {
+        console.log("Palette visibility.......");
         /** @type {string} */
         var name = data.Events.FRACTION_PICK_PALETTE_SHOW;
         if (this.display.visible) {
@@ -11227,7 +11977,7 @@
         });
         _this.f.on(_this.d.STAGE_UPDATE, initialize);
         _this.f.on(data.Events.EDIT_CLOCK_PALETTE_SHOW, function (item) {
-          //console.log("SDFSADF", item);//Vikas
+          console.log("Edit clock", item);//Vikas
           bounds = item.targetEntity;
           initialize();
           var beat = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT);
@@ -11237,6 +11987,7 @@
           _this.f.dispatchEvent(beat);
         });
         _this.f.on(data.Events.TOGGLE_EDIT_MODE, function () {
+          console.log("Toggle edit mode...")
           var beat;
           var bl;
           var value;
@@ -11629,8 +12380,7 @@
         _this.f.on(data.Events.TOGGLE_DIGITAL_READOUT_MODE, flush);
         _this.f.on(data.Events.TOGGLE_RUN_JUMP_MODE, decode);
         _this.f.on(data.Events.TOGGLE_ELAPSED_TIME_MODE, _init);
-        _this.f.on(data.Events.TOGGLE_TELL_TIME_MODE, tellTime);
-        _this.f.on(data.Events.TOGGLE_TELL_ANGLE_MODE, tellAngle);
+        _this.f.on(data.Events.TOGGLE_TELL_TIME_MODE, tellTimeHandler);
         _this.f.on(_this.d.EQUATION_TOOLS_HIDE, onPause);
         _this.f.on(_this.d.EQUATION_TOOLS_SHOW, pause);
         _this.f.on(_this.d.TEXT_TOOLS_HIDE, onPause);
@@ -13319,7 +14069,7 @@
             {
               event: data.Events.SET_CLOCK_HAND_VISIBILITY,
               condition: function (o) {
-                return search(o).length > 0;
+                return !(search(o).length > 0);
               },
             },
           ],
@@ -13336,11 +14086,7 @@
                   }
                 );
                 return i()(t).call(t, function (canCreateDiscussions) {
-                  return (
-                    canCreateDiscussions.tellTimeMode/* &&
-                    canCreateDiscussions.activeMajorControl  ===
-                      selection.MajorControls.ElapsedTime */
-                  );
+                  return canCreateDiscussions.tellTimeMode;
                 });
               },
             },
@@ -13350,11 +14096,7 @@
               condition: function (o) {
                 var t = search(o);
                 return i()(t).call(t, function (canCreateDiscussions) {
-                  return (
-                    canCreateDiscussions.tellTimeMode/*  &&
-                    canCreateDiscussions.activeMajorControl ===
-                      selection.MajorControls.ElapsedTime */
-                  );
+                  return canCreateDiscussions.tellTimeMode;
                 });
               },
             },
@@ -13392,11 +14134,7 @@
                 );
                 return (
                   match()(url).call(url, function (canCreateDiscussions) {
-                    return !(
-                      canCreateDiscussions.tellTimeMode/*  &&
-                      canCreateDiscussions.activeMajorControl ===
-                        selection.MajorControls.ElapsedTime */
-                    );
+                    return !canCreateDiscussions.tellTimeMode;
                   }) || !(url.length > 0)
                 );
               },
@@ -13410,11 +14148,7 @@
                   match()(selector).call(
                     selector,
                     function (canCreateDiscussions) {
-                      return !(
-                        canCreateDiscussions.tellTimeMode/*  &&
-                        canCreateDiscussions.activeMajorControl ===
-                          selection.MajorControls.ElapsedTime */
-                      );
+                      return !canCreateDiscussions.tellTimeMode;
                     }
                   ) || !(selector.length > 0)
                 );
@@ -13436,10 +14170,6 @@
                 });
               },
             },
-           /*  {
-              eventID: data.Events.FRACTION_PICK_PALETTE_SHOW,
-              cssClass: "on",
-            }, */
           ],
         },
       };

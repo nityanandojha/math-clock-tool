@@ -23,31 +23,23 @@
     "/PjG": function (eta, lmbda, n) {},
     "/Wnl": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-regular.479970ffb74f2117317f9d24d9e317fe.woff2";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-regular.479970ffb74f2117317f9d24d9e317fe.woff2";
     },
     "08Mx": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p + "images/checkbox-off.efb5db132df40cbcbbe5ffa907685efe.png";
+      blob.exports = universe.p + "images/checkbox-off.efb5db132df40cbcbbe5ffa907685efe.png";
     },
     "0TsU": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-700.adcde98f1d584de52060ad7b16373da3.woff";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-700.adcde98f1d584de52060ad7b16373da3.woff";
     },
     "1WW8": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/cursor-pen-blue.4c87b444c898b1340ea5b040db59488d.cur";
+      blob.exports = universe.p + "images/cursor-pen-blue.4c87b444c898b1340ea5b040db59488d.cur";
     },
     "1mBI": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p + "images/icon-share.ff1b09390530b1fe58879833adfda9f0.png";
+      blob.exports = universe.p + "images/icon-share.ff1b09390530b1fe58879833adfda9f0.png";
     },
     "1v75": function (blob, name, universe) {
       /** @type {string} */
@@ -57,9 +49,7 @@
     },
     "2xYs": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-icon-stop-off.147653b1c214867c5b97c8bec6c86806.png";
+      blob.exports = universe.p + "images/runjump-icon-stop-off.147653b1c214867c5b97c8bec6c86806.png";
     },
     3127: function (blob, name, universe) {
       /** @type {string} */
@@ -69,14 +59,11 @@
     },
     "3vhr": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-fill-blue.bd0624db42e16b713a6e7d1683d007b7.png";
+      blob.exports = universe.p + "images/icon-fill-blue.bd0624db42e16b713a6e7d1683d007b7.png";
     },
     "45L6": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p + "images/icon-info.bc0d973100dac97ff4a73f9e937aed48.png";
+      blob.exports = universe.p + "images/icon-info.bc0d973100dac97ff4a73f9e937aed48.png";
     },
     "9jHf": function (blob, name, universe) {
       /** @type {string} */
@@ -86,26 +73,19 @@
     },
     C2c7: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-faceselect-bg-on.889bf5465943a7e1ac2e3fc2a2bacbaa.png";
+      blob.exports = universe.p + "images/icon-faceselect-bg-on.889bf5465943a7e1ac2e3fc2a2bacbaa.png";
     },
     CJ9Q: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-tab-run-on.7ec5263e8957c2b1f9bf555b88893ee1.png";
+      blob.exports = universe.p + "images/runjump-tab-run-on.7ec5263e8957c2b1f9bf555b88893ee1.png";
     },
     CgZc: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p + "images/icon-fill-on.c2a499f3d83371ab1979d72a67bce99d.png";
+      blob.exports = universe.p + "images/icon-fill-on.c2a499f3d83371ab1979d72a67bce99d.png";
     },
     CmYf: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-700.2735a3a69b509faf3577afd25bdf552e.woff2";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-700.2735a3a69b509faf3577afd25bdf552e.woff2";
     },
     DudV: function (blob, name, universe) {
       /** @type {string} */
@@ -376,9 +356,7 @@
     },
     Hni1: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-300.b00849e00f4c2331cddd8ffb44a6720b.woff";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-300.b00849e00f4c2331cddd8ffb44a6720b.woff";
     },
     HpR4: function (blob, name, universe) {
       /** @type {string} */
@@ -388,9 +366,7 @@
     },
     "IZU+": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-faceselect-blank.41ae07b623a3bb42462771923ab13d71.png";
+      blob.exports = universe.p + "images/icon-faceselect-blank.41ae07b623a3bb42462771923ab13d71.png";
     },
     Ic0E: function (blob, name, universe) {
       /** @type {string} */
@@ -403,38 +379,27 @@
     },
     Iv4c: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-regular.60fa3c0614b8fb2f394fa29944c21540.woff";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-regular.60fa3c0614b8fb2f394fa29944c21540.woff";
     },
     J8P3: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p + "images/45stripe.9925a52084f7737cc3daa77635ef59f5.svg";
+      blob.exports = universe.p + "images/45stripe.9925a52084f7737cc3daa77635ef59f5.svg";
     },
     "JY+c": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-add-clock.c32c2de949472c6e98952496e396e1a1.png";
+      blob.exports = universe.p + "images/icon-add-clock.c32c2de949472c6e98952496e396e1a1.png";
     },
     JhVI: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/widget-elapsed-cancel-icon.360923e307106f288fba21a9e85d4d74.png";
+      blob.exports = universe.p + "images/widget-elapsed-cancel-icon.360923e307106f288fba21a9e85d4d74.png";
     },
     KUtk: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-300italic.14286f3ba79c6627433572dfa925202e.woff2";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-300italic.14286f3ba79c6627433572dfa925202e.woff2";
     },
     "M9x/": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-faceselect-bg-off.35381b350adec9e44b1660646eecef41.png";
+      blob.exports = universe.p + "images/icon-faceselect-bg-off.35381b350adec9e44b1660646eecef41.png";
     },
     MuzD: function (vdwB, d, $) {
       /**
@@ -454,14 +419,9 @@
             var startPoint = this.interactionState.previousPosition;
             var currentXY = this.interactionState.currentPosition;
             /** @type {number} */
-            var tstart = Math.atan2(
-              prevXY.y - startPoint.y,
-              prevXY.x - startPoint.x
-            );
+            var tstart = Math.atan2(prevXY.y - startPoint.y, prevXY.x - startPoint.x);
             /** @type {number} */
-            var lat =
-              Math.atan2(prevXY.y - currentXY.y, prevXY.x - currentXY.x) -
-              tstart;
+            var lat = Math.atan2(prevXY.y - currentXY.y, prevXY.x - currentXY.x) - tstart;
             /** @type {number} */
             var phi = 1 / 0;
             if ((lat = lat * _this.d.RADIANS_TO_DEGREES) < 0) {
@@ -492,9 +452,7 @@
         this.handGraphics = options.handGraphics || new doc.a.Graphics();
         this.handLabel = options.handLabel || new doc.a.Graphics();
         this.handHitArea = options.handHitArea || null;
-        this.angle = req.a.isNumber(options.initialAngle)
-          ? options.initialAngle
-          : 0;
+        this.angle = req.a.isNumber(options.initialAngle) ? options.initialAngle : 0;
         this.setupDisplayComponents(options);
       }
       /**
@@ -534,9 +492,7 @@
           click: function (event) {
             //console.log("DONE", event); //Vikas
             var c = new doc.a.Event(data.Events.DIGITAL_READOUT_TOGGLE_ACTIVE);
-            if (
-              !(_this.c.getFirstParentEntity(event.target) instanceof _this.b)
-            ) {
+            if (!(_this.c.getFirstParentEntity(event.target) instanceof _this.b)) {
               c.set({
                 ids: [wunderlist_list.id],
               });
@@ -579,9 +535,7 @@
           pressup: function () {},
           click: function (event) {
             var c = new doc.a.Event(data.Events.TELL_TIME_TOGGLE_ACTIVE);
-            if (
-              !(_this.c.getFirstParentEntity(event.target) instanceof _this.b)
-            ) {
+            if (!(_this.c.getFirstParentEntity(event.target) instanceof _this.b)) {
               c.set({
                 ids: [wunderlist_list.id],
               });
@@ -627,14 +581,12 @@
         var smoothArcSteepness = 0;
         if (
           (function (pathToDestinationFile) {
-            console.log("Call test", pathToDestinationFile); 
+            console.log("Call test", pathToDestinationFile);
             return new RegExp(/^\d{1,2}$/).test(pathToDestinationFile);
           })(($input = debug()("input", connection.input.htmlElement)).val())
         ) {
           smoothArcSteepness = pipe()($input.val(), 10);
-          (deviceOrientationEvent = new doc.a.Event(
-            data.Events.JUMP_BY_AMOUNT
-          )).set({
+          (deviceOrientationEvent = new doc.a.Event(data.Events.JUMP_BY_AMOUNT)).set({
             ids: [connection.id],
             jumpAmount: smoothArcSteepness * from,
           });
@@ -750,7 +702,7 @@
         this.active = params.active;
         this.startAngle = params.startAngle;
         this.endAngle = params.endAngle;
-        this.radius = params.radius;        
+        this.radius = params.radius;
         this._setupDisplayComponents(config);
       }
       /**
@@ -768,22 +720,15 @@
           mousedown: function () {
             var i;
             var shadow11;
-            var object = this.display.globalToLocal(
-              this.interactionState.currentPosition.x,
-              this.interactionState.currentPosition.y
-            );
+            var object = this.display.globalToLocal(this.interactionState.currentPosition.x, this.interactionState.currentPosition.y);
             /** @type {string} */
             this.activeColor = Colors.Transparent;
             if (this.fillMode) {
               i = this.display.getObjectUnderPoint(object.x, object.y);
               if (
-                (shadow11 = isLeftButton()(req.a).call(
-                  req.a,
-                  this.fragments,
-                  function (data) {
-                    return i === data.shape;
-                  }
-                ))
+                (shadow11 = isLeftButton()(req.a).call(req.a, this.fragments, function (data) {
+                  return i === data.shape;
+                }))
               ) {
                 if (shadow11.color !== this.fillColor) {
                   this.activeColor = this.fillColor;
@@ -797,10 +742,7 @@
           pressmove: function () {
             var methodsToOverwrite;
             if (this.fillMode) {
-              methodsToOverwrite = this._getFragmentsAlongLine(
-                this.interactionState.previousPosition,
-                this.interactionState.currentPosition
-              );
+              methodsToOverwrite = this._getFragmentsAlongLine(this.interactionState.previousPosition, this.interactionState.currentPosition);
               req.a.each(
                 methodsToOverwrite,
                 function (consideration) {
@@ -815,20 +757,13 @@
           pressup: function () {
             var i;
             var shadow11;
-            var object = this.display.globalToLocal(
-              this.interactionState.currentPosition.x,
-              this.interactionState.currentPosition.y
-            );
+            var object = this.display.globalToLocal(this.interactionState.currentPosition.x, this.interactionState.currentPosition.y);
             if (this.fillMode) {
               i = this.display.getObjectUnderPoint(object.x, object.y);
               if (
-                (shadow11 = isLeftButton()(req.a).call(
-                  req.a,
-                  this.fragments,
-                  function (data) {
-                    return i === data.shape;
-                  }
-                ))
+                (shadow11 = isLeftButton()(req.a).call(req.a, this.fragments, function (data) {
+                  return i === data.shape;
+                }))
               ) {
                 shadow11.color = this.activeColor;
                 this.draw();
@@ -922,14 +857,10 @@
             /** @type {boolean} */
             var saw_r = entry instanceof DirSearchPathEntry;
             /** @type {boolean} */
-            var adjustHeight =
-              entry instanceof CatchEntry || entry instanceof FinallyEntry;
-            var isLessThanMaxAttempts =
-              entry instanceof Array && entry.fillMode;
+            var adjustHeight = entry instanceof CatchEntry || entry instanceof FinallyEntry;
+            var isLessThanMaxAttempts = entry instanceof Array && entry.fillMode;
             if (saw_u) {
-              (deviceOrientationEvent = new doc.a.Event(
-                _this.d.SELECT_ENTITY_EVENT
-              )).set({
+              (deviceOrientationEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set({
                 ids: [this.id],
                 add: false,
               });
@@ -953,8 +884,7 @@
             /** @type {boolean} */
             var saw_r = entry instanceof DirSearchPathEntry;
             /** @type {boolean} */
-            var adjustHeight =
-              entry instanceof CatchEntry || entry instanceof FinallyEntry;
+            var adjustHeight = entry instanceof CatchEntry || entry instanceof FinallyEntry;
             if (saw_u) {
               this.snapHands();
             } else {
@@ -994,11 +924,7 @@
         this.setRadius(self.radius);
         this.bindDispatcherEvents();
         this.bindDisplayEvents();
-        this.setTime(
-          self.initialTime.hour,
-          self.initialTime.minute,
-          self.initialTime.second
-        );
+        this.setTime(self.initialTime.hour, self.initialTime.minute, self.initialTime.second);
         this.setColorMode(self.initialFillColor);
       }
       /**
@@ -1029,11 +955,7 @@
         var MOVE =
           write()((sig = args.State.activeColor))
             .call(sig, 0, 1)
-            .toUpperCase() +
-          write()((placeMidpointLine = args.State.activeColor)).call(
-            placeMidpointLine,
-            1
-          );
+            .toUpperCase() + write()((placeMidpointLine = args.State.activeColor)).call(placeMidpointLine, 1);
         root.setBackgroundColor(EVENT[MOVE]);
         _this.f.dispatchEvent(data.Events.FRACTION_PICK_PALETTE_HIDE);
       }
@@ -1074,20 +996,14 @@
         var MOVE =
           write()((sig = args.State.activeColor))
             .call(sig, 0, 1)
-            .toUpperCase() +
-          write()((placeMidpointLine = args.State.activeColor)).call(
-            placeMidpointLine,
-            1
-          );
+            .toUpperCase() + write()((placeMidpointLine = args.State.activeColor)).call(placeMidpointLine, 1);
         root.setBackgroundColor(EVENT[MOVE]);
       }
       /**
        * @return {undefined}
        */
       function apply() {
-        document
-          .querySelector(data.FRACTION_FILL_PALETTE_SELECTOR)
-          .setAttribute("data-active-color", args.State.activeColor);
+        document.querySelector(data.FRACTION_FILL_PALETTE_SELECTOR).setAttribute("data-active-color", args.State.activeColor);
       }
       /**
        * @return {undefined}
@@ -1107,11 +1023,7 @@
         var key =
           write()((sig = args.State.activeColor))
             .call(sig, 0, 1)
-            .toUpperCase() +
-          write()((placeMidpointLine = args.State.activeColor)).call(
-            placeMidpointLine,
-            1
-          );
+            .toUpperCase() + write()((placeMidpointLine = args.State.activeColor)).call(placeMidpointLine, 1);
         var newColor = Array.FragmentColors[key];
         beat.set({
           setTo: longpoll,
@@ -1165,30 +1077,18 @@
             x: bounds.x + bounds.width / 2,
             y: bounds.y + bounds.height / 2,
           };
-          var that = bounds.topmostParent.t.localToLocal(
-            rightRenderRect.x,
-            rightRenderRect.y,
-            e.topmostParent.t
-          );
+          var that = bounds.topmostParent.t.localToLocal(rightRenderRect.x, rightRenderRect.y, e.topmostParent.t);
           /** @type {boolean} */
           var s = that.y > rect.height / 2;
           if (s) {
-            that = bounds.topmostParent.t.localToLocal(
-              o.x,
-              o.y,
-              e.topmostParent.t
-            );
+            that = bounds.topmostParent.t.localToLocal(o.x, o.y, e.topmostParent.t);
             /** @type {number} */
             e.x = that.x - e.width / 2;
             /** @type {number} */
             e.y = that.y - e.height - 25 - 12;
             e.y -= bounds._getVerticalPadding() + 1;
           } else {
-            that = bounds.topmostParent.t.localToLocal(
-              leftRenderRect.x,
-              leftRenderRect.y,
-              e.topmostParent.t
-            );
+            that = bounds.topmostParent.t.localToLocal(leftRenderRect.x, leftRenderRect.y, e.topmostParent.t);
             /** @type {number} */
             e.x = that.x - e.width / 2;
             e.y = that.y + 25;
@@ -1245,30 +1145,18 @@
             x: bounds.x + bounds.width / 2,
             y: bounds.y + bounds.height / 2,
           };
-          var c = bounds.topmostParent.t.localToLocal(
-            rightRenderRect.x,
-            rightRenderRect.y,
-            item.topmostParent.t
-          );
+          var c = bounds.topmostParent.t.localToLocal(rightRenderRect.x, rightRenderRect.y, item.topmostParent.t);
           /** @type {boolean} */
           var s = c.y > containment.height / 2;
           if (s) {
-            c = bounds.topmostParent.t.localToLocal(
-              o.x,
-              o.y,
-              item.topmostParent.t
-            );
+            c = bounds.topmostParent.t.localToLocal(o.x, o.y, item.topmostParent.t);
             /** @type {number} */
             item.x = c.x - item.width / 2;
             /** @type {number} */
             item.y = c.y - item.height - 25 - 12;
             item.y -= bounds._getVerticalPadding() + 1;
           } else {
-            c = bounds.topmostParent.t.localToLocal(
-              leftRenderRect.x,
-              leftRenderRect.y,
-              item.topmostParent.t
-            );
+            c = bounds.topmostParent.t.localToLocal(leftRenderRect.x, leftRenderRect.y, item.topmostParent.t);
             /** @type {number} */
             item.x = c.x - item.width / 2;
             item.y = c.y + 25;
@@ -1324,29 +1212,17 @@
             x: bounds.x + bounds.width / 2,
             y: bounds.y + bounds.height / 2,
           };
-          var b = bounds.topmostParent.t.localToLocal(
-            rightRenderRect.x,
-            rightRenderRect.y,
-            e.topmostParent.t
-          );
+          var b = bounds.topmostParent.t.localToLocal(rightRenderRect.x, rightRenderRect.y, e.topmostParent.t);
           /** @type {boolean} */
           var s = b.x > cc.width / 2;
           if (s) {
-            b = bounds.topmostParent.t.localToLocal(
-              o.x,
-              o.y,
-              c.topmostParent.t
-            );
+            b = bounds.topmostParent.t.localToLocal(o.x, o.y, c.topmostParent.t);
             /** @type {number} */
             c.x = b.x - c.width - 25 - 1;
             /** @type {number} */
             c.y = b.y - c.height / 2;
           } else {
-            b = bounds.topmostParent.t.localToLocal(
-              leftRenderRect.x,
-              leftRenderRect.y,
-              c.topmostParent.t
-            );
+            b = bounds.topmostParent.t.localToLocal(leftRenderRect.x, leftRenderRect.y, c.topmostParent.t);
             c.x = b.x + 25 + 1;
             /** @type {number} */
             c.y = b.y - c.height / 2;
@@ -1401,52 +1277,36 @@
             x: bounds.x + bounds.width / 2,
             y: bounds.y + bounds.height / 2,
           };
-          var rect = bounds.topmostParent.t.localToLocal(
-            rightRenderRect.x,
-            rightRenderRect.y,
-            e.topmostParent.t
-          );
-         
+          var rect = bounds.topmostParent.t.localToLocal(rightRenderRect.x, rightRenderRect.y, e.topmostParent.t);
+
           var s = rect.x > canvas.width / 2;
           if (s) {
-            rect = bounds.topmostParent.t.localToLocal(
-              o.x,
-              o.y,
-              obj.topmostParent.t
-            );
-         
+            rect = bounds.topmostParent.t.localToLocal(o.x, o.y, obj.topmostParent.t);
+
             obj.x = rect.x - obj.width - 25 - 1;
-         
+
             obj.y = rect.y - obj.height / 2;
           } else {
-            rect = bounds.topmostParent.t.localToLocal(
-              leftRenderRect.x,
-              leftRenderRect.y,
-              obj.topmostParent.t
-            );
+            rect = bounds.topmostParent.t.localToLocal(leftRenderRect.x, leftRenderRect.y, obj.topmostParent.t);
             obj.x = rect.x + 25 + 1;
-         
+
             obj.y = rect.y - obj.height / 2;
           }
           if (obj.y < 0) {
-         
             obj.y = 0;
           }
           if (obj.y + obj.height > canvas.height) {
-         
             obj.y = canvas.height - obj.height;
           }
           if (obj.x < 0) {
-         
             obj.x = 0;
           }
           if (obj.x + obj.width > canvas.width) {
-         
             obj.x = canvas.width - obj.width;
           }
-         
+
           obj.x = Math.round(obj.x);
-         
+
           obj.y = Math.round(obj.y);
           if (s) {
             obj.indicator("right", rect.y - obj.y);
@@ -1526,16 +1386,12 @@
           /** @type {number} */
           item.y = fx.y - item.height / 2;
           self.addText(item);
-          (deviceOrientationEvent = new doc.a.Event(
-            _this.d.SELECT_ENTITY_EVENT
-          )).set({
+          (deviceOrientationEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set({
             ids: [item.id],
             add: false,
           });
           _this.f.dispatchEvent(deviceOrientationEvent);
-          (docLoadedEvent = new doc.a.Event(
-            _this.d.CONSTRAIN_ENTITY_EVENT
-          )).set({
+          (docLoadedEvent = new doc.a.Event(_this.d.CONSTRAIN_ENTITY_EVENT)).set({
             skipAnimation: true,
             selectionBounds: item.getConstraintBounds(),
           });
@@ -1575,16 +1431,12 @@
           /** @type {number} */
           item.y = fx.y - item.height / 2;
           self.addText(item);
-          (deviceOrientationEvent = new doc.a.Event(
-            _this.d.SELECT_ENTITY_EVENT
-          )).set({
+          (deviceOrientationEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set({
             ids: [item.id],
             add: false,
           });
           _this.f.dispatchEvent(deviceOrientationEvent);
-          (docLoadedEvent = new doc.a.Event(
-            _this.d.CONSTRAIN_ENTITY_EVENT
-          )).set({
+          (docLoadedEvent = new doc.a.Event(_this.d.CONSTRAIN_ENTITY_EVENT)).set({
             skipAnimation: true,
             selectionBounds: item.getConstraintBounds(),
           });
@@ -1617,17 +1469,14 @@
             cornerResizeImage: _this.n.getResult("entities", linkCont),
             fillImage: _this.n.getResult("entities", fakeSrc),
           };
-          (fx = curve((e = new _this.t(null, stream)), true)).x +=
-            24 * Math.random() - 12;
+          (fx = curve((e = new _this.t(null, stream)), true)).x += 24 * Math.random() - 12;
           fx.y += 24 * Math.random() - 12;
           /** @type {number} */
           e.x = fx.x - e.width / 2;
           /** @type {number} */
           e.y = fx.y - e.height / 2;
           self.addShade(e);
-          (deviceOrientationEvent = new doc.a.Event(
-            _this.d.CONSTRAIN_ENTITY_EVENT
-          )).set({
+          (deviceOrientationEvent = new doc.a.Event(_this.d.CONSTRAIN_ENTITY_EVENT)).set({
             skipAnimation: true,
             selectionBounds: e.getConstraintBounds(),
           });
@@ -1646,9 +1495,7 @@
         var deviceOrientationEvent;
         var docLoadedEvent;
         if (onChange(1)) {
-          _this.f.dispatchEvent(
-            new doc.a.Event(_this.d.SPAWN_ITEM_FAILURE_PROMPT_EVENT)
-          );
+          _this.f.dispatchEvent(new doc.a.Event(_this.d.SPAWN_ITEM_FAILURE_PROMPT_EVENT));
         } else {
           target = new selection(null, {
             position: {
@@ -1674,14 +1521,10 @@
           body = {
             ids: [target.id],
           };
-          (deviceOrientationEvent = new doc.a.Event(
-            _this.d.SELECT_ENTITY_EVENT
-          )).set(body);
+          (deviceOrientationEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set(body);
           _this.f.dispatchEvent(deviceOrientationEvent);
           if (_clr_hex.fractionMode) {
-            (docLoadedEvent = new doc.a.Event(
-              data.Events.FRACTION_PICK_PALETTE_SHOW
-            )).set({
+            (docLoadedEvent = new doc.a.Event(data.Events.FRACTION_PICK_PALETTE_SHOW)).set({
               targetEntity: target,
             });
             _this.f.dispatchEvent(docLoadedEvent);
@@ -1779,19 +1622,13 @@
        */
       function flush() {
         console.log("Flush: EVENT: TOGGLE_DIGITAL_READOUT_MODE");
-        var beat = new doc.a.Event(
-          data.Events.TOGGLE_SELECTION_DIGITAL_READOUT_MODE
-        );
+        var beat = new doc.a.Event(data.Events.TOGGLE_SELECTION_DIGITAL_READOUT_MODE);
         /** @type {!Array} */
         var t = [];
         var selected = me.getSelection(selection);
-        var event = require()(req.a).call(
-          req.a,
-          selected,
-          function (canCreateDiscussions) {
-            return canCreateDiscussions.isGeared();
-          }
-        );
+        var event = require()(req.a).call(req.a, selected, function (canCreateDiscussions) {
+          return canCreateDiscussions.isGeared();
+        });
         /** @type {boolean} */
         var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
           return canCreateDiscussions.digitalReadoutMode;
@@ -1808,19 +1645,18 @@
 
       function tellTimeHandler() {
         console.log("tellTimeHandler: EVENT: TOGGLE_TELL_TIME_MODE");
-        var beat = new doc.a.Event(
-          data.Events.TOGGLE_SELECTION_TELL_TIME_MODE
-        );
+        var tt = document.getElementById("run-jump-mode");
+        if(tt.classList.contains("on")){
+          console.log("runjum on");
+          tt.click();
+        }
+        var beat = new doc.a.Event(data.Events.TOGGLE_SELECTION_TELL_TIME_MODE);
         /** @type {!Array} */
         var t = [];
         var selected = me.getSelection(selection);
-        var event = require()(req.a).call(
-          req.a,
-          selected,
-          function (canCreateDiscussions) {
-            return canCreateDiscussions.isGeared();
-          }
-        );
+        var event = require()(req.a).call(req.a, selected, function (canCreateDiscussions) {
+          return canCreateDiscussions.isGeared();
+        });
         /** @type {boolean} */
         var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
           return canCreateDiscussions.tellTimeMode;
@@ -1839,17 +1675,18 @@
        */
       function decode() {
         console.log("decode: EVENT: TOGGLE_RUN_JUMP_MODE");
+        var tt = document.getElementById("tell-time-mode");
+        if(tt.classList.contains("on")){
+          console.log("telltime on");
+          tt.click();
+        }
         var beat = new doc.a.Event(data.Events.TOGGLE_SELECTION_RUN_JUMP_MODE);
         /** @type {!Array} */
         var t = [];
         var selected = me.getSelection(selection);
-        var event = require()(req.a).call(
-          req.a,
-          selected,
-          function (canCreateDiscussions) {
-            return canCreateDiscussions.isGeared();
-          }
-        );
+        var event = require()(req.a).call(req.a, selected, function (canCreateDiscussions) {
+          return canCreateDiscussions.isGeared();
+        });
         /** @type {boolean} */
         var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
           return canCreateDiscussions.runJumpMode;
@@ -1868,19 +1705,13 @@
        */
       function _init() {
         console.log("_init: EVENT: TOGGLE_ELAPSED_TIME_MODE");
-        var beat = new doc.a.Event(
-          data.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE
-        );
+        var beat = new doc.a.Event(data.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE);
         /** @type {!Array} */
         var t = [];
         var selected = me.getSelection(selection);
-        var event = require()(req.a).call(
-          req.a,
-          selected,
-          function (canCreateDiscussions) {
-            return canCreateDiscussions.isGeared();
-          }
-        );
+        var event = require()(req.a).call(req.a, selected, function (canCreateDiscussions) {
+          return canCreateDiscussions.isGeared();
+        });
         /** @type {boolean} */
         var a = !i()(req.a).call(req.a, event, function (canCreateDiscussions) {
           return canCreateDiscussions.elapsedTimeMode;
@@ -1894,8 +1725,6 @@
         });
         _this.f.dispatchEvent(beat);
       }
-
-      
 
       /**
        * @param {string} name
@@ -2049,8 +1878,7 @@
         return match()(url).call(url, function (canCreateDiscussions) {
           return (
             canCreateDiscussions.fractionControl.getFragmentCount() > 0 &&
-            canCreateDiscussions.activeMajorControl ===
-              selection.MajorControls.FractionControl
+            canCreateDiscussions.activeMajorControl === selection.MajorControls.FractionControl
           );
         });
       }
@@ -2071,12 +1899,9 @@
         /** @type {string} */
         document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).value = "";
         rule = {};
-        __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(
-          function () {
-            document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).focus();
-          },
-          0
-        );
+        __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(function () {
+          document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).focus();
+        }, 0);
       }
       /**
        * @return {undefined}
@@ -2084,21 +1909,15 @@
       function clear() {
         /** @type {string} */
         document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).value = "";
-        document
-          .querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR)
-          .removeAttribute("aria-invalid");
-        document
-          .querySelector(data.ACTIVITY_CODE_SUBMIT_BOX_SELECTOR)
-          .classList.remove("show-error");
+        document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).removeAttribute("aria-invalid");
+        document.querySelector(data.ACTIVITY_CODE_SUBMIT_BOX_SELECTOR).classList.remove("show-error");
       }
       /**
        * @return {undefined}
        */
       function init() {
         var req = new doc.a.Event(_this.d.LOAD_ACTIVITY_CODE_EVENT);
-        var input = find(
-          document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).value
-        );
+        var input = find(document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).value);
         input = input.toLowerCase().replace(/o/g, "0").replace(/i/g, "1");
         _.fetch(input).then(
           function (nextResponse) {
@@ -2109,12 +1928,8 @@
             _this.f.dispatchEvent(req);
           },
           function () {
-            document
-              .querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR)
-              .setAttribute("aria-invalid", "true");
-            document
-              .querySelector(data.ACTIVITY_CODE_SUBMIT_BOX_SELECTOR)
-              .classList.add("show-error");
+            document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).setAttribute("aria-invalid", "true");
+            document.querySelector(data.ACTIVITY_CODE_SUBMIT_BOX_SELECTOR).classList.add("show-error");
             document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).select();
           }
         );
@@ -2123,20 +1938,14 @@
        * @return {undefined}
        */
       function refresh() {
-        document
-          .querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR)
-          .removeAttribute("aria-invalid");
-        document
-          .querySelector(data.ACTIVITY_CODE_SUBMIT_BOX_SELECTOR)
-          .classList.remove("show-error");
+        document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).removeAttribute("aria-invalid");
+        document.querySelector(data.ACTIVITY_CODE_SUBMIT_BOX_SELECTOR).classList.remove("show-error");
         (function () {
           var SOFT_TAB_LENGTH;
           var ret;
           var val;
           /** @type {(Element|null)} */
-          var textarea = document.querySelector(
-            data.ACTIVITY_CODE_TARGET_SELECTOR
-          );
+          var textarea = document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR);
           var value = textarea.value;
           var caret = textarea.selectionStart;
           var selectionEnd = textarea.selectionEnd;
@@ -2145,10 +1954,7 @@
           var c = false;
           if (req.a.isString(rule.value)) {
             /** @type {boolean} */
-            c =
-              "-" === rule.value.substr(4, 1) &&
-              4 === caret &&
-              4 === value.length;
+            c = "-" === rule.value.substr(4, 1) && 4 === caret && 4 === value.length;
           }
           if (c) {
             value = write()(value).call(value, 0, 3);
@@ -2157,12 +1963,7 @@
           val = (function (value) {
             /** @type {string} */
             var output = "";
-            output =
-              value.length >= 4
-                ? write()(value).call(value, 0, 4) +
-                  "-" +
-                  write()(value).call(value, 4, 8)
-                : value;
+            output = value.length >= 4 ? write()(value).call(value, 0, 4) + "-" + write()(value).call(value, 4, 8) : value;
             return (output = output.toUpperCase());
           })(ret);
           if (8 === ret.length) {
@@ -2173,10 +1974,7 @@
           /** @type {number} */
           SOFT_TAB_LENGTH = val.length - i;
           textarea.value = val;
-          textarea.setSelectionRange(
-            caret + SOFT_TAB_LENGTH,
-            selectionEnd + SOFT_TAB_LENGTH
-          );
+          textarea.setSelectionRange(caret + SOFT_TAB_LENGTH, selectionEnd + SOFT_TAB_LENGTH);
           rule = {
             value: textarea.value,
             selectionStart: textarea.selectionStart,
@@ -2201,12 +1999,8 @@
         var t = document.querySelector(data.SHARE_POPUP_URL_INPUT_SELECTOR);
         t.setAttribute("value", event.stateLink);
         t.select();
-        document
-          .querySelector(data.SHARE_POPUP_CODE_INPUT_SELECTOR)
-          .setAttribute("value", event.formattedSaveStateId);
-        document.querySelector(
-          data.ACTIVITY_CODE_DISPLAY_SELECTOR
-        ).textContent = event.formattedSaveStateId;
+        document.querySelector(data.SHARE_POPUP_CODE_INPUT_SELECTOR).setAttribute("value", event.formattedSaveStateId);
+        document.querySelector(data.ACTIVITY_CODE_DISPLAY_SELECTOR).textContent = event.formattedSaveStateId;
         authReqCmd.saveLinkCopy.enable();
         authReqCmd.saveLinkDisplay.enable();
       }
@@ -2226,13 +2020,9 @@
        */
       function _getCroppedText() {
         /** @type {(Element|null)} */
-        var transporterInput = document.querySelector(
-          data.SHARE_POPUP_URL_INPUT_SELECTOR
-        );
+        var transporterInput = document.querySelector(data.SHARE_POPUP_URL_INPUT_SELECTOR);
         /** @type {(Element|null)} */
-        var oldpwbox = document.querySelector(
-          data.SHARE_POPUP_CODE_INPUT_SELECTOR
-        );
+        var oldpwbox = document.querySelector(data.SHARE_POPUP_CODE_INPUT_SELECTOR);
         /** @type {(Element|null)} */
         var xorEl = document.querySelector(data.ACTIVITY_CODE_DISPLAY_SELECTOR);
         transporterInput.setAttribute("value", "Saving...");
@@ -2249,12 +2039,8 @@
         if (navigator.onLine) {
           _this.f.dispatchEvent(_this.d.SAVE_STATE);
         } else {
-          document
-            .querySelector(data.SHARE_POPUP_URL_INPUT_SELECTOR)
-            .setAttribute("value", "No internet connection");
-          document
-            .querySelector(data.SHARE_POPUP_CODE_INPUT_SELECTOR)
-            .setAttribute("value", "No internet connection");
+          document.querySelector(data.SHARE_POPUP_URL_INPUT_SELECTOR).setAttribute("value", "No internet connection");
+          document.querySelector(data.SHARE_POPUP_CODE_INPUT_SELECTOR).setAttribute("value", "No internet connection");
         }
       }
       /**
@@ -2273,10 +2059,7 @@
           if (Data.checkSaveBlobSupport()) {
             navigator.msSaveBlob(blob, "my-basic-app.png");
           } else {
-            var styleElId = dataUrl.replace(
-              "data:image/png",
-              "data:attachment/file"
-            );
+            var styleElId = dataUrl.replace("data:image/png", "data:attachment/file");
             el.setAttribute("href", styleElId);
             el.setAttribute("target", "_blank");
             el.click();
@@ -2303,32 +2086,25 @@
             }
           );
           /** @type {(Element|null)} */
-          var row = document.querySelector(
-            "#copy-container #image-copy-feedback"
-          );
+          var row = document.querySelector("#copy-container #image-copy-feedback");
           /** @type {!Array} */
           var range = [];
           row.classList.add("input-feedback-pulse");
-          cb()(
-            (placeMidpointLine = [
-              "animationend",
-              "webkitAnimationEnd",
-              "oAnimationEnd",
-              "MSAnimationEnd",
-            ])
-          ).call(placeMidpointLine, function (type) {
-            var t = row.addEventListener(type, function () {
-              row.classList.remove("input-feedback-pulse");
-              cb()(range).call(range, function (increment) {
-                row.removeEventListener(type, increment);
+          cb()((placeMidpointLine = ["animationend", "webkitAnimationEnd", "oAnimationEnd", "MSAnimationEnd"])).call(
+            placeMidpointLine,
+            function (type) {
+              var t = row.addEventListener(type, function () {
+                row.classList.remove("input-feedback-pulse");
+                cb()(range).call(range, function (increment) {
+                  row.removeEventListener(type, increment);
+                });
               });
-            });
-            range.push(t);
-          });
+              range.push(t);
+            }
+          );
         } else {
           if (!Data.isCPA()) {
-            var o =
-              oMultiSelect.$element[0].querySelector(".copy-image-source");
+            var o = oMultiSelect.$element[0].querySelector(".copy-image-source");
             url = root.getPageDataURL();
             o.setAttribute("src", "");
             if (url) {
@@ -2342,22 +2118,12 @@
        * @return {undefined}
        */
       function notify() {
-        if (
-          (document.querySelector(data.SHARE_POPUP_URL_INPUT_SELECTOR).select(),
-          document.execCommand("copy"))
-        ) {
+        if ((document.querySelector(data.SHARE_POPUP_URL_INPUT_SELECTOR).select(), document.execCommand("copy"))) {
           var placeMidpointLine;
           /** @type {(Element|null)} */
           var t = document.querySelector("#save-popup #copy-feedback");
           t.classList.add("input-feedback-pulse");
-          cb()(
-            (placeMidpointLine = [
-              "animationend",
-              "webkitAnimationEnd",
-              "oAnimationEnd",
-              "MSAnimationEnd",
-            ])
-          ).call(placeMidpointLine, function (e) {
+          cb()((placeMidpointLine = ["animationend", "webkitAnimationEnd", "oAnimationEnd", "MSAnimationEnd"])).call(placeMidpointLine, function (e) {
             t.addEventListener(e, function () {
               t.classList.remove("input-feedback-pulse");
             });
@@ -2388,27 +2154,18 @@
        */
       function search(options) {
         var imageryProvider;
-        var context = require()((imageryProvider = root.getEntities())).call(
-          imageryProvider,
-          function (bounds) {
-            return bounds instanceof selection;
-          }
-        );
+        var context = require()((imageryProvider = root.getEntities())).call(imageryProvider, function (bounds) {
+          return bounds instanceof selection;
+        });
         return context
           ? require()(context).call(context, function (_this) {
               /** @type {boolean} */
               var relation = true;
               return (
                 "minute" === options.hand
-                  ? (relation =
-                      (relation = req.a.isBoolean(options.setTo)
-                        ? options.setTo
-                        : !_this.minuteHandOn) && _this.hourHandOn)
+                  ? (relation = (relation = req.a.isBoolean(options.setTo) ? options.setTo : !_this.minuteHandOn) && _this.hourHandOn)
                   : "hour" === options.hand &&
-                    (relation =
-                      (relation = req.a.isBoolean(options.setTo)
-                        ? options.setTo
-                        : !_this.hourHandOn) && _this.minuteHandOn),
+                    (relation = (relation = req.a.isBoolean(options.setTo) ? options.setTo : !_this.hourHandOn) && _this.minuteHandOn),
                 _this.gearedHands && relation
               );
             })
@@ -2423,8 +2180,7 @@
         return match()(url).call(url, function (canCreateDiscussions) {
           return (
             canCreateDiscussions.fractionControl.getFragmentCount() > 0 &&
-            canCreateDiscussions.activeMajorControl ===
-              selection.MajorControls.FractionControl
+            canCreateDiscussions.activeMajorControl === selection.MajorControls.FractionControl
           );
         });
       }
@@ -2583,12 +2339,8 @@
       function render(opt) {
         if (opt.saveId) {
           if (
-            (document
-              .querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR)
-              .removeAttribute("aria-invalid"),
-            document
-              .querySelector(data.ACTIVITY_CODE_SUBMIT_BOX_SELECTOR)
-              .classList.remove("show-error"),
+            (document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).removeAttribute("aria-invalid"),
+            document.querySelector(data.ACTIVITY_CODE_SUBMIT_BOX_SELECTOR).classList.remove("show-error"),
             Data.isCPA())
           ) {
             var state = opt.response[_.SAVE_KEY];
@@ -2605,11 +2357,7 @@
             _this.f.dispatchEvent(_this.d.ACTIVITY_CODE_CLOSE_EVENT);
           } else {
             /** @type {string} */
-            window.location.href =
-              window.location.origin +
-              window.location.pathname +
-              "?" +
-              opt.saveId;
+            window.location.href = window.location.origin + window.location.pathname + "?" + opt.saveId;
           }
         }
       }
@@ -2619,9 +2367,7 @@
       var avatarSrc = ($("6QhM"), $("CZX6"), $("RjO5"), $("XVer"));
       var schema = $("L6fE");
       var __WEBPACK_IMPORTED_MODULE_20_date_fns_min__ = $("OBge");
-      var __WEBPACK_IMPORTED_MODULE_20_date_fns_min___default = $.n(
-        __WEBPACK_IMPORTED_MODULE_20_date_fns_min__
-      );
+      var __WEBPACK_IMPORTED_MODULE_20_date_fns_min___default = $.n(__WEBPACK_IMPORTED_MODULE_20_date_fns_min__);
       var opts = $("F/us");
       var req = $.n(opts);
       var link = $("EVdn");
@@ -2777,16 +2523,13 @@
       /** @type {string} */
       that.Events.SPAWN_TEXT_FAILURE_PROMPT_CLOSE = "spawntextfailureclose";
       /** @type {string} */
-      that.Events.DUPLICATE_CLOCK_FAILURE_PROMPT =
-        "duplicateclockfailureprompt";
+      that.Events.DUPLICATE_CLOCK_FAILURE_PROMPT = "duplicateclockfailureprompt";
       /** @type {string} */
-      that.Events.DUPLICATE_CLOCK_FAILURE_PROMPT_CLOSE =
-        "duplicateclockfailureclose";
+      that.Events.DUPLICATE_CLOCK_FAILURE_PROMPT_CLOSE = "duplicateclockfailureclose";
       /** @type {string} */
       that.Events.DUPLICATE_TEXT_FAILURE_PROMPT = "duplicatetextfailureprompt";
       /** @type {string} */
-      that.Events.DUPLICATE_TEXT_FAILURE_PROMPT_CLOSE =
-        "duplicatetextfailureclose";
+      that.Events.DUPLICATE_TEXT_FAILURE_PROMPT_CLOSE = "duplicatetextfailureclose";
       /** @type {string} */
       that.Events.SPAWN_CLOCK_FAILURE = "spawnclockfailure";
       /** @type {string} */
@@ -2802,8 +2545,7 @@
       /** @type {string} */
       that.Events.TOGGLE_DIGITAL_READOUT_MODE = "toggledigitalreadout";
       /** @type {string} */
-      that.Events.TOGGLE_SELECTION_DIGITAL_READOUT_MODE =
-        "togglesleectiondigitalreadoutmode";
+      that.Events.TOGGLE_SELECTION_DIGITAL_READOUT_MODE = "togglesleectiondigitalreadoutmode";
       /** @type {string} */
       that.Events.TOGGLE_RUN_JUMP_MODE = "togglerunjump";
       /** @type {string} */
@@ -2811,23 +2553,19 @@
       /** @type {string} */
       that.Events.TOGGLE_ELAPSED_TIME_MODE = "toggleelapsedtime";
       /** @type {string} */
-      that.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE =
-        "toggleselectionelapsedtimemode";
+      that.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE = "toggleselectionelapsedtimemode";
       /** @type {string} */
       that.Events.TOGGLE_TELL_TIME_MODE = "toggletelltime";
       /** @type {string} */
-      that.Events.TOGGLE_SELECTION_TELL_TIME_MODE =
-        "toggleselectiontelltimemode";
+      that.Events.TOGGLE_SELECTION_TELL_TIME_MODE = "toggleselectiontelltimemode";
       /** @type {string} */
       that.Events.TOGGLE_TELL_ANGLE_MODE = "toggletellangle";
       /** @type {string} */
-      that.Events.TOGGLE_SELECTION_TELL_ANGLE_MODE =
-        "toggleselectiontellanglemode";
+      that.Events.TOGGLE_SELECTION_TELL_ANGLE_MODE = "toggleselectiontellanglemode";
       /** @type {string} */
       that.Events.TOGGLE_FRACTION_MODE = "togglefractionmode";
       /** @type {string} */
-      that.Events.TOGGLE_SELECTION_FRACTION_MODE =
-        "toggleselectionfractionmode";
+      that.Events.TOGGLE_SELECTION_FRACTION_MODE = "toggleselectionfractionmode";
       /** @type {string} */
       that.Events.FRACTION_PICK_PALETTE_SHOW = "fractionpickpaletteshow";
       /** @type {string} */
@@ -2835,11 +2573,9 @@
       /** @type {string} */
       that.Events.FRACTION_PICK_PALETTE_TOGGLE = "fractionpickpalettetoggle";
       /** @type {string} */
-      that.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT =
-        "fractionpickpalettesetfragmentcount";
+      that.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT = "fractionpickpalettesetfragmentcount";
       /** @type {string} */
-      that.Events.FRACTION_ENTITY_SET_FRAGMENT_COUNT =
-        "fractionentitysetfragmentcount";
+      that.Events.FRACTION_ENTITY_SET_FRAGMENT_COUNT = "fractionentitysetfragmentcount";
       /** @type {string} */
       that.Events.FRACTION_FILL_PALETTE_SHOW = "fractionfillpaletteshow";
       /** @type {string} */
@@ -2849,8 +2585,7 @@
       /** @type {string} */
       that.Events.TOGGLE_FRACTION_FILL_MODE = "togglefractionfillmode";
       /** @type {string} */
-      that.Events.TOGGLE_SELECTION_FRACTION_FILL_MODE =
-        "toggleselectionfractionfillmode";
+      that.Events.TOGGLE_SELECTION_FRACTION_FILL_MODE = "toggleselectionfractionfillmode";
       /** @type {string} */
       that.Events.SET_FRACTION_FILL_COLOR = "setfractionfillcolor";
       /** @type {string} */
@@ -2860,14 +2595,11 @@
       /** @type {string} */
       that.Events.SET_CLOCK_HAND_VISIBILITY = "setclockhandvisibility";
       /** @type {string} */
-      that.Events.SET_SELECTION_CLOCK_HAND_VISIBILITY =
-        "setselectionclockhandvisibility";
+      that.Events.SET_SELECTION_CLOCK_HAND_VISIBILITY = "setselectionclockhandvisibility";
       /** @type {string} */
-      that.Events.SET_CLOCK_HAND_LABEL_VISIBILITY =
-        "setclockhandlabelvisibility";
+      that.Events.SET_CLOCK_HAND_LABEL_VISIBILITY = "setclockhandlabelvisibility";
       /** @type {string} */
-      that.Events.SET_SELECTION_CLOCK_HAND_LABEL_VISIBILITY =
-        "setselectionclockhandlabelvisibility";
+      that.Events.SET_SELECTION_CLOCK_HAND_LABEL_VISIBILITY = "setselectionclockhandlabelvisibility";
       /** @type {string} */
       that.Events.TOGGLE_RUN_JUMP_STATE = "togglerunjumpstate";
       /** @type {string} */
@@ -2905,8 +2637,7 @@
       /** @type {string} */
       that.Events.ACTIVITY_CODE_DISPLAY_OPEN_EVENT = "activitycodedisplayopen";
       /** @type {string} */
-      that.Events.ACTIVITY_CODE_DISPLAY_CLOSE_EVENT =
-        "activitycodedisplayclose";
+      that.Events.ACTIVITY_CODE_DISPLAY_CLOSE_EVENT = "activitycodedisplayclose";
       /** @type {string} */
       that.Events.ACTIVITY_CODE_OPEN_EVENT = "activitycodeopen";
       /** @type {string} */
@@ -3110,13 +2841,9 @@
        * @return {?}
        */
       model.anyActive = function () {
-        return match()(req.a).call(
-          req.a,
-          bubbled_sets__3355,
-          function (FileModal) {
-            return FileModal.isOpen;
-          }
-        );
+        return match()(req.a).call(req.a, bubbled_sets__3355, function (FileModal) {
+          return FileModal.isOpen;
+        });
       };
       var ret = model;
       var div = $("mnMc");
@@ -3196,8 +2923,7 @@
         );
       };
       var tablesongs = $("Kwsy");
-      var __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default =
-        $.n(tablesongs);
+      var __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default = $.n(tablesongs);
       var x = $("lHQ6");
       var pipe = $.n(x);
       var state = {
@@ -3261,9 +2987,7 @@
           this.minutesInput,
           this.periodUp.display,
           this.periodDown.display,
-          this.readoutDisplayModeCanToggle
-            ? this.readoutDisplayModeToggle.display
-            : null,
+          this.readoutDisplayModeCanToggle ? this.readoutDisplayModeToggle.display : null,
         ];
         req.a.each(
           this.displayComponents,
@@ -3299,15 +3023,9 @@
         var result = this._getButtonOptions("up", nums.HOURS_UP);
         var y = this._getButtonOptions("down", nums.HOURS_DOWN);
         var subprotocols = this._getButtonOptions("up", nums.MINUTES_UNITS_UP);
-        var startHistoryId = this._getButtonOptions(
-          "down",
-          nums.MINUTES_UNITS_DOWN
-        );
+        var startHistoryId = this._getButtonOptions("down", nums.MINUTES_UNITS_DOWN);
         var data = this._getButtonOptions("up", nums.PERIOD_UP);
-        var tls_socket_options = this._getButtonOptions(
-          "down",
-          nums.PERIOD_DOWN
-        );
+        var tls_socket_options = this._getButtonOptions("down", nums.PERIOD_DOWN);
         return (
           (self.backing = new doc.a.Shape()),
           (self.hoursUp = new _this.b(null, result)),
@@ -3316,10 +3034,7 @@
           (self.minutesDown = new _this.b(null, startHistoryId)),
           (self.periodUp = new _this.b(null, data)),
           (self.periodDown = new _this.b(null, tls_socket_options)),
-          (self.readoutDisplayModeToggle = new _this.v(
-            null,
-            this._getModeToggleButtonOptions()
-          )),
+          (self.readoutDisplayModeToggle = new _this.v(null, this._getModeToggleButtonOptions())),
           self.hoursUp.draw(),
           self.hoursDown.draw(),
           self.minutesUp.draw(),
@@ -3338,15 +3053,12 @@
         _this.f.on(
           data.Events.DIGITAL_READOUT_MODE_TOGGLE,
           function (aReport) {
-            console.log("DIGITAL_READOUT_MODE_TOGGLE",aReport);
+            console.log("DIGITAL_READOUT_MODE_TOGGLE", aReport);
             var node = this.readoutDisplayMode;
             var value = pipe()(this.hours.text, 10);
             var BR = this.period.text;
             this.readoutDisplayMode = aReport.mode;
-            if (
-              (node === state.hr24 && value > 12) ||
-              (node === state.hr24 && 0 === value)
-            ) {
+            if ((node === state.hr24 && value > 12) || (node === state.hr24 && 0 === value)) {
               this.setTime(value);
             } else {
               if (node === state.hr12 && "AM" === BR && 12 === value) {
@@ -3366,25 +3078,22 @@
           },
           this
         );
-        _this.f.on(
-          data.Events.DIGITAL_READOUT_TOGGLE_ACTIVE,
-          function (options) {
-            var c;
-            var s = req.a.isBoolean(options.setTo);
-            if (req.a.contains(options.ids, node.id) && node.enabled) {
-              if ((s && options.setTo) || (!s && !node.active)) {
-                c = new doc.a.Event(data.Events.DIGITAL_READOUT_SET_ACTIVE);
-              }
-              if ((s && !options.setTo) || (!s && node.active)) {
-                c = new doc.a.Event(data.Events.DIGITAL_READOUT_UNSET_ACTIVE);
-              }
-              c.set({
-                ids: [node.id],
-              });
-              _this.f.dispatchEvent(c);
+        _this.f.on(data.Events.DIGITAL_READOUT_TOGGLE_ACTIVE, function (options) {
+          var c;
+          var s = req.a.isBoolean(options.setTo);
+          if (req.a.contains(options.ids, node.id) && node.enabled) {
+            if ((s && options.setTo) || (!s && !node.active)) {
+              c = new doc.a.Event(data.Events.DIGITAL_READOUT_SET_ACTIVE);
             }
+            if ((s && !options.setTo) || (!s && node.active)) {
+              c = new doc.a.Event(data.Events.DIGITAL_READOUT_UNSET_ACTIVE);
+            }
+            c.set({
+              ids: [node.id],
+            });
+            _this.f.dispatchEvent(c);
           }
-        );
+        });
         _this.f.on(data.Events.DIGITAL_READOUT_SET_ACTIVE, function (options) {
           if (req.a.contains(options.ids, node.id) && node.enabled) {
             /** @type {boolean} */
@@ -3393,28 +3102,21 @@
             _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
           }
         });
-        _this.f.on(
-          data.Events.DIGITAL_READOUT_UNSET_ACTIVE,
-          function (options) {
-            if (req.a.contains(options.ids, node.id) && node.enabled) {
-              /** @type {boolean} */
-              node.active = false;
-              node.draw();
-              _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
-            }
+        _this.f.on(data.Events.DIGITAL_READOUT_UNSET_ACTIVE, function (options) {
+          if (req.a.contains(options.ids, node.id) && node.enabled) {
+            /** @type {boolean} */
+            node.active = false;
+            node.draw();
+            _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
           }
-        );
+        });
       };
       /**
        * @return {?}
        */
       test.prototype._setupElements = function () {
         var d = {};
-        return (
-          (d.hoursInput = this._createInputField("hours")),
-          (d.minutesInput = this._createInputField("minutes")),
-          d
-        );
+        return (d.hoursInput = this._createInputField("hours")), (d.minutesInput = this._createInputField("minutes")), d;
       };
       /**
        * @param {string} key
@@ -3450,9 +3152,7 @@
         e.on("input", function () {
           var name;
           var n;
-          var trigger = new doc.a.Event(
-            data.Events.DIGITAL_READOUT_INPUT_TEXT_CHANGE
-          );
+          var trigger = new doc.a.Event(data.Events.DIGITAL_READOUT_INPUT_TEXT_CHANGE);
           e.val(e.val().replace(/\D/g, ""));
           if ((name = e.val()).length > 2) {
             name = name.substring(1);
@@ -3462,16 +3162,8 @@
           if (req.a.isNaN(n)) {
             console.error("New time is not a number.");
           } else {
-            if (
-              !(
-                ("hours" === undefined && (n < 1 || n > 12)) ||
-                ("minutes" === undefined && (n < 0 || n > 59))
-              )
-            ) {
-              if (
-                "hours" === undefined &&
-                scope.readoutDisplayMode === state.hr12
-              ) {
+            if (!(("hours" === undefined && (n < 1 || n > 12)) || ("minutes" === undefined && (n < 0 || n > 59)))) {
+              if ("hours" === undefined && scope.readoutDisplayMode === state.hr12) {
                 if ("PM" === scope.period.text && 12 !== n) {
                   n = n + 12;
                 } else {
@@ -3506,16 +3198,10 @@
         });
         e.on("blur", function () {
           var intVal = pipe()(e.val(), 10);
-          if (
-            "hours" === undefined &&
-            (intVal < 1 || intVal > 12 || req.a.isNaN(intVal))
-          ) {
+          if ("hours" === undefined && (intVal < 1 || intVal > 12 || req.a.isNaN(intVal))) {
             e.val(scope.hours.text);
           }
-          if (
-            "minutes" === undefined &&
-            (intVal < 0 || intVal > 59 || req.a.isNaN(intVal))
-          ) {
+          if ("minutes" === undefined && (intVal < 0 || intVal > 59 || req.a.isNaN(intVal))) {
             e.val(scope.minutes.text);
           }
           _this.f.dispatchEvent(data.Events.DIGITAL_READOUT_INPUT_BLUR);
@@ -3531,10 +3217,8 @@
         this.minutesUp.display.visible = this.active && this.enabled;
         this.minutesDown.display.visible = this.active && this.enabled;
         this.minutesInput.visible = this.active && this.enabled;
-        this.periodUp.display.visible =
-          this.readoutDisplayMode === state.hr12 && this.active && this.enabled;
-        this.periodDown.display.visible =
-          this.readoutDisplayMode === state.hr12 && this.active && this.enabled;
+        this.periodUp.display.visible = this.readoutDisplayMode === state.hr12 && this.active && this.enabled;
+        this.periodDown.display.visible = this.readoutDisplayMode === state.hr12 && this.active && this.enabled;
         if (this.enabled) {
           if (this.active) {
             this.backing.graphics
@@ -3542,13 +3226,7 @@
               .setStrokeStyle(3)
               .beginStroke(TABS_ACTIVE_LINE_COLOR)
               .beginFill("black")
-              .drawRoundRect(
-                0,
-                -this.height / 2,
-                this.width,
-                2 * this.height,
-                8
-              );
+              .drawRoundRect(0, -this.height / 2, this.width, 2 * this.height, 8);
           } else {
             this.backing.graphics
               .clear()
@@ -3558,12 +3236,7 @@
               .drawRoundRect(0, 0, this.width, this.height, 8);
           }
         } else {
-          this.backing.graphics
-            .clear()
-            .setStrokeStyle(3)
-            .beginStroke("grey")
-            .beginFill("grey")
-            .drawRoundRect(0, 0, this.width, this.height, 8);
+          this.backing.graphics.clear().setStrokeStyle(3).beginStroke("grey").beginFill("grey").drawRoundRect(0, 0, this.width, this.height, 8);
         }
       };
       /**
@@ -3572,7 +3245,7 @@
        * @return {undefined}
        */
       test.prototype.setTime = function (i, v) {
-        var value;        
+        var value;
         if (req.a.isNumber(i)) {
           if (i < 0 || i >= 24) {
             console.error("Hour time out of bounds:", i);
@@ -3610,77 +3283,13 @@
               this.minutes.text = "0" + this.minutes.text;
             }
           }
-          debug()("input", this.minutesInput.htmlElement).val(
-            this.minutes.text
-          );
+          debug()("input", this.minutesInput.htmlElement).val(this.minutes.text);
         }
         if (this.readoutDisplayMode === state.hr12) {
           /** @type {string} */
           this.period.text = i < 12 ? "AM" : "PM";
         }
-        var tBox = document.getElementById("time-box");
-        tBox.innerHTML = this.hours.text + ":" + this.minutes.text;
-        tBox.setAttribute("data-h", this.hours.text);
-        tBox.setAttribute("data-m", this.minutes.text);
-        tBox.setAttribute("data-p", this.period.text);
-        //console.clear();
-        //console.log("TIME: ", this.hours.text, this.minutes.text);
-
-        /*
-        var aValBox = document.getElementById("angle-value");
-        var aTypeBox = document.getElementById("angle-type");
-         var aVal = test.prototype.getAngleByTime(parseInt(this.hours.text), parseInt(this.minutes.text))[0];
-        aVal = Math.round(aVal);
-        aValBox.setAttribute("data-a", aVal);
-        aValBox.innerHTML = aVal + '&#176;';
-        var aType = test.prototype.getAngleType(aVal);
-        aTypeBox.setAttribute("data-t", aType);
-        aTypeBox.innerHTML = aType + " angle"; */
       };
-
-      /* test.prototype.getAngleByTime = function(h,m){
-        // if (h <0 || m < 0 || h >12 || m > 60)
-        //  document.write("Wrong input");
-          if (h == 12) h = 0;
-          if (m == 60){
-            m = 0;
-            h += 1;
-            if(h>12)
-                h = h-12;
-          }
-          //console.log(h,m);
-          let hour_angle = 0.5 * (h * 60 + m);
-          let minute_angle = 6 * m;
-          // Find the difference between two angles
-          let angle = Math.abs(hour_angle - minute_angle);
-          // Return the smaller angle of two possible angles
-          //angle = Math.min(360 - angle, angle);
-          //console.log("max: ",360 - angle, "min: ", angle)
-          return [angle, 360-angle];
-      }
-      test.prototype.getAngleType = function(angle){
-        if(!angle){
-          return "Zero";
-        }
-        if(angle && angle <90){
-          return "Acute";
-        }
-        if(angle==90){
-          return "Right";
-        }
-        if(angle>90 && angle<180){
-          return "Obtuse";
-        }
-        if(angle == 180){
-          return "Straight";
-        }
-        if(angle > 180 && angle <360){
-          return "Reflex";
-        }
-        if(angle == 360){
-          return "Complete";
-        }
-      } */
 
       /**
        * @return {undefined}
@@ -3695,9 +3304,7 @@
           4 +
           this.minutes.getMeasuredWidth() +
           (this.readoutDisplayMode === state.hr12 ? 8 : 0) +
-          (this.readoutDisplayMode === state.hr12
-            ? this.period.getMeasuredWidth()
-            : 0);
+          (this.readoutDisplayMode === state.hr12 ? this.period.getMeasuredWidth() : 0);
         /** @type {number} */
         var plottingAreaHeight = this.height / 2 + 1;
         /** @type {number} */
@@ -3713,12 +3320,7 @@
         /** @type {number} */
         this.hoursDown.x = i;
         /** @type {number} */
-        this.hoursInput.x =
-          i -
-          (this.hours.getMeasuredWidth() -
-            debug()(this.hoursInput.htmlElement).outerWidth(true)) /
-            2 -
-          5;
+        this.hoursInput.x = i - (this.hours.getMeasuredWidth() - debug()(this.hoursInput.htmlElement).outerWidth(true)) / 2 - 5;
         i = i + this.hours.getMeasuredWidth();
         i = i + 4;
         this.spacer.x = i + -1;
@@ -3728,20 +3330,13 @@
         this.minutesUp.x = i;
         this.minutesDown.x = i;
         /** @type {number} */
-        this.minutesInput.x =
-          i -
-          (this.minutes.getMeasuredWidth() -
-            debug()(this.minutesInput.htmlElement).outerWidth(true)) /
-            2 -
-          5;
+        this.minutesInput.x = i - (this.minutes.getMeasuredWidth() - debug()(this.minutesInput.htmlElement).outerWidth(true)) / 2 - 5;
         i = i + this.minutes.getMeasuredWidth();
         i = i + 8;
         /** @type {boolean} */
         this.period.visible = this.readoutDisplayMode === state.hr12;
-        this.periodUp.display.visible =
-          this.readoutDisplayMode === state.hr12 && this.active;
-        this.periodDown.display.visible =
-          this.readoutDisplayMode === state.hr12 && this.active;
+        this.periodUp.display.visible = this.readoutDisplayMode === state.hr12 && this.active;
+        this.periodDown.display.visible = this.readoutDisplayMode === state.hr12 && this.active;
         this.period.x = i;
         this.periodUp.x = i;
         this.periodDown.x = i;
@@ -3896,10 +3491,7 @@
         this.tickTracker.tickCount += 1;
         if (this.tickTracker.tickCount > 1) {
           /** @type {number} */
-          start =
-            n === nums.MINUTES_FIVES_UP || n === nums.MINUTES_FIVES_DOWN
-              ? 250
-              : 150;
+          start = n === nums.MINUTES_FIVES_UP || n === nums.MINUTES_FIVES_DOWN ? 250 : 150;
         }
         if (this.tickTracker.tickCount >= 10) {
           if (n === nums.MINUTES_UNITS_UP) {
@@ -3912,13 +3504,9 @@
             }
           }
         }
-        this.tickTracker.timeoutId =
-          __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(
-            function () {
-              jimple._adjustmentButtonTicker(n);
-            },
-            start
-          );
+        this.tickTracker.timeoutId = __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(function () {
+          jimple._adjustmentButtonTicker(n);
+        }, start);
       };
       /**
        * @param {string} undefined
@@ -3978,9 +3566,7 @@
        * @return {undefined}
        */
       test.prototype._adjustmentTick = function (posnum) {
-        var new_record = new doc.a.Event(
-          data.Events.DIGITAL_READOUT_ADJUSTMENT
-        );
+        var new_record = new doc.a.Event(data.Events.DIGITAL_READOUT_ADJUSTMENT);
         new_record.set({
           adjustmentType: posnum,
           id: this.display.id,
@@ -4003,9 +3589,7 @@
           activeColor: "chocolate",
           toggleEvent: data.Events.DIGITAL_READOUT_MODE_TOGGLE,
           clickCallback: function () {
-            var instance = new doc.a.Event(
-              data.Events.DIGITAL_READOUT_MODE_TOGGLE
-            );
+            var instance = new doc.a.Event(data.Events.DIGITAL_READOUT_MODE_TOGGLE);
             if (e.enabled) {
               if (this.stateActive) {
                 /** @type {string} */
@@ -4045,9 +3629,9 @@
         STOP: "stop",
         RESET: "reset",
       };
-/*Tell time funcions start...............*/
+      /*Tell time funcions start...............*/
 
-testTellTime.prototype = mutation()(_this.c.prototype);
+      testTellTime.prototype = mutation()(_this.c.prototype);
       testTellTime.prototype.constructor = _this.c;
       /** @type {function(?, string): undefined} */
       //var DirSearchPathEntry = testTellTime;
@@ -4070,18 +3654,13 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         /** @type {!Array} */
         this.displayComponents = [
           this.backing,
-          
           this.hours,
           this.spacer,
           this.minutes,
           this.period,
           this.timeButton,
           this.timeBar,
-          //this.hoursInput,
-          //this.minutesInput,
-          this.readoutDisplayModeCanToggle
-            ? this.readoutDisplayModeToggle.display
-            : null,
+          this.tellTimeDisplayModeCanToggle ? this.tellTimeDisplayModeToggle.display : null,
         ];
         req.a.each(
           this.displayComponents,
@@ -4118,15 +3697,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var timeBar = this._setupTimeBar();
         return (
           (self.backing = new doc.a.Shape()),
-          self.timeBox = new _this.b(null, timeBox),
-          self.timeBar = new _this.b(null, timeBar),
-          (self.tellTimeDisplayModeToggle = new _this.v(
-            null,
-            this._getModeToggleButtonOptions()
-          )),
+          (self.timeBox = new _this.b(null, timeBox)),
+          (self.timeBar = new _this.b(null, timeBar)),
+          (self.tellTimeDisplayModeToggle = new _this.v(null, this._getModeToggleButtonOptions())),
           self.timeBar.draw(),
           self.timeBox.draw(),
-
           self.tellTimeDisplayModeToggle.draw(),
           self
         );
@@ -4139,29 +3714,10 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var config = {
           buttonType: _this.b.ButtonTypes.TEXT,
           font: fontName,
-          fillColor: "rgba(255, 0, 0, 1)",//_this.d.COLOR_PRIMARY_BASE,
+          fillColor: "rgba(255, 0, 0, 1)", //_this.d.COLOR_PRIMARY_BASE,
           activeColor: _this.d.COLOR_PRIMARY_PALE,
-          borderColor: "transparent",
+          borderColor: "transparent",          
           
-          clickableHandlers: {
-            mousedown: function (event) {
-              if (0 === event.nativeEvent.button) {
-                removedRelations._adjustmentButtonMouseDown("up");
-                /** @type {boolean} */
-                this.active = true;
-                this.draw();
-                _this.f.dispatchEvent(new doc.a.Event(data.STAGE_UPDATE));
-              }
-            },
-            pressup: function () {
-              removedRelations._adjustmentButtonPressUp();
-              /** @type {boolean} */
-              this.active = false;
-              this.draw();
-              _this.f.dispatchEvent(new doc.a.Event(data.STAGE_UPDATE));
-            },
-          },
-          clickCallback: function () {},
         };
         return (
           (config.draw = ev
@@ -4184,7 +3740,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                 init: function () {
                   this.shape = new doc.a.Shape();
                   this.display.addChild(this.shape);
-                  shape.translate(50,400);
+                  shape.translate(50, 400);
                 },
                 callback: function () {
                   //console.log("CASE 2: ", this.activeColor, this.fillColor);
@@ -4200,7 +3756,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               }),
           config
         );
-      }
+      };
 
       testTellTime.prototype._setupTimeBar = function () {
         var removedRelations = this;
@@ -4229,7 +3785,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                 init: function () {
                   this.shape = new doc.a.Shape();
                   this.display.addChild(this.shape);
-                  shape.translate(50,400);
+                  shape.translate(50, 400);
                 },
                 callback: function () {
                   //console.log("BAR CASE 2: ", this.activeColor, this.fillColor);
@@ -4245,8 +3801,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               }),
           config
         );
-      }
-
+      };
 
       /**
        * @return {undefined}
@@ -4257,14 +3812,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           data.Events.TELL_TIME_MODE_TOGGLE,
           function (aReport) {
             //console.log("TELL_TIME_MODE_TOGGLE",aReport);
-            var node = this.readoutDisplayMode;
+            var node = this.tellTimeDisplayMode;
             var value = pipe()(this.hours.text, 10);
             var BR = this.period.text;
             this.tellTimeDisplayMode = aReport.mode;
-            if (
-              (node === state.hr24 && value > 12) ||
-              (node === state.hr24 && 0 === value)
-            ) {
+            if ((node === state.hr24 && value > 12) || (node === state.hr24 && 0 === value)) {
               this.setTime(value);
             } else {
               if (node === state.hr12 && "AM" === BR && 12 === value) {
@@ -4284,25 +3836,22 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           },
           this
         );
-        _this.f.on(
-          data.Events.TELL_TIME_TOGGLE_ACTIVE,
-          function (options) {
-            var c;
-            var s = req.a.isBoolean(options.setTo);
-            if (req.a.contains(options.ids, node.id) && node.enabled) {
-              if ((s && options.setTo) || (!s && !node.active)) {
-                c = new doc.a.Event(data.Events.TELL_TIME_SET_ACTIVE);
-              }
-              if ((s && !options.setTo) || (!s && node.active)) {
-                c = new doc.a.Event(data.Events.TELL_TIME_UNSET_ACTIVE);
-              }
-              c.set({
-                ids: [node.id],
-              });
-              _this.f.dispatchEvent(c);
+        _this.f.on(data.Events.TELL_TIME_TOGGLE_ACTIVE, function (options) {
+          var c;
+          var s = req.a.isBoolean(options.setTo);
+          if (req.a.contains(options.ids, node.id) && node.enabled) {
+            if ((s && options.setTo) || (!s && !node.active)) {
+              c = new doc.a.Event(data.Events.TELL_TIME_SET_ACTIVE);
             }
+            if ((s && !options.setTo) || (!s && node.active)) {
+              c = new doc.a.Event(data.Events.TELL_TIME_UNSET_ACTIVE);
+            }
+            c.set({
+              ids: [node.id],
+            });
+            _this.f.dispatchEvent(c);
           }
-        );
+        });
         _this.f.on(data.Events.TELL_TIME_SET_ACTIVE, function (options) {
           if (req.a.contains(options.ids, node.id) && node.enabled) {
             /** @type {boolean} */
@@ -4311,37 +3860,28 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
           }
         });
-        _this.f.on(
-          data.Events.TELL_TIME_UNSET_ACTIVE,
-          function (options) {
-            if (req.a.contains(options.ids, node.id) && node.enabled) {
-              /** @type {boolean} */
-              node.active = false;
-              node.draw();
-              _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
-            }
+        _this.f.on(data.Events.TELL_TIME_UNSET_ACTIVE, function (options) {
+          if (req.a.contains(options.ids, node.id) && node.enabled) {
+            /** @type {boolean} */
+            node.active = false;
+            node.draw();
+            _this.f.dispatchEvent(_this.d.STAGE_UPDATE);
           }
-        );
+        });
       };
       /**
        * @return {?}
        */
       testTellTime.prototype._setupElements = function () {
         var d = {};
-        return (
-          (d.timeButton = this._createButton("time")),
-          (d.timeBar = this._createBar()),
-          d
-        );
+        return (d.timeButton = this._createButton("time")),
+                  (d.timeBar = this._createBar()), d;
       };
       testTellTime.prototype._createBar = function () {
         var element = debug()("<div id='time-box'></div>");
         var bunny = new doc.a.DOMElement(element[0]);
-        return (
-          document.querySelector("main").appendChild(element[0]),
-          bunny
-        );
-      }
+        return document.querySelector("main").appendChild(element[0]), bunny;
+      };
       /**
        * @param {string} key
        * @return {?}
@@ -4350,12 +3890,10 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var element = debug()("<div><button id='tell-time-button'>Tell the Time</button></div>");
         var bunny = new doc.a.DOMElement(element[0]);
         return (
-          document.querySelector("main").appendChild(element[0]),
-          this._attachInputFieldEvents(debug()("#tell-time-button", element), key),
-          bunny
+          document.querySelector("main").appendChild(element[0]), this._attachInputFieldEvents(debug()("#tell-time-button", element), key), bunny
         );
       };
-      
+
       /**
        * @param {!Object} e
        * @param {string} undefined
@@ -4364,51 +3902,20 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       testTellTime.prototype._attachInputFieldEvents = function (e, undefined) {
         var scope = this;
         e.on("click", function (event) {
-          if(event.target.classList.contains("on")){
+          if (event.target.classList.contains("on")) {
             event.target.classList.remove("on");
-          }else{
+          } else {
             event.target.classList.add("on");
           }
-          var trigger = new doc.a.Event(
-            data.Events.TELL_TIME_BUTTON_CLICK
-          );
+          var trigger = new doc.a.Event(data.Events.TELL_TIME_BUTTON_CLICK);
           trigger.set({
-            display:true,
+            display: true,
             id: scope.id,
           });
           _this.f.dispatchEvent(trigger);
         });
 
-        e.on("keydown", function (event) {
-          switch (event.keyCode) {
-            case data.Keycodes.ARROW_UP:
-            case data.Keycodes.ARROW_DOWN:
-              scope._adjustmentKeyboardTicker(undefined, event.keyCode);
-          }
-        });
-        e.on("keyup", function () {
-          scope._cleanupTickTracker();
-        });
-        e.on("focus", function () {
-          e.select();
-          _this.f.dispatchEvent(data.Events.TELL_TIME_INPUT_FOCUS);
-        });
-        e.on("blur", function () {
-          var intVal = pipe()(e.val(), 10);
-          if (
-            "hours" === undefined &&
-            (intVal < 1 || intVal > 12 || req.a.isNaN(intVal))
-          ) {
-            e.val(scope.hours.text);
-          }
-          if (
-            "minutes" === undefined &&
-            (intVal < 0 || intVal > 59 || req.a.isNaN(intVal))
-          ) {
-            e.val(scope.minutes.text);
-          }
-          _this.f.dispatchEvent(data.Events.TELL_TIME_INPUT_BLUR);
-        });
+        
       };
       /**
        * @return {undefined}
@@ -4416,29 +3923,30 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       testTellTime.prototype.draw = function () {
         //this.hoursInput.visible = this.active && this.enabled;
         //this.minutesInput.visible = this.active && this.enabled;
+        //console.log("TELL TIME: ", this);
+        //console.log("------TELL TIME: ", _this);
         if (this.enabled) {
           if (this.active) {
             this.backing.graphics
               .clear()
-              .setStrokeStyle(3)
+              //.setStrokeStyle(3)
               //.beginStroke(TABS_ACTIVE_LINE_COLOR)
-              .beginFill("black")
-              .drawRoundRect(this.width/10, this.height*2.5, this.width, this.height, 20)
+              .beginFill('#233239')
+              .drawRoundRect(0, 0, this.width, this.height, 20);
           } else {
             this.backing.graphics
               .clear()
-              .setStrokeStyle(3)
-              //.beginStroke(TABS_ACTIVE_LINE_COLOR)
-              .beginFill("black")
-              .drawRoundRect(this.width/10, this.height*2.5, this.width, this.height, 20);
+              //setStrokeStyle(3)
+              //beginStroke(TABS_ACTIVE_LINE_COLOR)
+              .beginFill('#233239')
+              .drawRoundRect(0, 0, this.width, this.height, 20);
           }
         } else {
-          this.backing.graphics
-            .clear()
-            .setStrokeStyle(3)
-            .beginStroke("grey")
-            .beginFill("grey")
-            .drawRoundRect(0, 0, this.width, this.height, 8);
+          clear()
+          //.setStrokeStyle(3)
+          //.beginStroke("grey")
+          .beginFill('#233239')
+          .drawRoundRect(0, 0, this.width, this.height, 20);
         }
       };
       /**
@@ -4448,7 +3956,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       testTellTime.prototype.setTime = function (i, v) {
         //console.log("testTellTime.prototype.setTime", i,v);//Vikas
-        var value;        
+        var value;
         if (req.a.isNumber(i)) {
           if (i < 0 || i >= 24) {
             console.error("Hour time out of bounds:", i);
@@ -4492,7 +4000,6 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           /** @type {string} */
           this.period.text = i < 12 ? "AM" : "PM";
         }
-        
       };
 
       /**
@@ -4500,6 +4007,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       testTellTime.prototype._placeComponents = function () {
         /** @type {number} */
+        //console.log("TELL TIME: ", this);
         var w = this.width / 2;
         var lineWidth =
           this.hours.getMeasuredWidth() +
@@ -4508,25 +4016,16 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           4 +
           this.minutes.getMeasuredWidth() +
           (this.tellTimeDisplayMode === state.hr12 ? 8 : 0) +
-          (this.tellTimeDisplayMode === state.hr12
-            ? this.period.getMeasuredWidth()
-            : 0);
-        /** @type {number} */
-        var plottingAreaHeight = this.height / 2 + 1;
-        /** @type {number} */
-        var yAxisVerticalMargin = -this.hours.getMeasuredHeight() - 4;
-        /** @type {number} */
-        var wty = this.hours.getMeasuredHeight() / 2 + 2;
+          (this.tellTimeDisplayMode === state.hr12 ? this.period.getMeasuredWidth() : 0);        
+        
         /** @type {number} */
         var i = w - lineWidth / 2;
         /** @type {number} */
-        this.timeButton.x = i-78;
-        this.timeBar.x = i-78;
-        
-        i += 30;
+        this.timeButton.x = i - 108;
+        this.timeBar.x = i - 78;
         this.hours.x = i;
         /** @type {number} */
-        
+
         i = i + this.hours.getMeasuredWidth();
         i = i + 4;
         this.spacer.x = i + -1;
@@ -4541,20 +4040,19 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.period.x = i;
         i = i + this.period.getMeasuredWidth();
         /** @type {number} */
-        this.hours.y = plottingAreaHeight+340;
+        this.hours.y = 40;
         /** @type {number} */
-        this.spacer.y = plottingAreaHeight+340;
+        this.spacer.y = 40;
         /** @type {number} */
-        this.minutes.y = plottingAreaHeight+340;
+        this.minutes.y = 40;
         /** @type {number} */
-        this.period.y = plottingAreaHeight+340;
+        this.period.y = 40;
         /** @type {number} */
-        this.timeButton.y = plottingAreaHeight + 380;
-        this.timeBar.y = plottingAreaHeight + 307;
+        this.timeButton.y = 80;
+        this.timeBar.y = 100;
         this.tellTimeDisplayModeToggle.x = 2;
         /** @type {number} */
         this.tellTimeDisplayModeToggle.y = 2;
-        console.log();
       };
       /**
        * @param {string} direction
@@ -4679,10 +4177,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.tickTracker.tickCount += 1;
         if (this.tickTracker.tickCount > 1) {
           /** @type {number} */
-          start =
-            n === nums.MINUTES_FIVES_UP || n === nums.MINUTES_FIVES_DOWN
-              ? 250
-              : 150;
+          start = n === nums.MINUTES_FIVES_UP || n === nums.MINUTES_FIVES_DOWN ? 250 : 150;
         }
         if (this.tickTracker.tickCount >= 10) {
           if (n === nums.MINUTES_UNITS_UP) {
@@ -4695,13 +4190,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             }
           }
         }
-        this.tickTracker.timeoutId =
-          __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(
-            function () {
-              jimple._adjustmentButtonTicker(n);
-            },
-            start
-          );
+        this.tickTracker.timeoutId = __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(function () {
+          jimple._adjustmentButtonTicker(n);
+        }, start);
       };
       /**
        * @param {string} undefined
@@ -4761,9 +4252,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {undefined}
        */
       testTellTime.prototype._adjustmentTick = function (posnum) {
-        var new_record = new doc.a.Event(
-          data.Events.DIGITAL_READOUT_ADJUSTMENT
-        );
+        var new_record = new doc.a.Event(data.Events.DIGITAL_READOUT_ADJUSTMENT);
         new_record.set({
           adjustmentType: posnum,
           id: this.display.id,
@@ -4786,9 +4275,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           activeColor: "chocolate",
           toggleEvent: data.Events.DIGITAL_READOUT_MODE_TOGGLE,
           clickCallback: function () {
-            var instance = new doc.a.Event(
-              data.Events.DIGITAL_READOUT_MODE_TOGGLE
-            );
+            var instance = new doc.a.Event(data.Events.DIGITAL_READOUT_MODE_TOGGLE);
             if (e.enabled) {
               if (this.stateActive) {
                 /** @type {string} */
@@ -4829,7 +4316,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         RESET: "reset",
       };
 
-/*Tell time functions end................*/
+      /*Tell time functions end................*/
       M6CorpoChecker_HpPro.prototype = mutation()(_this.c.prototype);
       M6CorpoChecker_HpPro.prototype.constructor = _this.c;
       /** @type {function(?, ?): undefined} */
@@ -4842,11 +4329,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.stop = this._setupStopButton();
         this.play = this._setupPlayButton();
         /** @type {!Array} */
-        this.displayComponents = [
-          this.backing,
-          this.stop.display,
-          this.play.display,
-        ];
+        this.displayComponents = [this.backing, this.stop.display, this.play.display];
         req.a.each(
           this.displayComponents,
           function (name) {
@@ -4874,9 +4357,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             /** @type {boolean} */
             e.play.stateActive = false;
             e.draw();
-            (deviceOrientationEvent = new doc.a.Event(
-              data.Events.SET_RUN_STATE
-            )).set({
+            (deviceOrientationEvent = new doc.a.Event(data.Events.SET_RUN_STATE)).set({
               ids: [e.id],
               newState: continueLast ? accessInfo.RESET : accessInfo.STOP,
             });
@@ -4901,9 +4382,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             /** @type {boolean} */
             e.play.stateActive = !e.play.stateActive;
             e.draw();
-            (deviceOrientationEvent = new doc.a.Event(
-              data.Events.SET_RUN_STATE
-            )).set({
+            (deviceOrientationEvent = new doc.a.Event(data.Events.SET_RUN_STATE)).set({
               ids: [e.id],
               newState: e.play.stateActive ? accessInfo.PLAY : accessInfo.STOP,
             });
@@ -5023,9 +4502,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       HtmlAxisLabel.prototype._attachInputFieldEvents = function (e) {
         var RoomVisual = this;
         e.on("input", function () {
-          var deviceOrientationEvent = new doc.a.Event(
-            data.Events.JUMP_CONTROL_INPUT_TEXT_CHANGE
-          );
+          var deviceOrientationEvent = new doc.a.Event(data.Events.JUMP_CONTROL_INPUT_TEXT_CHANGE);
           e.val(e.val().replace(/\D/g, ""));
           RoomVisual.fakeInputText.text = e.val();
           _this.f.dispatchEvent(deviceOrientationEvent);
@@ -5043,16 +4520,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {?}
        */
       HtmlAxisLabel.prototype._setupFakeText = function (word) {
-        var labelContext = new doc.a.Text(
-          word.initialJumpStep,
-          "normal 24px Helvetica neue, sans-serif",
-          "#333333"
-        );
-        return (
-          (labelContext.textAlign = "center"),
-          (labelContext.textBaseline = "middle"),
-          labelContext
-        );
+        var labelContext = new doc.a.Text(word.initialJumpStep, "normal 24px Helvetica neue, sans-serif", "#333333");
+        return (labelContext.textAlign = "center"), (labelContext.textBaseline = "middle"), labelContext;
       };
       /**
        * @return {?}
@@ -5194,13 +4663,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           /** @type {number} */
           start = 150;
         }
-        this.tickTracker.timeoutId =
-          __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(
-            function () {
-              cnxn._jumpButtonTicker(data);
-            },
-            start
-          );
+        this.tickTracker.timeoutId = __WEBPACK_IMPORTED_MODULE_2_date_fns_difference_in_days___default()(function () {
+          cnxn._jumpButtonTicker(data);
+        }, start);
       };
       /**
        * @return {undefined}
@@ -5232,11 +4697,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       HtmlAxisLabel.prototype.draw = function () {
         this.input.visible = this.active;
-        this.fakeInputBacking.graphics
-          .clear()
-          .beginFill("white")
-          .beginStroke("rgb(238, 238, 238)")
-          .drawRect(0, 0, 38, 28);
+        this.fakeInputBacking.graphics.clear().beginFill("white").beginStroke("rgb(238, 238, 238)").drawRect(0, 0, 38, 28);
       };
       /**
        * @return {undefined}
@@ -5266,24 +4727,14 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {undefined}
        */
       Tween.prototype._setupDisplayComponents = function (obj2) {
-        
         var RawClasses = this._setupRunComponent(obj2.controlMode);
-        var keys = this._setupJumpComponent(
-          obj2.controlMode,
-          obj2.initialJumpStep
-        );
-        console.log(RawClasses.tab.draw);
+        var keys = this._setupJumpComponent(obj2.controlMode, obj2.initialJumpStep);
         this.runTab = RawClasses.tab;
         this.runControl = RawClasses.control;
         this.jumpTab = keys.tab;
         this.jumpControl = keys.control;
         /** @type {!Array} */
-        this.displayComponents = [
-          this.runTab.display,
-          this.jumpTab.display,
-          this.runControl.display,
-          this.jumpControl.display,
-        ];
+        this.displayComponents = [this.runTab.display, this.jumpTab.display, this.runControl.display, this.jumpControl.display];
         req.a.each(
           this.displayComponents,
           function (name) {
@@ -5299,24 +4750,19 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       Tween.prototype._setupRunComponent = function (tab) {
         var $scope = {};
-        return (
-          ($scope.tab = this._setupRunTab(tab)),
-          ($scope.control = this._setupRunControl()),
-          $scope
-        );
+        return ($scope.tab = this._setupRunTab(tab)), ($scope.control = this._setupRunControl()), $scope;
       };
       /**
        * @param {string} indent
        * @return {?}
        */
       Tween.prototype._setupRunTab = function (indent) {
-        var opts = this._getGenericButtonOptions(
-          "RUN",
-          data.Events.TOGGLE_RUN_JUMP_STATE
-        );
+        var opts = this._getGenericButtonOptions("RUN", data.Events.TOGGLE_RUN_JUMP_STATE);
         return (
-          (opts.defaultImage = "data:image/png;base64,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"), //key),
-          (opts.activeImage = "data:image/png;base64,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"), //index),
+          (opts.defaultImage =
+            "data:image/png;base64,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"), //key),
+          (opts.activeImage =
+            "data:image/png;base64,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"), //index),
           (opts.initialState = indent === listTypeStack.RUN),
           new _this.v(null, opts)
         );
@@ -5334,24 +4780,19 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       Tween.prototype._setupJumpComponent = function (index, context) {
         var item = {};
-        return (
-          (item.tab = this._setupJumpTab(index)),
-          (item.control = this._setupJumpControl(context)),
-          item
-        );
+        return (item.tab = this._setupJumpTab(index)), (item.control = this._setupJumpControl(context)), item;
       };
       /**
        * @param {string} indent
        * @return {?}
        */
       Tween.prototype._setupJumpTab = function (indent) {
-        var opts = this._getGenericButtonOptions(
-          "JUMP",
-          data.Events.TOGGLE_RUN_JUMP_STATE
-        );
+        var opts = this._getGenericButtonOptions("JUMP", data.Events.TOGGLE_RUN_JUMP_STATE);
         return (
-          (opts.defaultImage = "data:image/png;base64,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"),//_img),
-          (opts.activeImage = "data:image/png;base64,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"), //imageNum),
+          (opts.defaultImage =
+            "data:image/png;base64,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"), //_img),
+          (opts.activeImage =
+            "data:image/png;base64,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"), //imageNum),
           (opts.initialState = indent === listTypeStack.JUMP),
           new _this.v(null, opts)
         );
@@ -5377,7 +4818,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           textColor: "white",
           activeColor: _this.d.COLOR_NEUTRAL_BASE,
           fillColor: _this.d.COLOR_PRIMARY_BASE,
-          dimensions: { // width height of run jump
+          dimensions: {
+            // width height of run jump
             width: 135,
             height: 66,
           },
@@ -5386,10 +4828,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           clickCallback: function () {
             var form = new doc.a.Event(properties);
             /** @type {!Array} */
-            var joined_ids = [
-              this.display.parent.js.runTab.id,
-              this.display.parent.js.jumpTab.id,
-            ];
+            var joined_ids = [this.display.parent.js.runTab.id, this.display.parent.js.jumpTab.id];
             form.set({
               ids: joined_ids,
             });
@@ -5434,16 +4873,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           data.Events.TOGGLE_RUN_JUMP_STATE,
           function (options) {
             var deviceOrientationEvent;
-            if (
-              req.a.contains(options.ids, this.runTab.id) &&
-              req.a.contains(options.ids, this.jumpTab.id)
-            ) {
+            if (req.a.contains(options.ids, this.runTab.id) && req.a.contains(options.ids, this.jumpTab.id)) {
               if (this.controlMode === listTypeStack.RUN) {
                 /** @type {string} */
                 this.controlMode = listTypeStack.JUMP;
-                (deviceOrientationEvent = new doc.a.Event(
-                  data.Events.SET_RUN_STATE
-                )).set({
+                (deviceOrientationEvent = new doc.a.Event(data.Events.SET_RUN_STATE)).set({
                   ids: [this.runControl.id],
                   newState: CatchEntry.RunStates.RESET,
                 });
@@ -5463,12 +4897,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           function (result) {
             if (req.a.contains(result.ids, this.runControl.id)) {
               /** @type {boolean} */
-              this.runControl.play.stateActive =
-                result.newState === CatchEntry.RunStates.PLAY;
+              this.runControl.play.stateActive = result.newState === CatchEntry.RunStates.PLAY;
               /** @type {boolean} */
-              this.runControl.stop.stateActive =
-                result.newState === CatchEntry.RunStates.STOP ||
-                result.newState === CatchEntry.RunStates.RESET;
+              this.runControl.stop.stateActive = result.newState === CatchEntry.RunStates.STOP || result.newState === CatchEntry.RunStates.RESET;
             }
           },
           this
@@ -5550,11 +4981,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       var val = $.n(zoom);
       var dir = $("UtpJ");
       var write = $.n(dir);
-      var __WEBPACK_IMPORTED_MODULE_17_date_fns_difference_in_minutes__ =
-        $("gA8o");
-      var refreshFunc = $.n(
-        __WEBPACK_IMPORTED_MODULE_17_date_fns_difference_in_minutes__
-      );
+      var __WEBPACK_IMPORTED_MODULE_17_date_fns_difference_in_minutes__ = $("gA8o");
+      var refreshFunc = $.n(__WEBPACK_IMPORTED_MODULE_17_date_fns_difference_in_minutes__);
       var jasmine = {};
       var scope = jasmine;
       var toFloat = new (function () {
@@ -5694,14 +5122,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           .closePath();
         this.shape_7.setTransform(-0.225, -105.55);
         this.shape_8 = new doc.a.Shape();
-        this.shape_8.graphics
-          .beginFill("#FFFFFF")
-          .beginStroke()
-          .moveTo(-4.3, 0.9)
-          .lineTo(-4.3, -0.9)
-          .lineTo(4.3, -0.9)
-          .lineTo(4.3, 0.9)
-          .closePath();
+        this.shape_8.graphics.beginFill("#FFFFFF").beginStroke().moveTo(-4.3, 0.9).lineTo(-4.3, -0.9).lineTo(4.3, -0.9).lineTo(4.3, 0.9).closePath();
         this.shape_8.setTransform(-0.225, -111.725);
         this.shape_9 = new doc.a.Shape();
         this.shape_9.graphics
@@ -5744,7 +5165,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.shape_10.setTransform(0, -76.5);
         this.shape_11 = new doc.a.Shape();
         this.shape_11.graphics
-        // NNO Minuit hand circle
+          // NNO Minuit hand circle
           .beginFill("#1ab123")
           .beginStroke()
           .moveTo(-8.5, 8.5)
@@ -5911,10 +5332,10 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           .curveTo(5.8, 14, -0, 14)
           .curveTo(-5.8, 14, -9.9, 9.9)
           .closePath();
-          //console.log("HAND: ",this.shape_17); //Vikas 
+        //console.log("HAND: ",this.shape_17); //Vikas
         this.shape_18 = new doc.a.Shape();
         this.shape_18.graphics
-        // NNO hour hand circle
+          // NNO hour hand circle
           .beginFill("#ff0038")
           .beginStroke()
           .moveTo(-5.4, 43)
@@ -7358,244 +6779,94 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           .curveTo(-30.1, 148, -57.6, 136.3)
           .closePath();
         this.shape_66 = new doc.a.Shape();
-        this.shape_66.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-16.7, 159.1)
-          .lineTo(16.7, -159.1);
+        this.shape_66.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-16.7, 159.1).lineTo(16.7, -159.1);
         this.shape_66.setTransform(-0.025, -0.025);
         this.shape_67 = new doc.a.Shape();
-        this.shape_67.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-33.3, 156.5)
-          .lineTo(33.3, -156.5);
+        this.shape_67.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-33.3, 156.5).lineTo(33.3, -156.5);
         this.shape_67.setTransform(-0.025, -0.025);
         this.shape_68 = new doc.a.Shape();
-        this.shape_68.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-49.4, 152.2)
-          .lineTo(49.4, -152.2);
+        this.shape_68.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-49.4, 152.2).lineTo(49.4, -152.2);
         this.shape_68.setTransform(-0.025, -0.025);
         this.shape_69 = new doc.a.Shape();
-        this.shape_69.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-65.1, 146.2)
-          .lineTo(65.1, -146.2);
+        this.shape_69.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-65.1, 146.2).lineTo(65.1, -146.2);
         this.shape_69.setTransform(-0.025, -0.025);
         this.shape_70 = new doc.a.Shape();
-        this.shape_70.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(4)
-          .moveTo(-80, 138.6)
-          .lineTo(80, -138.6);
+        this.shape_70.graphics.beginFill().beginStroke("#333333").setStrokeStyle(4).moveTo(-80, 138.6).lineTo(80, -138.6);
         this.shape_70.setTransform(-0.025, -0.025);
         this.shape_71 = new doc.a.Shape();
-        this.shape_71.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-94, 129.4)
-          .lineTo(94, -129.4);
+        this.shape_71.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-94, 129.4).lineTo(94, -129.4);
         this.shape_71.setTransform(-0.025, -0.025);
         this.shape_72 = new doc.a.Shape();
-        this.shape_72.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-107.1, 118.9)
-          .lineTo(107.1, -118.9);
+        this.shape_72.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-107.1, 118.9).lineTo(107.1, -118.9);
         this.shape_72.setTransform(-0.025, -0.025);
         this.shape_73 = new doc.a.Shape();
-        this.shape_73.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-118.9, 107.1)
-          .lineTo(118.9, -107.1);
+        this.shape_73.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-118.9, 107.1).lineTo(118.9, -107.1);
         this.shape_73.setTransform(-0.025, -0.025);
         this.shape_74 = new doc.a.Shape();
-        this.shape_74.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-129.4, 94)
-          .lineTo(129.4, -94);
+        this.shape_74.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-129.4, 94).lineTo(129.4, -94);
         this.shape_74.setTransform(-0.025, -0.025);
         this.shape_75 = new doc.a.Shape();
-        this.shape_75.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(4)
-          .moveTo(-138.6, 80)
-          .lineTo(138.6, -80);
+        this.shape_75.graphics.beginFill().beginStroke("#333333").setStrokeStyle(4).moveTo(-138.6, 80).lineTo(138.6, -80);
         this.shape_75.setTransform(-0.025, -0.025);
         this.shape_76 = new doc.a.Shape();
-        this.shape_76.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-146.2, 65.1)
-          .lineTo(146.2, -65.1);
+        this.shape_76.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-146.2, 65.1).lineTo(146.2, -65.1);
         this.shape_76.setTransform(-0.025, -0.025);
         this.shape_77 = new doc.a.Shape();
-        this.shape_77.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-152.2, 49.4)
-          .lineTo(152.2, -49.4);
+        this.shape_77.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-152.2, 49.4).lineTo(152.2, -49.4);
         this.shape_77.setTransform(-0.025, -0.025);
         this.shape_78 = new doc.a.Shape();
-        this.shape_78.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-156.5, 33.3)
-          .lineTo(156.5, -33.3);
+        this.shape_78.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-156.5, 33.3).lineTo(156.5, -33.3);
         this.shape_78.setTransform(-0.025, -0.025);
         this.shape_79 = new doc.a.Shape();
-        this.shape_79.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-159.1, 16.7)
-          .lineTo(159.1, -16.7);
+        this.shape_79.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-159.1, 16.7).lineTo(159.1, -16.7);
         this.shape_79.setTransform(-0.025, -0.025);
         this.shape_80 = new doc.a.Shape();
-        this.shape_80.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(4)
-          .moveTo(-160, -0)
-          .lineTo(160, 0);
+        this.shape_80.graphics.beginFill().beginStroke("#333333").setStrokeStyle(4).moveTo(-160, -0).lineTo(160, 0);
         this.shape_80.setTransform(0, -0.025);
         this.shape_81 = new doc.a.Shape();
-        this.shape_81.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-159.1, -16.7)
-          .lineTo(159.1, 16.7);
+        this.shape_81.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-159.1, -16.7).lineTo(159.1, 16.7);
         this.shape_81.setTransform(-0.025, -0.025);
         this.shape_82 = new doc.a.Shape();
-        this.shape_82.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-156.5, -33.3)
-          .lineTo(156.5, 33.3);
+        this.shape_82.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-156.5, -33.3).lineTo(156.5, 33.3);
         this.shape_82.setTransform(-0.025, -0.025);
         this.shape_83 = new doc.a.Shape();
-        this.shape_83.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-152.2, -49.4)
-          .lineTo(152.2, 49.4);
+        this.shape_83.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-152.2, -49.4).lineTo(152.2, 49.4);
         this.shape_83.setTransform(-0.025, -0.025);
         this.shape_84 = new doc.a.Shape();
-        this.shape_84.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-146.2, -65.1)
-          .lineTo(146.2, 65.1);
+        this.shape_84.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-146.2, -65.1).lineTo(146.2, 65.1);
         this.shape_84.setTransform(-0.025, -0.025);
         this.shape_85 = new doc.a.Shape();
-        this.shape_85.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(4)
-          .moveTo(-138.6, -80)
-          .lineTo(138.6, 80);
+        this.shape_85.graphics.beginFill().beginStroke("#333333").setStrokeStyle(4).moveTo(-138.6, -80).lineTo(138.6, 80);
         this.shape_85.setTransform(-0.025, -0.025);
         this.shape_86 = new doc.a.Shape();
-        this.shape_86.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-129.4, -94)
-          .lineTo(129.4, 94);
+        this.shape_86.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-129.4, -94).lineTo(129.4, 94);
         this.shape_86.setTransform(-0.025, -0.025);
         this.shape_87 = new doc.a.Shape();
-        this.shape_87.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-118.9, -107.1)
-          .lineTo(118.9, 107.1);
+        this.shape_87.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-118.9, -107.1).lineTo(118.9, 107.1);
         this.shape_87.setTransform(-0.025, -0.025);
         this.shape_88 = new doc.a.Shape();
-        this.shape_88.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-107.1, -118.9)
-          .lineTo(107.1, 118.9);
+        this.shape_88.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-107.1, -118.9).lineTo(107.1, 118.9);
         this.shape_88.setTransform(-0.025, -0.025);
         this.shape_89 = new doc.a.Shape();
-        this.shape_89.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-94, -129.4)
-          .lineTo(94, 129.4);
+        this.shape_89.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-94, -129.4).lineTo(94, 129.4);
         this.shape_89.setTransform(-0.025, -0.025);
         this.shape_90 = new doc.a.Shape();
-        this.shape_90.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(4)
-          .moveTo(-80, -138.6)
-          .lineTo(80, 138.6);
+        this.shape_90.graphics.beginFill().beginStroke("#333333").setStrokeStyle(4).moveTo(-80, -138.6).lineTo(80, 138.6);
         this.shape_90.setTransform(-0.025, -0.025);
         this.shape_91 = new doc.a.Shape();
-        this.shape_91.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-65.1, -146.2)
-          .lineTo(65.1, 146.2);
+        this.shape_91.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-65.1, -146.2).lineTo(65.1, 146.2);
         this.shape_91.setTransform(-0.025, -0.025);
         this.shape_92 = new doc.a.Shape();
-        this.shape_92.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-49.4, -152.2)
-          .lineTo(49.4, 152.2);
+        this.shape_92.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-49.4, -152.2).lineTo(49.4, 152.2);
         this.shape_92.setTransform(-0.025, -0.025);
         this.shape_93 = new doc.a.Shape();
-        this.shape_93.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-33.3, -156.5)
-          .lineTo(33.3, 156.5);
+        this.shape_93.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-33.3, -156.5).lineTo(33.3, 156.5);
         this.shape_93.setTransform(-0.025, -0.025);
         this.shape_94 = new doc.a.Shape();
-        this.shape_94.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(1)
-          .moveTo(-16.7, -159.1)
-          .lineTo(16.7, 159.1);
+        this.shape_94.graphics.beginFill().beginStroke("#333333").setStrokeStyle(1).moveTo(-16.7, -159.1).lineTo(16.7, 159.1);
         this.shape_94.setTransform(-0.025, -0.025);
         this.shape_95 = new doc.a.Shape();
-        this.shape_95.graphics
-          .beginFill()
-          .beginStroke("#333333")
-          .setStrokeStyle(4)
-          .moveTo(0, -160)
-          .lineTo(0, 160);
+        this.shape_95.graphics.beginFill().beginStroke("#333333").setStrokeStyle(4).moveTo(0, -160).lineTo(0, 160);
         this.shape_96 = new doc.a.Shape();
         this.shape_96.graphics
           .beginFill()
@@ -8367,52 +7638,22 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         },
       };
       jasmine.Clock.rawGraphics = func(toFloat);
-      jasmine.Clock.SecondHand = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(0, 3)
-      );
+      jasmine.Clock.SecondHand = insert(jasmine.Clock.rawGraphics, req.a.range(0, 3));
       jasmine.Clock.MinuteHandHit = jasmine.Clock.rawGraphics[3];
-      jasmine.Clock.MinuteHandLabel = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(4, 10)
-      );
-      jasmine.Clock.MinuteHand = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(10, 12)
-      );
+      jasmine.Clock.MinuteHandLabel = insert(jasmine.Clock.rawGraphics, req.a.range(4, 10));
+      jasmine.Clock.MinuteHand = insert(jasmine.Clock.rawGraphics, req.a.range(10, 12));
       jasmine.Clock.MinuteHandDisabled = insert(after, req.a.range(0, 1));
-      jasmine.Clock.HourHandLabel = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(12, 16)
-      );
+      jasmine.Clock.HourHandLabel = insert(jasmine.Clock.rawGraphics, req.a.range(12, 16));
       jasmine.Clock.HourHandHit = jasmine.Clock.rawGraphics[16];
-      jasmine.Clock.HourHand = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(17, 19)
-      );
+      jasmine.Clock.HourHand = insert(jasmine.Clock.rawGraphics, req.a.range(17, 19));
       jasmine.Clock.HourHandDisabled = insert(after, req.a.range(2, 3));
       jasmine.Clock.Window = jasmine.Clock.rawGraphics[19];
       jasmine.Clock.WindowHighlight = jasmine.Clock.rawGraphics[20];
-      jasmine.Clock.Gear = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(21, 23)
-      );
-      jasmine.Clock.RomanNumerals = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(23, 49)
-      );
-      jasmine.Clock.ArabicNumerals = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(49, 64)
-      );
-      jasmine.Clock.Face = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(64, 98)
-      );
-      jasmine.Clock.FiveLabels = insert(
-        jasmine.Clock.rawGraphics,
-        req.a.range(98, 123)
-      );
+      jasmine.Clock.Gear = insert(jasmine.Clock.rawGraphics, req.a.range(21, 23));
+      jasmine.Clock.RomanNumerals = insert(jasmine.Clock.rawGraphics, req.a.range(23, 49));
+      jasmine.Clock.ArabicNumerals = insert(jasmine.Clock.rawGraphics, req.a.range(49, 64));
+      jasmine.Clock.Face = insert(jasmine.Clock.rawGraphics, req.a.range(64, 98));
+      jasmine.Clock.FiveLabels = insert(jasmine.Clock.rawGraphics, req.a.range(98, 123));
       var cat = $("SL7T");
       var canvas = $("Rh6l");
       var $music = $("qBZb");
@@ -8438,13 +7679,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.hourCounter = self.text;
         this.hourCounterBacking = self.backing;
         /** @type {!Array} */
-        methodsToOverwrite = [
-          this.hourHand.display,
-          this.minuteHand.display,
-          this.fillWedge,
-          this.toggleHandle.display,
-          this.hourCounterDisplay,
-        ];
+        methodsToOverwrite = [this.hourHand.display, this.minuteHand.display, this.fillWedge, this.toggleHandle.display, this.hourCounterDisplay];
         req.a.each(
           methodsToOverwrite,
           function (name) {
@@ -8487,16 +7722,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               /** @type {number} */
               this.activeIcon.regY = 12;
               /** @type {!Array} */
-              newNodeLists = [
-                this.defaultBacking,
-                this.activeBacking,
-                this.defaultIcon,
-                this.activeIcon,
-              ];
-              (m = this.display).addChild.apply(
-                m,
-                Object(event.a)(newNodeLists)
-              );
+              newNodeLists = [this.defaultBacking, this.activeBacking, this.defaultIcon, this.activeIcon];
+              (m = this.display).addChild.apply(m, Object(event.a)(newNodeLists));
               this.display.hitArea = this.defaultBacking;
             },
             callback: function () {
@@ -8577,12 +7804,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       Particle.prototype._setupHourCounterText = function () {
         var ctx = new doc.a.Text("", name, "white");
-        return (
-          (ctx.textAlign = "center"),
-          (ctx.textBaseline = "middle"),
-          (ctx.regY = -2),
-          ctx
-        );
+        return (ctx.textAlign = "center"), (ctx.textBaseline = "middle"), (ctx.regY = -2), ctx;
       };
       /**
        * @return {?}
@@ -8621,21 +7843,13 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         /** @type {number} */
         this.radius = width;
         /** @type {number} */
-        this.hourHand.display.scaleX =
-          width /
-          (data.DEFAULT_CLOCK_RADIUS - data.GENERAL_CLOCK_FACE_RADIUS_PADDING);
+        this.hourHand.display.scaleX = width / (data.DEFAULT_CLOCK_RADIUS - data.GENERAL_CLOCK_FACE_RADIUS_PADDING);
         /** @type {number} */
-        this.hourHand.display.scaleY =
-          width /
-          (data.DEFAULT_CLOCK_RADIUS - data.GENERAL_CLOCK_FACE_RADIUS_PADDING);
+        this.hourHand.display.scaleY = width / (data.DEFAULT_CLOCK_RADIUS - data.GENERAL_CLOCK_FACE_RADIUS_PADDING);
         /** @type {number} */
-        this.minuteHand.display.scaleX =
-          width /
-          (data.DEFAULT_CLOCK_RADIUS - data.GENERAL_CLOCK_FACE_RADIUS_PADDING);
+        this.minuteHand.display.scaleX = width / (data.DEFAULT_CLOCK_RADIUS - data.GENERAL_CLOCK_FACE_RADIUS_PADDING);
         /** @type {number} */
-        this.minuteHand.display.scaleY =
-          width /
-          (data.DEFAULT_CLOCK_RADIUS - data.GENERAL_CLOCK_FACE_RADIUS_PADDING);
+        this.minuteHand.display.scaleY = width / (data.DEFAULT_CLOCK_RADIUS - data.GENERAL_CLOCK_FACE_RADIUS_PADDING);
         this._placeComponents();
       };
       /**
@@ -8644,10 +7858,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       Particle.prototype.draw = function () {
         //console.log("ASFSDFSF", Particle.prototype.draw.caller);//Vikas-- Note: Particle draw
         /** @type {string} */
-        var color =
-          this.startAngle <= this.endAngle
-            ? "rgb(17, 138, 13)"
-            : "rgb(179, 17, 18)";
+        var color = this.startAngle <= this.endAngle ? "rgb(17, 138, 13)" : "rgb(179, 17, 18)";
         var i = parse()((this.endAngle - this.startAngle) / 360);
         var newItem = this.active && 0 !== i;
         this.hourHand.display.visible = this.active;
@@ -8707,10 +7918,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           if ((this.endAngle - this.startAngle) % 360 == 0) {
             if (this.endAngle - this.startAngle < 0) {
               /** @type {string} */
-              TABS_ACTIVE_FILL_COLOR =
-                Math.abs(left) < 360
-                  ? "rgba(179, 17, 18, .50)"
-                  : "rgba(179, 17, 18, .25)";
+              TABS_ACTIVE_FILL_COLOR = Math.abs(left) < 360 ? "rgba(179, 17, 18, .50)" : "rgba(179, 17, 18, .25)";
               this.fillWedge.graphics
                 .clear()
                 .beginFill(TABS_ACTIVE_FILL_COLOR)
@@ -8720,16 +7928,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                   0,
                   this.radius,
                   ((this.startAngle % 360) - 90) * data.DEGREES_TO_RADIANS,
-                  ((this.startAngle % 360) - 360 - 90) *
-                    data.DEGREES_TO_RADIANS,
+                  ((this.startAngle % 360) - 360 - 90) * data.DEGREES_TO_RADIANS,
                   this.endAngle - this.startAngle < 0
                 );
             } else {
               /** @type {string} */
-              TABS_ACTIVE_FILL_COLOR =
-                Math.abs(left) < 360
-                  ? "rgba(17, 138, 13, .50)"
-                  : "rgba(17, 138, 13, .25)";
+              TABS_ACTIVE_FILL_COLOR = Math.abs(left) < 360 ? "rgba(17, 138, 13, .50)" : "rgba(17, 138, 13, .25)";
               this.fillWedge.graphics
                 .clear()
                 .beginFill(TABS_ACTIVE_FILL_COLOR)
@@ -8739,8 +7943,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                   0,
                   this.radius,
                   ((this.startAngle % 360) - 90) * data.DEGREES_TO_RADIANS,
-                  ((this.startAngle % 360) + 360 - 90) *
-                    data.DEGREES_TO_RADIANS,
+                  ((this.startAngle % 360) + 360 - 90) * data.DEGREES_TO_RADIANS,
                   this.endAngle - this.startAngle < 0
                 );
             }
@@ -8779,8 +7982,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                 0,
                 this.radius,
                 ((this.startAngle % 360) - 90) * data.DEGREES_TO_RADIANS,
-                ((this.startAngle % 360) + (left % 360) - 90) *
-                  data.DEGREES_TO_RADIANS,
+                ((this.startAngle % 360) + (left % 360) - 90) * data.DEGREES_TO_RADIANS,
                 this.endAngle - this.startAngle < 0
               );
             if (Math.abs(n) > 360) {
@@ -8791,8 +7993,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                   0,
                   0,
                   this.radius,
-                  ((this.startAngle % 360) + (left % 360) - 90) *
-                    data.DEGREES_TO_RADIANS,
+                  ((this.startAngle % 360) + (left % 360) - 90) * data.DEGREES_TO_RADIANS,
                   ((this.startAngle % 360) - 90) * data.DEGREES_TO_RADIANS,
                   this.endAngle - this.startAngle < 0
                 );
@@ -8852,12 +8053,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var cell = [];
         this.border = new doc.a.Shape();
         this.fragments = this._setupFragments(data);
-        this.fragmentOutlines = ok()((comboPathName = this.fragments)).call(
-          comboPathName,
-          function () {
-            return new doc.a.Shape();
-          }
-        );
+        this.fragmentOutlines = ok()((comboPathName = this.fragments)).call(comboPathName, function () {
+          return new doc.a.Shape();
+        });
         cell.push(this.border);
         req.a.each(req.a.pluck(this.fragments, "shape"), function (prisoner) {
           cell.push(prisoner);
@@ -8906,9 +8104,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var p;
         var shape1;
         var gradient;
-        var overlapsEndcoor = req.a.isObject(obj)
-          ? req.a.pluck(obj, "color")
-          : {};
+        var overlapsEndcoor = req.a.isObject(obj) ? req.a.pluck(obj, "color") : {};
         var o = req.a.isNumber(obj) ? obj : obj.length;
         req.a.each(
           this.fragments,
@@ -9009,8 +8205,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var angleEndCurrent;
         var angleStartCurrent;
         /** @type {number} */
-        var SLIDE_PAGE_ITEMS =
-          this.fragmentCount > 0 ? 360 / this.fragmentCount : 0;
+        var SLIDE_PAGE_ITEMS = this.fragmentCount > 0 ? 360 / this.fragmentCount : 0;
         req.a.each(
           this.fragments,
           function (node, i) {
@@ -9024,31 +8219,17 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               node.shape.alpha = pipe()(data.COLOR_ALPHA_AFFIX, 16) / 256;
             }
             /** @type {number} */
-            angleEndCurrent =
-              (i * SLIDE_PAGE_ITEMS - 90) * data.DEGREES_TO_RADIANS;
+            angleEndCurrent = (i * SLIDE_PAGE_ITEMS - 90) * data.DEGREES_TO_RADIANS;
             /** @type {number} */
-            angleStartCurrent =
-              ((i + 1) * SLIDE_PAGE_ITEMS - 90) * data.DEGREES_TO_RADIANS;
+            angleStartCurrent = ((i + 1) * SLIDE_PAGE_ITEMS - 90) * data.DEGREES_TO_RADIANS;
             node.shape.graphics.clear().beginFill(color);
             shape.graphics.clear().setStrokeStyle(0.5).beginStroke("black");
             if (1 !== this.fragmentCount) {
               node.shape.graphics.moveTo(this.width / 2, this.height / 2);
               shape.graphics.moveTo(this.width / 2, this.height / 2);
             }
-            node.shape.graphics.arc(
-              this.width / 2,
-              this.height / 2,
-              this.width / 2,
-              angleEndCurrent,
-              angleStartCurrent
-            );
-            shape.graphics.arc(
-              this.width / 2,
-              this.height / 2,
-              this.width / 2,
-              angleEndCurrent,
-              angleStartCurrent
-            );
+            node.shape.graphics.arc(this.width / 2, this.height / 2, this.width / 2, angleEndCurrent, angleStartCurrent);
+            shape.graphics.arc(this.width / 2, this.height / 2, this.width / 2, angleEndCurrent, angleStartCurrent);
             if (1 !== this.fragmentCount) {
               node.shape.graphics.lineTo(this.width / 2, this.height / 2);
               shape.graphics.lineTo(this.width / 2, this.height / 2);
@@ -9067,12 +8248,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           req.a,
           this.fragments,
           function (tilesPerTexture, navSettings) {
-            return this._lineIntersectsFragment(
-              data,
-              key,
-              tilesPerTexture,
-              navSettings
-            );
+            return this._lineIntersectsFragment(data, key, tilesPerTexture, navSettings);
           },
           this
         );
@@ -9084,12 +8260,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @param {number} settings
        * @return {?}
        */
-      start.prototype._lineIntersectsFragment = function (
-        type,
-        s,
-        n,
-        settings
-      ) {
+      start.prototype._lineIntersectsFragment = function (type, s, n, settings) {
         var b = this._getFragmentLines(n, settings);
         return req.a.any(
           b,
@@ -9186,37 +8357,19 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @param {!Object} screen
        * @return {?}
        */
-      start.prototype._lineIntersectsLine = function (
-        event,
-        item,
-        element,
-        screen
-      ) {
+      start.prototype._lineIntersectsLine = function (event, item, element, screen) {
         var beginAngle;
         var height;
         /** @type {boolean} */
         var xGrid = false;
         /** @type {number} */
-        var r =
-          (item.x - event.x) * (screen.y - element.y) -
-          (item.y - event.y) * (screen.x - element.x);
+        var r = (item.x - event.x) * (screen.y - element.y) - (item.y - event.y) * (screen.x - element.x);
         /** @type {number} */
-        var beginDistance =
-          (event.y - element.y) * (screen.x - element.x) -
-          (event.x - element.x) * (screen.y - element.y);
+        var beginDistance = (event.y - element.y) * (screen.x - element.x) - (event.x - element.x) * (screen.y - element.y);
         /** @type {number} */
-        var width =
-          (event.y - element.y) * (item.x - event.x) -
-          (event.x - element.x) * (item.y - event.y);
+        var width = (event.y - element.y) * (item.x - event.x) - (event.x - element.x) * (item.y - event.y);
         return (
-          0 !== r &&
-            ((height = width / r),
-            (xGrid =
-              (beginAngle = beginDistance / r) >= 0 &&
-              beginAngle <= 1 &&
-              height >= 0 &&
-              height <= 1)),
-          xGrid
+          0 !== r && ((height = width / r), (xGrid = (beginAngle = beginDistance / r) >= 0 && beginAngle <= 1 && height >= 0 && height <= 1)), xGrid
         );
       };
       /**
@@ -9234,13 +8387,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           position: {
             x: this.x,
             y: this.y,
-            z: this.display.parent
-              ? action()(req.a).call(
-                  req.a,
-                  this.display.parent.children,
-                  this.display
-                )
-              : 0,
+            z: this.display.parent ? action()(req.a).call(req.a, this.display.parent.children, this.display) : 0,
           },
           dimensions: {
             width: this.width,
@@ -9279,12 +8426,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.fraction = this._setupFraction(obj);
         this.cover = this._setupFractionCover();
         /** @type {!Array} */
-        methodsToOverwrite = [
-          this.toggleHandle.display,
-          this.handleConnector,
-          this.fraction.display,
-          this.cover,
-        ];
+        methodsToOverwrite = [this.toggleHandle.display, this.handleConnector, this.fraction.display, this.cover];
         req.a.each(
           methodsToOverwrite,
           function (name) {
@@ -9332,7 +8474,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             /** @type {number} */
             delta = delta * data.RADIANS_TO_DEGREES;
             particle.angle += delta;
-            particle._placeComponents();  //Vikas--Note: add all info about colck hands
+            particle._placeComponents(); //Vikas--Note: add all info about colck hands
             particle.draw();
           },
           pressup: function () {
@@ -9404,8 +8546,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.toggleHandle.x = this.radius;
         this.toggleHandle.y = this.radius;
         /** @type {number} */
-        this.toggleHandle.icon.y =
-          -this.toggleHandle.height / 2 - this.radius - 20;
+        this.toggleHandle.icon.y = -this.toggleHandle.height / 2 - this.radius - 20;
         this.toggleHandle.display.rotation = this.angle;
         this.fraction.x = this.radius;
         this.fraction.y = this.radius;
@@ -9444,12 +8585,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           this.fraction.display.mouseEnabled = this.fillMode;
         }
         if (req.a.isString(color)) {
-          num_elements = req.a.findKey(
-            Array.FragmentColors,
-            function (excludedColor) {
-              return excludedColor === color;
-            }
-          );
+          num_elements = req.a.findKey(Array.FragmentColors, function (excludedColor) {
+            return excludedColor === color;
+          });
           /** @type {string} */
           this.fraction.fillColor = color;
           this.coverFillColor = map[num_elements];
@@ -9478,21 +8616,14 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var pane3 = _this.c.getFirstParentEntity(this.display.parent);
         /** @type {number} */
         var angleRadians = (this.angle + -90) * data.DEGREES_TO_RADIANS;
-        this.toggleHandle.display.visible =
-          pane3.selected && this.getFragmentCount() > 0;
+        this.toggleHandle.display.visible = pane3.selected && this.getFragmentCount() > 0;
         this.toggleHandle.draw();
         this.handleConnector.graphics.clear();
         if (this.toggleHandle.display.visible) {
           this.handleConnector.graphics
             .beginStroke("black")
-            .moveTo(
-              Math.cos(angleRadians) * this.radius + this.width / 2,
-              Math.sin(angleRadians) * this.radius + this.height / 2
-            )
-            .lineTo(
-              Math.cos(angleRadians) * (this.radius + 20) + this.width / 2,
-              Math.sin(angleRadians) * (this.radius + 20) + this.height / 2
-            );
+            .moveTo(Math.cos(angleRadians) * this.radius + this.width / 2, Math.sin(angleRadians) * this.radius + this.height / 2)
+            .lineTo(Math.cos(angleRadians) * (this.radius + 20) + this.width / 2, Math.sin(angleRadians) * (this.radius + 20) + this.height / 2);
         }
         /** @type {boolean} */
         this.fraction.visible = this.getFragmentCount() > 0;
@@ -9500,10 +8631,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.cover.visible = !(this.getFragmentCount() > 0) && this.fillMode;
         /** @type {number} */
         this.cover.alpha = pipe()(20, 16) / 256;
-        this.cover.graphics
-          .clear()
-          .beginFill(this.coverFillColor)
-          .drawCircle(this.radius, this.radius, this.radius);
+        this.cover.graphics.clear().beginFill(this.coverFillColor).drawCircle(this.radius, this.radius, this.radius);
       };
       /**
        * @return {?}
@@ -9518,14 +8646,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var value;
         return {
           angle: this.angle * data.DEGREES_TO_RADIANS,
-          fragments: ok()((value = this.fraction.fragments)).call(
-            value,
-            function (state) {
-              return {
-                color: state.color,
-              };
-            }
-          ),
+          fragments: ok()((value = this.fraction.fragments)).call(value, function (state) {
+            return {
+              color: state.color,
+            };
+          }),
           shown: this.display.visible,
         };
       };
@@ -9573,12 +8698,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           data.Events.HAND_CHANGED,
           function (e) {
             if (e.id === this.minuteHand.id || e.id === this.hourHand.id) {
-              if (
-                (e.animated
-                  ? this._animateHandChanged(e)
-                  : this._jumpHandChanged(e),
-                0 !== this.secondHand.angle)
-              ) {
+              if ((e.animated ? this._animateHandChanged(e) : this._jumpHandChanged(e), 0 !== this.secondHand.angle)) {
                 var c = new doc.a.Event(data.Events.SET_RUN_STATE);
                 c.set({
                   ids: [this.runJumpControl.runControl.id],
@@ -9634,9 +8754,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             if (req.a.contains(options.id, this.id)) {
               /** @type {boolean} */
               this.handleActive = false;
-              this.digitalReadoutMode = req.a.isBoolean(options.setTo)
-                ? options.setTo
-                : !this.digitalReadoutMode;
+              this.digitalReadoutMode = req.a.isBoolean(options.setTo) ? options.setTo : !this.digitalReadoutMode;
               this._placeComponents();
               this.draw();
             }
@@ -9650,13 +8768,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             if (req.a.contains(options.id, this.id)) {
               /** @type {boolean} */
               this.handleActive = false;
-              this.runJumpMode = req.a.isBoolean(options.setTo)
-                ? options.setTo
-                : !this.runJumpMode;
+              this.runJumpMode = req.a.isBoolean(options.setTo) ? options.setTo : !this.runJumpMode;
               if (!this.runJumpMode) {
-                (deviceOrientationEvent = new doc.a.Event(
-                  data.Events.SET_RUN_STATE
-                )).set({
+                (deviceOrientationEvent = new doc.a.Event(data.Events.SET_RUN_STATE)).set({
                   ids: [this.runJumpControl.runControl.id],
                   newState: CatchEntry.RunStates.RESET,
                 });
@@ -9674,9 +8788,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             if (req.a.contains(options.id, this.id)) {
               /** @type {boolean} */
               this.handleActive = false;
-              this.elapsedTimeMode = req.a.isBoolean(options.setTo)
-                ? options.setTo
-                : !this.elapsedTimeMode;
+              this.elapsedTimeMode = req.a.isBoolean(options.setTo) ? options.setTo : !this.elapsedTimeMode;
               if (this.elapsedTimeMode) {
                 /** @type {string} */
                 this.activeMajorControl = modifier.ElapsedTime;
@@ -9698,9 +8810,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             if (req.a.contains(options.id, this.id)) {
               /** @type {boolean} */
               this.handleActive = false;
-              this.tellTimeMode = req.a.isBoolean(options.setTo)
-                ? options.setTo
-                : !this.tellTimeMode;
+              this.tellTimeMode = req.a.isBoolean(options.setTo) ? options.setTo : !this.tellTimeMode;
               this._placeComponents();
               this.draw();
             }
@@ -9732,9 +8842,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           data.Events.TOGGLE_SELECTION_FRACTION_MODE,
           function (options) {
             if (req.a.contains(options.id, this.id)) {
-              this.fractionMode = req.a.isBoolean(options.setTo)
-                ? options.setTo
-                : !this.fractionMode;
+              this.fractionMode = req.a.isBoolean(options.setTo) ? options.setTo : !this.fractionMode;
               /** @type {boolean} */
               this.digitalReadout.active = false;
               this._placeComponents();
@@ -9746,9 +8854,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         _this.f.on(
           data.Events.TOGGLE_FRACTION_FILL_MODE,
           function (options) {
-            this.fractionFillMode = req.a.isBoolean(options.setTo)
-              ? options.setTo
-              : !this.fractionFillMode;
+            this.fractionFillMode = req.a.isBoolean(options.setTo) ? options.setTo : !this.fractionFillMode;
             this.setColorMode(options.newColor);
           },
           this
@@ -9854,9 +8960,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           _this.d.SELECT_EVENT,
           function (options) {
             if (!req.a.contains(options.ids, this.id)) {
-              var c = new doc.a.Event(
-                data.Events.DIGITAL_READOUT_TOGGLE_ACTIVE
-              );
+              var c = new doc.a.Event(data.Events.DIGITAL_READOUT_TOGGLE_ACTIVE);
               c.set({
                 ids: [this.digitalReadout.id],
                 setTo: false,
@@ -9882,14 +8986,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var m;
         var clock = this.setupClockHands(e);
         var i = this.setupGearBox();
-        var this_area = this.setupDigitalReadout(e);  //Vikas Step: 1
-        var tell_time = this.setupTellTime(e);  //Vikas Note: Step1 for tell time
+        var this_area = this.setupDigitalReadout(e); //Vikas Step: 1
+        var tell_time = this.setupTellTime(e); //Vikas Note: Step1 for tell time
         var intervalGroups = this.setupRunJumpControl(e);
         var elapsedTime = this.setupElapsedTime(e);
         var sourceatt = this.setupFractionControl(e);
-        this.selectionHighlight = new doc.a.Shape(
-          this.createSelectionHighlightGraphics()
-        );
+        this.selectionHighlight = new doc.a.Shape(this.createSelectionHighlightGraphics());
         this.handle = this.setupResizeHandle();
         this.fiveLabels = new doc.a.Shape(scope.Clock.FiveLabels);
         this.face = new doc.a.Shape(scope.Clock.Face);
@@ -9914,14 +9016,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           this.romanNumerals,
           this.gearBox.display,
         ]);
-        this.clockFaceComponents = req.a.union(
-          this.clockFaceComponents,
-          req.a.pluck(this.minorTicks, "display")
-        );
-        this.clockFaceComponents = req.a.union(
-          this.clockFaceComponents,
-          req.a.pluck(this.majorTicks, "display")
-        );
+        this.clockFaceComponents = req.a.union(this.clockFaceComponents, req.a.pluck(this.minorTicks, "display"));
+        this.clockFaceComponents = req.a.union(this.clockFaceComponents, req.a.pluck(this.majorTicks, "display"));
         req.a.each(
           this.clockFaceComponents,
           function (_childName) {
@@ -9932,11 +9028,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.clockHandsContainer = new doc.a.Container();
         /** @type {!Array} */
         this.clockHandsComponents = [];
-        this.clockHandsComponents = req.a.union(this.clockHandsComponents, [
-          this.hourHand.display,
-          this.minuteHand.display,
-          this.secondHand.display,
-        ]);
+        this.clockHandsComponents = req.a.union(this.clockHandsComponents, [this.hourHand.display, this.minuteHand.display, this.secondHand.display]);
         req.a.each(
           this.clockHandsComponents,
           function (_childName) {
@@ -9954,7 +9046,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           this.fractionControl.display,
           this.runJumpControl.display,
           this.digitalReadout.display,
-          this.tellTime.display,//Vikas Note: added for tell time
+          this.tellTime.display, //Vikas Note: added for tell time
         ];
         (m = this.display).addChild.apply(m, searchPipeline);
       };
@@ -9965,12 +9057,10 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var g = new doc.a.Graphics();
         var radius = this.radius + 10;
         return (
-          this.clockType !== rules.Increments &&
-            (radius =
-              radius - data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale),
+          this.clockType !== rules.Increments && (radius = radius - data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale),
           g
             .setStrokeStyle(12)
-            .beginStroke("#6697c4")  //Color of clock selection
+            .beginStroke("#6697c4") //Color of clock selection
             .drawCircle(this.radius, this.radius, radius),
           g
         );
@@ -10002,16 +9092,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               var startX = 0.8 * this.width - 9;
               this.corner.graphics.clear();
               this.corner.graphics.beginFill(this.fillColor);
-              this.corner.graphics.drawRoundRectComplex(
-                0,
-                -this.height / 2,
-                this.width,
-                this.height,
-                0,
-                20,
-                20,
-                0
-              );
+              this.corner.graphics.drawRoundRectComplex(0, -this.height / 2, this.width, this.height, 0, 20, 20, 0);
               this.corner.graphics
                 .setStrokeStyle(5)
                 .beginStroke("white")
@@ -10039,14 +9120,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             var deltaX = this.interactionState.deltaX;
             var deltaY = this.interactionState.deltaY;
             /** @type {number} */
-            var button =
-              deltaX / -Math.cos(this.angle * _this.d.DEGREES_TO_RADIANS);
+            var button = deltaX / -Math.cos(this.angle * _this.d.DEGREES_TO_RADIANS);
             /** @type {number} */
-            var undefined =
-              deltaY / -Math.sin(this.angle * _this.d.DEGREES_TO_RADIANS);
+            var undefined = deltaY / -Math.sin(this.angle * _this.d.DEGREES_TO_RADIANS);
             /** @type {number} */
-            var newValue =
-              Math.abs(deltaX) > Math.abs(deltaY) ? button : undefined;
+            var newValue = Math.abs(deltaX) > Math.abs(deltaY) ? button : undefined;
             /** @type {!Object} */
             event.nativeEvent = eventData;
             event.deltaX = deltaX;
@@ -10114,8 +9192,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         });
       };
       options.prototype.setupTellTime = function (a22) {
-        //console.log("Step 2: options.prototype.setupTellTime: ", a22); //Vikas Step: 2        
-         return new testTellTime(null, {
+        //console.log("Step 2: options.prototype.setupTellTime: ", a22); //Vikas Step: 2
+        return new testTellTime(null, {
           tellTimeDisplayMode: a22.tellTimeMode,
           enabled: !a22.elapsedTimeMode,
         });
@@ -10137,11 +9215,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       options.prototype.setupElapsedTime = function (settings) {
         //console.log("call partilce....",  options.prototype.setupElapsedTime.caller);// Vikas-- Note: This calls particle
         /** @type {number} */
-        var current_radius =
-          settings.radius -
-          (data.GENERAL_CLOCK_FACE_RADIUS_PADDING * settings.radius) /
-            (scope.Clock.bounds.width / 2);
-         //Vikas-- Note: following code calls Particle....   
+        var current_radius = settings.radius - (data.GENERAL_CLOCK_FACE_RADIUS_PADDING * settings.radius) / (scope.Clock.bounds.width / 2);
+        //Vikas-- Note: following code calls Particle....
         return new Tabs(null, {
           active: settings.elapsedTimeActive,
           startAngle: settings.elapsedTimeStart,
@@ -10169,6 +9244,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this._placeDigitalReadout();
         this._placeRunJumpControl();
         this._placeElapsedTime();
+        this._placeTellTime();
         this._placeFractionControl();
       };
       /**
@@ -10179,25 +9255,13 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var y;
         var offset;
         if (this.clockType === rules.Increments) {
-          x =
-            Math.cos(225 * _this.d.DEGREES_TO_RADIANS) * this.radius +
-            (this.radius + 2);
-          y =
-            Math.sin(225 * _this.d.DEGREES_TO_RADIANS) * this.radius +
-            (this.radius + 2);
+          x = Math.cos(225 * _this.d.DEGREES_TO_RADIANS) * this.radius + (this.radius + 2);
+          y = Math.sin(225 * _this.d.DEGREES_TO_RADIANS) * this.radius + (this.radius + 2);
         } else {
           /** @type {number} */
-          offset =
-            data.GENERAL_CLOCK_FACE_RADIUS_PADDING *
-            (this.radius / data.DEFAULT_CLOCK_RADIUS);
-          x =
-            Math.cos(225 * _this.d.DEGREES_TO_RADIANS) *
-              (this.radius - offset) +
-            (this.radius + 2);
-          y =
-            Math.sin(225 * _this.d.DEGREES_TO_RADIANS) *
-              (this.radius - offset) +
-            (this.radius + 2);
+          offset = data.GENERAL_CLOCK_FACE_RADIUS_PADDING * (this.radius / data.DEFAULT_CLOCK_RADIUS);
+          x = Math.cos(225 * _this.d.DEGREES_TO_RADIANS) * (this.radius - offset) + (this.radius + 2);
+          y = Math.sin(225 * _this.d.DEGREES_TO_RADIANS) * (this.radius - offset) + (this.radius + 2);
         }
         this.handle.x = x;
         this.handle.y = y;
@@ -10233,30 +9297,38 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.elapsedTime.x = this.radius;
         this.elapsedTime.y = this.radius;
       };
+
+      options.prototype._placeTellTime = function () {
+        /** @type {number} */
+        this.tellTime.x = this.radius - this.tellTime.width / 2;
+        /** @type {number} */
+        this.tellTime.y = 2 * this.radius + 25;
+        if (this.digitalReadoutMode) {
+          this.tellTime.y += this.digitalReadout.height + 10;
+        }
+      };
+
       /**
        * @return {undefined}
        */
       options.prototype._placeFractionControl = function () {
         /** @type {number} */
-        this.fractionControl.x =
-          data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale;
+        this.fractionControl.x = data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale;
         /** @type {number} */
-        this.fractionControl.y =
-          data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale;
+        this.fractionControl.y = data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale;
       };
       /**
        * @return {undefined}
        */
       options.prototype.draw = function () {
+        //console.clear();
+        //console.log("OPTIONS: ", this);
         this.selectionHighlight.visible = this.selected;
         /** @type {number} */
         this.selectionHighlight.alpha = 0.5;
-        this.selectionHighlight.graphics =
-          this.createSelectionHighlightGraphics();
+        this.selectionHighlight.graphics = this.createSelectionHighlightGraphics();
         /** @type {boolean} */
-        this.arabicNumerals.visible =
-          this.clockType === rules.Arabic ||
-          this.clockType === rules.Increments;
+        this.arabicNumerals.visible = this.clockType === rules.Arabic || this.clockType === rules.Increments;
         /** @type {boolean} */
         this.romanNumerals.visible = this.clockType === rules.Roman;
         /** @type {boolean} */
@@ -10266,29 +9338,20 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.hourHand.display.visible = this.hourHandOn;
         this.hourHand.draw();
         this.secondHand.draw();
-        this.secondHand.display.visible =
-          this.runJumpMode &&
-          this.runJumpControl.controlMode === MOUSEDOWN.ControlModes.RUN;
+        this.secondHand.display.visible = this.runJumpMode && this.runJumpControl.controlMode === MOUSEDOWN.ControlModes.RUN;
         this.handle.display.visible = this.selected && this.handleActive;
         this.handle.draw();
         this.gearBox.display.visible = this.isGeared();
-        this.digitalReadout.display.visible =
-          this.digitalReadoutMode && this.isGeared();
+        this.digitalReadout.display.visible = this.digitalReadoutMode && this.isGeared();
         this.digitalReadout.draw();
-        this.tellTime.display.visible =
-          this.tellTimeMode && this.isGeared();
+        this.tellTime.display.visible = this.tellTimeMode && this.isGeared();
         this.tellTime.draw();
-        this.runJumpControl.display.visible =
-          this.runJumpMode && this.isGeared();
+        this.runJumpControl.display.visible = this.runJumpMode && this.isGeared();
         this.runJumpControl.draw();
-        this.elapsedTime.display.visible =
-          this.elapsedTimeMode &&
-          this.isGeared() &&
-          this.activeMajorControl === modifier.ElapsedTime;
+        this.elapsedTime.display.visible = this.elapsedTimeMode && this.isGeared() && this.activeMajorControl === modifier.ElapsedTime;
         this.elapsedTime.draw();
         /** @type {boolean} */
-        this.fractionControl.display.visible =
-          this.activeMajorControl !== modifier.ElapsedTime;
+        this.fractionControl.display.visible = this.activeMajorControl !== modifier.ElapsedTime;
         this.fractionControl.draw();
       };
       /**
@@ -10338,12 +9401,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.clockFaceContainer.y = this.radius;
         this.clockHandsContainer.x = this.radius;
         this.clockHandsContainer.y = this.radius;
-        this.elapsedTime.setRadius(
-          this.radius - data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale
-        );
-        this.fractionControl.setRadius(
-          this.radius - data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale
-        );
+        this.elapsedTime.setRadius(this.radius - data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale);
+        this.fractionControl.setRadius(this.radius - data.GENERAL_CLOCK_FACE_RADIUS_PADDING * this.scale);
         this._placeComponents();
       };
       /**
@@ -10393,9 +9452,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             newAngle: 30 * v,
             animated: false,
           });
-          (deviceOrientationEvent = new doc.a.Event(
-            data.Events.HAND_CHANGED
-          )).set({
+          (deviceOrientationEvent = new doc.a.Event(data.Events.HAND_CHANGED)).set({
             id: this.minuteHand.id,
             newAngle: 6 * pos,
             animated: false,
@@ -10444,11 +9501,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       options.prototype.getReadableHours = function () {
         /** @type {number} */
         var value = ((this.hourHand.angle % 720) / 720) * 24;
-        return (
-          this.gearedHands && (value = Math.floor(value)),
-          value < 0 && (value = 24 + value),
-          value
-        );
+        return this.gearedHands && (value = Math.floor(value)), value < 0 && (value = 24 + value), value;
       };
       /**
        * @param {string} val
@@ -10500,9 +9553,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {undefined}
        */
       options.prototype.setHandLabelVisibility = function (opt_round) {
-        this.handLabelsOn = req.a.isBoolean(opt_round)
-          ? opt_round
-          : !this.handLabelsOn;
+        this.handLabelsOn = req.a.isBoolean(opt_round) ? opt_round : !this.handLabelsOn;
         this.hourHand.labelOn = this.handLabelsOn;
         this.minuteHand.labelOn = this.handLabelsOn;
         this._placeComponents();
@@ -10665,14 +9716,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         this.elapsedTime.endAngle = this.minuteHand.angle;
         this.minuteHand.draw();
         this.hourHand.draw();
-        this.digitalReadout.setTime(
-          this.getReadableHours(),
-          this.getReadableMinutes()
-        );
-        this.tellTime.setTime(
-          this.getReadableHours(),
-          this.getReadableMinutes()
-        )
+        this.digitalReadout.setTime(this.getReadableHours(), this.getReadableMinutes());
+        this.tellTime.setTime(this.getReadableHours(), this.getReadableMinutes());
 
         this.elapsedTime._placeComponents();
       };
@@ -10682,22 +9727,14 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       options.prototype._handleReadoutAdjustment = function (item) {
         var _funcmap = {};
-        _funcmap[DirSearchPathEntry.AdjustmentTypes.HOURS_UP] =
-          this._handleReadoutAdjustmentHoursUp;
-        _funcmap[DirSearchPathEntry.AdjustmentTypes.HOURS_DOWN] =
-          this._handleReadoutAdjustmentHoursDown;
-        _funcmap[DirSearchPathEntry.AdjustmentTypes.MINUTES_UNITS_UP] =
-          this._handleReadoutAdjustmentMinutesUnitsUp;
-        _funcmap[DirSearchPathEntry.AdjustmentTypes.MINUTES_UNITS_DOWN] =
-          this._handleReadoutAdjustmentMinutesUnitsDown;
-        _funcmap[DirSearchPathEntry.AdjustmentTypes.MINUTES_FIVES_UP] =
-          this._handleReadoutAdjustmentMinutesFivesUp;
-        _funcmap[DirSearchPathEntry.AdjustmentTypes.MINUTES_FIVES_DOWN] =
-          this._handleReadoutAdjustmentMinutesFivesDown;
-        _funcmap[DirSearchPathEntry.AdjustmentTypes.PERIOD_UP] =
-          this._handleReadoutAdjustmentPeriodUp;
-        _funcmap[DirSearchPathEntry.AdjustmentTypes.PERIOD_DOWN] =
-          this._handleReadoutAdjustmentPeriodDown;
+        _funcmap[DirSearchPathEntry.AdjustmentTypes.HOURS_UP] = this._handleReadoutAdjustmentHoursUp;
+        _funcmap[DirSearchPathEntry.AdjustmentTypes.HOURS_DOWN] = this._handleReadoutAdjustmentHoursDown;
+        _funcmap[DirSearchPathEntry.AdjustmentTypes.MINUTES_UNITS_UP] = this._handleReadoutAdjustmentMinutesUnitsUp;
+        _funcmap[DirSearchPathEntry.AdjustmentTypes.MINUTES_UNITS_DOWN] = this._handleReadoutAdjustmentMinutesUnitsDown;
+        _funcmap[DirSearchPathEntry.AdjustmentTypes.MINUTES_FIVES_UP] = this._handleReadoutAdjustmentMinutesFivesUp;
+        _funcmap[DirSearchPathEntry.AdjustmentTypes.MINUTES_FIVES_DOWN] = this._handleReadoutAdjustmentMinutesFivesDown;
+        _funcmap[DirSearchPathEntry.AdjustmentTypes.PERIOD_UP] = this._handleReadoutAdjustmentPeriodUp;
+        _funcmap[DirSearchPathEntry.AdjustmentTypes.PERIOD_DOWN] = this._handleReadoutAdjustmentPeriodDown;
         _funcmap[item.adjustmentType].call(this);
       };
       /**
@@ -10822,13 +9859,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           position: {
             x: this.x,
             y: this.y,
-            z: this.display.parent
-              ? action()(req.a).call(
-                  req.a,
-                  this.display.parent.children,
-                  this.display
-                )
-              : 0,
+            z: this.display.parent ? action()(req.a).call(req.a, this.display.parent.children, this.display) : 0,
           },
           activeMajorControl: this.activeMajorControl,
           clockType: this.clockType,
@@ -10874,9 +9905,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       var tile = $("KYsz");
       var t = $.n(tile);
       var __WEBPACK_IMPORTED_MODULE_18_date_fns_add_hours__ = $("+oHS");
-      var parseTemplate = $.n(
-        __WEBPACK_IMPORTED_MODULE_18_date_fns_add_hours__
-      );
+      var parseTemplate = $.n(__WEBPACK_IMPORTED_MODULE_18_date_fns_add_hours__);
       var useragent = {};
       var Data = useragent;
       /**
@@ -10963,12 +9992,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         id: "fraction-fill-base",
         classes: "popup",
         backgroundClose: true,
-        appendTo: document.querySelector(data.FRACTION_FILL_SELECTOR)
-          .parentElement,
+        appendTo: document.querySelector(data.FRACTION_FILL_SELECTOR).parentElement,
       });
       var koyomi = isolatedNodeComponent;
       /** @type {!Array} */
-      var r = ["#ffffff", "#ffffff"];//color
+      var r = ["#ffffff", "#ffffff"]; //color
       var EVENT = {
         Red: "rgb(241, 217, 218)",
         Orange: "rgb(245, 228, 215)",
@@ -10977,10 +10005,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         Blue: "rgb(213, 232, 244)",
         Purple: "rgb(233, 211, 234)",
       };
-      _this.f.on(
-        data.Events.FRACTION_FILL_PALETTE_TOGGLE,
-        create_proxy_with_event_dispatch
-      );
+      _this.f.on(data.Events.FRACTION_FILL_PALETTE_TOGGLE, create_proxy_with_event_dispatch);
       _this.f.on(data.Events.FRACTION_FILL_PALETTE_SHOW, eventHandler);
       _this.f.on(data.Events.FRACTION_FILL_PALETTE_HIDE, back);
       _this.f.on(data.Events.SET_FRACTION_FILL_COLOR, create);
@@ -11063,9 +10088,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       View.prototype._setupHTMLDisplay = function (scope) {
         var c = scope.base.$element;
         var inDesignable = new doc.a.DOMElement(c[0]);
-        return (
-          inDesignable.setBounds(0, 0, c.width(), c.height()), inDesignable
-        );
+        return inDesignable.setBounds(0, 0, c.width(), c.height()), inDesignable;
       };
       /**
        * @return {?}
@@ -11152,11 +10175,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {undefined}
        */
       View.prototype._bindEvents = function () {
-        _this.f.on(
-          data.Events.EDIT_CLOCK_PALETTE_TOGGLE,
-          this._toggleVisibility,
-          this
-        );
+        _this.f.on(data.Events.EDIT_CLOCK_PALETTE_TOGGLE, this._toggleVisibility, this);
         _this.f.on(data.Events.EDIT_CLOCK_PALETTE_SHOW, this._show, this);
         _this.f.on(data.Events.EDIT_CLOCK_PALETTE_HIDE, this._hide, this);
       };
@@ -11208,9 +10227,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         }
       };
       var __WEBPACK_IMPORTED_MODULE_19_date_fns_add_seconds__ = $("j6J1");
-      var __WEBPACK_IMPORTED_MODULE_19_date_fns_add_seconds___default = $.n(
-        __WEBPACK_IMPORTED_MODULE_19_date_fns_add_seconds__
-      );
+      var __WEBPACK_IMPORTED_MODULE_19_date_fns_add_seconds___default = $.n(__WEBPACK_IMPORTED_MODULE_19_date_fns_add_seconds__);
       var element = $("o+MX");
       var renderer = $.n(element);
       var states = {
@@ -11220,12 +10237,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         NONE: "400 22px " + _this.d.KEYPAD_FONT_FAMILY,
         OK: "400 22px " + _this.d.KEYPAD_FONT_FAMILY,
       };
-      var marker_shadow = new doc.a.Shadow(
-        _this.d.SHADOW_COLOR,
-        0,
-        0,
-        _this.d.PALETTE_SHADOW_RADIUS
-      );
+      var marker_shadow = new doc.a.Shadow(_this.d.SHADOW_COLOR, 0, 0, _this.d.PALETTE_SHADOW_RADIUS);
       Palette.prototype = mutation()(_this.q.prototype);
       Palette.prototype.constructor = _this.q;
       /** @type {function(?, number): undefined} */
@@ -11268,18 +10280,10 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {undefined}
        */
       Palette.prototype._bindEvents = function () {
-        _this.f.on(
-          data.Events.FRACTION_PICK_PALETTE_TOGGLE,
-          this._toggleVisibility,
-          this
-        );
+        _this.f.on(data.Events.FRACTION_PICK_PALETTE_TOGGLE, this._toggleVisibility, this);
         _this.f.on(data.Events.FRACTION_PICK_PALETTE_SHOW, this._show, this);
         _this.f.on(data.Events.FRACTION_PICK_PALETTE_HIDE, this._hide, this);
-        _this.f.on(
-          data.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT,
-          this._updatePartsIndicator,
-          this
-        );
+        _this.f.on(data.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT, this._updatePartsIndicator, this);
       };
       /**
        * @param {?} htOptions
@@ -11306,9 +10310,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       Palette.prototype._show = function (message) {
         req.a.each(this.keyButtons, function (consideration) {
           /** @type {boolean} */
-          consideration.stateActive =
-            consideration.partsValue ===
-            message.targetEntity.fractionControl.getFragmentCount();
+          consideration.stateActive = consideration.partsValue === message.targetEntity.fractionControl.getFragmentCount();
           consideration.draw();
         });
         /** @type {boolean} */
@@ -11334,8 +10336,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           /** @type {number} */
           t = 60 / saveNum.value;
           /** @type {string} */
-          this.partsIndicator.text =
-            1 === t ? t + " minute each" : t + " minutes each";
+          this.partsIndicator.text = 1 === t ? t + " minute each" : t + " minutes each";
         } else {
           /** @type {string} */
           this.partsIndicator.text = "";
@@ -11372,21 +10373,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         /** @type {number} */
         this.partsIndicator.x = 105;
         /** @type {number} */
-        this.partsIndicator.y =
-          this.height - 12 - 25 - this.partsIndicator.getMeasuredHeight() / 2;
+        this.partsIndicator.y = this.height - 12 - 25 - this.partsIndicator.getMeasuredHeight() / 2;
         this.keyButtons = this._createButtons();
         /** @type {!Array} */
-        source = [
-          this.backing,
-          this.indicatorLeft,
-          this.indicatorRight,
-          this.header,
-          this.partsIndicator,
-        ];
-        source = renderer()(source).call(
-          source,
-          req.a.pluck(this.keyButtons, "display")
-        );
+        source = [this.backing, this.indicatorLeft, this.indicatorRight, this.header, this.partsIndicator];
+        source = renderer()(source).call(source, req.a.pluck(this.keyButtons, "display"));
         req.a.each(
           source,
           function (name) {
@@ -11403,19 +10394,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var backColor = new doc.a.Shape();
         return (
           border.graphics.clear(),
-          border.graphics
-            .beginFill("#233239")
-            .moveTo(1, -25)
-            .lineTo(-25, 0)
-            .lineTo(1, 25)
-            .endStroke(),
+          border.graphics.beginFill("#233239").moveTo(1, -25).lineTo(-25, 0).lineTo(1, 25).endStroke(),
           backColor.graphics.clear(),
-          backColor.graphics
-            .beginFill("#233239")
-            .moveTo(-2, -25)
-            .lineTo(25, 0)
-            .lineTo(-2, 25)
-            .endStroke(),
+          backColor.graphics.beginFill("#233239").moveTo(-2, -25).lineTo(25, 0).lineTo(-2, 25).endStroke(),
           {
             left: border,
             right: backColor,
@@ -11429,10 +10410,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         /** @type {!Array} */
         var myHooks = [];
         return (
-          myHooks.push.apply(
-            myHooks,
-            Object(event.a)(this._createPartsButtons())
-          ),
+          myHooks.push.apply(myHooks, Object(event.a)(this._createPartsButtons())),
           myHooks.push(this._createNoneButton(0, 1, 4)),
           myHooks.push(this._createOKButton(3, 5, 1)),
           myHooks
@@ -11446,13 +10424,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @param {boolean} config
        * @return {?}
        */
-      Palette.prototype._createGenericButton = function (
-        data,
-        event,
-        a,
-        keyName,
-        config
-      ) {
+      Palette.prototype._createGenericButton = function (data, event, a, keyName, config) {
         var definition;
         var json = config ? req.a.clone(config) : {};
         return (
@@ -11477,9 +10449,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             clickCallback: function () {
               var deviceOrientationEvent;
               if (event.eventName) {
-                (deviceOrientationEvent = new doc.a.Event(event.eventName)).set(
-                  event
-                );
+                (deviceOrientationEvent = new doc.a.Event(event.eventName)).set(event);
                 _this.f.dispatchEvent(deviceOrientationEvent);
               }
             },
@@ -11496,13 +10466,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @param {boolean} config
        * @return {?}
        */
-      Palette.prototype._createPartsButton = function (
-        val,
-        data,
-        keys,
-        fn,
-        config
-      ) {
+      Palette.prototype._createPartsButton = function (val, data, keys, fn, config) {
         var definition;
         var json = config ? req.a.clone(config) : {};
         return (
@@ -11527,9 +10491,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             clickCallback: function () {
               var deviceOrientationEvent;
               if (data.eventName) {
-                (deviceOrientationEvent = new doc.a.Event(data.eventName)).set(
-                  data
-                );
+                (deviceOrientationEvent = new doc.a.Event(data.eventName)).set(data);
                 _this.f.dispatchEvent(deviceOrientationEvent);
               }
             },
@@ -11561,8 +10523,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                   cache[s] = this._createPartsButton(
                     s,
                     {
-                      eventName:
-                        data.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT,
+                      eventName: data.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT,
                       value: n,
                     },
                     0 + canCreateDiscussions,
@@ -11595,9 +10556,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               e
             );
           }),
-          __WEBPACK_IMPORTED_MODULE_19_date_fns_add_seconds___default()(
-            req.a
-          ).call(req.a, cache)
+          __WEBPACK_IMPORTED_MODULE_19_date_fns_add_seconds___default()(req.a).call(req.a, cache)
         );
       };
       /**
@@ -11606,11 +10565,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @param {number} ignoreClockTick
        * @return {?}
        */
-      Palette.prototype._createNoneButton = function (
-        select,
-        options,
-        ignoreClockTick
-      ) {
+      Palette.prototype._createNoneButton = function (select, options, ignoreClockTick) {
         var opt = this._createPartsButton(
           "NONE",
           {
@@ -11743,16 +10698,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           src: _msgSibling,
         },
       ];
-      _this.n.defineManifest(
-        "draw-tools",
-        GET_AUTH_URL_TIMEOUT,
-        data.CACHEBUST_BASEPATH
-      );
-      _this.n.defineManifest(
-        "equation-tools",
-        artistTrack,
-        data.CACHEBUST_BASEPATH
-      );
+      _this.n.defineManifest("draw-tools", GET_AUTH_URL_TIMEOUT, data.CACHEBUST_BASEPATH);
+      _this.n.defineManifest("equation-tools", artistTrack, data.CACHEBUST_BASEPATH);
       /**
        * @param {string} v
        * @return {undefined}
@@ -11881,9 +10828,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             skipAnimation: true,
           });
           e.display.dispatchEvent(beat);
-          var eventStart = new doc.a.Event(
-            _this.d.DRAW_TOOLS_MODE_CHANGE_EVENT
-          );
+          var eventStart = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT);
           eventStart.set({
             newMode: _this.g.DrawMode.NONE,
           });
@@ -11942,27 +10887,19 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             skipAnimation: true,
           });
           item.display.dispatchEvent(beat);
-          var eventStart = new doc.a.Event(
-            _this.d.DRAW_TOOLS_MODE_CHANGE_EVENT
-          );
+          var eventStart = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT);
           eventStart.set({
             newMode: _this.g.DrawMode.NONE,
           });
           _this.f.dispatchEvent(eventStart);
         });
         _this.f.on(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT, function (dataNode) {
-          if (
-            dataNode.newMode !== _this.g.DrawMode.NONE &&
-            item.display.visible
-          ) {
+          if (dataNode.newMode !== _this.g.DrawMode.NONE && item.display.visible) {
             _this.f.dispatchEvent(_this.d.TEXT_TOOLS_HIDE);
           }
         });
         _this.f.on(_this.d.DELETE_SELECTION_EVENT, function (dataNode) {
-          if (
-            dataNode.newMode !== _this.g.DrawMode.NONE &&
-            item.display.visible
-          ) {
+          if (dataNode.newMode !== _this.g.DrawMode.NONE && item.display.visible) {
             _this.f.dispatchEvent(_this.d.TEXT_TOOLS_HIDE);
           }
         });
@@ -11977,7 +10914,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         });
         _this.f.on(_this.d.STAGE_UPDATE, initialize);
         _this.f.on(data.Events.EDIT_CLOCK_PALETTE_SHOW, function (item) {
-          console.log("Edit clock", item);//Vikas
+          console.log("Edit clock", item); //Vikas
           bounds = item.targetEntity;
           initialize();
           var beat = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT);
@@ -11987,7 +10924,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           _this.f.dispatchEvent(beat);
         });
         _this.f.on(data.Events.TOGGLE_EDIT_MODE, function () {
-          console.log("Toggle edit mode...")
+          console.log("Toggle edit mode...");
           var beat;
           var bl;
           var value;
@@ -11996,9 +10933,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           } else {
             beat = new doc.a.Event(data.Events.EDIT_CLOCK_PALETTE_SHOW);
             if (
-              (bl = require()(
-                (value = root.getSelectedEntities(selection))
-              ).call(value, function (bounds) {
+              (bl = require()((value = root.getSelectedEntities(selection))).call(value, function (bounds) {
                 return bounds instanceof selection;
               })).length > 0
             ) {
@@ -12016,12 +10951,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           if (bounds) {
             var selector;
             c = new doc.a.Event(data.Events.SET_SELECTION_CLOCK_TYPE);
-            var attrs = require()((selector = root.getSelectedEntities())).call(
-              selector,
-              function (bounds) {
-                return bounds instanceof selection;
-              }
-            );
+            var attrs = require()((selector = root.getSelectedEntities())).call(selector, function (bounds) {
+              return bounds instanceof selection;
+            });
             id = req.a.pluck(attrs, "id");
             c.set({
               ids: id,
@@ -12035,15 +10967,10 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           var id;
           if (bounds) {
             var selector;
-            c = new doc.a.Event(
-              data.Events.SET_SELECTION_CLOCK_HAND_VISIBILITY
-            );
-            var attrs = require()((selector = root.getSelectedEntities())).call(
-              selector,
-              function (bounds) {
-                return bounds instanceof selection;
-              }
-            );
+            c = new doc.a.Event(data.Events.SET_SELECTION_CLOCK_HAND_VISIBILITY);
+            var attrs = require()((selector = root.getSelectedEntities())).call(selector, function (bounds) {
+              return bounds instanceof selection;
+            });
             id = req.a.pluck(attrs, "id");
             c.set({
               ids: id,
@@ -12053,30 +10980,23 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             _this.f.dispatchEvent(c);
           }
         });
-        _this.f.on(
-          data.Events.SET_CLOCK_HAND_LABEL_VISIBILITY,
-          function (options) {
-            var c;
-            var id;
-            if (bounds) {
-              var selector;
-              c = new doc.a.Event(
-                data.Events.SET_SELECTION_CLOCK_HAND_LABEL_VISIBILITY
-              );
-              var attrs = require()(
-                (selector = root.getSelectedEntities())
-              ).call(selector, function (bounds) {
-                return bounds instanceof selection;
-              });
-              id = req.a.pluck(attrs, "id");
-              c.set({
-                ids: id,
-                setTo: options.setTo,
-              });
-              _this.f.dispatchEvent(c);
-            }
+        _this.f.on(data.Events.SET_CLOCK_HAND_LABEL_VISIBILITY, function (options) {
+          var c;
+          var id;
+          if (bounds) {
+            var selector;
+            c = new doc.a.Event(data.Events.SET_SELECTION_CLOCK_HAND_LABEL_VISIBILITY);
+            var attrs = require()((selector = root.getSelectedEntities())).call(selector, function (bounds) {
+              return bounds instanceof selection;
+            });
+            id = req.a.pluck(attrs, "id");
+            c.set({
+              ids: id,
+              setTo: options.setTo,
+            });
+            _this.f.dispatchEvent(c);
           }
-        );
+        });
         _this.f.on(_this.d.STAGE_UPDATE, load);
         _this.f.on(data.Events.FRACTION_PICK_PALETTE_SHOW, function (item) {
           bounds = item.targetEntity;
@@ -12091,25 +11011,18 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           } else {
             var htmlDocument;
             beat = new doc.a.Event(data.Events.FRACTION_PICK_PALETTE_SHOW);
-            var a = require()((htmlDocument = root.getSelectedEntities())).call(
-              htmlDocument,
-              function (bounds) {
-                return bounds instanceof selection;
-              }
-            );
+            var a = require()((htmlDocument = root.getSelectedEntities())).call(htmlDocument, function (bounds) {
+              return bounds instanceof selection;
+            });
             if (a.length > 0) {
               beat.set({
                 targetEntity: a[0],
               });
-              (deviceOrientationEvent = new doc.a.Event(
-                data.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE
-              )).set({
+              (deviceOrientationEvent = new doc.a.Event(data.Events.TOGGLE_SELECTION_ELAPSED_TIME_MODE)).set({
                 id: req.a.pluck(a, "id"),
                 setTo: false,
               });
-              (docLoadedEvent = new doc.a.Event(
-                _this.d.SELECT_ENTITY_EVENT
-              )).set({
+              (docLoadedEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set({
                 ids: [a[0].id],
               });
             }
@@ -12123,38 +11036,29 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           }
           _this.f.dispatchEvent(beat);
         });
-        _this.f.on(
-          data.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT,
-          function (s) {
-            var c;
-            var id;
-            var value;
-            var sel_text;
-            var config;
-            if (bounds) {
-              var level;
-              c = new doc.a.Event(
-                data.Events.FRACTION_ENTITY_SET_FRAGMENT_COUNT
-              );
-              var tiles = require()((level = root.getSelectedEntities())).call(
-                level,
-                function (bounds) {
-                  return bounds instanceof selection;
-                }
-              );
-              value = req.a.pluck(tiles, "fractionControl");
-              sel_text = req.a.pluck(value, "fraction");
-              id = req.a.pluck(sel_text, "id");
-              config = value[0]._tempFragments;
-              c.set({
-                ids: id,
-                newFragments:
-                  config && s.value === config.length ? config : s.value,
-              });
-              _this.f.dispatchEvent(c);
-            }
+        _this.f.on(data.Events.FRACTION_PICK_PALETTE_SET_FRAGMENT_COUNT, function (s) {
+          var c;
+          var id;
+          var value;
+          var sel_text;
+          var config;
+          if (bounds) {
+            var level;
+            c = new doc.a.Event(data.Events.FRACTION_ENTITY_SET_FRAGMENT_COUNT);
+            var tiles = require()((level = root.getSelectedEntities())).call(level, function (bounds) {
+              return bounds instanceof selection;
+            });
+            value = req.a.pluck(tiles, "fractionControl");
+            sel_text = req.a.pluck(value, "fraction");
+            id = req.a.pluck(sel_text, "id");
+            config = value[0]._tempFragments;
+            c.set({
+              ids: id,
+              newFragments: config && s.value === config.length ? config : s.value,
+            });
+            _this.f.dispatchEvent(c);
           }
-        );
+        });
       };
       /**
        * @param {string} layer
@@ -12185,11 +11089,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var visible = false;
         return (visible =
           (visible =
-            (visible =
-              (visible =
-                (visible = visible || e.display.visible) ||
-                item.display.visible) || p.display.visible) ||
-            obj.display.visible) || c.display.visible);
+            (visible = (visible = (visible = visible || e.display.visible) || item.display.visible) || p.display.visible) || obj.display.visible) ||
+          c.display.visible);
       };
       /**
        * @return {?}
@@ -12275,11 +11176,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           src: fakeSrc,
         },
       ];
-      _this.n.defineManifest(
-        "entities",
-        topShowDialog,
-        data.CACHEBUST_BASEPATH
-      );
+      _this.n.defineManifest("entities", topShowDialog, data.CACHEBUST_BASEPATH);
       var prevState;
       var marketID;
       /** @type {!Array} */
@@ -12313,12 +11210,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                   },
                   pressup: function (event) {
                     var value = me._findFirstObject(event.target);
-                    if (
-                      value &&
-                      value.js &&
-                      (value = me._findFirstObject(value.js.topmostParent.t)) &&
-                      value.js
-                    ) {
+                    if (value && value.js && (value = me._findFirstObject(value.js.topmostParent.t)) && value.js) {
                       value = value.js;
                     }
                     var def2 = ctx.getTargetEntity();
@@ -12335,12 +11227,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                         }
                       }
                       if (ctx.isTargetEntity(selection)) {
-                        _this.f.dispatchEvent(
-                          data.Events.EDIT_CLOCK_PALETTE_HIDE
-                        );
-                        _this.f.dispatchEvent(
-                          data.Events.FRACTION_PICK_PALETTE_HIDE
-                        );
+                        _this.f.dispatchEvent(data.Events.EDIT_CLOCK_PALETTE_HIDE);
+                        _this.f.dispatchEvent(data.Events.FRACTION_PICK_PALETTE_HIDE);
                       }
                     }
                   },
@@ -12352,9 +11240,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                   mousedown: function (event) {
                     var entry = _this.c.getFirstParentEntity(event.target);
                     if (entry instanceof _this.p) {
-                      _this.f.dispatchEvent(
-                        data.Events.FRACTION_FILL_PALETTE_HIDE
-                      );
+                      _this.f.dispatchEvent(data.Events.FRACTION_FILL_PALETTE_HIDE);
                     }
                   },
                 },
@@ -12391,11 +11277,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         _this.f.on(data.Events.FRACTION_PICK_PALETTE_SHOW, pause);
         _this.f.on(_this.d.SELECT_ENTITY_EVENT, onRefreshRateChanged);
         _this.f.on(_this.d.DESELECT_ENTITY_EVENT, onRefreshRateChanged);
-        document
-          .querySelector("#canvas")
-          .addEventListener("contextmenu", function (event) {
-            event.preventDefault();
-          });
+        document.querySelector("#canvas").addEventListener("contextmenu", function (event) {
+          event.preventDefault();
+        });
       };
       /**
        * @param {boolean} table
@@ -12413,10 +11297,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       self.loadState = function (state) {
         var stacked;
         if ((me.resetPage(), (prevState = state), state)) {
-          cb()((stacked = state.workspaces)).call(
-            stacked,
-            self.loadStateWorkspace
-          );
+          cb()((stacked = state.workspaces)).call(stacked, self.loadStateWorkspace);
         }
       };
       /**
@@ -12434,16 +11315,10 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           me.drawing.loadDataUri(data.drawLayer),
           req.a.isArray(data.shades))
         ) {
-          cb()((placeMidpointLine = data.shades)).call(
-            placeMidpointLine,
-            self.loadStateShade
-          );
+          cb()((placeMidpointLine = data.shades)).call(placeMidpointLine, self.loadStateShade);
         }
         if (req.a.isArray(data.texts)) {
-          cb()((ffmpegArguments = data.texts)).call(
-            ffmpegArguments,
-            self.loadStateText
-          );
+          cb()((ffmpegArguments = data.texts)).call(ffmpegArguments, self.loadStateText);
         }
         if (req.a.isArray(data.entities)) {
           cb()((imports = data.entities)).call(imports, self.loadStateClock);
@@ -12461,10 +11336,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           cornerResizeImage: _this.n.getResult("entities", linkCont),
           fillImage: _this.n.getResult("entities", fakeSrc),
         };
-        var init = new _this.t(
-          null,
-          req.a.defaults(options.data, url_params_def)
-        );
+        var init = new _this.t(null, req.a.defaults(options.data, url_params_def));
         self.addShade(init);
       };
       /**
@@ -12484,10 +11356,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var range = _this.h.PRESET_FONT_SIZES;
         var i = _this.h.DEFAULT_FONT_SIZE_INDEX;
         cb()(range).call(range, function (elementSize, maxAtomIndex) {
-          if (
-            Math.abs(elementSize - me.data.size) <
-            Math.abs(range[i] - me.data.size)
-          ) {
+          if (Math.abs(elementSize - me.data.size) < Math.abs(range[i] - me.data.size)) {
             i = maxAtomIndex;
           }
         });
@@ -12521,38 +11390,24 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var mbhour = {};
         if (feature.data.gearedMode) {
           /** @type {number} */
-          mbhour.hour =
-            ((feature.data.time.hourAngle * data.RADIANS_TO_DEGREES) / 720) *
-            24;
+          mbhour.hour = ((feature.data.time.hourAngle * data.RADIANS_TO_DEGREES) / 720) * 24;
           /** @type {number} */
-          mbhour.minute =
-            (((feature.data.time.minuteAngle * data.RADIANS_TO_DEGREES) / 360) *
-              60) %
-            60;
+          mbhour.minute = (((feature.data.time.minuteAngle * data.RADIANS_TO_DEGREES) / 360) * 60) % 60;
           if (mbhour.minute < 0 && mbhour.hour >= 0) {
             mbhour.minute += 60;
           }
         } else {
           /** @type {number} */
-          mbhour.hour =
-            ((feature.data.time.hourAngle * data.RADIANS_TO_DEGREES) / 360) *
-            12;
+          mbhour.hour = ((feature.data.time.hourAngle * data.RADIANS_TO_DEGREES) / 360) * 12;
           /** @type {number} */
-          mbhour.minute =
-            (((feature.data.time.minuteAngle * data.RADIANS_TO_DEGREES) / 360) *
-              60) %
-            60;
+          mbhour.minute = (((feature.data.time.minuteAngle * data.RADIANS_TO_DEGREES) / 360) * 60) % 60;
         }
         /** @type {number} */
         mbhour.second = feature.data.time.secondAngle * data.RADIANS_TO_DEGREES;
         /** @type {number} */
-        var n =
-          feature.data.elapsedTimeDisplay.startTime.minuteAngle *
-          data.RADIANS_TO_DEGREES;
+        var n = feature.data.elapsedTimeDisplay.startTime.minuteAngle * data.RADIANS_TO_DEGREES;
         /** @type {number} */
-        var i =
-          feature.data.elapsedTimeDisplay.endTime.minuteAngle *
-          data.RADIANS_TO_DEGREES;
+        var i = feature.data.elapsedTimeDisplay.endTime.minuteAngle * data.RADIANS_TO_DEGREES;
         /** @type {string} */
         var modifiers = selection.MajorControls.None;
         if (feature.data.elapsedTimeDisplay.shown) {
@@ -12566,14 +11421,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         }
         var type = new selection(null, {
           position: {
-            x:
-              feature.data.center.x -
-              feature.data.radius +
-              selection.CONSTRAINT_PADDING,
-            y:
-              feature.data.center.y -
-              feature.data.radius +
-              selection.CONSTRAINT_PADDING,
+            x: feature.data.center.x - feature.data.radius + selection.CONSTRAINT_PADDING,
+            y: feature.data.center.y - feature.data.radius + selection.CONSTRAINT_PADDING,
           },
           radius: feature.data.radius - 2 * selection.CONSTRAINT_PADDING,
           activeMajorControl: modifiers,
@@ -12591,8 +11440,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           elapsedTimeStart: n,
           elapsedTimeEnd: i,
           fractionMode: feature.data.fractionDisplay.shown,
-          fractionInitialAngle:
-            feature.data.fractionDisplay.angle * data.RADIANS_TO_DEGREES,
+          fractionInitialAngle: feature.data.fractionDisplay.angle * data.RADIANS_TO_DEGREES,
           initialFragments: feature.data.fractionDisplay.fragments,
           initialTime: mbhour,
           readoutDisplayMode: DirSearchPathEntry.ReadoutModes.hr12,
@@ -12678,13 +11526,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {?}
        */
       self.getSelectedEntities = function () {
-        return require()(req.a).call(
-          req.a,
-          me.entities,
-          function (cbCollection) {
-            return cbCollection.selected;
-          }
-        );
+        return require()(req.a).call(req.a, me.entities, function (cbCollection) {
+          return cbCollection.selected;
+        });
       };
       /**
        * @return {?}
@@ -12698,11 +11542,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {?}
        */
       self.getAllEntities = function () {
-        return req.a.union(
-          this.getShades(),
-          this.getTexts(),
-          this.getEntities()
-        );
+        return req.a.union(this.getShades(), this.getTexts(), this.getEntities());
       };
       /**
        * @return {?}
@@ -12717,10 +11557,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         var e;
         var bounds = me._pageViewportDimensions();
         return (
-          me.display.cache(bounds.x, bounds.y, bounds.width, bounds.height),
-          (e = me.display.bitmapCache.getCacheDataURL()),
-          me.display.uncache(),
-          e
+          me.display.cache(bounds.x, bounds.y, bounds.width, bounds.height), (e = me.display.bitmapCache.getCacheDataURL()), me.display.uncache(), e
         );
       };
       /**
@@ -12746,9 +11583,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           },
           0
         );
-        return (
-          n && (nCatCount = nCatCount + n), nCatCount > _this.d.SHADE_LIMIT
-        );
+        return n && (nCatCount = nCatCount + n), nCatCount > _this.d.SHADE_LIMIT;
       };
       /**
        * @param {undefined} action
@@ -12823,10 +11658,8 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           visibleRect: {
             x: -config.offset.x / me.workspace.scaleX,
             y: -config.offset.y / me.workspace.scaleY,
-            width:
-              (me.width - me.verticalScrollbar.width) / me.workspace.scaleX,
-            height:
-              (me.height - me.horizontalScrollbar.height) / me.workspace.scaleY,
+            width: (me.width - me.verticalScrollbar.width) / me.workspace.scaleX,
+            height: (me.height - me.horizontalScrollbar.height) / me.workspace.scaleY,
           },
           zoomLevel: config.zoomLevel,
         };
@@ -12839,8 +11672,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         return req.a.any(selected, function (canCreateDiscussions) {
           return (
             canCreateDiscussions.fractionControl.getFragmentCount() > 0 &&
-            canCreateDiscussions.activeMajorControl ===
-              selection.MajorControls.FractionControl
+            canCreateDiscussions.activeMajorControl === selection.MajorControls.FractionControl
           );
         });
       };
@@ -12876,9 +11708,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           /** @type {boolean} */
           var k = 8 === event.keyCode;
           /** @type {boolean} */
-          var d =
-            "INPUT" !== event.target.nodeName &&
-            "TEXTAREA" !== event.target.nodeName;
+          var d = "INPUT" !== event.target.nodeName && "TEXTAREA" !== event.target.nodeName;
           if (k && d) {
             event.preventDefault();
           }
@@ -13019,19 +11849,14 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         add("l", run(data.Events.TOGGLE_ELAPSED_TIME_MODE));
         add("z", function () {
           var _Visitor;
-          var t = require()((_Visitor = root.getSelectedEntities())).call(
-            _Visitor,
-            function (bounds) {
-              return bounds instanceof selection;
-            }
-          );
+          var t = require()((_Visitor = root.getSelectedEntities())).call(_Visitor, function (bounds) {
+            return bounds instanceof selection;
+          });
           if (t.length > 0) {
             var target = req.a.max(t, function (event) {
               return event.display.parent.getChildIndex(event.display);
             });
-            var beat = new doc.a.Event(
-              data.Events.FRACTION_PICK_PALETTE_TOGGLE
-            );
+            var beat = new doc.a.Event(data.Events.FRACTION_PICK_PALETTE_TOGGLE);
             beat.set({
               targetEntity: target,
             });
@@ -13073,11 +11898,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           ],
         });
         log(info.IPAD_CHECK, _this.k.OPEN_EVENT, _this.k.CLOSE_EVENT);
-        log(
-          info.TEXT_EDIT,
-          [_this.d.EQUATION_TOOLS_SHOW, _this.d.TEXT_TOOLS_SHOW],
-          [_this.d.EQUATION_TOOLS_HIDE, _this.d.TEXT_TOOLS_HIDE]
-        );
+        log(info.TEXT_EDIT, [_this.d.EQUATION_TOOLS_SHOW, _this.d.TEXT_TOOLS_SHOW], [_this.d.EQUATION_TOOLS_HIDE, _this.d.TEXT_TOOLS_HIDE]);
         log(info.INFO, _this.d.INFO_SHOW_EVENT, _this.d.INFO_HIDE_EVENT);
         log(
           info.msgBox,
@@ -13098,47 +11919,14 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             _this.d.DRAW_TOOLS_CLEAR_DRAWING_PROMPT_CLOSE_EVENT,
           ]
         );
-        log(
-          info.SHARE_WORK,
-          _this.d.SAVE_POPUP_SHOW_EVENT,
-          _this.d.SAVE_POPUP_HIDE_EVENT
-        );
-        log(
-          info.ACTIVITY_CODE,
-          _this.d.ACTIVITY_CODE_OPEN_EVENT,
-          _this.d.ACTIVITY_CODE_CLOSE_EVENT
-        );
-        log(
-          info.DISPLAY_CODE,
-          _this.d.ACTIVITY_CODE_DISPLAY_OPEN_EVENT,
-          info.SHARE_WORK,
-          _this.d.ACTIVITY_CODE_DISPLAY_CLOSE_EVENT
-        );
-        log(
-          info.ADD_CLOCK,
-          data.Events.NEW_CLOCK_base_OPEN,
-          data.Events.NEW_CLOCK_base_CLOSE
-        );
-        log(
-          info.EDIT_FACE,
-          data.Events.EDIT_CLOCK_PALETTE_SHOW,
-          data.Events.EDIT_CLOCK_PALETTE_HIDE
-        );
-        log(
-          info.FRACTION_PICKER,
-          data.Events.FRACTION_PICK_PALETTE_SHOW,
-          data.Events.FRACTION_PICK_PALETTE_HIDE
-        );
-        log(
-          info.DIGITAL_READOUT,
-          data.Events.DIGITAL_READOUT_INPUT_FOCUS,
-          data.Events.DIGITAL_READOUT_INPUT_BLUR
-        );
-        log(
-          info.JUMP_CONTROL,
-          data.Events.JUMP_INPUT_FOCUS,
-          data.Events.JUMP_INPUT_BLUR
-        );
+        log(info.SHARE_WORK, _this.d.SAVE_POPUP_SHOW_EVENT, _this.d.SAVE_POPUP_HIDE_EVENT);
+        log(info.ACTIVITY_CODE, _this.d.ACTIVITY_CODE_OPEN_EVENT, _this.d.ACTIVITY_CODE_CLOSE_EVENT);
+        log(info.DISPLAY_CODE, _this.d.ACTIVITY_CODE_DISPLAY_OPEN_EVENT, info.SHARE_WORK, _this.d.ACTIVITY_CODE_DISPLAY_CLOSE_EVENT);
+        log(info.ADD_CLOCK, data.Events.NEW_CLOCK_base_OPEN, data.Events.NEW_CLOCK_base_CLOSE);
+        log(info.EDIT_FACE, data.Events.EDIT_CLOCK_PALETTE_SHOW, data.Events.EDIT_CLOCK_PALETTE_HIDE);
+        log(info.FRACTION_PICKER, data.Events.FRACTION_PICK_PALETTE_SHOW, data.Events.FRACTION_PICK_PALETTE_HIDE);
+        log(info.DIGITAL_READOUT, data.Events.DIGITAL_READOUT_INPUT_FOCUS, data.Events.DIGITAL_READOUT_INPUT_BLUR);
+        log(info.JUMP_CONTROL, data.Events.JUMP_INPUT_FOCUS, data.Events.JUMP_INPUT_BLUR);
       };
       $scope.bind = $scope.on;
       /**
@@ -13159,20 +11947,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       window.isDigitalReadoutInputActive = function () {
         var placeMidpointLine;
-        var path = require()((placeMidpointLine = root.getEntities())).call(
-          placeMidpointLine,
-          function (bounds) {
-            return bounds instanceof selection;
-          }
-        );
+        var path = require()((placeMidpointLine = root.getEntities())).call(placeMidpointLine, function (bounds) {
+          return bounds instanceof selection;
+        });
         return match()(path).call(path, function (canCreateDiscussions) {
-          var t = canCreateDiscussions.digitalReadout.hoursInput.htmlElement
-            .querySelector("input")
-            .matches(":focus");
-          var types =
-            canCreateDiscussions.digitalReadout.minutesInput.htmlElement
-              .querySelector("input")
-              .matches(":focus");
+          var t = canCreateDiscussions.digitalReadout.hoursInput.htmlElement.querySelector("input").matches(":focus");
+          var types = canCreateDiscussions.digitalReadout.minutesInput.htmlElement.querySelector("input").matches(":focus");
           return t || types;
         });
       };
@@ -13181,17 +11961,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        */
       window.isJumpInputActive = function () {
         var placeMidpointLine;
-        var path = require()((placeMidpointLine = root.getEntities())).call(
-          placeMidpointLine,
-          function (bounds) {
-            return bounds instanceof selection;
-          }
-        );
+        var path = require()((placeMidpointLine = root.getEntities())).call(placeMidpointLine, function (bounds) {
+          return bounds instanceof selection;
+        });
         return match()(path).call(path, function (canCreateDiscussions) {
           canCreateDiscussions.runJumpControl.jumpControl.input.htmlElement;
-          return canCreateDiscussions.runJumpControl.jumpControl.input.htmlElement
-            .querySelector("input")
-            .matches(":focus");
+          return canCreateDiscussions.runJumpControl.jumpControl.input.htmlElement.querySelector("input").matches(":focus");
         });
       };
       var content_panes = $("RnbG");
@@ -13267,28 +12042,16 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               var n = (function (value) {
                 /** @type {string} */
                 var output = "";
-                output =
-                  value.length >= 4
-                    ? write()(value).call(value, 0, 4) +
-                      "-" +
-                      write()(value).call(value, 4, 8)
-                    : value;
+                output = value.length >= 4 ? write()(value).call(value, 0, 4) + "-" + write()(value).call(value, 4, 8) : value;
                 return (output = output.toUpperCase());
               })(canCreateDiscussions.save_state_id);
               /** @type {string} */
               var picKey = window.location.host + window.location.pathname;
               /** @type {string} */
-              var a =
-                window.location.protocol +
-                "//" +
-                picKey +
-                "?" +
-                canCreateDiscussions.save_state_id;
+              var a = window.location.protocol + "//" + picKey + "?" + canCreateDiscussions.save_state_id;
               if (Data.isCPA()) {
                 /** @type {string} */
-                a =
-                  "https://apps.mathlearningcenter.org/clock/?" +
-                  canCreateDiscussions.save_state_id;
+                a = "https://apps.mathlearningcenter.org/clock/?" + canCreateDiscussions.save_state_id;
               }
               beat.set({
                 formattedSaveStateId: n,
@@ -13321,9 +12084,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         /** @type {string} */
         var extension = fileExtension || ax;
         return (
-          extension &&
-            "/" === (s = extension.toLowerCase().substring(1))[s.length - 1] &&
-            (s = s.substring(0, s.length - 1)),
+          extension && "/" === (s = extension.toLowerCase().substring(1))[s.length - 1] && (s = s.substring(0, s.length - 1)),
           (e = s),
           (s = write()((t = e.replace(/[^a-z0-9]/gi, ""))).call(t, 0, 8))
         );
@@ -13347,9 +12108,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
       _this.f.on(_this.d.ACTIVITY_CODE_OPEN_EVENT, testAppearance);
       _this.f.on(_this.d.ACTIVITY_CODE_CLOSE_EVENT, clear);
       _this.f.on(_this.d.LOAD_ACTIVITY_CODE_REQUEST_EVENT, init);
-      document
-        .querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR)
-        .addEventListener("input", refresh);
+      document.querySelector(data.ACTIVITY_CODE_TARGET_SELECTOR).addEventListener("input", refresh);
       var oMultiSelect = new _this.o("#copy-image-box", {
         openEvent: _this.d.COPY_IMAGE_OPEN_EVENT,
         closeEvent: _this.d.COPY_IMAGE_CLOSE_EVENT,
@@ -13385,20 +12144,14 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         disabled: true,
         disableEvent: _this.d.SAVE_STATE_EVENT,
       });
-      authReqCmd.saveLinkDisplay = new _this.e(
-        data.SAVE_LINK_DISPLAY_SELECTOR,
-        {
-          clickEvent: _this.d.DISPLAY_SAVE_LINK_EVENT,
-          disabled: true,
-          disableEvent: _this.d.SAVE_STATE_EVENT,
-        }
-      );
-      authReqCmd.saveImageDownload = new _this.e(
-        data.SAVE_IMAGE_DOWNLOAD_SELECTOR,
-        {
-          clickEvent: _this.d.EXPORT_CANVAS_TO_DESKTOP_EVENT,
-        }
-      );
+      authReqCmd.saveLinkDisplay = new _this.e(data.SAVE_LINK_DISPLAY_SELECTOR, {
+        clickEvent: _this.d.DISPLAY_SAVE_LINK_EVENT,
+        disabled: true,
+        disableEvent: _this.d.SAVE_STATE_EVENT,
+      });
+      authReqCmd.saveImageDownload = new _this.e(data.SAVE_IMAGE_DOWNLOAD_SELECTOR, {
+        clickEvent: _this.d.EXPORT_CANVAS_TO_DESKTOP_EVENT,
+      });
       _this.f.on(_this.d.SAVE_STATE_RESPONSE, onSuccess);
       _this.f.on(_this.d.SAVE_POPUP_TOGGLE_EVENT, Menu);
       _this.f.on(_this.d.SAVE_POPUP_HIDE_EVENT, _getCroppedText);
@@ -13410,11 +12163,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
         _this.f.dispatchEvent(_this.d.ACTIVITY_CODE_DISPLAY_OPEN_EVENT);
       });
       document
-        .querySelector(
-          data.SHARE_POPUP_URL_INPUT_SELECTOR +
-            ", " +
-            data.SHARE_POPUP_CODE_INPUT_SELECTOR
-        )
+        .querySelector(data.SHARE_POPUP_URL_INPUT_SELECTOR + ", " + data.SHARE_POPUP_CODE_INPUT_SELECTOR)
         .addEventListener("focus", function (e) {
           e.target.select();
         });
@@ -13438,13 +12187,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
        * @return {?}
        */
       popMsgbox.anyActive = function () {
-        return match()(req.a).call(
-          req.a,
-          bubbled_sets__3363,
-          function (FileModal) {
-            return FileModal.isOpen;
-          }
-        );
+        return match()(req.a).call(req.a, bubbled_sets__3363, function (FileModal) {
+          return FileModal.isOpen;
+        });
       };
       var Container = {};
       var targets = Container;
@@ -13567,12 +12312,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length > 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length > 0
                 );
               },
             },
@@ -13589,12 +12331,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length <= 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length <= 0
                 );
               },
             },
@@ -13611,12 +12350,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (value) {
                 var results;
-                var t = require()((results = resolve(value))).call(
-                  results,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var t = require()((results = resolve(value))).call(results, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(t).call(t, function (canCreateDiscussions) {
                   return canCreateDiscussions.digitalReadoutMode;
                 });
@@ -13637,18 +12373,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var x;
-                var path = require()((x = resolve())).call(
-                  x,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
-                return match()(path).call(
-                  path,
-                  function (canCreateDiscussions) {
-                    return !canCreateDiscussions.digitalReadoutMode;
-                  }
-                );
+                var path = require()((x = resolve())).call(x, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
+                return match()(path).call(path, function (canCreateDiscussions) {
+                  return !canCreateDiscussions.digitalReadoutMode;
+                });
               },
             },
           ],
@@ -13658,12 +12388,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (name) {
                 var pkg;
-                var url = require()((pkg = resolve(name))).call(
-                  pkg,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var url = require()((pkg = resolve(name))).call(pkg, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return (
                   match()(url).call(url, function (canCreateDiscussions) {
                     return !canCreateDiscussions.digitalReadoutMode;
@@ -13677,12 +12404,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (type) {
                 var selector = search(type);
                 return (
-                  match()(selector).call(
-                    selector,
-                    function (canCreateDiscussions) {
-                      return !canCreateDiscussions.digitalReadoutMode;
-                    }
-                  ) || !(selector.length > 0)
+                  match()(selector).call(selector, function (canCreateDiscussions) {
+                    return !canCreateDiscussions.digitalReadoutMode;
+                  }) || !(selector.length > 0)
                 );
               },
             },
@@ -13691,12 +12415,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var expr;
-                var value = require()((expr = resolve())).call(
-                  expr,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var value = require()((expr = resolve())).call(expr, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(value).call(value, function (canCreateDiscussions) {
                   return canCreateDiscussions.digitalReadoutMode;
                 });
@@ -13716,12 +12437,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length > 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length > 0
                 );
               },
             },
@@ -13738,12 +12456,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length <= 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length <= 0
                 );
               },
             },
@@ -13760,12 +12475,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var expr;
-                var value = require()((expr = resolve())).call(
-                  expr,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var value = require()((expr = resolve())).call(expr, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(value).call(value, function (canCreateDiscussions) {
                   return canCreateDiscussions.runJumpMode;
                 });
@@ -13786,18 +12498,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var x;
-                var path = require()((x = resolve())).call(
-                  x,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
-                return match()(path).call(
-                  path,
-                  function (canCreateDiscussions) {
-                    return !canCreateDiscussions.runJumpMode;
-                  }
-                );
+                var path = require()((x = resolve())).call(x, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
+                return match()(path).call(path, function (canCreateDiscussions) {
+                  return !canCreateDiscussions.runJumpMode;
+                });
               },
             },
           ],
@@ -13807,12 +12513,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (name) {
                 var pkg;
-                var url = require()((pkg = resolve(name))).call(
-                  pkg,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var url = require()((pkg = resolve(name))).call(pkg, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return (
                   match()(url).call(url, function (canCreateDiscussions) {
                     return !canCreateDiscussions.runJumpMode;
@@ -13826,12 +12529,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (type) {
                 var selector = search(type);
                 return (
-                  match()(selector).call(
-                    selector,
-                    function (canCreateDiscussions) {
-                      return !canCreateDiscussions.runJumpMode;
-                    }
-                  ) || !(selector.length > 0)
+                  match()(selector).call(selector, function (canCreateDiscussions) {
+                    return !canCreateDiscussions.runJumpMode;
+                  }) || !(selector.length > 0)
                 );
               },
             },
@@ -13840,12 +12540,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var expr;
-                var value = require()((expr = resolve())).call(
-                  expr,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var value = require()((expr = resolve())).call(expr, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(value).call(value, function (canCreateDiscussions) {
                   return canCreateDiscussions.runJumpMode;
                 });
@@ -13865,12 +12562,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length > 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length > 0
                 );
               },
             },
@@ -13887,12 +12581,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length <= 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length <= 0
                 );
               },
             },
@@ -13909,18 +12600,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (value) {
                 var results;
-                var t = require()((results = resolve(value))).call(
-                  results,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var t = require()((results = resolve(value))).call(results, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(t).call(t, function (canCreateDiscussions) {
-                  return (
-                    canCreateDiscussions.elapsedTimeMode &&
-                    canCreateDiscussions.activeMajorControl ===
-                      selection.MajorControls.ElapsedTime
-                  );
+                  return canCreateDiscussions.elapsedTimeMode && canCreateDiscussions.activeMajorControl === selection.MajorControls.ElapsedTime;
                 });
               },
             },
@@ -13930,11 +12614,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (o) {
                 var t = search(o);
                 return i()(t).call(t, function (canCreateDiscussions) {
-                  return (
-                    canCreateDiscussions.elapsedTimeMode &&
-                    canCreateDiscussions.activeMajorControl ===
-                      selection.MajorControls.ElapsedTime
-                  );
+                  return canCreateDiscussions.elapsedTimeMode && canCreateDiscussions.activeMajorControl === selection.MajorControls.ElapsedTime;
                 });
               },
             },
@@ -13943,18 +12623,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var x;
-                var path = require()((x = resolve())).call(
-                  x,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
-                return match()(path).call(
-                  path,
-                  function (canCreateDiscussions) {
-                    return !canCreateDiscussions.elapsedTimeMode;
-                  }
-                );
+                var path = require()((x = resolve())).call(x, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
+                return match()(path).call(path, function (canCreateDiscussions) {
+                  return !canCreateDiscussions.elapsedTimeMode;
+                });
               },
             },
           ],
@@ -13964,19 +12638,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (name) {
                 var pkg;
-                var url = require()((pkg = resolve(name))).call(
-                  pkg,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var url = require()((pkg = resolve(name))).call(pkg, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return (
                   match()(url).call(url, function (canCreateDiscussions) {
-                    return !(
-                      canCreateDiscussions.elapsedTimeMode &&
-                      canCreateDiscussions.activeMajorControl ===
-                        selection.MajorControls.ElapsedTime
-                    );
+                    return !(canCreateDiscussions.elapsedTimeMode && canCreateDiscussions.activeMajorControl === selection.MajorControls.ElapsedTime);
                   }) || !(url.length > 0)
                 );
               },
@@ -13987,16 +12654,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (type) {
                 var selector = search(type);
                 return (
-                  match()(selector).call(
-                    selector,
-                    function (canCreateDiscussions) {
-                      return !(
-                        canCreateDiscussions.elapsedTimeMode &&
-                        canCreateDiscussions.activeMajorControl ===
-                          selection.MajorControls.ElapsedTime
-                      );
-                    }
-                  ) || !(selector.length > 0)
+                  match()(selector).call(selector, function (canCreateDiscussions) {
+                    return !(canCreateDiscussions.elapsedTimeMode && canCreateDiscussions.activeMajorControl === selection.MajorControls.ElapsedTime);
+                  }) || !(selector.length > 0)
                 );
               },
             },
@@ -14005,12 +12665,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var expr;
-                var value = require()((expr = resolve())).call(
-                  expr,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var value = require()((expr = resolve())).call(expr, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(value).call(value, function (canCreateDiscussions) {
                   return canCreateDiscussions.elapsedTimeMode;
                 });
@@ -14035,12 +12692,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length > 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length > 0
                 );
               },
             },
@@ -14057,12 +12711,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length <= 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length <= 0
                 );
               },
             },
@@ -14079,12 +12730,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (value) {
                 var results;
-                var t = require()((results = resolve(value))).call(
-                  results,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var t = require()((results = resolve(value))).call(results, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(t).call(t, function (canCreateDiscussions) {
                   return canCreateDiscussions.tellTimeMode;
                 });
@@ -14105,18 +12753,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var x;
-                var path = require()((x = resolve())).call(
-                  x,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
-                return match()(path).call(
-                  path,
-                  function (canCreateDiscussions) {
-                    return !canCreateDiscussions.tellTimeMode;
-                  }
-                );
+                var path = require()((x = resolve())).call(x, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
+                return match()(path).call(path, function (canCreateDiscussions) {
+                  return !canCreateDiscussions.tellTimeMode;
+                });
               },
             },
           ],
@@ -14126,12 +12768,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (name) {
                 var pkg;
-                var url = require()((pkg = resolve(name))).call(
-                  pkg,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var url = require()((pkg = resolve(name))).call(pkg, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return (
                   match()(url).call(url, function (canCreateDiscussions) {
                     return !canCreateDiscussions.tellTimeMode;
@@ -14145,12 +12784,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (type) {
                 var selector = search(type);
                 return (
-                  match()(selector).call(
-                    selector,
-                    function (canCreateDiscussions) {
-                      return !canCreateDiscussions.tellTimeMode;
-                    }
-                  ) || !(selector.length > 0)
+                  match()(selector).call(selector, function (canCreateDiscussions) {
+                    return !canCreateDiscussions.tellTimeMode;
+                  }) || !(selector.length > 0)
                 );
               },
             },
@@ -14159,12 +12795,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var expr;
-                var value = require()((expr = resolve())).call(
-                  expr,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var value = require()((expr = resolve())).call(expr, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(value).call(value, function (canCreateDiscussions) {
                   return canCreateDiscussions.tellTimeMode;
                 });
@@ -14185,12 +12818,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length > 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length > 0
                 );
               },
             },
@@ -14207,12 +12837,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (value) {
                 var expr;
                 return (
-                  require()((expr = resolve(value))).call(
-                    expr,
-                    function (canCreateDiscussions) {
-                      return canCreateDiscussions.isGeared();
-                    }
-                  ).length <= 0
+                  require()((expr = resolve(value))).call(expr, function (canCreateDiscussions) {
+                    return canCreateDiscussions.isGeared();
+                  }).length <= 0
                 );
               },
             },
@@ -14229,18 +12856,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (value) {
                 var results;
-                var t = require()((results = resolve(value))).call(
-                  results,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var t = require()((results = resolve(value))).call(results, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(t).call(t, function (canCreateDiscussions) {
-                  return (
-                    canCreateDiscussions.elapsedTimeMode &&
-                    canCreateDiscussions.activeMajorControl ===
-                      selection.MajorControls.ElapsedTime
-                  );
+                  return canCreateDiscussions.elapsedTimeMode && canCreateDiscussions.activeMajorControl === selection.MajorControls.ElapsedTime;
                 });
               },
             },
@@ -14250,11 +12870,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (o) {
                 var t = search(o);
                 return i()(t).call(t, function (canCreateDiscussions) {
-                  return (
-                    canCreateDiscussions.elapsedTimeMode &&
-                    canCreateDiscussions.activeMajorControl ===
-                      selection.MajorControls.ElapsedTime
-                  );
+                  return canCreateDiscussions.elapsedTimeMode && canCreateDiscussions.activeMajorControl === selection.MajorControls.ElapsedTime;
                 });
               },
             },
@@ -14263,18 +12879,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var x;
-                var path = require()((x = resolve())).call(
-                  x,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
-                return match()(path).call(
-                  path,
-                  function (canCreateDiscussions) {
-                    return !canCreateDiscussions.elapsedTimeMode;
-                  }
-                );
+                var path = require()((x = resolve())).call(x, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
+                return match()(path).call(path, function (canCreateDiscussions) {
+                  return !canCreateDiscussions.elapsedTimeMode;
+                });
               },
             },
           ],
@@ -14284,19 +12894,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function (name) {
                 var pkg;
-                var url = require()((pkg = resolve(name))).call(
-                  pkg,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var url = require()((pkg = resolve(name))).call(pkg, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return (
                   match()(url).call(url, function (canCreateDiscussions) {
-                    return !(
-                      canCreateDiscussions.elapsedTimeMode &&
-                      canCreateDiscussions.activeMajorControl ===
-                        selection.MajorControls.ElapsedTime
-                    );
+                    return !(canCreateDiscussions.elapsedTimeMode && canCreateDiscussions.activeMajorControl === selection.MajorControls.ElapsedTime);
                   }) || !(url.length > 0)
                 );
               },
@@ -14307,16 +12910,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               condition: function (type) {
                 var selector = search(type);
                 return (
-                  match()(selector).call(
-                    selector,
-                    function (canCreateDiscussions) {
-                      return !(
-                        canCreateDiscussions.elapsedTimeMode &&
-                        canCreateDiscussions.activeMajorControl ===
-                          selection.MajorControls.ElapsedTime
-                      );
-                    }
-                  ) || !(selector.length > 0)
+                  match()(selector).call(selector, function (canCreateDiscussions) {
+                    return !(canCreateDiscussions.elapsedTimeMode && canCreateDiscussions.activeMajorControl === selection.MajorControls.ElapsedTime);
+                  }) || !(selector.length > 0)
                 );
               },
             },
@@ -14325,12 +12921,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var expr;
-                var value = require()((expr = resolve())).call(
-                  expr,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
+                var value = require()((expr = resolve())).call(expr, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
                 return i()(value).call(value, function (canCreateDiscussions) {
                   return canCreateDiscussions.elapsedTimeMode;
                 });
@@ -14398,18 +12991,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
               cssClass: "on",
               condition: function () {
                 var x;
-                var path = require()((x = resolve())).call(
-                  x,
-                  function (canCreateDiscussions) {
-                    return canCreateDiscussions.isGeared();
-                  }
-                );
-                return match()(path).call(
-                  path,
-                  function (canCreateDiscussions) {
-                    return !canCreateDiscussions.elapsedTimeMode;
-                  }
-                );
+                var path = require()((x = resolve())).call(x, function (canCreateDiscussions) {
+                  return canCreateDiscussions.isGeared();
+                });
+                return match()(path).call(path, function (canCreateDiscussions) {
+                  return !canCreateDiscussions.elapsedTimeMode;
+                });
               },
             },
           ],
@@ -14483,11 +13070,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           var level = [data.DRAW_TOOLS_SELECTOR];
           var targetPath = Data.inExclusionList(level, name);
           /** @type {!Array} */
-          var animationMap = [
-            data.EQUATION_TOOLS_SELECTOR,
-            data.TEXT_TOOLS_SELECTOR,
-            data.DELETE_SELECTOR,
-          ];
+          var animationMap = [data.EQUATION_TOOLS_SELECTOR, data.TEXT_TOOLS_SELECTOR, data.DELETE_SELECTOR];
           var inverseModels = Data.inExclusionList(animationMap, name);
           /** @type {!Array} */
           var owner = [
@@ -14511,19 +13094,13 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           ];
           var components = Data.inExclusionList(owner, name);
           /** @type {!Array} */
-          var index = [
-            data.ADD_FRACTION_CLOCK_SELECTOR,
-            data.EDIT_CLOCK_SELECTOR,
-            data.TOGGLE_FRACTION_SELECTOR,
-          ];
+          var index = [data.ADD_FRACTION_CLOCK_SELECTOR, data.EDIT_CLOCK_SELECTOR, data.TOGGLE_FRACTION_SELECTOR];
           var property = Data.inExclusionList(index, name);
           /** @type {!Array} */
           var event = [data.EDIT_CLOCK_SELECTOR, data.TOGGLE_FRACTION_SELECTOR];
           var distance = Data.inExclusionList(event, name);
           if (!targetPath) {
-            (deviceOrientationEvent = new doc.a.Event(
-              _this.d.DRAW_TOOLS_MODE_CHANGE_EVENT
-            )).set({
+            (deviceOrientationEvent = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT)).set({
               newMode: _this.g.DrawMode.NONE,
             });
             _this.f.dispatchEvent(deviceOrientationEvent);
@@ -14537,11 +13114,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             }
           }
           if (!components) {
-            (docLoadedEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set(
-              {
-                ids: [],
-              }
-            );
+            (docLoadedEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set({
+              ids: [],
+            });
             _this.f.dispatchEvent(docLoadedEvent);
           }
           if (!property) {
@@ -14584,12 +13159,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           /** @type {number} */
           doc.a.Ticker.framerate = 60;
           get();
-          (view = new doc.a.Container()).setBounds(
-            0,
-            0,
-            _this.u.canvas.width,
-            _this.u.canvas.height
-          );
+          (view = new doc.a.Container()).setBounds(0, 0, _this.u.canvas.width, _this.u.canvas.height);
           new _this.l("#infopage");
           PWWWService = new _this.k({
             appName: data.APP_FULL_NAME,
@@ -14616,16 +13186,12 @@ testTellTime.prototype = mutation()(_this.c.prototype);
           _this.f.on(_this.d.DELETE_SELECTION_REQUEST_EVENT, Matrix2D);
           _this.f.on(_this.d.SAVE_STATE, onMasterMessage);
           _this.f.on(_this.d.LOAD_ACTIVITY_CODE_EVENT, render);
-          document
-            .querySelector("#canvas")
-            .addEventListener("contextmenu", function () {
-              return false;
-            });
-          document
-            .querySelector("#canvas")
-            .addEventListener("mousedown", function () {
-              document.querySelector("#canvas").focus();
-            });
+          document.querySelector("#canvas").addEventListener("contextmenu", function () {
+            return false;
+          });
+          document.querySelector("#canvas").addEventListener("mousedown", function () {
+            document.querySelector("#canvas").focus();
+          });
           if (PWWWService.check()) {
             _this.f.dispatchEvent(_this.k.OPEN_EVENT);
           }
@@ -14636,13 +13202,9 @@ testTellTime.prototype = mutation()(_this.c.prototype);
             var name = _.getSaveStateName();
             text = name
               ? _.fetch(name)
-              : new __WEBPACK_IMPORTED_MODULE_20_date_fns_min___default.a(
-                  function (saveNotifs) {
-                    saveNotifs(
-                      Object(schema.a)({}, _.SAVE_KEY, data.FALLBACK_CONFIG)
-                    );
-                  }
-                );
+              : new __WEBPACK_IMPORTED_MODULE_20_date_fns_min___default.a(function (saveNotifs) {
+                  saveNotifs(Object(schema.a)({}, _.SAVE_KEY, data.FALLBACK_CONFIG));
+                });
             text
               .then(
                 function (document) {
@@ -14658,10 +13220,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
                 },
                 function (_errorThrown) {
                   return (
-                    console.error("Something went wrong."),
-                    console.error(_errorThrown),
-                    root.loadState(data.FALLBACK_CONFIG),
-                    data.FALLBACK_CONFIG
+                    console.error("Something went wrong."), console.error(_errorThrown), root.loadState(data.FALLBACK_CONFIG), data.FALLBACK_CONFIG
                   );
                 }
               )
@@ -14684,39 +13243,27 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     N69d: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-faceselect-arabic.13989310ba9a3d2046ee3b33f8c72c5c.png";
+      blob.exports = universe.p + "images/icon-faceselect-arabic.13989310ba9a3d2046ee3b33f8c72c5c.png";
     },
     NVI9: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-icon-stop-on.0df59b8f5d983de4e039061e3b8d6af9.png";
+      blob.exports = universe.p + "images/runjump-icon-stop-on.0df59b8f5d983de4e039061e3b8d6af9.png";
     },
     O6Lu: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-faceselect-roman.9c690239be0735ea8b7b56b8e3ef33ce.png";
+      blob.exports = universe.p + "images/icon-faceselect-roman.9c690239be0735ea8b7b56b8e3ef33ce.png";
     },
     OX93: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/cursor-pen-green.c5e004eb01f73bf9abce1c317e3b3688.cur";
+      blob.exports = universe.p + "images/cursor-pen-green.c5e004eb01f73bf9abce1c317e3b3688.cur";
     },
     OnMd: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/erase-all-active.f5a426a5a81d31b49c1f7376a32f9765.png";
+      blob.exports = universe.p + "images/erase-all-active.f5a426a5a81d31b49c1f7376a32f9765.png";
     },
     Q6Sk: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-faceselect-increment.05424bca4d372b1c3828aa0e2f067db6.png";
+      blob.exports = universe.p + "images/icon-faceselect-increment.05424bca4d372b1c3828aa0e2f067db6.png";
     },
     "RC+S": function (blob, name, universe) {
       /** @type {string} */
@@ -14726,15 +13273,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     "Rah+": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-300italic.4df32891a5f2f98a363314f595482e08.woff";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-300italic.4df32891a5f2f98a363314f595482e08.woff";
     },
     Rh6l: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/widget-elapsed-confirm-icon.0821c52d11e926ef602f54ff6fd72954.png";
+      blob.exports = universe.p + "images/widget-elapsed-confirm-icon.0821c52d11e926ef602f54ff6fd72954.png";
     },
     RjO5: function (module, id, require) {
       var content = require("FN4q");
@@ -14760,30 +13303,22 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     V6Ve: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/cursor-pen-red.cur";
+      blob.exports = universe.p + "images/cursor-pen-red.cur";
     },
     Va4Y: function (l, it, p) {
       l.exports = p.p;
     },
     VikQ: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-fill-green.41a1d196ac6c3e14030e3a30361fc2b9.png";
+      blob.exports = universe.p + "images/icon-fill-green.41a1d196ac6c3e14030e3a30361fc2b9.png";
     },
     WAVf: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-300.ef7c6637c68f269a882e73bcb57a7f6a.woff2";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-300.ef7c6637c68f269a882e73bcb57a7f6a.woff2";
     },
     X750: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-tab-jump-off.ce6a8a4c837ff0d20c6764b6ea0bde85.png";
+      blob.exports = universe.p + "images/runjump-tab-jump-off.ce6a8a4c837ff0d20c6764b6ea0bde85.png";
     },
     XVer: function (blob, name, universe) {
       /** @type {string} */
@@ -14794,39 +13329,29 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     Xp3h: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-700italic.81f57861ed4ac74741f5671e1dff2fd9.woff";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-700italic.81f57861ed4ac74741f5671e1dff2fd9.woff";
     },
     Y9ik: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/eraser-transparent.7aff2caa355213dd627839573ffe82e1.cur";
+      blob.exports = universe.p + "images/eraser-transparent.7aff2caa355213dd627839573ffe82e1.cur";
     },
     YLpD: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/fill-color-palette-bg.e41fea142bae704676d894984f168c49.png";
+      blob.exports = universe.p + "images/fill-color-palette-bg.e41fea142bae704676d894984f168c49.png";
     },
     YiJN: function (l, it, p) {
       l.exports = p.p;
     },
     ZgxC: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-icon-play-on.5e9b488f0504bd6188b07b95ecb73017.png";
+      blob.exports = universe.p + "images/runjump-icon-play-on.5e9b488f0504bd6188b07b95ecb73017.png";
     },
     aJT6: function (l, it, p) {
       l.exports = p.p;
     },
     aLGr: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/cursor-pen-orange.77277ae6663d9772b915cb04e31068e0.cur";
+      blob.exports = universe.p + "images/cursor-pen-orange.77277ae6663d9772b915cb04e31068e0.cur";
     },
     cJUU: function (l, it, p) {
       l.exports = p.p;
@@ -14845,15 +13370,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     dCLE: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-fill-red.55d4900bef2fa1a7b9ed3bc65bc799ef.png";
+      blob.exports = universe.p + "images/icon-fill-red.55d4900bef2fa1a7b9ed3bc65bc799ef.png";
     },
     "dCq+": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/cursor-pen-yellow.7c462ec7d4bd923adc5921866b92dd9c.cur";
+      blob.exports = universe.p + "images/cursor-pen-yellow.7c462ec7d4bd923adc5921866b92dd9c.cur";
     },
     dXac: function (l, it, p) {
       l.exports = p.p;
@@ -14876,9 +13397,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     iMqz: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-fill-active.0250074ed1b4986fb1468516d26a7af6.png";
+      blob.exports = universe.p + "images/icon-fill-active.0250074ed1b4986fb1468516d26a7af6.png";
     },
     iMrr: function (blob, name, universe) {
       /** @type {string} */
@@ -14898,39 +13417,28 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     jbH8: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-tab-jump-on.02e36fd0cc1598a6c9004fb23da71e8d.png";
+      blob.exports = universe.p + "images/runjump-tab-jump-on.02e36fd0cc1598a6c9004fb23da71e8d.png";
     },
     jhPy: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-fill-orange.afbf4c8079ecbef902a8c0f451c9f94f.png";
+      blob.exports = universe.p + "images/icon-fill-orange.afbf4c8079ecbef902a8c0f451c9f94f.png";
     },
     lD3G: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-icon-play-off.f90315b242875f7670c937270d9f9dc5.png";
+      blob.exports = universe.p + "images/runjump-icon-play-off.f90315b242875f7670c937270d9f9dc5.png";
     },
     lILe: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-700italic.da0e717829e033a69dec97f1e155ae42.woff2";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-700italic.da0e717829e033a69dec97f1e155ae42.woff2";
     },
     m79l: function (eta, lmbda, n) {},
     mLyz: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-italic.fe65b8335ee19dd944289f9ed3178c78.woff";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-italic.fe65b8335ee19dd944289f9ed3178c78.woff";
     },
     mVJv: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p + "images/cursor-pen.0b17119d63b2cfbafc7dbf35237eb0ac.cur";
+      blob.exports = universe.p + "images/cursor-pen.0b17119d63b2cfbafc7dbf35237eb0ac.cur";
     },
     mpcN: function (l, it, p) {
       l.exports = p.p;
@@ -14943,8 +13451,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     o0vD: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p + "images/checkbox-on.0127fdd5bcfbb786d85993e6ae1aca91.png";
+      blob.exports = universe.p + "images/checkbox-on.0127fdd5bcfbb786d85993e6ae1aca91.png";
     },
     oaRK: function (blob, name, universe) {
       /** @type {string} */
@@ -14954,21 +13461,15 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     qBZb: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/widget-elapsed-cancel.2356ab67625eaff13469382c3a5e5c43.png";
+      blob.exports = universe.p + "images/widget-elapsed-cancel.2356ab67625eaff13469382c3a5e5c43.png";
     },
     "qN/d": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-icon-jump-forward.48cbdee8c76297a03b2689b58ae7be94.png";
+      blob.exports = universe.p + "images/runjump-icon-jump-forward.48cbdee8c76297a03b2689b58ae7be94.png";
     },
     qPnO: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "fonts/roboto-v19-latin-italic.51521a2a8da71e50d871ac6fd2187e87.woff2";
+      blob.exports = universe.p + "fonts/roboto-v19-latin-italic.51521a2a8da71e50d871ac6fd2187e87.woff2";
     },
     quX5: function (blob, name, universe) {
       /** @type {string} */
@@ -14981,15 +13482,11 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     "sb+R": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-activity-code.fdd47fce846d62c566f0224b0a799629.png";
+      blob.exports = universe.p + "images/icon-activity-code.fdd47fce846d62c566f0224b0a799629.png";
     },
     ulOs: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/cursor-pen-black.e2a62b3eab508f7a335e32422f732bab.cur";
+      blob.exports = universe.p + "images/cursor-pen-black.e2a62b3eab508f7a335e32422f732bab.cur";
     },
     "v+RB": function (blob, name, universe) {
       /** @type {string} */
@@ -14999,9 +13496,7 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     vDVt: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-fill-yellow.1b86c9080e3e7cd2b1a565b69d20170f.png";
+      blob.exports = universe.p + "images/icon-fill-yellow.1b86c9080e3e7cd2b1a565b69d20170f.png";
     },
     wBlU: function (l, it, p) {
       l.exports = p.p;
@@ -15011,29 +13506,22 @@ testTellTime.prototype = mutation()(_this.c.prototype);
     },
     xfvv: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/icon-fill-purple.26c45ce39bdc49e1e0ebf5c4adc05daa.png";
+      blob.exports = universe.p + "images/icon-fill-purple.26c45ce39bdc49e1e0ebf5c4adc05daa.png";
     },
     xp4H: function (l, it, p) {
       l.exports = p.p;
     },
     "y45+": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-icon-jump-back.7054014e9b4d331815d5d5450a5e5640.png";
+      blob.exports = universe.p + "images/runjump-icon-jump-back.7054014e9b4d331815d5d5450a5e5640.png";
     },
     yqsS: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p + "images/icon-trash.099e66becd1ec4ce16d512ae75a44f7d.png";
+      blob.exports = universe.p + "images/icon-trash.099e66becd1ec4ce16d512ae75a44f7d.png";
     },
     "z6m/": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports =
-        universe.p +
-        "images/runjump-tab-run-off.3dabb85cef632117519ffe90ec5df066.png";
+      blob.exports = universe.p + "images/runjump-tab-run-off.3dabb85cef632117519ffe90ec5df066.png";
     },
     "zD+5": function (blob, name, universe) {
       /** @type {string} */

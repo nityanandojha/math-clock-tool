@@ -23513,7 +23513,7 @@
               : u.a.Tween.get(this)
                   .to({ x: T, y: w }, 150)
                   .on("change", function () {
-                    console.log("Change: ", p);//Vikas- Note: This code is executed whem clock is resized and needs to be re-located in canvas.
+                    //console.log("Change: ", p);//Vikas- Note: This code is executed whem clock is resized and needs to be re-located in canvas.
                     p.dispatchEvent(new u.a.Event(c.STAGE_UPDATE));
                   }));
         });

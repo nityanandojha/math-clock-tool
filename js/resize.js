@@ -33,9 +33,11 @@ function scaleStage() {
     width: config.stageWidth + "px",
     height: config.stageHeight + "px",
   }))
-    s.hasOwnProperty(i) && (e.style[i] = s[i]);
+   s.hasOwnProperty(i) && (e.style[i] = s[i]);
   var bar = document.getElementById("toolbar");
+  var hbar = document.getElementById("help-button-bar");
   bar.style.transform = "scale(0.96)";
+  hbar.style.width = bar.getBoundingClientRect().width+"px";
   window.zoomFactor = zoomFactor;
   scaleValue = Number(t.split(",")[0]);
 }

@@ -328,12 +328,40 @@
     </div> <!-- End info page -->
     
   </main>
-  <div id="tempDiv" data-X=0 data-Y=0></div>
+  <div id="help-button-wrap">
+    <div id="help-button-bar">
+      <button id="help-button">
+        <img src="images/help/help.png">
+      </button>
+    </div>
+  </div>
+  <div id="help-wrap" class="invisible">
+    <div id="help-box">
+      <div id="help-header">
+        <div id="help-title-wrap">
+          <span id="help-title">How To Use Clock</span>
+          <button id="help-close">
+            <img src="images/help/close.png" alt="">
+          </button>  
+        </div>
+        
+      </div>
+      <div id="help-body">
+        <img src="images/help/body.jpg" alt="">
+      </div>
+    </div>
+  </div>
 <script>
-  var timeBox=document.getElementById("tell-time-wrap");
-  var angleBox=document.getElementById("tell-angle-wrap");
   var customDiv=null;
-  var prevActive=null;
+  var helpBox = document.getElementById("help-wrap");
+  var hbtn = document.getElementById("help-button");
+  var closer = document.getElementById("help-close");
+  hbtn.addEventListener("click", (e)=>{
+    helpBox.classList.remove("invisible");
+  });
+  closer.addEventListener("click", (e)=>{
+    helpBox.classList.add("invisible");
+  })
 </script>  
 <script type="text/javascript" src="js/runtime.js"></script>
 <script type="text/javascript" src="js/createjs.js"></script>

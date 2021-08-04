@@ -301,7 +301,8 @@ main {
 }
 
 #toolbar .toolbar-button.on{
-  border: 2px solid rgb(136, 255, 0);
+  border: 3px solid rgb(27 222 229);
+    border-radius: 50%;
 }
 
 #edit-clock {
@@ -542,10 +543,46 @@ main {
 
 .base.msgBox .button-container button {
   color: #000;
-  flex: 1 0 100%;
   padding: 25px;
+  width: 127px;
 }
 
+.base.msgBox .button-container {
+  margin-top: 23px;
+  margin-bottom: 13px;
+}
+
+.base.msgBox .button-container button:nth-last-child(-n + 2):first-child,
+.base.msgBox .button-container button:nth-last-child(-n + 2):first-child ~ button {
+ background-size: cover; 
+ background-image: url(../images/noBtn.png);
+  flex: 1 0 40%;
+}
+.base.msgBox .button-container button:first-child:nth-last-child(2) {
+ background-image: url(../images/yesBtn.png);
+ background-size:cover;
+}
+.base.msgBox .button-container button:hover:active {
+  background-color: #cccccc;
+}
+.base.msgBox .button-container button.default {
+  /* background-color: #afd8ee; */
+  color: #000;
+  /* animation: pulse-msgBox-default 3s ease infinite; */
+}
+.base.msgBox .button-container button.default:hover:active {
+  background-color: #85c3e5;
+}
+
+#download-work {
+  background-image: url(../images/download-work.png);
+  background-size: contain;
+}
+
+#code {
+  background-image: url(../images/icon-activity-code.png);
+  background-size: contain;
+}
 
 .digital-readout input,
 .jump-control input {

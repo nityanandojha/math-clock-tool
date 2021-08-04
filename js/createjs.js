@@ -20520,7 +20520,7 @@
         }
       }),
         (H[c.CONSTRAIN_ENTITY_EVENT] = function (t) {
-          //console.log("CONSTRAIN_ENTITY_EVENT: ", t);
+          console.log("CONSTRAIN_ENTITY_EVENT: ", t);
           var e = { x: 0, y: 0, width: 0, height: 0 };
           this.bindingContainer
             ? (e = this.bindingContainer.getBounds())

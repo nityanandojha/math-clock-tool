@@ -477,8 +477,8 @@
         params = req.a.clone(params) || {};
         req.a.defaults(params, {
           dimensions: {
-            width: 160,
-            height: 36,
+            width: 240,
+            height: 80,
           },
           readoutDisplayMode: readFunction,
           enabled: true,
@@ -1133,6 +1133,7 @@
        * @return {undefined}
        */
       function checkBounds() {
+        //console.log("check bounds........",utils.isTargetEntity(_this.w));
         if (utils.isTargetEntity(_this.w)) {
           var containment = item.parent.getBounds();
           var o = {
@@ -1344,7 +1345,7 @@
        * @return {undefined}
        */
       function onPause() {
-        //console.log("On Pause.........1427", marketID, onPause.caller, onPause.callee);
+        console.log("On Pause.........1427", onPause.caller);
         if (marketID) {
           me.endSpotlight(marketID);
           /** @type {null} */
@@ -2326,13 +2327,16 @@
        * @return {undefined}
        */
       function Matrix2D() {
+        console.log("matrix 2d");
         if (
           req.a.where(root.getAllEntities(), {
             selected: true,
           }).length > 1
         ) {
+          console.log("matrix case 11111");
           _this.f.dispatchEvent(_this.d.DELETE_SELECTION_PROMPT_EVENT);
         } else {
+          console.log("matrix case 222222");
           _this.f.dispatchEvent(_this.d.DELETE_SELECTION_EVENT);
         }
       }
@@ -2982,6 +2986,7 @@
         this.minutes = interval.minutes;
         this.period = interval.period;
         this.backing = file.backing;
+        this.gbox = file.gbox;
         this.hoursUp = file.hoursUp;
         this.hoursDown = file.hoursDown;
         this.hoursInput = n.hoursInput;
@@ -2994,6 +2999,7 @@
         /** @type {!Array} */
         this.displayComponents = [
           this.backing,
+          this.gbox,
           this.hours,
           this.spacer,
           this.minutes,
@@ -3022,10 +3028,11 @@
        */
       test.prototype._setupTextComponents = function () {
         var options = {};
+        var fontName = "normal 40px Helvetica Neue, sans-serif";
         return (
-          (options.hours = new doc.a.Text("88", width, "white")),
+          (options.hours = new doc.a.Text("88", fontName, "white")),
           (options.spacer = new doc.a.Text(":", fontName, "white")),
-          (options.minutes = new doc.a.Text("88", width, "white")),
+          (options.minutes = new doc.a.Text("88", fontName, "white")),
           (options.period = new doc.a.Text("AM", fontName, "white")),
           (options.hours.textBaseline = "middle"),
           (options.spacer.textBaseline = "middle"),
@@ -3047,6 +3054,7 @@
         var tls_socket_options = this._getButtonOptions("down", nums.PERIOD_DOWN);
         return (
           (self.backing = new doc.a.Shape()),
+          (self.gbox = new doc.a.Shape()),
           (self.hoursUp = new _this.b(null, result)),
           (self.hoursDown = new _this.b(null, y)),
           (self.minutesUp = new _this.b(null, subprotocols)),
@@ -3243,23 +3251,32 @@
             //console.log("enable Active");
             this.backing.graphics
               .clear()
-              .setStrokeStyle(3)
-              .beginStroke(TABS_ACTIVE_LINE_COLOR)
-              .beginFill("black")
+              //.setStrokeStyle(3)
+              //.beginStroke(TABS_ACTIVE_LINE_COLOR)
+              .beginFill("#233239")
               .drawRoundRect(0, -this.height / 2, this.width, 2 * this.height, 8);
           } else {
             //console.log("enable NOT active");
             this.backing.graphics
               .clear()
-              .setStrokeStyle(3)
-              .beginStroke(TABS_ACTIVE_LINE_COLOR)
-              .beginFill("black")
+              //.setStrokeStyle(3)
+              //.beginStroke(TABS_ACTIVE_LINE_COLOR)
+              .beginFill("#233239")
               .drawRoundRect(0, 0, this.width, this.height, 8);
           }
         } else {
           //console.log("NOT enable");
-          this.backing.graphics.clear().setStrokeStyle(3).beginStroke("grey").beginFill("grey").drawRoundRect(0, 0, this.width, this.height, 8);
+          this.backing.graphics
+          .clear()
+          //.setStrokeStyle(3)
+          //.beginStroke("grey")
+          .beginFill("grey")
+          .drawRoundRect(0, 0, this.width, this.height, 8);
         }
+        this.gbox.graphics
+        .clear()
+        .setStrokeStyle(3).beginStroke('#05c302')
+        .beginFill('transparent').drawRoundRect(0,0,66,50, 8);
       };
       /**
        * @param {number} i
@@ -3342,15 +3359,15 @@
         /** @type {number} */
         this.hoursDown.x = i;
         /** @type {number} */
-        this.hoursInput.x = i - (this.hours.getMeasuredWidth() - debug()(this.hoursInput.htmlElement).outerWidth(true)) / 2 - 5;
+        this.hoursInput.x = i - (this.hours.getMeasuredWidth() - debug()(this.hoursInput.htmlElement).outerWidth(true)) / 2 - 15;
         i = i + this.hours.getMeasuredWidth();
         i = i + 4;
         this.spacer.x = i + -1;
         i = i + this.spacer.getMeasuredWidth();
         i = i + 4;
         this.minutes.x = i;
-        this.minutesUp.x = i;
-        this.minutesDown.x = i;
+        this.minutesUp.x = i+3;
+        this.minutesDown.x = i+3;
         /** @type {number} */
         this.minutesInput.x = i - (this.minutes.getMeasuredWidth() - debug()(this.minutesInput.htmlElement).outerWidth(true)) / 2 - 5;
         i = i + this.minutes.getMeasuredWidth();
@@ -3359,30 +3376,32 @@
         this.period.visible = this.readoutDisplayMode === state.hr12;
         this.periodUp.display.visible = this.readoutDisplayMode === state.hr12 && this.active;
         this.periodDown.display.visible = this.readoutDisplayMode === state.hr12 && this.active;
-        this.period.x = i;
-        this.periodUp.x = i;
-        this.periodDown.x = i;
+        this.period.x = i+5;
+        this.gbox.x = this.period.x -1; 
+        this.periodUp.x = i+20;
+        this.periodDown.x = i+20;
         i = i + this.period.getMeasuredWidth();
         /** @type {number} */
         this.hours.y = plottingAreaHeight;
         /** @type {number} */
-        this.hoursUp.y = plottingAreaHeight + yAxisVerticalMargin;
+        this.hoursUp.y = plottingAreaHeight + yAxisVerticalMargin - 18;
         /** @type {number} */
-        this.hoursDown.y = plottingAreaHeight + wty;
+        this.hoursDown.y = plottingAreaHeight + wty + 3;
         /** @type {number} */
         this.spacer.y = plottingAreaHeight;
         /** @type {number} */
         this.minutes.y = plottingAreaHeight;
         /** @type {number} */
-        this.minutesUp.y = plottingAreaHeight + yAxisVerticalMargin;
+        this.minutesUp.y = plottingAreaHeight + yAxisVerticalMargin - 18;
         /** @type {number} */
-        this.minutesDown.y = plottingAreaHeight + wty;
+        this.minutesDown.y = plottingAreaHeight + wty + 3;
         /** @type {number} */
         this.period.y = plottingAreaHeight;
+        this.gbox.y = this.period.y -30; 
         /** @type {number} */
-        this.periodUp.y = plottingAreaHeight + yAxisVerticalMargin;
+        this.periodUp.y = plottingAreaHeight + yAxisVerticalMargin - 15;
         /** @type {number} */
-        this.periodDown.y = plottingAreaHeight + wty;
+        this.periodDown.y = plottingAreaHeight + wty + 3;
         /** @type {number} */
         this.readoutDisplayModeToggle.x = 2;
         /** @type {number} */
@@ -3404,8 +3423,8 @@
           activeColor: _this.d.COLOR_PRIMARY_PALE,
           borderColor: "transparent",
           dimensions: {
-            width: 24,
-            height: 12,
+            width: 30,
+            height: 24,
           },
           clickableHandlers: {
             mousedown: function (event) {
@@ -3444,7 +3463,7 @@
                     .moveTo(0, this.height)
                     .lineTo(this.width / 2, 0)
                     .lineTo(this.width, this.height)
-                    .closePath();
+                    .closePath(); 
                 },
               }
             : {
@@ -10805,12 +10824,16 @@
           _this.f.dispatchEvent(eventStart);
         });
         _this.f.on(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT, function (dataNode) {
+          console.log("!!!!!!!!!!");
           if (dataNode.newMode !== _this.g.DrawMode.NONE && e.display.visible) {
+            console.log("@@@@@@@@@@@");
             _this.f.dispatchEvent(_this.d.EQUATION_TOOLS_HIDE);
           }
         });
         _this.f.on(_this.d.DELETE_SELECTION_EVENT, function (dataNode) {
+          console.log("delete_SELECTION_EVENT: ", dataNode.newMode);//Vikas Note: Delete button
           if (dataNode.newMode !== _this.g.DrawMode.NONE && e.display.visible) {
+            console.log("DIS");
             _this.f.dispatchEvent(_this.d.EQUATION_TOOLS_HIDE);
           }
         });
@@ -10844,6 +10867,7 @@
           }
         });
         _this.f.on(_this.d.TEXT_TOOLS_HIDE, function () {
+          console.log("text too hide", utils.isTargetEntity(_this.w));
           if (utils.isTargetEntity(_this.w)) {
             /** @type {null} */
             bounds = null;
@@ -10869,7 +10893,9 @@
           }
         });
         _this.f.on(_this.d.DELETE_SELECTION_EVENT, function (dataNode) {
+          console.log("deleteselection event");
           if (dataNode.newMode !== _this.g.DrawMode.NONE && item.display.visible) {
+            console.log("deleteselection event TRUE");
             _this.f.dispatchEvent(_this.d.TEXT_TOOLS_HIDE);
           }
         });
@@ -13004,6 +13030,7 @@
         });
         resetButton = _this.y.defaultDuplicateOptions;
         removeButton = _this.y.defaultDeleteOptions;
+        console.log(_this.y.defaultDeleteOptions);
         alignRightButton = _this.y.defaultEquationToolsOptions;
         insertButtonFC = _this.y.defaultTextToolsOptions;
         alignLeftButton = _this.y.defaultShadeOptions;
@@ -13071,32 +13098,42 @@
           var event = [data.EDIT_CLOCK_SELECTOR, data.TOGGLE_FRACTION_SELECTOR];
           var distance = Data.inExclusionList(event, name);
           if (!targetPath) {
+            console.log("iiiiiiiii");
             (deviceOrientationEvent = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT)).set({
               newMode: _this.g.DrawMode.NONE,
             });
             _this.f.dispatchEvent(deviceOrientationEvent);
           }
-          if (!inverseModels) {
+          
+          if (!inverseModels) { 
+            console.log("fffffff");
             if (ctx.isEquationToolsVisible()) {
+              console.log("ggggggg");
               _this.f.dispatchEvent(_this.d.EQUATION_TOOLS_HIDE);
             }
             if (ctx.isTextToolsVisible()) {
+              console.log("hhhhhhh");
               _this.f.dispatchEvent(_this.d.TEXT_TOOLS_HIDE);
             }
           }
           if (!components) {
+            console.log("aaaaaaaa");
             (docLoadedEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set({
               ids: [],
             });
             _this.f.dispatchEvent(docLoadedEvent);
           }
           if (!property) {
+            console.log("bbbbbbbbb");
             if (ctx.isFractionPickerVisible()) {
+              console.log("cccccccc");
               _this.f.dispatchEvent(data.Events.FRACTION_PICK_PALETTE_HIDE);
             }
           }
           if (!distance) {
+            console.log("dddddd");
             if (ctx.isEditClockPaletteVisible()) {
+              console.log("eeeeeeeeee");
               _this.f.dispatchEvent(data.Events.EDIT_CLOCK_PALETTE_HIDE);
             }
           }

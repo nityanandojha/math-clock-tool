@@ -6438,11 +6438,12 @@
                   (a = v.handle) ||
                     (a = v.handle =
                       function (e) {
-                        /* console.log(s);
+                        /*console.clear();
+                        console.log(s);
                         console.log(c, "W: ", w.event)
                         console.log("T: ",t);
                         console.log("ARG: ",arguments);
-                        console.log("e: ",e); */
+                        console.log("e: ",e);  */
                         return void 0 !== w && w.event.triggered !== e.type ? w.event.dispatch.apply(t, arguments) : void 0;
                       }),
                   c = (e = (e || "").match(B) || [""]).length;

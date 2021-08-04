@@ -393,7 +393,7 @@ main {
   background-image: url(../images/tell-time-btn-on.png);
 }
 
-#tell-time-button {
+.tell-time-button {
   width: 280px;
   height: 50px;
   background-image: url(../images/tell-time-btn.png);
@@ -403,14 +403,11 @@ main {
   font-size: 24px;
   line-height: 48px;
 }
-#tell-time-button.on{
+.tell-time-button.on{
   background-image: url(../images/tell-time-btn-on.png);
 }
 
-#tell-time-button>button{
-  width: 100%;
-  height: 100%;
-}
+
 #tell-angle-mode {
   background-image: url(../images/tellAngleMode.png);
   background-size: contain;
@@ -587,10 +584,10 @@ main {
 .digital-readout input,
 .jump-control input {
   box-sizing: content-box;
-  width: 34px;
-  height: 24px;
+  width: 65px;
+  height: 55px;
   padding: 0;
-  font: normal 24px Helvetica neue, sans-serif;
+  font: normal 40px Helvetica neue, sans-serif;
   text-align: center;
 }
 .jump-control input[type=number]::-webkit-inner-spin-button {

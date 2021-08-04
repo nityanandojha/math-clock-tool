@@ -98,6 +98,7 @@ body {
     margin: 0 auto;
     border-radius: 30px;
     color: white;
+    position: relative;
 }
 #help-title{
   line-height: 2;
@@ -105,9 +106,9 @@ body {
 }
 #help-title-wrap img{
   position: absolute;
-    right: 70px;
-    width: 5%;
-    top: 8px;
+  height: 60px;
+  top: 5px;
+  right: 40px;
 }
 #help-body{
   height: calc(100% - 73px);

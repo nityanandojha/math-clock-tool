@@ -1125,7 +1125,7 @@
           beat.set({
             skipAnimation: true,
           });
-          console.log("dispatch: ", beat);
+          //console.log("dispatch: ", beat);
           e.display.dispatchEvent(beat);
         }
       }
@@ -1345,7 +1345,7 @@
        * @return {undefined}
        */
       function onPause() {
-        console.log("On Pause.........1427", onPause.caller);
+        //console.log("On Pause.........1427", onPause.caller);
         if (marketID) {
           me.endSpotlight(marketID);
           /** @type {null} */
@@ -1493,7 +1493,7 @@
        * @return {undefined}
        */
       function setColor(_clr_hex) {
-        //console.log("SET COLOR........");
+        //console.log("SET COLOR........",_clr_hex, _clr_hex.tellTimeMode);
         var target;
         var body;
         var deviceOrientationEvent;
@@ -1561,7 +1561,7 @@
        * @return {undefined}
        */
       function rubricAdvance() {
-        console.log("rubricAdvance: EVENT: SPAWN_FRACTION_CLOCK_REQUEST");
+        //console.log("rubricAdvance: EVENT: SPAWN_FRACTION_CLOCK_REQUEST");
         var beat = new doc.a.Event(data.Events.SPAWN_CLOCK_REQUEST);
         beat.set({
           gearedClock: true,
@@ -1649,7 +1649,7 @@
 
       function tellTimeHandler() {
         //console.log("tellTimeHandler: EVENT: TOGGLE_TELL_TIME_MODE");//Vikas
-        var ct = document.getElementById("tell-time-mode");
+        /* var ct = document.getElementById("tell-time-mode");
         var tt = document.getElementById("run-jump-mode");  
         if(tt.getAttribute("data-on")=="yes"){
           ct.setAttribute("data-on", "no");
@@ -1660,7 +1660,7 @@
           ct.setAttribute("data-on", "yes");
         }else{
           ct.setAttribute("data-on", "no");
-        }
+        } */
         var beat = new doc.a.Event(data.Events.TOGGLE_SELECTION_TELL_TIME_MODE);
         /** @type {!Array} */
         var t = [];
@@ -1686,7 +1686,7 @@
        */
       function decode() {
         //console.log("decode: EVENT: TOGGLE_RUN_JUMP_MODE");
-        var tt = document.getElementById("tell-time-mode");
+        /* var tt = document.getElementById("tell-time-mode");
         var ct = document.getElementById("run-jump-mode");  
         if(tt.getAttribute("data-on")=="yes"){
           ct.setAttribute("data-on", "no");
@@ -1697,7 +1697,7 @@
           ct.setAttribute("data-on", "yes");
         }else{
           ct.setAttribute("data-on", "no");
-        }
+        } */
         var beat = new doc.a.Event(data.Events.TOGGLE_SELECTION_RUN_JUMP_MODE);
         /** @type {!Array} */
         var t = [];
@@ -2026,7 +2026,7 @@
        * @return {undefined}
        */
       function Menu() {
-        console.log("show popup ...");
+        //console.log("show popup ...");
         if (document.querySelector("#save-popup").classList.contains("open")) {
           _this.f.dispatchEvent(_this.d.SAVE_POPUP_HIDE_EVENT);
         } else {
@@ -2283,7 +2283,7 @@
        * @return {undefined}
        */
       function remove() {
-        console.log("duplicate.....");
+        //console.log("duplicate.....");
         var query = req.a.where(root.getAllEntities(), {
           selected: true,
         });
@@ -2297,7 +2297,7 @@
           req.a.each(query, function (e) {
             if (req.a.isFunction(e.clone)) {
               var el = e.clone();
-              console.log("duplicate: ", el);
+              //console.log("duplicate: ", el);
               el.x += data.CellDimensions.WIDTH;
               el.y += data.CellDimensions.HEIGHT;
               root.addDefault(el);
@@ -2327,16 +2327,16 @@
        * @return {undefined}
        */
       function Matrix2D() {
-        console.log("matrix 2d");
+        //console.log("matrix 2d");
         if (
           req.a.where(root.getAllEntities(), {
             selected: true,
           }).length > 1
         ) {
-          console.log("matrix case 11111");
+          //console.log("matrix case 11111");
           _this.f.dispatchEvent(_this.d.DELETE_SELECTION_PROMPT_EVENT);
         } else {
-          console.log("matrix case 222222");
+          //console.log("matrix case 222222");
           _this.f.dispatchEvent(_this.d.DELETE_SELECTION_EVENT);
         }
       }
@@ -3080,7 +3080,7 @@
         _this.f.on(
           data.Events.DIGITAL_READOUT_MODE_TOGGLE,
           function (aReport) {
-            console.log("DIGITAL_READOUT_MODE_TOGGLE", aReport);
+            //console.log("DIGITAL_READOUT_MODE_TOGGLE", aReport);
             var node = this.readoutDisplayMode;
             var value = pipe()(this.hours.text, 10);
             var BR = this.period.text;
@@ -3770,7 +3770,7 @@
         _this.f.on(
           data.Events.TELL_TIME_MODE_TOGGLE,
           function (aReport) {
-            console.log("TELL_TIME_MODE_TOGGLE",this.tellTimeDisplayMode);
+            //console.log("TELL_TIME_MODE_TOGGLE",this.tellTimeDisplayMode);
             var node = this.tellTimeDisplayMode;
             var value = pipe()(this.hours.text, 10);
             var BR = this.period.text;
@@ -3884,7 +3884,7 @@
         //console.log("------TELL TIME: ", _this);
         if (this.enabled) {
           if (this.active) {
-           // console.log("enable active");
+           // //console.log("enable active");
             this.backing.graphics
               .clear()
               //.setStrokeStyle(3)
@@ -3901,7 +3901,7 @@
               .drawRoundRect(0, 0, this.width, this.height, 20);
           }
         } else {
-         // console.log("NOT Enable");
+         // //console.log("NOT Enable");
          this.backing.graphics
           .clear()
           //.setStrokeStyle(3)
@@ -9269,6 +9269,9 @@
         if (this.digitalReadoutMode) {
           this.runJumpControl.y += this.digitalReadout.height + 6;
         }
+        if(this.tellTimeMode){
+          this.runJumpControl.x += this.tellTime.width/2 + 5;
+        }
       };
       /**
        * @return {undefined}
@@ -9280,12 +9283,15 @@
 
       options.prototype._placeTellTime = function () {
         /** @type {number} */
-       // console.log(this.elapsedTimeMode, this.tellTime);
+       // //console.log(this.elapsedTimeMode, this.tellTime);
         this.tellTime.x = this.radius - this.tellTime.width / 2;
         /** @type {number} */
         this.tellTime.y = 2 * this.radius + 25;
         if (this.digitalReadoutMode) {
           this.tellTime.y += this.digitalReadout.height + 10;
+        }
+        if(this.runJumpMode){
+          this.tellTime.x -= this.runJumpControl.width/2 + 5;
         }
       };
 
@@ -9959,14 +9965,14 @@
         cb()(element).call(element, function (e) {
           var tokens;
           if (trigger()((tokens = parseTemplate()(template))).call(tokens, e)) {
-            console.log("HAS", e);
+            //console.log("HAS", e);
           } else {
-            console.log("NEEDS", e);
+            //console.log("NEEDS", e);
           }
         });
         cb()((tokens = parseTemplate()(template))).call(tokens, function (t) {
           if (!trigger()(element).call(element, t)) {
-            console.log("REMOVE", t);
+            //console.log("REMOVE", t);
           }
         });
       };
@@ -10022,11 +10028,11 @@
        */
       View.prototype.indicator = function (side, value) {
         //console.clear();
-        /* console.log("This: ", this);
-        console.log("Side: ", side);
-        console.log("Value: ", value);
-        console.log("caller 1",View.prototype.indicator.caller);
-        console.log("caller 2",View.prototype.indicator.caller.caller); */
+        /* //console.log("This: ", this);
+        //console.log("Side: ", side);
+        //console.log("Value: ", value);
+        //console.log("caller 1",View.prototype.indicator.caller);
+        //console.log("caller 2",View.prototype.indicator.caller.caller); */
         if (req.a.isNumber(value)) {
           /** @type {number} */
           this.baseElement.y = value - this.height / 2;
@@ -10167,7 +10173,7 @@
        * @return {undefined}
        */
       View.prototype._toggleVisibility = function () {
-        console.log("View visibility.......");
+        //console.log("View visibility.......");
 
         /** @type {string} */
         var deviceOrientationEvent = data.Events.EDIT_CLOCK_PALETTE_SHOW;
@@ -10274,7 +10280,7 @@
        * @return {undefined}
        */
       Palette.prototype._toggleVisibility = function (htOptions) {
-        console.log("Palette visibility.......");
+        //console.log("Palette visibility.......");
         /** @type {string} */
         var name = data.Events.FRACTION_PICK_PALETTE_SHOW;
         if (this.display.visible) {
@@ -10321,7 +10327,7 @@
           /** @type {number} */
           t = 60 / saveNum.value;
           /** @type {string} */
-          console.log(this.partsIndicator);
+          //console.log(this.partsIndicator);
           this.partsIndicator.color = "#fff"
           this.partsIndicator.text = 1 === t ? t + " minute each" : t + " minutes each";
         } else {
@@ -10824,14 +10830,15 @@
           _this.f.dispatchEvent(eventStart);
         });
         _this.f.on(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT, function (dataNode) {
-          console.log("!!!!!!!!!!");
+          //console.log("EVENT: DRAW_TOOLS_MODE_CHANGE_EVENT");
           if (dataNode.newMode !== _this.g.DrawMode.NONE && e.display.visible) {
-            console.log("@@@@@@@@@@@");
+            //console.log("@@@@@@@@@@@");
             _this.f.dispatchEvent(_this.d.EQUATION_TOOLS_HIDE);
           }
         });
         _this.f.on(_this.d.DELETE_SELECTION_EVENT, function (dataNode) {
-          console.log("delete_SELECTION_EVENT: ", dataNode.newMode);//Vikas Note: Delete button
+          //console.log("delete_SELECTION_EVENT: ");
+          //console.log(dataNode); //console.log(e);//Vikas Note: Delete button
           if (dataNode.newMode !== _this.g.DrawMode.NONE && e.display.visible) {
             console.log("DIS");
             _this.f.dispatchEvent(_this.d.EQUATION_TOOLS_HIDE);
@@ -10867,7 +10874,7 @@
           }
         });
         _this.f.on(_this.d.TEXT_TOOLS_HIDE, function () {
-          console.log("text too hide", utils.isTargetEntity(_this.w));
+          //console.log("text too hide", utils.isTargetEntity(_this.w));
           if (utils.isTargetEntity(_this.w)) {
             /** @type {null} */
             bounds = null;
@@ -10888,14 +10895,16 @@
           _this.f.dispatchEvent(eventStart);
         });
         _this.f.on(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT, function (dataNode) {
+          //console.log("DRAW_TOOLS_MODE_CHANGE_EVENT");
           if (dataNode.newMode !== _this.g.DrawMode.NONE && item.display.visible) {
+            //console.log("AAAAAAAAAAAAAA");
             _this.f.dispatchEvent(_this.d.TEXT_TOOLS_HIDE);
           }
         });
         _this.f.on(_this.d.DELETE_SELECTION_EVENT, function (dataNode) {
-          console.log("deleteselection event");
+          //console.log("deleteselection event", item);
           if (dataNode.newMode !== _this.g.DrawMode.NONE && item.display.visible) {
-            console.log("deleteselection event TRUE");
+            //console.log("deleteselection event TRUE");
             _this.f.dispatchEvent(_this.d.TEXT_TOOLS_HIDE);
           }
         });
@@ -11416,6 +11425,7 @@
           }
         }
         var type = new selection(null, {
+          
           position: {
             x: feature.data.center.x - feature.data.radius + selection.CONSTRAINT_PADDING,
             y: feature.data.center.y - feature.data.radius + selection.CONSTRAINT_PADDING,
@@ -11442,6 +11452,7 @@
           initialTime: mbhour,
           readoutDisplayMode: DirSearchPathEntry.ReadoutModes.hr12,
         });
+        console.log("--------------");
         self.addEntity(type);
       };
       /**
@@ -13030,7 +13041,7 @@
         });
         resetButton = _this.y.defaultDuplicateOptions;
         removeButton = _this.y.defaultDeleteOptions;
-        console.log(_this.y.defaultDeleteOptions);
+        //console.log(_this.y.defaultDeleteOptions);
         alignRightButton = _this.y.defaultEquationToolsOptions;
         insertButtonFC = _this.y.defaultTextToolsOptions;
         alignLeftButton = _this.y.defaultShadeOptions;
@@ -13062,6 +13073,7 @@
           FloatingMenu.addButton(targets[i].selector, targets[i].options);
         });
         _this.f.on(data.Events.TOOLBAR_CLICKED, function (name) {
+          //console.log("toolbar clicked", name); //Vikas
           var deviceOrientationEvent;
           var docLoadedEvent;
           /** @type {!Array} */
@@ -13070,6 +13082,7 @@
           /** @type {!Array} */
           var animationMap = [data.EQUATION_TOOLS_SELECTOR, data.TEXT_TOOLS_SELECTOR, data.DELETE_SELECTOR];
           var inverseModels = Data.inExclusionList(animationMap, name);
+          //console.log("invers model: ", targetPath, inverseModels);
           /** @type {!Array} */
           var owner = [
             data.ADD_CLOCK_SELECTOR,
@@ -13098,7 +13111,7 @@
           var event = [data.EDIT_CLOCK_SELECTOR, data.TOGGLE_FRACTION_SELECTOR];
           var distance = Data.inExclusionList(event, name);
           if (!targetPath) {
-            console.log("iiiiiiiii");
+            //console.log("iiiiiiiii");
             (deviceOrientationEvent = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT)).set({
               newMode: _this.g.DrawMode.NONE,
             });
@@ -13106,34 +13119,34 @@
           }
           
           if (!inverseModels) { 
-            console.log("fffffff");
+            //console.log("fffffff");
             if (ctx.isEquationToolsVisible()) {
-              console.log("ggggggg");
+              //console.log("ggggggg");
               _this.f.dispatchEvent(_this.d.EQUATION_TOOLS_HIDE);
             }
             if (ctx.isTextToolsVisible()) {
-              console.log("hhhhhhh");
+              //console.log("hhhhhhh");
               _this.f.dispatchEvent(_this.d.TEXT_TOOLS_HIDE);
             }
           }
           if (!components) {
-            console.log("aaaaaaaa");
+            //console.log("aaaaaaaa");
             (docLoadedEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set({
               ids: [],
             });
             _this.f.dispatchEvent(docLoadedEvent);
           }
           if (!property) {
-            console.log("bbbbbbbbb");
+            //console.log("bbbbbbbbb");
             if (ctx.isFractionPickerVisible()) {
-              console.log("cccccccc");
+              //console.log("cccccccc");
               _this.f.dispatchEvent(data.Events.FRACTION_PICK_PALETTE_HIDE);
             }
           }
           if (!distance) {
-            console.log("dddddd");
+            //console.log("dddddd");
             if (ctx.isEditClockPaletteVisible()) {
-              console.log("eeeeeeeeee");
+              //console.log("eeeeeeeeee");
               _this.f.dispatchEvent(data.Events.EDIT_CLOCK_PALETTE_HIDE);
             }
           }

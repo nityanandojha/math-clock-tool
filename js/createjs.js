@@ -24841,6 +24841,11 @@
             );
         }),
         (Yi.prototype.resetPage = function (t) {
+          var tb = document.getElementsByClassName("tell-time-button");
+          while(tb.length){
+            tb[0].parentNode.removeChild(tb[0]);
+          }
+          
           this.shadeLayer.removeAllChildren(),
             this.textLayer.removeAllChildren(),
             this.entityLayer.removeAllChildren(),

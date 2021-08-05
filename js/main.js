@@ -603,7 +603,7 @@
       function HtmlAxisLabel(plot, opts) {
         opts = req.a.clone(opts) || {};
         req.a.defaults(opts, {
-          initialJumpStep: 20,
+          initialJumpStep: 5,
         });
         _this.c.call(this, plot, opts);
         this._setupDisplayComponents(opts);
@@ -13359,7 +13359,7 @@
     },
     YLpD: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "images/fill-color-palette-bg.e41fea142bae704676d894984f168c49.png";
+      blob.exports = universe.p + "images/fill-color-palette-bg.png";
     },
     YiJN: function (l, it, p) {
       l.exports = p.p;

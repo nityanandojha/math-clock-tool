@@ -19884,7 +19884,7 @@
           SHADOW_OFFSET: 3,
           SHADOW_BLUR: 3,
           COLOR_PRIMARY_BASE: "rgba(0, 129, 198, 1)",
-          COLOR_PRIMARY_LIGHT: "rgba(0, 0, 0, 1)",
+          COLOR_PRIMARY_LIGHT: "rgba(35, 50, 57, 1)",
           COLOR_PRIMARY_PALE: "rgba(201, 218, 228, 1)",
           COLOR_SECONDARY_BASE: "rgba(39, 54, 145, 1)",
           COLOR_SECONDARY_DARK: "rgba(255, 255, 255, 1)",

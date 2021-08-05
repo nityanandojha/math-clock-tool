@@ -7509,6 +7509,7 @@
           .closePath();
         this.shape_122 = new doc.a.Shape();
         this.shape_122.graphics
+        // nno dial color
           .beginFill("#555555")
           .beginStroke()
           .moveTo(-73.9, 175)

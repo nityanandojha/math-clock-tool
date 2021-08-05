@@ -8943,7 +8943,7 @@
               }),
             (_.filter = _.select =
               function (t, e, i) {
-                try {
+                /* try {
                   //console.clear();
                   //console.log(t);
                   var angle = t[0].minuteHand.angle;
@@ -8951,7 +8951,7 @@
                   //console.log("Minute: ", angle);
                   //angle = Math.round(angle/6)*6;
                   //console.log("NEW Minute: ", angle);
-                } catch (Err) {}
+                } catch (Err) {} */
                 var n = [];
                 return (
                   (e = E(e, i)),
@@ -20520,7 +20520,7 @@
         }
       }),
         (H[c.CONSTRAIN_ENTITY_EVENT] = function (t) {
-          console.log("CONSTRAIN_ENTITY_EVENT: ", t);
+          //console.log("CONSTRAIN_ENTITY_EVENT: ", t);
           var e = { x: 0, y: 0, width: 0, height: 0 };
           this.bindingContainer
             ? (e = this.bindingContainer.getBounds())
@@ -25643,8 +25643,9 @@
           var e = new u.a.Event(c.SELECT_ENTITY_EVENT);
           e.set({ ids: [] }), p.dispatchEvent(e);
         }),
+        
         (Yi.prototype._handleDeleteEntity = function (t) {
-          var e = [];
+          var e = [];  
           t && t.entity && (t.entity.display.parent && t.entity.display.parent.removeChild(t.entity.display), e.push(t.entity), t.entity.delete()),
             (this.shades = a.a.difference(this.shades, e)),
             (this.texts = a.a.difference(this.texts, e)),

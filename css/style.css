@@ -57,7 +57,7 @@ body {
 #help-button-wrap{
   display: flex;
   justify-content: center;
-  pointer-events: all;
+  pointer-events: none;
   opacity: 1;
   
 }
@@ -67,6 +67,7 @@ body {
 }
 #help-button{
   float: right;
+  pointer-events: all;
 }
 #help-button img{
   width: 60%;

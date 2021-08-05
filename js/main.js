@@ -73,7 +73,7 @@
     },
     C2c7: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "images/icon-faceselect-bg-on.889bf5465943a7e1ac2e3fc2a2bacbaa.png";
+      blob.exports = universe.p + "images/icon-faceselect-bg-on.png";
     },
     CJ9Q: function (blob, name, universe) {
       /** @type {string} */

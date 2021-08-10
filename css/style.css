@@ -54,6 +54,21 @@ body {
   pointer-events: none;
 }
 
+.tip-wrap::after{
+  content: 'Only 1 to 60 is allowed';
+  position: absolute;
+  height: 50px;
+  width: 290px;
+  line-height: 50px;
+  font-size: 20px;
+  background: red;
+  z-index: 38;
+  top: 88px;
+  left: -115px;
+  border-radius: 12px;
+  text-align: center;
+  color: #FFF;
+}
 #help-button-wrap{
   display: flex;
   justify-content: center;

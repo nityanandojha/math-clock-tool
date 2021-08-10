@@ -8943,15 +8943,6 @@
               }),
             (_.filter = _.select =
               function (t, e, i) {
-                /* try {
-                  //console.clear();
-                  //console.log(t);
-                  var angle = t[0].minuteHand.angle;
-                  //console.log("Hour: ", t[0].hourHand.angle);//Vikas most imp
-                  //console.log("Minute: ", angle);
-                  //angle = Math.round(angle/6)*6;
-                  //console.log("NEW Minute: ", angle);
-                } catch (Err) {} */
                 var n = [];
                 return (
                   (e = E(e, i)),
@@ -24841,9 +24832,11 @@
             );
         }),
         (Yi.prototype.resetPage = function (t) {
+          //console.log("reset page");
           var tb = document.getElementsByClassName("tell-time-button");
           while(tb.length){
-            tb[0].parentNode.removeChild(tb[0]);
+            //console.log(tb[0]);
+            tb[0].parentNode.parentNode.removeChild(tb[0].parentNode);
           }
           
           this.shadeLayer.removeAllChildren(),
@@ -25650,7 +25643,10 @@
         }),
         
         (Yi.prototype._handleDeleteEntity = function (t) {
+          //console.log("DELETE: "); //Vikas- Note: This code is execute when delete button is clicked
           var e = [];  
+          var tb = t.entity.display.js.tellTime.timeButton.htmlElement;
+          tb.parentNode.removeChild(tb);
           t && t.entity && (t.entity.display.parent && t.entity.display.parent.removeChild(t.entity.display), e.push(t.entity), t.entity.delete()),
             (this.shades = a.a.difference(this.shades, e)),
             (this.texts = a.a.difference(this.texts, e)),
@@ -25658,6 +25654,7 @@
             p.dispatchEvent(new u.a.Event(c.STAGE_UPDATE));
         }),
         (Yi.prototype._handleDeleteAll = function () {
+          //console.log("delete all"); //Vikas - Note: Delete all
           this.shadeLayer.removeAllChildren(),
             (this.shades = []),
             this.textLayer.removeAllChildren(),

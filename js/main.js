@@ -3683,7 +3683,14 @@
         //console.log(testTellTime.prototype._setupDisplayComponents.caller);
         var interval = this._setupTextComponents();
         var file = this._setupUiComponents();
-        var n = this._setupElements();
+        var n;
+        n = this.timeButton? {"timeButton": this.timeButton}: this._setupElements();
+        /* if(this.timeButton){
+          n = {"timeButton": this.timeButton}
+        }else{
+          n = this._setupElements();
+        } */
+        //console.log("N: ", JSON.stringify(n));
         this.hours = interval.hours;
         this.spacer = interval.spacer;
         this.minutes = interval.minutes;
@@ -4444,7 +4451,7 @@
       HtmlAxisLabel.prototype._setupInputElement = function (keys) {
         var width;
         var size;
-        var $grid = debug()("<div><input/></div>");
+        var $grid = debug()("<div><input/><span ></span></div>");
         var iframe = new doc.a.DOMElement($grid[0]);
         return (
           document.querySelector("main").appendChild($grid[0]),
@@ -4472,14 +4479,32 @@
         e.on("input", function () {
           var deviceOrientationEvent = new doc.a.Event(data.Events.JUMP_CONTROL_INPUT_TEXT_CHANGE);
           e.val(e.val().replace(/\D/g, ""));
+          console.log(e.val());
+          if(e.val()>60){
+            e.next().addClass("tip-wrap");
+            e.val(60);
+          }else if(e.val() && e.val()<= 0){
+            e.next().addClass("tip-wrap");
+            e.val(1);
+          }
+          setTimeout(()=>{
+            console.log("TIME OUT......");
+            e.next().removeClass("tip-wrap");
+          }, 1500);
           RoomVisual.fakeInputText.text = e.val();
           _this.f.dispatchEvent(deviceOrientationEvent);
         });
         e.on("focus", function () {
+          e.attr('data-val', e.val());
           e.select();
           _this.f.dispatchEvent(data.Events.JUMP_INPUT_FOCUS);
         });
         e.on("blur", function () {
+          console.log("blue", e.val());
+          if(!e.val()){
+            e.val(e.attr('data-val'));
+            RoomVisual.fakeInputText.text = e.val();
+          }
           _this.f.dispatchEvent(data.Events.JUMP_INPUT_BLUR);
         });
       };

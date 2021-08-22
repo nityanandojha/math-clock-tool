@@ -408,6 +408,9 @@ main {
 #tell-time-wrap.active button{
   background-image: url(../images/tell-time-btn-on.png);
 }
+#time-button-wrap{
+  display: none;
+}
 
 .tell-time-button {
   width: 280px;

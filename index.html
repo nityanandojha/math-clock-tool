@@ -206,6 +206,11 @@
 
   <main class="" id="app">
     <div id="loading-spinner"></div>
+    <div id="front-page">
+      <button id="start-btn">
+        <img src="images/start-btn.png" alt="">
+      </button>
+    </div>
     <div id="bg-orange"></div>
 
     <canvas id="canvas"></canvas><!-- tabindex="1" -->
@@ -364,6 +369,17 @@
     return value;  
   }
 }
+var sBtn = document.getElementById("start-btn");
+var fPage = document.getElementById("front-page");
+var main = document.getElementById("app");
+fPage.addEventListener("transitionend", (e)=>{
+  //e.target.classList.add("hidden");
+  app.removeChild(fPage);
+})
+sBtn.addEventListener("click", (e)=>{
+  fPage.style.opacity = 0;
+});
+
 </script>  
 <script type="text/javascript" src="js/runtime.js"></script>
 <script type="text/javascript" src="js/createjs.js"></script>

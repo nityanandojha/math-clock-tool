@@ -2,6 +2,10 @@
   font-family: RockwellB;
   src: url(../fonts/Rockwell-Bold.ttf);
 }
+@font-face {
+  font-family: RockwellR;
+  src: url(../fonts/Rockwell-Regular.ttf);
+}
 
 *:before,
 *:after {
@@ -28,6 +32,9 @@ body {
 }
 .hidden{
   display: none;
+}
+.calculator-textarea textarea{
+  font-family: RockwellR !important;
 }
 /* width */
 ::-webkit-scrollbar {

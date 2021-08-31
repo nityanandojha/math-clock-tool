@@ -24210,6 +24210,7 @@
           SIZE_DECREASE: { DEFAULT: "", ACTIVE: "" },
         };
       function ji(t, e) {
+        console.log(t, e);
         ((e = e || {}).constrained = !0),
           (e.movable = {
             selectable: !0,
@@ -24250,6 +24251,7 @@
         (ji.prototype._setupDisplay = function (t) {
           var e = this._setupHandles(t),
             i = this._setupSizeButtons(t);
+            console.log("FOTN: ", this.textStyle);
           (this.handles = e),
             (this.sizeIncButton = i.inc),
             (this.sizeDecButton = i.dec),
@@ -24317,6 +24319,11 @@
             n = {},
             r = {},
             s = this;
+            console.log(t);
+            t.incDefault = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAcBJREFUeNpiZJBkoC4w0DYQ4BNwsHKoL65nYaA2uHD1ApA8cPzAh08fGKnudmTAxEBLQDhkYoNjY0NisUotXrN48drFFJkuLyNvZ2GHVerQiUP49TIz8BL24MMnD4FIX0sf2Vygw4Hkw6cPKTIdqP/QyUNA55sbml+8dlFCVAIoCEwPcXlx+I0mIVYhQT9l3hSgBUAG0B96mnrUSTO+rr7ADAJ0LzAOgRYg20cF0yEGbd61GTkm/dz8qGA6Py8/xCBgNEKjAWwBMC0B/USp6RCHA9MMMG7hyZxI5xMuCW4evgl0JjAyISED8g0ff25SLoQtrif+8fNHMk23M7fbtWIXHgWpJal4sisTMcFCtgJ8bgfG580jN4FpERiNmJkeaC4wxIAMdRt1XNkKXzkDjDSg0UDG5HmTN+/ejFk8zO6ZDcoNbr5T5k8h2e0nt54E5klgJpLQl8DjM6A16rbqJJQzNfk1QBdBEtzNuzeBZQswEC5dv4RcLLvZu6krqwNNByJgKgKWQvAkS8DtP+7/wCxs3SLd4Nxdy3dhFsscihxEhTtmHEIKL1xc8nPT4K1XR00fNZ3U5ioN0/uGeRsAAgwAcDm0kuBeuoYAAAAASUVORK5CYII=";
+            t.incActive = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAc5JREFUeNpiZJBkoC4w0DYQ4BNwsHKoL65nYaA2uHD1ApA8cPyAgqwCI9XdDgcKMrQ0HQgIh4yPs4+vsy9Wqc17N2/Zu4Ui06XEpIx1jbFKnb18Fr9eZgZewh58/ur5s5fP1JXUgWwgg5eHF2gu0NVAEiiFRyMTQaPPXjk7a/msz18/g1LCiQPLNy0HMni4eYCCQCn8epmIjB9I0ANNByIgA+gPNUU1grqIMt3e3B4YGp+/fAaGBjAobt67CYlt6pjuYOEAcTiEe/DEQbggpaYDg9jXBRQs8MQHsUZKXAroJ0pNh7gRmFTgcXjr/i0glxjnsxAZn8A0kxaZBheEJCGgn3rn9H75+oVM0yXFJCFZCZhIIOkd02d4sisLMQ4HglnLZmGWEMCgByog33RIstu8ZzMw76BJAQOnOLUY6DOg/3DlWHyxCswvQNchp0VkABfEE7f4TI/0iwS58cvngycP4ip84MpIKMWAyQPoZWCYsrOxP3jyQERQRFJcEpgQkUMM6GSgIFAKmI2BeUJXXRez2MFee5zZfAazsE2vSodzZ7bNxCyWTXxNiIpVzIIbUrbg4uICtK35mBgYRk0fNX2wmA5srtIwvW+YtwEgwADBB7f/+YfzPgAAAABJRU5ErkJggg==";
+            t.decDefault = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVJJREFUeNpiZJBkoC4w0DYQ4BNwsHKoL65nYaA2uHD1ApA8cPzAh08fGKnudmTAxMAwavoAmE5smvlx/weaiFuE26GTh/DrYmbgJcEt8jLyD588/Pjp45R5Uw6dOPTx80f86klIkSe3ngQaDTS0p65HXE+coNEkhLuepp6+lv7mXZuBCMiNDYmlZqxCjAM6/OHTh0AfUNl0Pze/i9cuAo0Gsjft2gT0h7y0PHXSjJ25HTA+GZ4w7Fq+C8jl5+MHkjlJOaXNpVRwOyQcgAEC4QLTDLCEAvqGoEai0syLiy+ARpt7m8NFumu7c5NyzbzMLl2/RJHbY4NjgeU1MIEjC0K4QAvIz03AeAPqBwaLhKgE0O0/f/6ExCpQHCiop6WnrqzOwc4Byl84074kTmQXYPcDCdR01GAVB3JxmTBae4yaPmr6iDcd2FylYUmwYd4GgAADAIhcmOL3L6XAAAAAAElFTkSuQmCC";
+            t.decActive = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVNJREFUeNpiZJBkoC4w0DYQ4BNwsHKoL65npLrpcLBgwgIamq4go0BD04Fg1HRKTT+z+QyaSHpl+tkrZ/HrYmbgJcEtUuJSz14++/z18/JNy4FGf/n6hWohs3Ti0uevnp+9fLY4tdghwoGg0UDARKTRaopq6krqB04cACIg19fZlxhdxJru4+wDJIEOBzofGDgQLtVMd7BwuHnvJtBoIBvofKA/JMUIhylRsWqsYxzlH/Xr1y+gHcAwAWZxEUERoPjxc8ep4HZIOEAcDgTA+Pz85TPQJoIaWYgPlvSqdLhIUUoR0DfAqL51/xZFbgc6nJeHF5jAkQUh3Ei/SPLDHRhvUX5RQNOBoQxMJ8BwhwQOUBwY+kCHAyOAnY392atnuNI+vpCREpNKi0qDsIHhADQCkvWRxYEMSDIdLYFHTR81fQibzkQ7o4HNVRq6fcO8DQABBgBEUIaU7NkJJwAAAABJRU5ErkJggg==";
           return (
             (ki = {
               SIZE_INCREASE: { DEFAULT: t.incDefault, ACTIVE: t.incActive },
@@ -25645,8 +25652,10 @@
         (Yi.prototype._handleDeleteEntity = function (t) {
           //console.log("DELETE: "); //Vikas- Note: This code is execute when delete button is clicked
           var e = [];  
-          var tb = t.entity.display.js.tellTime.timeButton.htmlElement;
-          tb.parentNode.removeChild(tb);
+          try{
+            var tb = t.entity.display.js.tellTime.timeButton.htmlElement;
+            tb.parentNode.removeChild(tb);
+          }catch(err){}
           t && t.entity && (t.entity.display.parent && t.entity.display.parent.removeChild(t.entity.display), e.push(t.entity), t.entity.delete()),
             (this.shades = a.a.difference(this.shades, e)),
             (this.texts = a.a.difference(this.texts, e)),

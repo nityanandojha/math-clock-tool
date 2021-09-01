@@ -213,8 +213,6 @@ main {
 
 #toolbar .toolbar-button-container {
   position: relative;
-  /* margin: 0 4px;
-  min-width: 24px; */
   display: flex;
   justify-content: center;
   align-items: center;

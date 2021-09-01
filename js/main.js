@@ -14,16 +14,17 @@
         universe.p +
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAABj0lEQVRoge2YPW4CMRBGJ6k4wBYcIeWWSL5ASsqU3MTaW6TMESgpaVZKyTEofADKaMGIKOOf8aztnQg/CQl58DJPgtlvDY3Gk/MS0++GcWvfHoxWF/SBhXklfH1vX7tuGFeo+g8E7qwlSqQIgESJVAGQJsERAEkSFIETWrkhQiI6RuExSntUuHEGgK+lRixJAARLkAUgLnGxEmdUKUiSgESJZAEQJsESAEES0TE6NdoN4/vfdaPVPjBiV3bErlElM9Qwt/mVSkVJpNyJe4kSqVFCnAQnC82ReEOVmXDDHFfioxtG3+RiMSfMcSQmtjklcoS5k206Zc/E3mgVEiWRK8wtJpEzzC0ikTvMVZcoEeaqSpQKc1yJ6fDsG60GoJzMXYOc0ergqIUa4ko49/mg3Ac2zDDHvU849/koHeaKS9QIc0UlaoW5YhI1w1wRCYqA76zHeeFIQ9klKAKhuey8cKShrBJRAaPV0Z68+egZD/2cPc59pP+A0eoTAI6Bn5PzgJfQEIKzp9FoNBpPCgD8AChdIF7AVN8sAAAAAElFTkSuQmCC";
     },
+    // there was backspace image path this is not in use NNO
     "+ugO": function (blob, name, universe) {
       /** @type {string} */
       blob.exports =
         universe.p +
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAABj0lEQVRoge2YPW4CMRBGJ6k4wBYcIeWWSL5ASsqU3MTaW6TMESgpaVZKyTEofADKaMGIKOOf8aztnQg/CQl58DJPgtlvDY3Gk/MS0++GcWvfHoxWF/SBhXklfH1vX7tuGFeo+g8E7qwlSqQIgESJVAGQJsERAEkSFIETWrkhQiI6RuExSntUuHEGgK+lRixJAARLkAUgLnGxEmdUKUiSgESJZAEQJsESAEES0TE6NdoN4/vfdaPVPjBiV3bErlElM9Qwt/mVSkVJpNyJe4kSqVFCnAQnC82ReEOVmXDDHFfioxtG3+RiMSfMcSQmtjklcoS5k206Zc/E3mgVEiWRK8wtJpEzzC0ikTvMVZcoEeaqSpQKc1yJ6fDsG60GoJzMXYOc0ergqIUa4ko49/mg3Ac2zDDHvU849/koHeaKS9QIc0UlaoW5YhI1w1wRCYqA76zHeeFIQ9klKAKhuey8cKShrBJRAaPV0Z68+egZD/2cPc59pP+A0eoTAI6Bn5PzgJfQEIKzp9FoNBpPCgD8AChdIF7AVN8sAAAAAElFTkSuQmCC";
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXA";
     },
     "/PjG": function (eta, lmbda, n) {},
     "/Wnl": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-regular.479970ffb74f2117317f9d24d9e317fe.woff2";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     "08Mx": function (blob, name, universe) {
       /** @type {string} */
@@ -31,7 +32,7 @@
     },
     "0TsU": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-700.adcde98f1d584de52060ad7b16373da3.woff";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     "1WW8": function (blob, name, universe) {
       /** @type {string} */
@@ -84,7 +85,7 @@
     },
     CmYf: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-700.2735a3a69b509faf3577afd25bdf552e.woff2";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     DudV: function (blob, name, universe) {
       /** @type {string} */
@@ -242,29 +243,29 @@
           oldCondition +
           ");\n}\n.base-box .header .close-button:active {\n  opacity: 0.5;\n}\n.base.msgBox .base-box {\n  display: flex;\n  flex-flow: column nowrap;\n  width: 400px;\n  text-align: center;\n  position: relative;\n  top: -24px;\nbackground-color:#233239;\n}\n.base.msgBox .title {\n  margin: 20px 20px 0;\n  font-weight: 600;\n}\n.base.msgBox .message {\n  margin: 0.5em 20px 20px;\n}\n@keyframes pulse-msgBox-default {\n  0% {\n    background-color: #568995;\n  }\n  50% {\n    background-color: #5c757b;\n  }\n  100% {\n    background-color: #568995;\n  }\n}\n.base.popup {\n  user-select: text;\n  -moz-user-select: text;\n  -webkit-user-select: text;\n  -ms-user-select: text;\n  -webkit-user-drag: auto;\n}\n.base.popup .content {\n padding: 15px;\n  display: flex;\n  flex-direction: column;\n}\n.base.popup .description {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  margin-bottom: 0.75em;\n}\n.base.popup .description .description-icon {\n  height: 24px;\n  width: 24px;\n  margin-right: 0.5em;\n}\n.base.popup .description .description-icon.short {\n  height: 20px;\n}\n.base.popup .text-button {\n  margin: 0 5px;\n  padding-left: 0;\n  padding-right: 0;\n  flex-basis: 0;\n  flex-grow: 1;\n}\n.base.popup input {\n  height: 100%;\n  padding: 0 0.5em;\n  border: 1px solid #CCC;\n  border-radius: 3px;\n  box-shadow: inset 2px 2px 5px #CCC;\n  margin: 0;\n}\n.base.popup .base-box {\n  position: relative;\n}\n.base.popup .popup-divider {\n  margin: 1em -15px;\n  flex-grow: 0;\n  flex-basis: 2px;\n  background: #CCC;\n}\n#save-popup {\n  width: 380px;\n}\n#save-popup .base-box {\n  right: 130px;\n}\n#save-popup #share-image-ui-container,\n#save-popup #share-activity-ui-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n#save-popup .share-image-button-container {\n  display: flex;\n  flex-flow: row nowrap;\n  width: calc(100% + 10px);\n  margin: 0 -5px;\n}\n#save-popup #share-link-ui-container input {\n  width: 240px;\n}\n#save-popup #link-copy {\n  margin: 0;\n  padding-left: 1.5em;\n  padding-right: 1.5em;\n}\n#copy-container {\n  position: relative;\n  overflow: hidden;\n  padding: 0;\n}\n#copy-container #image-copy {\n  width: 100%;\n  height: 100%;\n}\nhtml.disable-copy-image #copy-container {\n  background-color: #b2b2b2;\n}\n#share-activity-ui-container {\n  display: flex;\n  flex-flow: row nowrap;\n  width: calc(100% + 10px);\n  margin: 0 -5px;\n}\n#share-activity-ui-container .input-container,\n#share-activity-ui-container .text-button {\n  margin: 0 5px;\n  flex: 1 0 0;\n}\n#share-activity-ui-container input {\n  font-family: Monaco, monospace;\n  font-size: 1em;\n  width: 100%;\n}\n.submit-container {\n  display: flex;\n  justify-content: space-between;\n}\n.submit-container .field-container {\n  width: 100%;\n}\n.submit-container .input-container {\n  margin: 0 5px;\n  padding-left: 0;\n  padding-right: 0;\n  position: relative;\n  overflow: hidden;\n}\n.submit-container .input-container input {\n  border: 1px solid #CCC;\n  border-radius: 3px;\n  box-shadow: inset 2px 2px 5px #CCC;\n  padding: 5px;\n  font-size: 4em;\n  font-weight: 400;\n  margin: 0;\n  flex-grow: 1;\n  letter-spacing: -0.01em;\n}\n.submit-container .text-button {\n  padding: 0.75em 1.2em;\n  font-size: 1.4em;\n}\n/* Default styling: show desktop instructions. */\n#copy-image-base .copy-image-instructions .mobile {\n  display: none;\n}\n/*\n * If touch is detected, hide desktop instructions and show mobileinstructions.\n */\n.touch #copy-image-base .desktop {\n  display: none;\n}\n.touch #copy-image-base .mobile {\n  display: block;\n}\n#copy-image-base {\n  z-index: 110;\n}\n#copy-image-base .base-box {\n  position: relative;\n  top: -24px;\n}\n#copy-image-base .content {\n  padding: 20px;\n  display: flex;\n  flex-flow: row nowrap;\n}\n#copy-image-base .content .copy-image-instructions {\n  width: 10em;\n  margin-right: 20px;\n}\n#copy-image-base .content .copy-image-instructions p:first-child {\n  margin-top: 0;\n}\n#copy-image-base .content .copy-image-instructions .sub-head {\n  font-size: 0.9em;\n}\n#copy-image-base .content .copy-image-source-container {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: center;\n}\n#copy-image-base .content .copy-image-source-container .copy-image-source {\n  max-width: 50vw;\n  max-height: 50vh;\n  box-shadow: 0 5px 10px 0 grey;\n}\n#activity-display .header {\n  border-bottom: solid 2px #CCC;\n  background-color: white;\n  color: #333;\n  justify-content: center;\n  padding: 0 15px;\n}\n#activity-display .header .close-button {\n  /* Give the title full width to center itself. */\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n#activity-display .content {\n  padding: 5px 10px 10px 10px;\n}\n#activity-display .content .description {\n  font-size: 10pt;\n  font-weight: 500;\n  text-align: center;\n}\n#activity-display .content #activity-display-code {\n  padding: 15px 25px;\n  font-family: Monaco, monospace;\n  font-size: 6em;\n  text-align: center;\n  text-transform: uppercase;\n}\n#activity-display .submit-glyph-inline {\n  height: 1.2em;\n  width: 24px;\n  vertical-align: bottom;\n}\n#submit-activity-submit-box .header .error-text {\n  display: none;\n}\n#submit-activity-submit-box.show-error .header {\n  background: #ac312e;\n}\n#submit-activity-submit-box.show-error .header span {\n  display: none;\n}\n#submit-activity-submit-box.show-error .header .error-text {\n  display: inline;\n}\n#submit-activity-submit-box.show-error input {\n  color: #ac312e;\n}\n#submit-activity-ui-container {\n  padding: 15px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n#submit-activity-ui-container .submit-icon {\n  width: 48px;\n}\n#submit-activity-ui-container .input-container {\n  margin: 0 15px;\n}\n#submit-activity-ui-container .input-container input {\n  font-family: Monaco, monospace;\n  text-transform: uppercase;\n  padding-left: 15px;\n  padding-right: 15px;\n  width: 6em;\n}\n#submit-activity-ui-container #submit-activity-target-background {\n  box-shadow: none;\n  background: white;\n  color: grey;\n}\n#submit-activity-ui-container #submit-activity-target {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  background: transparent;\n}\n/* --- End base styles --- */\n.calculator-input input {\n  width: 414px;\n  height: 44px;\n  font: 300 32px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  padding: 2px 4px;\n}\n.calculator-textarea textarea {\n  width: 414px;\n  height: 202px;\n  font: 300 30px RockwellR, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  line-height: 1.1;\n  padding: 2px 4px;\n  resize: none;\n  overflow: auto;\n}\n.infopage {\n  display: none;\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 100%;\n  z-index: 200;\n  background-color: #cce0ff;\n  /* hide about initially */\n}\n.infopage .titlebar {\n  display: flex;\n  position: absolute;\n  width: 100%;\n  z-index: 10;\n  height: 50px;\n  background-color: #0287cf;\n  color: white;\n  text-align: center;\n  font-weight: bold;\n  line-height: 50px;\n}\n.infopage .sectionwrapper {\n  display: flex;\n  justify-content: center;\n  text-align: center;\n  line-height: 13px;\n  margin: auto;\n}\n.infopage .title {\n  display: inline-block;\n  color: white;\n  font-size: 13px;\n  cursor: pointer;\n  margin: 5px 0;\n  padding: 6px 5px;\n  text-align: center;\n  width: 100px;\n  border: solid 1px white;\n}\n.infopage .title:first-child {\n  border-bottom-left-radius: 5px;\n  border-right: medium none;\n  border-top-left-radius: 5px;\n}\n.infopage .title:last-child {\n  border-bottom-right-radius: 5px;\n  border-right: 1px solid white;\n  border-top-right-radius: 5px;\n}\n.infopage .title.selected {\n  color: #0287CF;\n  background-color: white;\n}\n.infopage .close {\n  display: inline-block;\n}\n.infopage .close {\n  float: right;\n  cursor: pointer;\n  padding-right: 15px;\n  font-weight: normal;\n}\n.infopage .infowrapper {\n  height: 100%;\n}\n.infopage .contents-wrapper {\n  height: 100%;\n  background-color: #cce0ff;\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n.infopage .contents {\n  padding-top: 50px;\n  margin: 0 10px 10px;\n}\n.infopage .contents.about {\n  display: none;\n}\n.infopage .box {\n  background-color: white;\n  border-radius: 10px;\n  margin: 10px auto;\n  max-width: 810px;\n  min-width: 500px;\n  padding: 30px;\n}\n.infopage .infohead {\n  color: #0081c6;\n  font: bold 36px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  margin: 0;\n  text-align: center;\n}\n.infopage .infohead.howto {\n  margin-bottom: 1em;\n}\n.infopage .infohead.rule-line {\n  border-top: 4px solid #a4dfff;\n  margin: 30px -30px 0;\n  padding-top: 30px;\n}\n.infopage .info-subhead {\n  color: #0081c6;\n  font: bold 28px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  margin: 0 0 20px;\n  text-align: left;\n}\n.infopage .info-subhead-description {\n  color: #0081c6;\n  font: 18px Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  line-height: 1.4em;\n  margin: -15px 0 30px;\n  text-align: left;\n}\n.infopage .infobody,\n.infopage .box ul,\n.infopage .info-buttons p {\n  color: #666;\n  font: 18px/1.4em Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n.infopage .infolink {\n  text-align: center;\n  font-size: 24px;\n  padding-bottom: 10px;\n}\n.infopage img {\n  text-decoration: none;\n  border: 0px;\n}\n.infopage .info_illus {\n  margin: 40px 0;\n  text-align: center;\n}\n.infopage .info_illus img {\n  max-width: 100%;\n}\n.infopage .infoversion {\n  font-size: 11pt;\n  text-align: center;\n  color: #666;\n}\n.infopage a.about-link {\n  color: #0287CF;\n  display: block;\n  font-weight: bold;\n  text-align: center;\n  transition: opacity 0.2s ease 0s;\n  width: 100%;\n}\n.infopage a.about-link:hover {\n  opacity: 0.5;\n}\n.flex {\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n}\n.two-column {\n  width: 50%;\n}\n.two-column-wide {\n  width: 55%;\n}\n.two-column-small {\n  width: 45%;\n}\n/* roboto-300 - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 300;\n  src: url(" +
           codeEls +
-          ") format('woff2'),  url(" +
+          ") format('ttf'),  url(" +
           threshold +
-          ") format('woff');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-300italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-weight: 300;\n  src: url(" +
+          ") format('ttf');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-300italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-weight: 300;\n  src: url(" +
           noResults +
-          ") format('woff2'),  url(" +
+          ") format('ttf'),  url(" +
           subs +
-          ") format('woff');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-regular - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" +
+          ") format('ttf');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-regular - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" +
           button2Component +
-          ") format('woff2'),  url(" +
+          ") format('ttf'),  url(" +
           countDiv +
-          ") format('woff');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-weight: 400;\n  src: url(" +
+          ") format('ttf');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-weight: 400;\n  src: url(" +
           ftype +
-          ") format('woff2'),  url(" +
+          ") format('ttf'),  url(" +
           pseudoNames +
-          ") format('woff');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-700italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-weight: 700;\n  src: url(" +
+          ") format('ttf');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-700italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-weight: 700;\n  src: url(" +
           pencil +
-          ") format('woff2'),  url(" +
+          ") format('ttf'),  url(" +
           current +
-          ") format('woff');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-700 - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 700;\n  src: url(" +
+          ") format('ttf');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n/* roboto-700 - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 700;\n  src: url(" +
           markStart +
-          ") format('woff2'),  url(" +
+          ") format('ttf'),  url(" +
           originalB +
-          ") format('woff');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n@keyframes missing-feature {\n  0% {\n    background-color: red;\n  }\n  17% {\n    background-color: magenta;\n  }\n  33% {\n    background-color: blue;\n  }\n  50% {\n    background-color: cyan;\n  }\n  67% {\n    background-color: green;\n  }\n  83% {\n    background-color: yellow;\n  }\n  100% {\n    background-color: red;\n  }\n}\n.missing-feature {\n  animation: missing-feature 600s infinite linear;\n}\n.beta-tag::after {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  content: \"BETA\";\n  font-size: 1.5em;\n  background: #0273af;\n  opacity: 0.75;\n  position: absolute;\n  padding: 0.2em 0.4em;\n  top: 0.3em;\n  right: 0.3em;\n  color: #fff;\n  border-radius: 3px;\n  font-weight: 600;\n  pointer-events: none;\n}\n#toolbar .toolbar-button-container.narrow {\n  flex-basis: 32px;\n}\n#toolbar .toolbar-button-container.wide {\n  flex-basis: 32px;\n}\n#toolbar .toolbar-divider {\n  height: 48px;\n  flex: 0 0 2px;\n  margin: 0 7px;\n  border: none;\n  background: #4da7d7;\n}\n.input-feedback {\n  position: absolute;\n  background: url(" +
+          ") format('ttf');\n  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\n}\n@keyframes missing-feature {\n  0% {\n    background-color: red;\n  }\n  17% {\n    background-color: magenta;\n  }\n  33% {\n    background-color: blue;\n  }\n  50% {\n    background-color: cyan;\n  }\n  67% {\n    background-color: green;\n  }\n  83% {\n    background-color: yellow;\n  }\n  100% {\n    background-color: red;\n  }\n}\n.missing-feature {\n  animation: missing-feature 600s infinite linear;\n}\n.beta-tag::after {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  content: \"BETA\";\n  font-size: 1.5em;\n  background: #0273af;\n  opacity: 0.75;\n  position: absolute;\n  padding: 0.2em 0.4em;\n  top: 0.3em;\n  right: 0.3em;\n  color: #fff;\n  border-radius: 3px;\n  font-weight: 600;\n  pointer-events: none;\n}\n#toolbar .toolbar-button-container.narrow {\n  flex-basis: 32px;\n}\n#toolbar .toolbar-button-container.wide {\n  flex-basis: 32px;\n}\n#toolbar .toolbar-divider {\n  height: 48px;\n  flex: 0 0 2px;\n  margin: 0 7px;\n  border: none;\n  background: #4da7d7;\n}\n.input-feedback {\n  position: absolute;\n  background: url(" +
           el +
           ");\n  width: 400%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  border-radius: 3px;\n  align-items: center;\n  justify-content: center;\n  display: none;\n  z-index: 10;\n  background-size: 48px;\n  opacity: 0;\n  color: #4a7727;\n  font-size: 1.2em;\n  letter-spacing: 0.025em;\n  user-select: none;\n}\n@keyframes pulse-feedback {\n  10% {\n    left: -150%;\n    background-size: 8px;\n    opacity: 1;\n  }\n  80% {\n    left: -150%;\n    background-size: 8px;\n    opacity: 1;\n  }\n}\n.input-feedback-pulse {\n  animation-duration: 2.5s;\n  animation-name: pulse-feedback;\n  display: flex;\n}\n.button-field {\n  position: relative;\n  width: 100%;\n}\n.button-field input {\n  width: calc(100% - 10px);\n  height: calc(100% - 12px);\n}\n.button-field .input-container {\n  position: relative;\n  flex-grow: 1;\n  overflow: hidden;\n}\n#base-stage {\n  display: none;\n}\n#save-popout {\n  width: 380px;\n}\n#save-popout .base-box {\n  position: relative;\n  right: 130px;\n}\n#save-popout {\n  user-select: text;\n  -moz-user-select: text;\n  -webkit-user-select: text;\n  -ms-user-select: text;\n  -webkit-user-drag: auto;\n}\n#save-popout .content {\n  background-color: white;\n  padding: 15px;\n  display: flex;\n  flex-direction: column;\n}\n#save-popout .content #share-image-ui-container {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n#save-popout .content .description {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  margin-bottom: 0.75em;\n}\n#save-popout .content .description .description-icon {\n  height: 18px;\n  margin-right: 0.5em;\n}\n#save-popout .content .share-image-button-container {\n  display: flex;\n  flex-flow: row nowrap;\n  width: calc(100% + 10px);\n  margin: 0 -5px;\n}\n#save-popout .content .share-image-button-container .text-button {\n  margin: 0 5px;\n  padding-left: 0;\n  padding-right: 0;\n  flex-basis: 0;\n  flex-grow: 1;\n}\n#save-popout .content .popout-divider {\n  margin: 1em -15px;\n  flex-grow: 0;\n  flex-basis: 2px;\n  background: #CCC;\n}\n#edit-clock-base {\n  left: 0;\n}\n#edit-clock-base .base-background {\n  /**\n     * Pass through pointer events on HTML palettes so Page can handle dismissal,\n     * and other workspace interactions can still occur.\n     */\n  pointer-events: none;\n}\n#edit-clock-box .checkboxes input[type='checkbox'] + label::before {\n  content: ' ';\n  display: inline-block;\n  background-image: url(" +
           tree +
@@ -353,7 +354,7 @@
     },
     Hni1: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-300.b00849e00f4c2331cddd8ffb44a6720b.woff";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     HpR4: function (blob, name, universe) {
       /** @type {string} */
@@ -376,7 +377,7 @@
     },
     Iv4c: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-regular.60fa3c0614b8fb2f394fa29944c21540.woff";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     J8P3: function (blob, name, universe) {
       /** @type {string} */
@@ -392,7 +393,7 @@
     },
     KUtk: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-300italic.14286f3ba79c6627433572dfa925202e.woff2";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     "M9x/": function (blob, name, universe) {
       /** @type {string} */
@@ -10769,7 +10770,8 @@
               x: 500,
               y: 30,
             },
-            backspaceImage: _this.n.getResult("equation-tools", _msgSibling),
+            //backspace Image NNO
+            backspaceImage: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAMCAYAAADoIwS6AAAAv0lEQVQ4jc2UzRGCMBBGvwTvtLDSgGFiuKIVaCfagZRgB1KCJXiWg1iBNALrARX8gfHgLL5bNjuzb77NBOghsNYn41Z9Pb9Ed12QmS6qUhcAllIyo9dCYK1flV7aSLCUC1T7QKGLwSoFQE2VcyisxWTqNHQCKJGhnTKf0xgGDVYz/IEIcFvTOIwmzJwCygwuc4dMtAGQPLcIP+A2dUrY47E6PhR5NpeQefv0LqfjWXulAXgrIfA1FLqYjNtJzbsCk1EujLlGtn4AAAAASUVORK5CYII="//_this.n.getResult("equation-tools", _msgSibling),
           };
           /** @type {string} */
           (e = new _this.i(x, props)).bindingContainer = x;
@@ -11170,10 +11172,10 @@
       utils.isTargetEntity = function (selection) {
         return bounds instanceof selection;
       };
-      var props = $("3127"); //Vikas -- Note: icon-resize-plus.fbe029dfef2e5830f864a9b1c8c07364.png
-      var wrapper = $("zD+5"); //Vikas -- Note: icon-resize-plus-down.80e5f2bd1fb58c75290a9a352e994ecd.png
-      var srcNodeId = $("n8Jy"); //Vikas -- Note: icon-resize-minus.b6eed95dce718920c6736cfcf8002645.png
-      var node = $("GWf8"); //Vikas -- Note: icon-resize-minus-down.acaf5a1080e1332ea2a0326781b521af.png
+      var props = $("3127"); //Vikas -- Note: icon-resize-plus.png
+      var wrapper = $("zD+5"); //Vikas -- Note: icon-resize-plus-down.png
+      var srcNodeId = $("n8Jy"); //Vikas -- Note: icon-resize-minus.png
+      var node = $("GWf8"); //Vikas -- Note: icon-resize-minus-down.png
       var researcher = $("quX5");
       var config = $("zNve");
       var themeSrc = $("oaRK");
@@ -13325,7 +13327,7 @@
     },
     "Rah+": function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-300italic.4df32891a5f2f98a363314f595482e08.woff";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     Rh6l: function (blob, name, universe) {
       /** @type {string} */
@@ -13366,7 +13368,7 @@
     },
     WAVf: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-300.ef7c6637c68f269a882e73bcb57a7f6a.woff2";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     X750: function (blob, name, universe) {
       /** @type {string} */
@@ -13381,7 +13383,7 @@
     },
     Xp3h: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-700italic.81f57861ed4ac74741f5671e1dff2fd9.woff";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     Y9ik: function (blob, name, universe) {
       /** @type {string} */
@@ -13488,12 +13490,12 @@
     },
     lILe: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-700italic.da0e717829e033a69dec97f1e155ae42.woff2";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     m79l: function (eta, lmbda, n) {},
     mLyz: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-italic.fe65b8335ee19dd944289f9ed3178c78.woff";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     mVJv: function (blob, name, universe) {
       /** @type {string} */
@@ -13528,7 +13530,7 @@
     },
     qPnO: function (blob, name, universe) {
       /** @type {string} */
-      blob.exports = universe.p + "fonts/roboto-v19-latin-italic.51521a2a8da71e50d871ac6fd2187e87.woff2";
+      blob.exports = universe.p + "fonts/Rockwell-Regular.ttf";
     },
     quX5: function (blob, name, universe) {
       /** @type {string} */

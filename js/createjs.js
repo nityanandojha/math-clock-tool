@@ -23100,7 +23100,7 @@
             e,
             i = {};
           return (
-            // NNO calculator
+            // NNO calculator numbers
             a.a.each(
               a.a.range(0, 10),
               function (n, r) {
@@ -23138,11 +23138,11 @@
         }),
         (ii.prototype._createQuestionButton = function (t, e) {
           var i = {
-            fillColor: "#99cde8",
-            activeColor: "#cce6f3",
+            fillColor: "#233239",
+            activeColor: "#405C69",
             font: $e["?"],
             draw: {
-              init: function (t) {
+              /* init: function (t) {
                 (this.shape = new u.a.Shape()),
                   (this.boundingBox = new u.a.Shape()),
                   (this.boundingBox.regX = 18.5),
@@ -23165,19 +23165,21 @@
                   this.shape.graphics.setStrokeStyle(this.strokeThickness).beginStroke(this.borderColor),
                   this.shape.graphics.beginFill(this.active ? this.activeColor : this.fillColor),
                   this.shape.graphics.drawRoundRect((this.width - t) / 2, 0, t, this.height, this.borderRadius);
-              },
+              }, */
             },
           };
-          return this._createGenericButton("?", { text: "▢" }, t, e, i);
+          return this._createGenericButton("?", { text: "?" }, t, e, i);
         }),
         (ii.prototype._createSpaceButton = function (t, e, i) {
           return this._createGenericButton("Space".split("").join(" "), { text: " " }, t, e, {
-            font: $e.space,
+            //font: $e.space,
+            font: $e["%"],
             width: 52 * i - 2,
             textColor: "#000",
             fillColor: "#fff",
           });
         }),
+        // calculator backspace button
         (ii.prototype._createBackspaceButton = function (t, e, i, n) {
           var r = 52 * i - 2,
             s = {
@@ -23185,7 +23187,8 @@
               buttonType: ut.ButtonTypes.ICON,
               defaultImage: n,
               leftPadding: (r - 50) / 2,
-              topPadding: 6,
+              topPadding: 20,
+              fillColor: "#fff",
             };
           return this._createGenericButton(" ", { eventName: c.EQUATION_TOOLS_BACKSPACE }, t, e, s);
         }),
@@ -23269,7 +23272,7 @@
               activeColor: "#cce6f3",
               width: 37,
             }),
-            this._createGenericButton("¢", { text: "¢" }, 3.75, 5, {
+            this._createGenericButton("°", { text: "°" }, 3.75, 5, {
               fillColor: "#233239",
               activeColor: "#cce6f3",
               width: 37,
@@ -23307,10 +23310,11 @@
           ];
         }),
         (ii.prototype._createDoneButton = function (t, e, i) {
+          // calculator NNO
           return this._createGenericButton("DONE".split("").join(" "), { eventName: c.EQUATION_TOOLS_TOGGLE }, t, e, {
             font: $e.STRING,
-            fillColor: "#2b81c6",
-            activeColor: "#80c0e2",
+            fillColor: "#233239",
+            activeColor: "#405C69",
             textColor: c.COLOR_NEUTRAL_PALE,
             width: 52 * i - 2,
           });
@@ -23358,7 +23362,7 @@
       var si = ri,
         ai = "ios-check-msgBox";
       function oi(t) {
-        var e = t.message || "For best results on an Apple iPad, use the free app. Click here to view it in the App Store:<br>",
+        var e = t.message || "",// For best results on an Apple iPad, use the free app. Click here to view it in the App Store:<br>
           i = t.title || "App available",
           n = t.appName || "",
           r = t.appURL || "",
@@ -26448,9 +26452,10 @@
           ];
         }),
         (Cn.prototype._createDoneButton = function (t, e, i) {
+          // text tool NNO
           return this._createGenericButton("DONE".split("").join(" "), { eventName: c.TEXT_TOOLS_TOGGLE }, t + 4 / 52, e, {
             font: wn,
-            fillColor: "#2b81c6",
+            fillColor: "#233239",
             activeColor: "#80c0e2",
             textColor: c.COLOR_NEUTRAL_PALE,
             width: 52 * i - 2 - 4,

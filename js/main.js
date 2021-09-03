@@ -613,7 +613,7 @@
        */
       function Tween(target, props) {
         props = req.a.clone(props) || {};
-        console.log("TWEEN Props: ",target,  props);//Vikas
+        //console.log("TWEEN Props: ",target,  props);//Vikas
         req.a.defaults(props, {
           dimensions: {
             width: 200,
@@ -4319,6 +4319,7 @@
        */
       M6CorpoChecker_HpPro.prototype._setupStopButton = function () {
         var e = this;
+        console.log(e);
         var config = this._genericButtonOptions();
         return (
           (config.defaultImage = bar),
@@ -4370,11 +4371,12 @@
        * @return {?}
        */
       M6CorpoChecker_HpPro.prototype._genericButtonOptions = function () {
+
         return {
           buttonType: _this.b.ButtonTypes.ICON,
           dimensions: {
-            width: 150,
-            height: 150,
+            width: 60,
+            height: 60,
           },
         };
       };
@@ -4725,7 +4727,7 @@
        * @return {undefined}
        */
       Tween.prototype._setupDisplayComponents = function (obj2) {
-        console.log("RJ: ", $sharepreview);
+        //console.log("RJ: ", $sharepreview);
         var RawClasses = this._setupRunComponent(obj2.controlMode);
         var keys = this._setupJumpComponent(obj2.controlMode, obj2.initialJumpStep);
         this.backing = new doc.a.Bitmap($sharepreview);
@@ -13104,7 +13106,7 @@
           FloatingMenu.addButton(targets[i].selector, targets[i].options);
         });
         _this.f.on(data.Events.TOOLBAR_CLICKED, function (name) {
-          console.log("toolbar clicked", name); //Vikas
+          //console.log("toolbar clicked", name); //Vikas
           var deviceOrientationEvent;
           var docLoadedEvent;
           /** @type {!Array} */
@@ -13142,7 +13144,7 @@
           var event = [data.EDIT_CLOCK_SELECTOR, data.TOGGLE_FRACTION_SELECTOR];
           var distance = Data.inExclusionList(event, name);
           if (!targetPath) {
-            console.log("iiiiiiiii");
+            //console.log("iiiiiiiii");
             (deviceOrientationEvent = new doc.a.Event(_this.d.DRAW_TOOLS_MODE_CHANGE_EVENT)).set({
               newMode: _this.g.DrawMode.NONE,
             });
@@ -13150,32 +13152,32 @@
           }
           
           if (!inverseModels) { 
-            console.log("fffffff");
+            //console.log("fffffff");
             if (ctx.isEquationToolsVisible()) {
               console.log("ggggggg");
               _this.f.dispatchEvent(_this.d.EQUATION_TOOLS_HIDE);
             }
             if (ctx.isTextToolsVisible()) {
-              console.log("hhhhhhh");
+              //console.log("hhhhhhh");
               _this.f.dispatchEvent(_this.d.TEXT_TOOLS_HIDE);
             }
           }
           if (!components) {
-            console.log("aaaaaaaa");
+            //console.log("aaaaaaaa");
             (docLoadedEvent = new doc.a.Event(_this.d.SELECT_ENTITY_EVENT)).set({
               ids: [],
             });
             _this.f.dispatchEvent(docLoadedEvent);
           }
           if (!property) {
-            console.log("bbbbbbbbb");
+            //console.log("bbbbbbbbb");
             if (ctx.isFractionPickerVisible()) {
               //console.log("cccccccc");
               _this.f.dispatchEvent(data.Events.FRACTION_PICK_PALETTE_HIDE);
             }
           }
           if (!distance) {
-            console.log("dddddd");
+            //console.log("dddddd");
             if (ctx.isEditClockPaletteVisible()) {
               //console.log("eeeeeeeeee");
               _this.f.dispatchEvent(data.Events.EDIT_CLOCK_PALETTE_HIDE);

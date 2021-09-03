@@ -33,6 +33,24 @@ body {
 .hidden{
   display: none;
 }
+.face-select-button{
+  background-color: #fff !important;
+}
+.label-border{
+  position: absolute;
+  
+  visibility: hidden;
+}
+.upper-frame{
+  top: 12px;
+}
+.lower-frame{
+  top: 84px;
+}
+#edit-clock-box input[type='radio']:checked + .face-select-button >img {
+  visibility: visible;
+ }
+ 
 .calculator-textarea textarea{
   font-family: RockwellR !important;
 }

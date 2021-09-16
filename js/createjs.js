@@ -25034,6 +25034,8 @@
             p.dispatchEvent(new u.a.Event(c.STAGE_UPDATE));
         }),
         (Yi.prototype.spotlight = function (t, e) {
+          //console.log("SPOT: ", t);
+          //console.log("SPOT1111: ", this);
           var i,
             n = a.a.isArray(t) ? t : [t],
             r = a.a.uniqueId("spotlight_");
@@ -25069,6 +25071,8 @@
           );
         }),
         (Yi.prototype.endSpotlight = function (t) {
+          //console.log("END: ", t);
+          //console.log("END1111: ", this);
           var e,
             i = a.a.union(this.shades, this.texts, this.entities),
             n = pi()((e = a.a.chain(i)))

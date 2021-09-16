@@ -228,6 +228,7 @@
       //var $pText = $(param_text);
       var $vid = $(youtube);
       var messageField = $(message);
+      var fracObj = null;
       exports.push([
         module.i,
         "button {\n  background: none;\n  outline: none;\n  padding: 0;\n  margin: 0;\n  border: 0;\n  color: inherit;\n  font: inherit;\n  line-height: normal;\n  overflow: visible;\n  cursor: pointer;\n}\n.hidden {\n  display: none;\n}\n.light-on-dark {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.soft-shadow {\n  box-shadow: 0 0 300px rgba(0, 0, 0, 0.25);\n}\n.alpha-tag,\n.beta-tag {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  position: absolute;\n  top: 0.3em;\n  right: 0.3em;\n  padding: 0.2em 0.4em;\n  border-radius: 3px;\n  background-color: #551A8B;\n  color: #fff;\n  opacity: 0.75;\n  font-size: 1.35em;\n  font-weight: 600;\n  text-align: right;\n}\n.alpha-tag {\n  background-color: #551a8b;\n}\n.beta-tag {\n  background-color: #0273af;\n}\n/* -----\nToolbar\n----- */\n#toolbar.top .popup::after {\n  top: -24px;\n  background: url(" +
@@ -1343,7 +1344,7 @@
        * @return {undefined}
        */
       function onPause() {
-        //console.log("On Pause.........1427", onPause.caller);
+        fracObj.partsIndicator.text = "";
         if (marketID) {
           me.endSpotlight(marketID);
           /** @type {null} */
@@ -1357,6 +1358,13 @@
       function pause(message) {
         if (req.a.isString(marketID)) {
           onPause();
+        }
+
+        var c = message.targetEntity.fractionControl.fraction.fragmentCount;
+        if(c){
+          var t = c===60?" minute each":" minutes each";
+          c = 60/c;
+          fracObj.partsIndicator.text = c.toString() + t;
         }
         marketID = me.spotlight(message.targetEntity);
       }
@@ -4282,7 +4290,6 @@
        * @return {undefined}
        */
       testTellTime.prototype.delete = function () {
-        
         debug()(this.timeButton.htmlElement).remove();        
 
       };
@@ -4319,7 +4326,6 @@
        */
       M6CorpoChecker_HpPro.prototype._setupStopButton = function () {
         var e = this;
-        console.log(e);
         var config = this._genericButtonOptions();
         return (
           (config.defaultImage = bar),
@@ -9338,7 +9344,7 @@
        */
       options.prototype.draw = function () {
         //console.clear();
-        //console.log("OPTIONS: ", this);
+        //console.log("OPTIONS: ", this.fractionControl.fraction);
         this.selectionHighlight.visible = this.selected;
         /** @type {number} */
         this.selectionHighlight.alpha = 0.5;
@@ -9914,6 +9920,7 @@
         this.digitalReadout.delete();
         this.runJumpControl.delete();
         this.tellTime.delete();
+        this.fractionControl.delete();
       };
       options.ClockTypes = rules;
       /** @type {number} */
@@ -10352,13 +10359,13 @@
        */
       Palette.prototype._updatePartsIndicator = function (saveNum) {
         /** @type {number} */
-        
+        //console.log("FRACTION : ", saveNum);
         var t = 0;
         if (saveNum && saveNum.value) {
           /** @type {number} */
           t = 60 / saveNum.value;
           /** @type {string} */
-          //console.log(this.partsIndicator);
+          //console.log("SAVD: ", saveNum, saveNum.value);
           this.partsIndicator.color = "#fff"
           this.partsIndicator.text = 1 === t ? t + " minute each" : t + " minutes each";
         } else {
@@ -10368,6 +10375,10 @@
 
         //new doc.a.Text("How many parts?", states.HEADER, "#fff");
       };
+      Palette.prototype.delete = function(){
+        //console.log(this);
+        //this.partsIndicator.text = "";
+      }
       /**
        * @return {undefined}
        */
@@ -10799,7 +10810,8 @@
                 x: 500,
                 y: 30,
               },
-            })
+            }),
+            (fracObj = c)
           ).bindingContainer = a;
           c.draw();
           _this.f.dispatchEvent(data.Events.FRACTION_PICK_PALETTE_HIDE);

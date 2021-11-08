@@ -22850,7 +22850,7 @@
         (ze.prototype.getConstraintBounds = function () {
           return { x: this.x, y: this.y, width: this.width, height: this.height };
         }),
-        (ze.prototype.clone = function () {          
+        (ze.prototype.clone = function () {  
           return new ze(null, {
             startingText: this.text,
             position: this.position,

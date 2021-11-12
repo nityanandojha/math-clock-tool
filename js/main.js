@@ -1359,8 +1359,10 @@
         if (req.a.isString(marketID)) {
           onPause();
         }
-
-        var c = message.targetEntity.fractionControl.fraction.fragmentCount;
+        //console.log("Pause....", message);
+        try{
+          var c = message.targetEntity.fractionControl.fraction.fragmentCount;
+        }catch(err){}
         if(c){
           var t = c===60?" minute each":" minutes each";
           c = 60/c;
@@ -4290,7 +4292,7 @@
        * @return {undefined}
        */
       testTellTime.prototype.delete = function () {
-        debug()(this.timeButton.htmlElement).remove();        
+        debug()(this.timeButton.htmlElement).remove();
 
       };
       testTellTime.AdjustmentTypes = nums;

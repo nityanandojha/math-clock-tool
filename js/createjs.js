@@ -19886,7 +19886,8 @@
           COLOR_TEXT: "black",
           COLOR_BORDER: "grey",
           ANNOTATION_COLORS_LIGHT: {
-            RED: { draw: "#E73C3C", display: "#E73C3C", displayDown: "rgba(231, 60, 60, 0.5)" },
+            // NNO RED obj display is -- #E73C3C, changes for drawing tool 
+            RED: { draw: "#E73C3C", display: "", displayDown: "rgba(231, 60, 60, 0.5)" },
             ORANGE: { draw: "#FDA100", display: "#FDA100", displayDown: "rgba(253, 161, 0, 0.5)" },
             YELLOW: { draw: "#FFEA00", display: "#EED000", displayDown: "rgba(238, 208, 0, 0.5)" },
             GREEN: { draw: "#01B309", display: "#01B309", displayDown: "rgba(1, 179, 9, 0.5)" },
@@ -21710,7 +21711,7 @@
             this.draw();
         }),
         (we.prototype._updateColor = function (t) {
-          (this.color = t.newColor), this.draw();
+          //(this.color = t.newColor), this.draw(); // NNO changed for drawing tool color change
         }),
         (we.prototype._createButtons = function () {
           (this.closeButton = this._createActionButton({

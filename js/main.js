@@ -1477,7 +1477,8 @@
               "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAYAAABU1PscAAAD7UlEQVRYhc1Yu27jRhQ9d7gy0sl/YAFBaitlkGJVKLDNxvoD6w9Wa0mhOjMduZYd5QtC/4HSaL2AC26TlKHrpND+gbaVwTkpaBl6cTiUXOQABizizpl7Z+Y+Ba8Etzs80kgbSrFBorZdShISiYITT256X15jX9lncdMLqgepdChsC6RWZi3BqVAi0In2MWYnA5peUK2k4ougs+vGyyAw1in9T7eDx7JrSxvg9sIrAB0IDsuuLQYj6Dd+mRuxNuDkMjhWCiMRaRjEEhBjgAlFzVY2oj4EpA5BC0A9l4GYQehPrge/2ehlZcBpN7xQClHunmQMUf7H658/2/Cd9T+8BbVvOgyS8ZOD1kM4+GriKjTA7Qe/A9LOFSD8ydD7pYhnK3cvvILAz6fmVKdomXwj14CmF1QrWiIBWrka7KH8AkVGgJhRpJV3u862j1mUwVhETvO3ZjQZDt6XU3cT//z58Pm7H5s1QLb7heAbAdrf/vDT9N+/HjZuQq1/aHpB9UBLbHyf4HSuXieEAsBcoUNwapJRCpHbC843vi//WJw8TFECgBCdIucqg4dw8FVocSAi49NueLHyafGP1ZvPkEyuve9NAm4vOCdWFRJgNBkO/jCu64d/o+DwQMwAthdcLzdgqTwARkYleuEVRMYi0lj+g8j4OQnuzA0AWQKV6OQyOH4xwO2FV3bKA4RKcpXvDo+MEUXgu93h0S7cazyHysG46QVVdXIZHBs3XYMpWVHSwndskrFNhAAgkNpBKh2lFEa2i4pB8/u1lrFGRxXUNv9vCA5V5tX2aHpB1cBo8YbzZczcmyA4Vdom/i6holXuExA6hc/RJGPi3gadoqXub7w70t4PBDp3k8lN74vWaG+9VWKmNdqmWt/EvUFHjD7dDh4VAHwceu8BWIWw9QS1jvsb7y7VbACMSMYkY4BRqtm4v/Hu9uFeQvLk0AeWMnEWw9PEptPSGu0iZcqiqOd4ATFLNRuLEnulnD65DI4dp9gRCU6fFOqvVQ9lZQwSm8HA+uGtFHOfbgePIAszskBqFS1RaU1zkJUxUiuWZGf95rc2NG4vOIfI2IIwmqvdK9OsdMfI2PEtdiJGz766gtyO7OQyOHaUxBY+kcwVG2WNWPQdKKo+Yfa5jYZmgew5OXUUR6d6RSNx+8G7IkUWcPvBu4pGApvSmWyZAobVVOKsF/5qNcQiZgQiAeNtYxVCGgK0bSIdyVj4xpg3gBJzobP+h7cCjmBx5fuA4FSA0avOhZZx2g0vRNEvOwstxPNAa64QlfGnnYe7bi84p0jbthHKA4ExNca7Jsa9ptMLZD2wNADWi8rzrLSQRMB47iDeNxn+B703ztcjT6uLAAAAAElFTkSuQmCC",
             concealImage:
               "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAYAAABU1PscAAADsElEQVRYhb1YzU4aURT+zgXbtDGRPoG+ASTuDMi8gbyBuBGJi+LKKCHFNGDcTReN4KbTN6BvMEDTncn0DegbYEJXOvd0MYAD83PvKPRbkDBz7znfuXPu+QPWhN3j8618pZF9yd5C9aKou5deoiCgsFI/EMQlMHIgysUuZnYAjFhQT0rh/Ox+/j17tV+tH5KECULGW8q1Qbf9ZS0G7J3WtzdcboKpNFP4EkhGadht/div1g+JYS28ZIz73daHuP3ppAp3j8+3NkXKhIsyQK/6hkwoDzsR5AHoHEwiA+afGArBzA6IxkvPMovuxdbgtv09kjwAZpgqTlrnt3t8vrVJKQtEpZhltmSYw27rR5yc95Q2iDg36LSv4sgDbPU77SMVN6UBU1+3AdoJ14OxFLI0vL3uq2T5sQrygMKAQvWiKFjYkQuYnQm7xv3dzYOOshl0yE+/us0ge9BtnUXJijSgUKkfCMCKvEiMsQth+MPgqsk/3xm2JtKthR1UqAHxSjxIksY63CZfaWRT5PYCLhvxtcWymEL1oqgiD7C1NvKQduh9I8ptUiqwf8GAfKWRjfV5AGCMJ9KtabGeQtdtUpB2bOwnKhVPLr/5H80NeLZeAeJekkurG208mTxSS6Sy3wgBePE5RW5PJ/NJpp4OcSB5qGRBysTlgcr7lcuPwDQTe75FOzpb3TQcnXUvifNSCidFUkc8iMgsVC8c0ok4fvQ7LWXye02SKp7UWZcLAFtMa5uVYVUZVhOGeE0pvIz/TB6Ad4ntJBuiOiWFK9o65PdO69tJuDDDFBP5VNILXx6EkIGOK5Y8s+PpUCP1hPhublHwaNBtnYn7u5sHSVzW3UbMhv+/knyCYo8AQ7loihlnAQDD2+s+M2tmVyrvHp9vAaslDwAElHXWMbg5K2XmmdhrnjmczOJ26/7u5mHV5PdPLj9pBhR70Glfzf4s1EL9TvtoOjWIgBdJVk0+X2lkiUntASH3KVCNTtg1wo1YD3mviHOj+465bIwf01RSltP3dzcPQSPWd/KLjUsUeXYe08j9+tr6s/wqtiyYVX3rIq8snzVka00ldMgDwNuNdCbslILE3aZiwjEVDTOuHwY0DIht7H3k567AGDNggXhpLkQZAhtKd/EWjyRxWafrUw62BItmHPl39GZnoYclZAioBc6G5j8xvDFmcPMvu5auO+pM5oygIh95r4d9ZUHII89d4ge5YVAawAyTCDXfg/mlylcaYGIzmXs8y2GQLSGspKMZP/4B6HCJVL8oVrYAAAAASUVORK5CYII=",
-            cornerResizeImage: _this.n.getResult("entities", linkCont),
+              // NNO shade
+            cornerResizeImage: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsSAAALEgHS3X78AAABj0lEQVRoge2YPW4CMRBGJ6k4wBYcIeWWSL5ASsqU3MTaW6TMESgpaVZKyTEofADKaMGIKOOf8aztnQg/CQl58DJPgtlvDY3Gk/MS0++GcWvfHoxWF/SBhXklfH1vX7tuGFeo+g8E7qwlSqQIgESJVAGQJsERAEkSFIETWrkhQiI6RuExSntUuHEGgK+lRixJAARLkAUgLnGxEmdUKUiSgESJZAEQJsESAEES0TE6NdoN4/vfdaPVPjBiV3bErlElM9Qwt/mVSkVJpNyJe4kSqVFCnAQnC82ReEOVmXDDHFfioxtG3+RiMSfMcSQmtjklcoS5k206Zc/E3mgVEiWRK8wtJpEzzC0ikTvMVZcoEeaqSpQKc1yJ6fDsG60GoJzMXYOc0ergqIUa4ko49/mg3Ac2zDDHvU849/koHeaKS9QIc0UlaoW5YhI1w1wRCYqA76zHeeFIQ9klKAKhuey8cKShrBJRAaPV0Z68+egZD/2cPc59pP+A0eoTAI6Bn5PzgJfQEIKzp9FoNBpPCgD8AChdIF7AVN8sAAAAAElFTkSuQmCC", //_this.n.getResult("entities", linkCont),
             fillImage: _this.n.getResult("entities", fakeSrc),
           };
           (fx = curve((e = new _this.t(null, stream)), true)).x += 24 * Math.random() - 12;
@@ -2767,12 +2768,14 @@
         message: "Delete selected items?",
         buttons: [
           {
-            label: "Cancel",
-          },
-          {
-            label: "Delete",
+            label: "", //Cancel
             event: _this.d.DELETE_SELECTION_EVENT,
             default: true,
+          },
+          {
+            label: "", //Delete
+            //event: _this.d.DELETE_SELECTION_EVENT,
+            //default: true,
           },
         ],
         appendTo: "body",
@@ -12106,7 +12109,7 @@
               var a = window.location.protocol + "//" + picKey + "?" + canCreateDiscussions.save_state_id;
               if (Data.isCPA()) {
                 /** @type {string} */
-                a = "https://apps.mathlearningcenter.org/clock/?" + canCreateDiscussions.save_state_id;
+                a = "" + canCreateDiscussions.save_state_id; // url
               }
               beat.set({
                 formattedSaveStateId: n,

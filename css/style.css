@@ -47,6 +47,7 @@ body {
 .lower-frame{
   top: 84px;
 }
+
 #edit-clock-box input[type='radio']:checked + .face-select-button >img {
   visibility: visible;
  }
@@ -361,9 +362,9 @@ button {
 }
 
 #new-clock-box button input[type="radio"]:checked {
-  background-color: #19b120;
+  /* background-color: #19b120;
   background-image: url(../images/radioBG.png);
-  background-size: contain;
+  background-size: contain; */
 }
 
 #new-clock-box button input[type="radio"]::before {

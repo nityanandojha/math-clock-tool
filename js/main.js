@@ -11903,6 +11903,7 @@
           scope: info.EDIT_FACE,
         });
         add("g", run(data.Events.TOGGLE_DIGITAL_READOUT_MODE));
+        add("v", run(data.Events.TOGGLE_TELL_TIME_MODE));
         add("j", run(data.Events.TOGGLE_RUN_JUMP_MODE));
         add("l", run(data.Events.TOGGLE_ELAPSED_TIME_MODE));
         add("z", function () {

@@ -327,6 +327,19 @@ main {
 
 /* Edit clock ends */
 
+button {
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  /* cursor: pointer; */
+}
+
 #new-clock-box button input {
   margin-right: 10px;
 }
@@ -344,6 +357,7 @@ main {
   background-color: #727272;
   border-radius: 50%;
   box-shadow: none;
+  cursor: pointer;
 }
 
 #new-clock-box button input[type="radio"]:checked {

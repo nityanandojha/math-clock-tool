@@ -11819,6 +11819,7 @@
         add("e", run(_this.d.SPAWN_EQUATION_EVENT));
         add("t", run(_this.d.SPAWN_TEXT_EVENT));
         add("w", run(_this.d.DRAW_TOOLS_TOGGLE_EVENT));
+        add("s", run(_this.d.EXPORT_CANVAS_TO_DESKTOP_EVENT));
         add("d", run(_this.d.DUPLICATE_SELECTION_EVENT), {
           enableEvent: [
             {
@@ -11866,9 +11867,9 @@
         add("esc", run(_this.d.SAVE_POPUP_HIDE_EVENT), {
           scope: info.SHARE_WORK,
         });
-        add("d", run(_this.d.ACTIVITY_CODE_DISPLAY_OPEN_EVENT), {
+        /* add("d", run(_this.d.ACTIVITY_CODE_DISPLAY_OPEN_EVENT), {
           scope: info.SHARE_WORK,
-        });
+        }); */
         add("esc", run(_this.d.ACTIVITY_CODE_DISPLAY_CLOSE_EVENT), {
           scope: info.DISPLAY_CODE,
         });

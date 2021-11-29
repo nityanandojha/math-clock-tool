@@ -19886,7 +19886,6 @@
           COLOR_TEXT: "black",
           COLOR_BORDER: "grey",
           ANNOTATION_COLORS_LIGHT: {
-            // NNO RED obj display is -- #E73C3C, changes for drawing tool 
             RED: { draw: "#E73C3C", display: "#E73C3C", displayDown: "rgba(231, 60, 60, 0.5)" },
             ORANGE: { draw: "#FDA100", display: "#FDA100", displayDown: "rgba(253, 161, 0, 0.5)" },
             YELLOW: { draw: "#FFEA00", display: "#EED000", displayDown: "rgba(238, 208, 0, 0.5)" },
@@ -21689,7 +21688,7 @@
             this.buttonTray.graphics.beginFill(this.paletteColor).drawRoundRect(0, 0, this.width, this.height, this.paletteBorderRadius),
             this.buttonColor.graphics
               .clear()
-              .beginFill(a.a.isObject(this.color) ? this.color.display : this.color)
+              //.beginFill(a.a.isObject(this.color) ? this.color.display : this.color) NNO changed for drawing tool color default
               .drawRect(5, 44, 48, 48)
               .drawRect(5, 94, 48, 48),
             a.a.each(this.allButtons, function (t) {

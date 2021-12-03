@@ -111,6 +111,7 @@ body {
 #help-button{
   float: right;
   pointer-events: all;
+  cursor: pointer;
 }
 #help-button img{
   width: 60%;
@@ -189,6 +190,10 @@ main {
 #start-btn{
   margin-left: 550px;
   margin-top: 490px;
+  cursor: pointer;
+}
+#help-close{
+  cursor: pointer;
 }
 #front-page img{
   height: 70px;

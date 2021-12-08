@@ -16137,8 +16137,9 @@
                   (this.width = this.height = this.x = this.y = this.offX = this.offY = 0),
                   (this.scale = 1);
               }),
-              (e.getCacheDataURL = function () {
+              (e.getCacheDataURL = function () {  
                 var t = this.target && this._cacheCanvas;
+                console.log("111111111: ",t.toDataURL());
                 return t
                   ? (this.cacheID !== this._cacheDataURLID &&
                       ((this._cacheDataURLID = this.cacheID), (this._cacheDataURL = t.toDataURL ? t.toDataURL() : null)),
@@ -22508,6 +22509,7 @@
           return this.fontWeight + " " + this.fontSize + " " + this.fontFace;
         }),
         (Ve.prototype.toDataURL = function () {
+          console.log("to data URL.....")
           var t = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
             e = this.display.getBounds();
           return (

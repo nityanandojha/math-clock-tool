@@ -8459,7 +8459,7 @@
                         }),
                     (e = e("abort"));
                   try {
-                    o.send((t.hasContent && t.data) || null);
+                    //o.send((t.hasContent && t.data) || null);
                   } catch (t) {
                     if (e) throw t;
                   }
@@ -16139,7 +16139,6 @@
               }),
               (e.getCacheDataURL = function () {  
                 var t = this.target && this._cacheCanvas;
-                console.log("111111111: ",t.toDataURL());
                 return t
                   ? (this.cacheID !== this._cacheDataURLID &&
                       ((this._cacheDataURLID = this.cacheID), (this._cacheDataURL = t.toDataURL ? t.toDataURL() : null)),
@@ -19620,6 +19619,7 @@
       };
     },
     tRS1: function (t, e, i) {
+      //console.log("ASDFSDA~~~~~~~~~")
       "use strict";
       i.d(e, "a", function () {
         return E;
@@ -20020,7 +20020,8 @@
             a.a.each(
               t,
               function (t) {
-                var e = h()("<button>").html(t.label);
+                
+                var e = (t.label === "OK")?h()("<button class='ok-button'>").html(t.label) :h()("<button>").html(t.label);
                 this.$buttonContainer.append(e),
                   a.a.isString(t.event) &&
                     "" !== t.event &&
@@ -25759,6 +25760,7 @@
         an = sn;
       (sn.SAVE_KEY = "save_state"),
         (sn.init = function (t) {
+          return;
           "object" === Ne(t) &&
             ("string" == typeof t.appName && ($i = t.appName),
             "number" == typeof t.schemaVersion && (tn = t.schemaVersion),

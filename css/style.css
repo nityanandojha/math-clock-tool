@@ -104,6 +104,14 @@ body {
   opacity: 1;
   
 }
+.ok-button{
+  background-image: url(../images/ok-Btn.png) !important;
+  height: 55px;
+  padding-top: 9px !important;
+  color: #fff !important;
+  font-size: 24px;
+  cursor: pointer;
+}
 #help-button-bar{
   width: 970px;
   transform: scale(1);

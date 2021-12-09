@@ -2743,7 +2743,7 @@
       /** @type {number} */
       that.DEGREES_TO_RADIANS = Math.PI / 180;
       /** @type {number} */
-      that.CLOCK_LIMIT = 5;
+      that.CLOCK_LIMIT = 10;
       /** @type {number} */
       that.WORKSPACE_HEIGHT = 720;
       /** @type {number} */

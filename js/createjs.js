@@ -11470,7 +11470,7 @@
         else {
           if ("object" != typeof t.insertAt || !t.insertAt.before)
             throw new Error(
-              "[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n"
+              "[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n"
             );
           var r = h(t.insertAt.before, i);
           i.insertBefore(e, r);
@@ -25768,7 +25768,7 @@
             "string" == typeof t.schemaFilename && sn.addSchemaFile(t.schemaFilename)),
             window.localStorage.getItem("endpointOverride")
               ? ((rn = window.localStorage.getItem("endpointOverride")), console.log("Endpoint is currently overridden. (%s)", rn))
-              : (rn = "https://save-api.mathlearningcenter.org");
+              : (rn = "");
         }),
         (sn.getPath = function (t) {
           var e = rn;
@@ -25782,7 +25782,7 @@
         (sn.resetPath = function () {
           return (
             window.localStorage.removeItem("endpointOverride"),
-            (rn = "https://save-api.mathlearningcenter.org"),
+            (rn = ""),
             console.log("Endpoint has been reset. (%s)", rn),
             rn
           );

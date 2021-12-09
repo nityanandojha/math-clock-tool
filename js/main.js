@@ -2751,11 +2751,11 @@
       /** @type {number} */
       that.SPAWN_PADDING_INC = 50;
       /** @type {string} */
-      that.APP_FULL_NAME = "Math Clock Tool";
+      that.APP_FULL_NAME = "Clock Tool";
       /** @type {string} */
       that.IOS_APP_URL = "";
       /** @type {string} */
-      that.DEFAULT_SAVE_FILENAME = "my math clock";
+      that.DEFAULT_SAVE_FILENAME = "my clock";
       that.FALLBACK_CONFIG = {
         appState: {
           booleanFlags: {},
